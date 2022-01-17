@@ -1,0 +1,10 @@
+{% if paginationNextUrl or paginationPrevUrl %}
+  <nav class="pagination">
+    {% if paginationPrevUrl %}
+      <a href="{{ paginationPrevUrl }}" class="pagination--pager" title="{{ previous.title | markdownify | strip_html }}">{{ paginationPrevText if paginationPrevText else 'Previous' }}</a>
+    {% endif %}
+    {% if paginationNextUrl %}
+      <a href="{{ paginationNextUrl }}" class="{{ paginationLinkTokens }}" data-direction="forwards">{{ paginationNextText if paginationNextText else 'Next' }}</a>
+    {% endif %}
+  </nav>
+{% endif %}

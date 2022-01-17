@@ -1,0 +1,6 @@
+<!--{% assign date_format = site.date_format | default: "B -d, Y" %}-->
+{% if last_modified_at %}
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time class="dt-published" datetime="{{ last_modified_at | date: "Y-m-d" }}">{{ last_modified_at | toUTCString }}</time></p>
+{% elsif date %}
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time class="dt-published" datetime="{{ date | date_to_xmlschema }}">{{ date | toUTCString }}</time></p>
+{% endif %}

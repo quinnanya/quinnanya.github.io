@@ -1,0 +1,163 @@
+---
+permalink: /blog/2009/12/11/do-it-drupal-drupal-under-pressure-performance-and-scalability/
+title: "Do It With Drupal: Drupal Under Pressure: Performance and Scalability"
+date: 2009-12-10
+classes: wide
+show_date: true
+---
+<ul>
+<li>Browser | Apache | PHP | -SQL Queries | MySQL</li>
+<li>Common pattern for optimization: inspect each layer, add little buckets of caches everywhere</li>
+<li>"Fast track" through the different layers to get out requests more efficiently</li>
+<li>On browser side: Mod Expires, sends a message to the browser and says "I've got this info, you've already looked at it, we're good"</li>
+<li>Firebug will show you all the individual requests- says how many kb it takes to download (if you only have to download a little bit when you refresh, that's good)</li>
+<li>CDN - Content Delivery Networks and reverse proxy caches: any stuff that hasn't changed, you don't have to ask your internal infrastructure to handle that (hand it off to geolocated servers optimized to quickly serve out that info)</li>
+<li>Proxy cache can be in front of your infrastructure (offload things Drupal would keep doing over and over)</li>
+<li>PHP level: OpCode cache</li>
+<li>MySQL level: query cache - takes all the read queries (most of the select statements) and stores the results in memory</li>
+<li>Query cache, OpCode cache: half hour or less, significant improvements</li>
+<li>Proxy caches and CDNs are a bit larger of a task</li>
+<li>Component between database and PHP: MemCache - clone of some of Drupal's tables</li>
+<li>MemCache: take all the cached tables, hold it in memory</li>
+<li>MemCache also used for sessions - if your sessions table is locking up, your site is about to implode</li>
+<li>MemCache also used to speed up path aliasing stuff</li>
+</ul>
+<p><strong>Apache Requirements</strong></p>
+<ul>
+<li>Apache 1.3.x or 2.x, ability to read .htaccess fiels, AllowOverrideALL</li>
+<li>If we take information in .htaccess and put it in main Apache config file - it's faster, it might not be a huge bump in performance, turn off dynamic configuration of Apache</li>
+<li>mod_rewrite (clean URLs), mod_php (Apache integration), mod_expires</li>
+<li>MaxClients- number of connections you can have to Apache at once; if you set it too high for your server, you'll run out of memory</li>
+<li>RAM / AvgApache mem size = # max clients</li>
+</ul>
+<p><strong>mod_expires</strong></p>
+<ul>
+<li>ExpiresDefault A1209600 (AKA "two weeks")
+</li>
+<li>ExpiresByType text/html A1 (all images, CSS, javascript: they get cached for two weeks, except the text/html)</li>
+<li>We can't cache html in Drupal because that's dynamic</li>
+<li>This is telling Apache to send the headers to the browser that tell the browser it's ok to cache it</li>
+</ul>
+<p><strong>KeepAlive</strong></p>
+<ul>
+<li>There's overhead to opening TCP/IP connections</li>
+<li>"We can have a conversation this long" - Apache and browser can keep a conversation going long enough to download an entire page</li>
+<li>KeepAliveTimeout 2 (but you can monitor Apache threads to determine when a process turns into a wait process, refine it)</li>
+<li>Resources: linuxgazette.net/123/vishnu.html</li>
+</ul>
+<p><strong>PHP requirements</strong></p>
+<ul>
+<li>5.2.x, XMl extension, GD image library, Curl support, register_globals:off, safe_mode:off</li>
+<li>PHP Opcode Cache: removes "compile to operation codes" steps - go right from parse PHP to execute</li>
+<li>APC: <a href="http://pecl.php.net/package/APC" title="http://pecl.php.net/package/APC">http://pecl.php.net/package/APC</a></li>
+<li>php.ini: max_execution_time = 60, memory_limit = 96M</li>
+<li>If you're uploading big things, you might need more; if you're doing image handling/image manipulating (image cache to dynamically create image derivatives) may need to increase memory</li>
+<li>Opcode cache is going to increase size of each Apache process? Or maybe not? (Debate ensues)</li>
+<li>In any case, check and see if Apache is holding onto more memory</li>
+<li>Use PHP best practice (don't count things over and over - store that count and then move on)</li>
+</ul>
+<p><strong>True or False?</strong></p>
+<ul>
+<li>The more modules you enable, the slower your site becomes (TRUE!)
+<ul>
+<li>Sometimes you may not need a module for that - 5 lines of code and it's done (don't need a birthday module with candles, etc if you just need the number)</li>
+<li>"Do I really need to enable this module?"</li>
+</ul>
+</li>
+<li>When my site is getting hammered, I should increase the MaxClients option to handle more traffic (FALSE!)
+<ul>
+<li>You'll run out of memory, start swapping, and die</li>
+</ul>
+</li>
+<li>echo() is faster than print() (WHO CARES?)
+<ul>
+<li>This is taking things a little too far</li>
+</ul>
+</li>
+</ul>
+<p><strong>Database server</strong></p>
+<ul>
+<li>MySQL 5.0.x or 5.1.33 or higher (there's some problems before 5.1.33 with CCK)</li>
+<li>MyISAM by default</li>
+<li>In Drupal 7, there are changes - MyISAM locks the entire table from writing when one thing is getting written somewhere; the access column, user table, session table is getting written to on every page request - this can cause problems</li>
+<li>Drupal 7 uses InnoDB - row-level locking, transactions, foreign key support, more robustness (less likely to get corrupted tables)</li>
+<li>If you have a table that's primarily read, MyISAM is a little faster</li>
+<li>Query caching - specify query_cache_size (64M?), max_allowed_packet (16M?)</li>
+<li>Is query cache size relative to table size? - yes, basically a bucket for read queries; how many result sets do you want to store in query cache</li>
+</ul>
+<p><strong>Query optimization</strong></p>
+<ul>
+<li>Find a slow query (can look at slow query log in MySQL), debug the query using EXPLAIN, it shows what's getting joined together and all sorts of other details; save the query, save the world</li>
+<li>log-slow-queries = /var/log/slow_query.log</li>
+<li>log_query_time = 5 (5 milliseconds)</li>
+<li>#log-queries-not-using-indexes: little ones that get run a ton, if you tweak that, you'll optimize the site (voting API, casting a vote)</li>
+<li>Add an index to reduce the number of rows it has to look through (tradeoff: it adds a little bit of time before a write can happen)</li>
+</ul>
+<p><strong>Drupal</strong></p>
+<ul>
+<li>Use Pressflow: same APIs as Drupal core but supports MySQL replication, reverse proxy caching, PHP 5 optimizatinos</li>
+<li>pressflow.org</li>
+<li>Almost all Pressflow changes make it back to core Drupal for the next release</li>
+<li>Cron is serious business - run it</li>
+<li>Drupal performance screen (/admin/settings/performance)</li>
+<li>We can't cache HTML like we can cache other things... but there's a way to do it</li>
+<li>It's disabled by default; the normal version takes requests (stores anonymous-user-viewing-a-page and stores it in the database)</li>
+<li>Aggressive cache bypasses some of the normal startup-y kind of things</li>
+<li>Aggressive cache lets you know if there's any modules that might be affected by enabling aggressive caching (such as Devel module)</li>
+<li>MTV runs on 4 web servers and a database server - and has TON of caching/CDN</li>
+<li>CDN is great for a huge spike in traffic</li>
+<li>If you don't have $$ for a CDN, use a reverse proxy like Varnish: don't ask Drupal to keep generating stuff for anonymous traffic</li>
+<li>Block caching is good</li>
+<li>Optimize CSS = aggregate and merge (20 requests for CSS files can go to 2)</li>
+<li>JSAggregator does compression for javascript (but be sure that you've got all the right semicolons)</li>
+</ul>
+<p><strong>Tools of the trade</strong></p>
+<ul>
+<li>Reverse proxy caches: like your own mini mini CDN; Varnish (varnish-cache.com)</li>
+<li>Set time to live for your content - this leads to regulated traffic off the originating server</li>
+<li>whitehouse.gov is being served all through Akamai; when you do a search, or post something you start to hit the original Drupal</li>
+<li>Apache Benchmark - impact of your code on your site</li>
+<li>It's built-in with Apache (ab from command line)</li>
+<li>ab -n 10 -c 10 <a href="http://www.example.com/" title="http://www.example.com/">http://www.example.com/</a> (10 requests, 10 at a time)</li>
+<li>You get back a number (requests per second your site can handle)</li>
+<li>More complicated for authenticated users; first, turn off all caching (for worst case scenario), look at the cookie and get the session ID, and do: ab -n 10 -c -C PHPSESSID=[whatever it is] <a href="http://www.example.com" title="http://www.example.com">http://www.example.com</a></li>
+</ul>
+<p><strong>devel module</strong></p>
+<ul>
+<li>Not suggested for a production site; Masquerade module is for switching users on a live site</li>
+<li>Print out database queries for each page</li>
+<li>Switch users</li>
+<li>View session information</li>
+<li>dsm()</li>
+<li>db_queryd()</li>
+<li>timer_start(), timer_stop()</li>
+</ul>
+<p><strong>MySQL Tuning Scripts</strong></p>
+<ul>
+<li>blog.mysqltuner.com</li>
+<li><a href="http://www.maatkit.org" title="www.maatkit.org">www.maatkit.org</a> - makes human-friendly reports from slow query report</li>
+</ul>
+<p><strong>Kinds of scalability</strong></p>
+<ul>
+<li>Scalability - how long can you survive the load</li>
+<li>Scaling: viral widgets, there, the mantra isn't "protect the database", it's "protect the web servers" - get more web servers</li>
+<li>Spike in anonymous user traffic (getting Slashdotted): site is a place for authenticated users, offload anonymous user traffic</li>
+<li>Tons of authenticated users: 100k employees logging into an infrastructure from 9 to 5 - big, beefy servers in a hosting location</li>
+</ul>
+<p><strong>Where do you start?</strong></p>
+<ul>
+<li>Do the quick wins first</li>
+<li>Save time for load testing</li>
+<li>RAM is cheap, MemCache is a nice solution</li>
+<li>If you get a warning about upcoming spikes in traffic, that triggers reverse proxy cache, CDN</li>
+<li>Work with hosting companies that know their infrastructure; build a relationship with them early on to have these kinds of conversations</li>
+<li>Some crashes are just a misunderstanding about what Drupal needs (going from a static site to Drupal without making changes)</li>
+</ul>
+<p><strong>When your server's on fire</strong></p>
+<ul>
+<li>Always have breathing room if you can</li>
+<li>If you've done MemCache, query caching, gone through all of that... add another box</li>
+<li>Add another virtual server</li>
+<li>Scalability = redundancy; back yourself up</li>
+<li>If the site goes down, will you lose money? If yes, invest in infrastructure</li>
+</ul>

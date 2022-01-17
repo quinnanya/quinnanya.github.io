@@ -1,0 +1,30 @@
+---
+title: "Blog"
+layout: single
+permalink: "blog/{% if pagination.pageNumber>0 %}page-{{ pagination.pageNumber | plus: 1 }}{% endif %}/index.html"
+header:
+  overlay_image: /assets/images/header_dsc.jpg
+  overlay_filter: 0.5
+pagination:
+  data: collections.posts
+  size: 10
+---
+
+{%- for post in pagination.items -%}
+<h2><a href="{{post.data.permalink}}">{{ post.data.title }}</a></h2>
+<em>{{ post.data.date | toUTCString}}</em>
+<p>{{ post.templateContent | description }} <a href="{{post.data.permalink}}"><em>read more</em></a></p>
+{%- endfor -%}
+
+
+<ul class="pagination">
+    <li><a href="{{ pagination.href.first }}" class="pagination">First</a></li>
+    <li>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}" class="pagination">Previous</a>{% else %}Previous{% endif %}</li>
+
+    <li>
+    <a href="#" class="pagination current">Page {{ pagination.pageNumber | plus: 1 }}</a>
+    </li>
+
+    <li>{% if pagination.href.next %}<a href="{{ pagination.href.next }}" class="pagination">Next</a>{% else %}Next{% endif %}</li>
+    <li><a href="{{ pagination.href.last }}" class="pagination">Last</a></li>
+</ul>

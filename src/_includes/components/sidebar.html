@@ -1,0 +1,19 @@
+{% if author_profile or layout.author_profile or sidebar %}
+  <div class="sidebar sticky">
+  {% if author_profile or layout.author_profile %}{% include components/author-profile.html %}{% endif %}
+  {% if sidebar %}
+    {% for s in sidebar %}
+      {% if s.image %}
+        <img src="{{ s.image }}"
+             alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
+      {% endif %}
+      {% if s.title %}<h3>{{ s.title }}</h3>{% endif %}
+      {% if s.text %}{{ s.text | markdownify }}{% endif %}
+      {% if s.nav %}{% include components/nav_list nav=s.nav %}{% endif %}
+    {% endfor %}
+    {% if sidebar.nav %}
+      {% include components/nav_list nav=sidebar.nav %}
+    {% endif %}
+  {% endif %}
+  </div>
+{% endif %}

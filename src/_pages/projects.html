@@ -1,0 +1,41 @@
+---
+title: Projects
+layout: collection
+permalink: /projects/
+collection: past-projects
+classes: wide
+---
+<div clsas="archive">
+<div class="entries-grid">
+{%- for project in collections.projects -%}
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    <img src="{{project.data.header.overlay_image}}" / >
+	<h3 class="archive__item-title no_toc" itemprop="headline">
+      {% if project.data.permalink %}
+        <a href="{{ project.data.permalink }}">{{ project.data.title }}</a> 
+      {% endif %}
+    {% if project.data.contents %}<p class="archive__item-excerpt" itemprop="description">{{ project.data.contents | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
+  </article>
+</div>
+{% endfor %}
+</div>
+</div>
+
+
+<h2>Past Projects</h2>
+<div class="entries-grid">
+{%- for past-project in collections.past-projects -%}
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    <img src="{{past-project.data.header.overlay_image}}" / >
+	<h3 class="archive__item-title no_toc" itemprop="headline">
+      {% if past-project.data.permalink %}
+        <a href="{{ past-project.data.permalink }}">{{ past-project.data.title }}</a> 
+      {% endif %}
+    {% if past-project.content %}<p class="archive__item-excerpt" itemprop="description">{{ past-project.content | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
+  </article>
+</div>
+{% endfor %}
+</div>

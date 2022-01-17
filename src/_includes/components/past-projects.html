@@ -1,0 +1,24 @@
+---
+pagination:
+  data: collections.past-projects
+  size: 10
+---
+
+<h2>Past Projects</h2>
+
+{%- for past-project in pagination.items -%}
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    <img src="{{past-project.data.header.overlay_image}}" / >
+	<h3 class="archive__item-title no_toc" itemprop="headline">
+      {% if past-project.data.permalink %}
+        <a href="{{ past-project.data.permalink }}">{{ past-project.data.title }}</a> 
+      {% endif %}
+    {% include components/page__meta.html type=include.type %}
+    {% if past-project.data.contents %}<p class="archive__item-excerpt" itemprop="description">{{ past-project.data.contents | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
+  </article>
+</div>
+
+
+{%- endfor -%}

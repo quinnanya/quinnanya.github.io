@@ -1,0 +1,20 @@
+{% if site.comments.provider and comments %}
+{% case site.comments.provider %}
+  {% when "disqus" %}
+    {% include components//comments-providers/disqus.html %}
+  {% when "discourse" %}
+    {% include components//comments-providers/discourse.html %}
+  {% when "facebook" %}
+    {% include components//comments-providers/facebook.html %}
+  {% when "staticman" %}
+    {% include components//comments-providers/staticman.html %}
+  {% when "staticman_v2" %}
+    {% include components//comments-providers/staticman_v2.html %}
+  {% when "utterances" %}
+    {% include components//comments-providers/utterances.html %}
+  {% when "giscus" %}
+    {% include components//comments-providers/giscus.html %}
+  {% when "custom" %}
+    {% include components//comments-providers/custom_scripts.html %}
+{% endcase %}
+{% endif %}

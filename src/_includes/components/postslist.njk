@@ -1,0 +1,21 @@
+{% if postListItems.length %}
+  <section class="[ post-list ] [ pad-top-700 gap-bottom-900 ]">
+    <div>
+      <h2>Posts</h2>
+      <ol>
+        {% for item in postListItems %}
+          {% if item.date.getTime() <= global.now %}
+            <li class="post-list__item">
+              <h3 class="font-base leading-tight text-600 weight-mid">
+                <a href="{{ item.url }}" class="post-list__link" rel="bookmark">{{ item.data.title }}</a>
+              </h3>
+              <p>
+                <time datetime="{{ item.date }}">{{ item.date }}</time>
+              </p>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ol>
+    </div>
+  </section>
+{% endif %}

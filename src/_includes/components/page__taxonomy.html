@@ -1,0 +1,7 @@
+{% if site.tag_archive.type and tags[0] %}
+  {% include components/tag-list.html %}
+{% endif %}
+
+{% if site.category_archive.type and categories[0] %}
+  {% include components/category-list.html %}
+{% endif %}

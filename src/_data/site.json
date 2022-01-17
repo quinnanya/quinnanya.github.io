@@ -1,0 +1,13 @@
+{
+  "minimal_mistakes_skin": "mint",
+  "locale": "en-US",
+  "title": "Quinn Dombrowski",
+  "logo_path": "",
+  "title_separator": "-",
+  "name": "Quinn Dombrowski",
+  "description": "Example description",
+  "maxPostsPerPage": 5,
+  "search": true,
+  "minimal_mistakes_skin": "mint",
+  "search_provider": "lunr"
+}

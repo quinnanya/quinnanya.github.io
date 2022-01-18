@@ -30,7 +30,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           #publish_dir is the folder on the docker instance which eleventy builds the pages to. 
           #it is not the docs folder in the repository
-          publish_dir: dist 
+          publish_dir: dist
           #publish_branch is the branch in the repository.
           #this is where you need to point GitHub pages
           publish_branch: gh-pages

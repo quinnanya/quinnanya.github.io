@@ -7,6 +7,7 @@ show_date: true
 header:
   overlay_image: /assets/images/header_dirt.jpg
   overlay_filter: 0.5
+blurb: "A beloved DH tool directory."
 ---
 
 Bamboo DiRT was a collaboratively edited directory of tools for digital research. I built it as part of Project Bamboo, working with Lisa Spiro, creator of the earlier DiRT wiki. It received funding from the Mellon Foundation, and its data was ultimately migrated to [TAPoR](https://tapor.ca/home).

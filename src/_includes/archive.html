@@ -8,14 +8,8 @@ layout: default
   {% include components/page__hero_video.html %}
 {% endif %}
 
-{% if url != "/" and site.breadcrumbs %}
-  {% unless paginator %}
-    {% include components/breadcrumbs.html %}
-  {% endunless %}
-{% endif %}
-
 <div id="main" role="main">
-  {% include components/sidebar.html %}
+  <!--{% include components/sidebar.html %}-->
 
   <div class="archive">
     {% unless header.overlay_color or header.overlay_image %}

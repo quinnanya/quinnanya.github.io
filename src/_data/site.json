@@ -7,7 +7,7 @@
   "name": "Quinn Dombrowski",
   "description": "Example description",
   "maxPostsPerPage": 5,
-  "search": true,
+  "search": false,
   "minimal_mistakes_skin": "mint",
   "search_provider": "lunr"
 }

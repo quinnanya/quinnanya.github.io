@@ -16,7 +16,7 @@ classes: wide
       {% if project.data.permalink %}
         <a href="{{ project.data.permalink }}">{{ project.data.title }}</a> 
       {% endif %}
-    {% if project.data.contents %}<p class="archive__item-excerpt" itemprop="description">{{ project.data.contents | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
+    {% if project.data.blurb %}<p class="archive__item-excerpt" itemprop="description">{{ project.data.blurb | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
   </article>
 </div>
 {% endfor %}
@@ -34,7 +34,7 @@ classes: wide
       {% if past-project.data.permalink %}
         <a href="{{ past-project.data.permalink }}">{{ past-project.data.title }}</a> 
       {% endif %}
-    {% if past-project.content %}<p class="archive__item-excerpt" itemprop="description">{{ past-project.content | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
+    {% if past-project.data.blurb %}<p class="archive__item-excerpt" itemprop="description">{{ past-project.data.blurb | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
   </article>
 </div>
 {% endfor %}

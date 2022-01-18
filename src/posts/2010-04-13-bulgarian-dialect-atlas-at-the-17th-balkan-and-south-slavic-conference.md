@@ -5,7 +5,7 @@ date: 2010-04-13
 classes: wide
 show_date: true
 ---
-<p>Andy and I will be demoing the <a href="http://links.quinndombrowski.com/atlas">Bulgarian Dialect Atlas</a> on April 17th at the <a href="http://bss17.osu.edu/program.html">17th Balkan and South Slavic Conference</a> at the Ohio State University. The <a data-file-id="50" href="/assets/files/dombrowski2_2010_slides.pdf">slides</a> and <a data-file-id="49" href="/assets/files/dombrowski2_2010.pdf">handout</a> will be posted after the talk.</p>
+<p>Andy and I will be demoing the Bulgarian Dialect Atlas on April 17th at the <a href="http://bss17.osu.edu/program.html">17th Balkan and South Slavic Conference</a> at the Ohio State University. The <a data-file-id="50" href="/assets/files/dombrowski2_2010_slides.pdf">slides</a> and <a data-file-id="49" href="/assets/files/dombrowski2_2010.pdf">handout</a> will be posted after the talk.</p>
 <p>While there hasn't been much additional development on the project since its presentation at <a href="http://www.balisage.net/">Balisage</a> last summer, this will be the first presentation for a Slavist audience.</p>
 <p>Below is the abstract we submitted for the talk:</p>
 <p><strong>An XML-­Based Approach to Dialectological Data: The Development of Syllabic Liquids in Bulgarian</strong></p>

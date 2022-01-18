@@ -7,9 +7,10 @@ show_date: true
 header:
   overlay_image: /assets/images/header_bdlt.jpg
   overlay_filter: 0.5
+blurb: "A database of Bulgarian dialects & folk culture."
 ---
 
-This project with Prof. Ronelle Alexander used a Drupal interface for encoding linguistic and cultural information about transcriptions of field recordings from Bulgaria, and presenting the material in a way that is easy for scholars to search and browse.
+[*Bulgarian Dialectology as Living Tradition*](http://bulgariandialectology.org/), a project led by Prof. Ronelle Alexander, used a Drupal interface for encoding linguistic and cultural information about transcriptions of field recordings from Bulgaria, and presenting the material in a way that is easy for scholars to search and browse.
 
 Read more at:
 

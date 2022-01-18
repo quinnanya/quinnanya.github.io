@@ -7,9 +7,10 @@ show_date: true
 header:
   overlay_image: /assets/images/header_gms.jpg
   overlay_filter: 0.5
+blurb: "A digital repository of medieval texts"
 ---
 
-The *Global Medieval Sourcebook*, led by Prof. Kathryn Starkey and Mae Velloso-Lyons, was already underway and NEH-funded when I began my position in the Division of Literatures, Cultures, and Languages at Stanford. I led the migration of the site from Drupal 7 to a Jekyll-based static site, with an eye towards "finishing" the project.
+The [*Global Medieval Sourcebook*](https://sourcebook.stanford.edu), led by Prof. Kathryn Starkey and Mae Velloso-Lyons, was already underway and NEH-funded when I began my position in the Division of Literatures, Cultures, and Languages at Stanford. I led the migration of the site from Drupal 7 to a Jekyll-based static site, with an eye towards "finishing" the project.
 
 Read more in:
 

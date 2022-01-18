@@ -7,6 +7,7 @@ show_date: true
 header:
   overlay_image: /assets/images/header_onfim.jpg
   overlay_filter: 0.5
+blurb: "XML markup for an old East Slavic reference source."
 ---
 
 This project planned to create an XML index of all the words in the word index from Zaliznjak 2004, with all of the vowels marked up to indicate their Common Slavic etymology, in addition to an XML index of all the given names (as denoted by личн., which includes nicknames) extracted from the word index, marked up for gender and classified as attested (based on data from Tupikov), compositional, or "other", for those names that fall into neither category.

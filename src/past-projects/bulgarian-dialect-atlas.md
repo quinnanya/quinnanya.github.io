@@ -7,6 +7,7 @@ show_date: true
 header:
   overlay_image: /assets/images/header_bda.jpg
   overlay_filter: 0.5
+blurb: "XML encoding of a print reference source for Bulgarian dialectology."
 ---
 
 This project built upon the word lists in the Bulgarian Dialect Atlas (BDA) by providing more accessible interfaces to the data. The words were transcribed and marked up using XML to indicate lexeme, reflex, and place of stress (where applicable). Each site was listed with its associated words and geographic coordinates. This metadata was leveraged using XSLT stylesheets to generate views onto the data that would not previously have been possible. Each site had its own profile that showed what percentage of the tokens have which reflex, lists all tokens, and notes tokens of the same lexeme that have different reflexes. The profile for each reflex shows what percentage of sites have that reflex, which reflexes co­-occur with it, and which lexemes have the given reflex and a different reflex within a single site. One of the views onto the lexemes was a sort based on how many reflexes are attested for a given lexeme, which provided insight into the lexical diffusion of reflexes. The token view identified where a token is the unique carrier of its reflex. Dynamically generated maps were provided for most views, using color­-coded location markers that better capture the nuances of the data than those found in the printed atlas.

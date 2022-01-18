@@ -1,0 +1,292 @@
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang='en-US' class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html -->
+<title>Do It With Drupal: The Power of Features - Quinn Dombrowski</title>
+<meta name="description" content="Example description">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Quinn Dombrowski">
+<meta property="og:title" content="Do It With Drupal: The Power of Features">
+<meta property="og:url" content="undefined">
+
+
+  <meta property="og:description" content="Example description">
+
+
+
+  <meta property="og:image" content="undefined">
+
+
+
+
+
+  <meta property="article:published_time" content="Wed Dec 09 2009 00:00:00 GMT+0000 (Coordinated Universal Time)">
+
+
+
+
+
+
+<link rel="canonical" href="undefined">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Quinn Dombrowski",
+      "url": "/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Quinn Dombrowski Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/styles/minimal-mistakes.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Quinn Dombrowski
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/cv/">CV</a>
+            </li><li class="masthead__menu-item">
+              <a href="/projects/">Projects</a>
+            </li><li class="masthead__menu-item">
+              <a href="/blog/">Blog</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    
+    <meta itemprop="datePublished" content="Wed Dec 09 2009 00:00:00 GMT+0000 (Coordinated Universal Time)">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="/blog/2009/12/10/do-it-drupal-power-features/" class="u-url" itemprop="url">Do It With Drupal: The Power of Features</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <p>See also <a href="http://drupal.org/project/features">Features</a> on drupal.org</p>
+<ul>
+<li>Jeff Miccolis & Eric Gundersen - Development Seed, building a lot of products (things like Open Atrium)</li>
+<li>Drupal is very configurable - but that's also a weakness: no distinction between what's configuration (views settings) and what's content</li>
+<li>Workflow problem: when you build a site, you build in a dev environment, but client/boss wants to see what it looks like before it goes live
+<ul>
+<li>So, you stage it somewhere, then move it over</li>
+<li>Development: where the action happens (possibly your laptop)</li>
+<li>Staging: where it's reviewed (much closer to where it's going to live)</li>
+<li>Production: where it's live. (developing on the live site is always a bad idea)</li>
+</ul>
+</li>
+<li>Three people working on a project that needs to go live
+<ul>
+<li>Musician, developer, themer</li>
+<li>Round 1 goes great - everyone works together and the site goes live</li>
+<li>Round two is a PITA: new views build on dev, rebuild on staging, rebuild on dev, rebuild on staging, over and over, rebuild on prod</li>
+<li>Extensive note taking, prone to human error, loads of repeated tasks</li>
+</ul>
+</li>
+<li>The solution? Make a distinction between config and content - views and settings are heavily and clearly distinguished from the actual content - then write this configuration to code and get it out of the database</li>
+<li>You can do version control with your config - this lets you track changes</li>
+<li>Node types, CCK fields, menu, blocks, views - these are config</li>
+<li>You can say "these components taken together define a feature" - something the site does</li>
+<li>"Features" module - Feature = Drupal parts that do something specific (Views, ImageCache presets, content types, fields, etc.)</li>
+<li>Features = Drupal module that allows for the capture of configuration into code</li>
+<li>(Sorry about the name; the Feature module makes Feature modules which have things)</li>
+<li>Feature modules have Core exportables: content types, permissions, input filters, menu items</li>
+<li>Contrib support: contexts, views, ImageCache, Ctools (panels, feeds, etc.)</li>
+<li>Features is a system to capture the various components that describe how your site behaves</li>
+<li>Features should be used throughout the development process - you can take a live site and capture existing features, but it requires you to change your thinking about how users interact with the site</li>
+<li>Concepting what's part of which feature, what's shared, etc. gives you stronger features</li>
+</ul>
+<p><strong>Making Features</strong></p>
+<ul>
+<li>Create a Feature: you can add components, cycle through various elements, clickthe ones you want in your module</li>
+<li>Features come as a nice tarball - turn it on in your website, you get all the stuff that comes with it</li>
+<li>But then people start changing the view - you can see the status in the Features module (has it been changed?)</li>
+<li>If something has been changed, it'll show you what</li>
+<li>"Recreate" button will give you another tarball, with the current state of things</li>
+</ul>
+<p><strong>Create, Update, Revert</strong></p>
+<ul>
+<li>Drush commands - features, features export, features update, features revert</li>
+<li>Views changes are made only once, each change has a commit log, if you check it into SVN like you should</li>
+<li>If you move your development to a real dev environment, and leave the staging site as a staging site (that you can show clients, etc without worrying it broke in the last five minutes) this is good</li>
+</ul>
+<p><strong>Distributing Features</strong></p>
+<ul>
+<li>Are your features appropriate for drupal.org?</li>
+<li>Is the configuration an IP issue?</li>
+<li>How can I get that nifty update status thing behind the firewall?</li>
+<li>If you can't/don't want to send it to drupal.org, but want to manage it internally over time: Features server</li>
+<li>code.developmentseed.org/featureserver</li>
+<li>Create projects, make new releases, subscribe to updates, etc</li>
+<li>For automatic packaging, try the Project module</li>
+<li>Feature server is much simpler, lets you get off the ground fast</li>
+<li>Based on implicit standards: update status xml, exportables, drush make</li>
+</ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        <!---->
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="Wed Dec 09 2009 00:00:00 GMT+0000 (Coordinated Universal Time)">December 9th 2009</time></p>
+
+      </footer>
+
+      
+
+      
+    </div>
+
+   
+  </article>
+
+  
+</div>
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Quinn Dombrowski. Powered by <a href="https://www.11ty.dev/" rel="nofollow">Eleventy</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a> (adapted as <a href="https://github.com/quinnanya/eleven-mistakes">Eleven Mistakes</a>).</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

@@ -106,6 +106,7 @@ header:
 * <em><a href="http://www.crescatgraffiti.com">Crescat Graffiti, Vita Excolatur: Confessions of the University of Chicago</a></em>, 2009. (ISBN 978-0-557-17205-4)
 
 ## Talks and Presentations
+* Digital Approaches to Multilingual Text Analysis, Australian National University. "Non-English DH is Not a Thing". January 27, 2022.
 * EADH 2020-2021. Poster: "Leveraging Computational Methods for Comparing Low-Prestige Translations", with Lee Skallerup Bessette, Katherine Bowers, Mariia Gorshkova, Isabelle Gribomont, Courtney Hodrick, Jennifer Isasi, Maria Massucco, Cosima Wagner, Ella Elbaz, Ona Ona Bantjes-Rafols. September 23, 2021.
 * Max Weber Foundation DH Working Group. Roundtable participant, "Discussing the Seven Seas of DH - A Global Fishbowl". September 17, 2021.
 * JADH 2021. "Virtual Communities and Post-Pandemic Possibilities: Animal Crossing New Digital Humanities", with Liz Grumbach and Merve Tekgürler. September 8, 2021.
@@ -116,6 +117,7 @@ header:
 * DHSI 2021 Institute Lecture. "Graceful Degradation in Collaborative Relationships", with Erica Cavanaugh. June 9, 2021.
 * !!Con 2021. "<a href="http://youtube.com/watch?v=6fjgYEDZBKE">Tropes! Cliches! Made-Up Slang! It's the Data-Sitters Club!</a>". May 17, 2021.
 * INTELE webinar. "Computational Text Analysis for Spanish". [<a href="https://github.com/quinnanya/intro-to-nlp-es">GitHub repo</a>]. May 17, 2021.
+* 3rd Lagos Summer School in Digital Humanities. "Tools for Text Mining and Analysis: Practical Approaches". May 11, 2021.
 * CSDH-SCHN 2021. "From Spaghetti-O’s to Osso Bucco: Francophone Translations of Suburban America", with Lee Skallerup-Bessette and Isabelle Gribomont. May 30, 2021.
 * Digital Frontiers: Realizing Resistance Episode II: Uncharted Galaxies. "'Whatever You Do, Don't Stare': Modeling Representation of Otherness in the Star Wars Expanded Universe", with Mark Algee-Hewitt, Nichole Nomura, and Matt Warner. May 3, 2021.
 * DARIAH "DH Goes Viral" Digital Workshop. Lightning talk: "Adventures in COVID Corpus Building". April 26, 2021.
@@ -225,6 +227,7 @@ header:
 
 ## Teaching
 
+* Princeton Center for Digital Humanities. Instructor for NEH-funded institute "New Languages for NLP". 2021-2022.
 * Stanford University, DLCL 205/305: Project Management and Ethical Collaboration for Humanists, winter 2020.
 * Stanford University, DLCL 204: Digital Humanities Across Borders, winter 2019.&nbsp;
 * Stanford University, CIDR workshops on research data management, data modeling, Cytoscape, Tableau, and Zotero/Tropy. 2018-present.

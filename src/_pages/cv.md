@@ -93,7 +93,7 @@ header:
 * "Pattern Review: Ann Person Collectibles Stretch & Sew, Pattern #199: Sweats to Go" in <em>OK ZOOMER</em> Stanford University Libraries zine, vol. 1, issue 2. May 11, 2020.
 * "<a href="https://doi.org/10.3828/mlo.v0i0.294">Preparing Non-English Texts for Computational Analysis</a>". Modern Languages Open, 2020(1): 45 pp. 1–9. DOI: https://doi.org/10.3828/mlo.v0i0.294
 * "<a href="https://doi.org/10.16995/dscn.325">Absorbing DiRT: Tool Directories in the Digital Age</a>", with Kaitlyn Grant, Kamal Ranaweera, Omar Rodriguez-Arenas, Stéfan Sinclair, and Geoffrey Rockwell. <em>Digital Studies/Le champ numérique</em> 10(1): 4, pp. 1–18. 2020. DOI: https://doi.org/10.16995/dscn.325
-* <a href="https://doi.org/10.16995/dscn.325">"</a><a href="https://dl.acm.org/doi/10.1145/3219104.3219137">Research Facilitation on a Budget</a>", with Jason Christopher, Aaron Culich, Debra McCaffrey, Amy Neeser, and Andrew Wiedlea. <em>PEARC '18: Proceedings of the Practice and Experience on Advanced Research Computing</em>. July 2018. DOI:&nbsp;10.1145/3219104.3219137.<li>
+* <a href="https://doi.org/10.16995/dscn.325">"</a><a href="https://dl.acm.org/doi/10.1145/3219104.3219137">Research Facilitation on a Budget</a>", with Jason Christopher, Aaron Culich, Debra McCaffrey, Amy Neeser, and Andrew Wiedlea. <em>PEARC '18: Proceedings of the Practice and Experience on Advanced Research Computing</em>. July 2018. DOI:&nbsp;10.1145/3219104.3219137.
 * "<a href="https://library.educause.edu/resources/2017/5/building-capacity-for-digital-humanities-a-framework-for-institutional-planning">Building Capacity for Digital Humanities: A Framework for Institutional Planning</a>". A Joint ECAR/CNI Working Group Publication (served as co-chair of working group).
 * "<a href="http://www.digitalhumanities.org/dhq/vol/10/1/000235/000235.html">TaDiRAH: a Case Study in Pragmatic Classification</a>", with Luise Borek, Jody Perkins, and Christof Schöch. DH Quarterly,&nbsp;Volume 10 Number 1.
 * <em><a href="http://drupal.forhumanists.org">Drupal for Humanists</a></em> published by Texas A&amp;M Press, 2016.
@@ -143,7 +143,7 @@ header:
 * Stanford Literary Lab. "Translation", with Yulia Ilchuk and J.D. Porter. February 18, 2020.
 * CESTA lunchtime talk series. "Multilingual Fanfic", with Steele Douris, Masha Gorshkova, and Antonio Lenzo. January 1, 2021.
 * DHARTI Twitter Conference 2020. "<a href="https://twitter.com/quinnanya/status/1218759310072668160">Multilingual DH</a>". January 19, 2020.
-* Fantastic Futures 2019. "OCR with Transkribus" workshop. December 9, 2019.<li>
+* Fantastic Futures 2019. "OCR with Transkribus" workshop. December 9, 2019.
 * Stanford Literary Lab presentation. "Multilingual Fanfic: Metadata Edition", with Steele Douris, Masha Gorshkova, Antonio Lenzo.&nbsp;December 9, 2019.
 * ASEEES 2019. "Digital Migrations: Diasporas, Transnational Circulations, and Border Crossings through the Lens of Digital Humanities" roundtable presenter with Natalia Ermolaev, Philip Gleissner, Yasha Klots, and Jessie Labov.
 * Trending at Stanford University Libraries. "Multilingual DH". October 17, 2019.
@@ -249,26 +249,24 @@ header:
 
 ## Media
 
-<ul>
-<li>November 20, 2020, "<a href="https://news.stanford.edu/2020/11/20/makerspaces-get-creative-coronavirus-pandemic/">Makerspaces get creative during coronavirus pandemic</a>", Stanford News article.
-<li>April 15, 2020, "<a href="https://www.insidehighered.com/news/2020/04/15/we-need-fun-more-ever-digital-humanities-meets-baby-sitters-club-books">The Data-Sitters Club</a>", Inside Higher Ed.
-	<li>December 9, 2019, featured in "<a href="https://news.stanford.edu/2019/12/09/makerspaces-at-stanford/">The many makerspaces of the Stanford campus</a>", Stanford News article.
-	<li>March 30, 2010, interview on WTTW’s local news show, “<a href="http://www.wttw.com/main.taf?p=42,2,1,1&amp;date=03/30/2010">Chicago Tonight</a>“
-	<li>March 24, 2010, Chicago Tribune, “<a href="http://www.chicagotribune.com/news/education/ct-live-0324-graffiti-book-20100324,0,3291709.story">U. of C. grad hunts for nerdy graffiti</a>“
-	<li>March 17, 2010, Spiegel Online, “<a href="http://www.spiegel.de/unispiegel/wunderbar/0,1518,684099,00.html">Graffiti in Uni-Bibliotheken: “Wir haben’s am Morgen zweimal gemacht”</a>” (<a href="http://www.spiegel.de/fotostrecke/fotostrecke-52756.html">Slideshow: “Studentische Wand-Kritzelei: Liebe, Sex und Abschlussprüfungen”</a>)
-	<li>February 11, 2010, Wall Street Journal tech blog, “<a href="http://blogs.wsj.com/digits/2010/02/11/a-statistical-stab-at-graffiti/">A Statistical Stab at Graffiti</a>“
-	<li>February 9, 2010, <a href="http://www.bbc.co.uk/blogs/magazinemonitor/2010/02/web_monitor_150.shtml">BBC Magazine Monitor: Web Monitor</a>
-	<li>February 8, 2010, Vecernij.hr (Croatian news site), <a href="http://www.vecernji.hr/vijesti/sto-studenti-chicaga-porucuju-skrabanjem-stolovima-zidovima-clanak-93230">Što studenti iz Chicaga poručuju škrabanjem na stolovima i zidovima</a> (What students from Chicago scribble on the tables and walls)
-	<li>February 8, 2010, Slashdot: <a href="http://science.slashdot.org/story/10/02/07/2122245/Statistical-Analysis-of-U-of-Chicago-Graffiti">Slashdot Science Story | Statistical Analysis of U of Chicago Graffiti</a>
-	<li>February 3, 2010, Inkling Magazine: <a href="http://www.inklingmagazine.com/articles/crescat-graffiti-vita-excolatur/">Crescat Graffiti, Vita Excolatur: Being a Statistical Analysis of Graffiti Found at the University of Chicago Library</a>
-	<li>January 14, 2010, Chicago Maroon: <a href="http://www.chicagomaroon.com/2010/1/14/dombrowski-discovers-that-wisdom-in-the-reg-not-in-the-books-but-on-the-walls">Dombrowski discovers wisdom in the Reg: not in the books, but on the walls</a>
-	<li>Dec 14, 2009, AV Club Chicago: <a href="http://www.avclub.com/chicago/articles/art-of-the-remix-interpreting-classroom-graffiti-a,36184/">Art of the remix: Interpreting classroom graffiti as contemporary art </a>
-	<li>December 7, 2009, Columbia Chronicle: <a href="http://columbiachronicle.com/library-confessions-revealed/">Library confessions revealed</a>
-	<li>Dec 4, 2009, Chicago Weekly: <a href="http://www.crescatgraffiti.com/2009/12/04/chicago-weekly-article/">The Writing on the Wall: Quinn Dombrowski documents the Regenstein Library’s graffiti</a>
-	<li>Nov 23, 2009, Chicago Weekly: <a href="http://blog.chicagoweekly.net/2009/11/23/regenstein-graffiti-the-newest-incarnation/">Regenstein Graffiti: the Newest Incarnation</a>
-	<li>Nov 18, 2009, Gapers Block: <a href="http://gapersblock.com/merge/archives/2009/11/18/regenstein-graffiti/">Regenstein Graffiti</a>
-	<li>Nov 18, 209, Chicagoist: <a href="http://chicagoist.com/2009/11/18/u_of_c_graffiti_becomes_book.php">Univ. of Chicago Graffiti Becomes Book</a>
-	<li>Oct 21, 2009, Chicago Weekly: <a href="http://blog.chicagoweekly.net/2009/10/21/graffiti-at-the-university-of-chicago/">Graffiti at the University of Chicago</a>
-	<li>Oct 16, 2009, Chicagoist: <a href="http://chicagoist.com/2009/10/16/graffiti_gallery.php">The Creative Graffiti Of U of C’s Regenstein Library</a>
-	<li>July 8, 2009: LA Times: <a href="http://latimesblogs.latimes.com/jacketcopy/2009/07/library-graffiti-at-the-university-of-chicago.html">Library graffiti at the University of Chicago</a>
-</ul>
+* November 20, 2020, "<a href="https://news.stanford.edu/2020/11/20/makerspaces-get-creative-coronavirus-pandemic/">Makerspaces get creative during coronavirus pandemic</a>", Stanford News article.
+* April 15, 2020, "<a href="https://www.insidehighered.com/news/2020/04/15/we-need-fun-more-ever-digital-humanities-meets-baby-sitters-club-books">The Data-Sitters Club</a>", Inside Higher Ed.
+* December 9, 2019, featured in "<a href="https://news.stanford.edu/2019/12/09/makerspaces-at-stanford/">The many makerspaces of the Stanford campus</a>", Stanford News article.
+* March 30, 2010, interview on WTTW’s local news show, “<a href="http://www.wttw.com/main.taf?p=42,2,1,1&amp;date=03/30/2010">Chicago Tonight</a>“
+* March 24, 2010, Chicago Tribune, “<a href="http://www.chicagotribune.com/news/education/ct-live-0324-graffiti-book-20100324,0,3291709.story">U. of C. grad hunts for nerdy graffiti</a>“
+* March 17, 2010, Spiegel Online, “<a href="http://www.spiegel.de/unispiegel/wunderbar/0,1518,684099,00.html">Graffiti in Uni-Bibliotheken: “Wir haben’s am Morgen zweimal gemacht”</a>” (<a href="http://www.spiegel.de/fotostrecke/fotostrecke-52756.html">Slideshow: “Studentische Wand-Kritzelei: Liebe, Sex und Abschlussprüfungen”</a>)
+* February 11, 2010, Wall Street Journal tech blog, “<a href="http://blogs.wsj.com/digits/2010/02/11/a-statistical-stab-at-graffiti/">A Statistical Stab at Graffiti</a>“
+* February 9, 2010, <a href="http://www.bbc.co.uk/blogs/magazinemonitor/2010/02/web_monitor_150.shtml">BBC Magazine Monitor: Web Monitor</a>
+* February 8, 2010, Vecernij.hr (Croatian news site), <a href="http://www.vecernji.hr/vijesti/sto-studenti-chicaga-porucuju-skrabanjem-stolovima-zidovima-clanak-93230">Što studenti iz Chicaga poručuju škrabanjem na stolovima i zidovima</a> (What students from Chicago scribble on the tables and walls)
+* February 8, 2010, Slashdot: <a href="http://science.slashdot.org/story/10/02/07/2122245/Statistical-Analysis-of-U-of-Chicago-Graffiti">Slashdot Science Story | Statistical Analysis of U of Chicago Graffiti</a>
+* February 3, 2010, Inkling Magazine: <a href="http://www.inklingmagazine.com/articles/crescat-graffiti-vita-excolatur/">Crescat Graffiti, Vita Excolatur: Being a Statistical Analysis of Graffiti Found at the University of Chicago Library</a>
+* January 14, 2010, Chicago Maroon: <a href="http://www.chicagomaroon.com/2010/1/14/dombrowski-discovers-that-wisdom-in-the-reg-not-in-the-books-but-on-the-walls">Dombrowski discovers wisdom in the Reg: not in the books, but on the walls</a>
+* Dec 14, 2009, AV Club Chicago: <a href="http://www.avclub.com/chicago/articles/art-of-the-remix-interpreting-classroom-graffiti-a,36184/">Art of the remix: Interpreting classroom graffiti as contemporary art </a>
+* December 7, 2009, Columbia Chronicle: <a href="http://columbiachronicle.com/library-confessions-revealed/">Library confessions revealed</a>
+* Dec 4, 2009, Chicago Weekly: <a href="http://www.crescatgraffiti.com/2009/12/04/chicago-weekly-article/">The Writing on the Wall: Quinn Dombrowski documents the Regenstein Library’s graffiti</a>
+* Nov 23, 2009, Chicago Weekly: <a href="http://blog.chicagoweekly.net/2009/11/23/regenstein-graffiti-the-newest-incarnation/">Regenstein Graffiti: the Newest Incarnation</a>
+* Nov 18, 2009, Gapers Block: <a href="http://gapersblock.com/merge/archives/2009/11/18/regenstein-graffiti/">Regenstein Graffiti</a>
+* Nov 18, 209, Chicagoist: <a href="http://chicagoist.com/2009/11/18/u_of_c_graffiti_becomes_book.php">Univ. of Chicago Graffiti Becomes Book</a>
+* Oct 21, 2009, Chicago Weekly: <a href="http://blog.chicagoweekly.net/2009/10/21/graffiti-at-the-university-of-chicago/">Graffiti at the University of Chicago</a>
+* Oct 16, 2009, Chicagoist: <a href="http://chicagoist.com/2009/10/16/graffiti_gallery.php">The Creative Graffiti Of U of C’s Regenstein Library</a>
+* July 8, 2009: LA Times: <a href="http://latimesblogs.latimes.com/jacketcopy/2009/07/library-graffiti-at-the-university-of-chicago.html">Library graffiti at the University of Chicago</a>

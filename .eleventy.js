@@ -22,8 +22,8 @@ module.exports = function (config) {
 	    'md',
 	    markdownIt().use(markdownItAnchor)
 	  )
-
-
+//Copy CNAME
+eleventyConfig.addPassthroughCopy("src/CNAME");
 
     // don't use .gitignore (allows compiling sass to css into a monitored folder WITHOUT committing it to repo)
     config.setUseGitIgnore(false)

@@ -23,14 +23,6 @@ module.exports = function (config) {
 	    markdownIt().use(markdownItAnchor)
 	  )
 
-//CSV support
-	  config.addDataExtension("csv", (contents) => {
-	    const records = parse(contents, {
-	      columns: true,
-	      skip_empty_lines: true,
-	    });
-	    return records;
-	  });
 
 
     // don't use .gitignore (allows compiling sass to css into a monitored folder WITHOUT committing it to repo)

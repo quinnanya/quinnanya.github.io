@@ -83,7 +83,8 @@ header:
 * "Academia is a Dice Roll", with Agnieszka Backman, Sabrina Grimberg, and Melissa Hosek. Forthcoming in <em>Debates in DH: The Digital Futures of Graduate Study in the Humanities</em>. Univ. of Minnesota Press. Eds. Simon Appleford, Gabriel Hankins, and Anouk Lang.
 * "Bringing Languages into the DH Classroom". Forthcoming in <em>Debates in DH: Pedagogy</em>. Ed. Brian Croxall and Diane Jakacki.
 * "Language is not a Default Setting: Countering Digital Humanities’ English Problem", with Patrick Burns. Forthcoming in&nbsp;<em>Debates in DH 2022</em>. Univ. of Minnesota Press. Eds. Matthew Gold and Lauren Klein.
-* "Rolling the Dice on Project Management". Forthcoming in <a href="https://ideah.pubpub.org/">IDEAH</a>.
+* "[Rolling the Dice on Project Management](https://ideah.pubpub.org/pub/9xiyfz6h/release/3)". IDEAH, vol. 2, issue 2. Nov 25, 2021. DOI: 10.21428/f1f23564.0f419bf4.
+* "[Linguistic Fingerprints on Translation's Lens](https://jdmdh.episciences.org/9008)", with J.D. Porter and Yulia Ilchuk. Journal of Data Mining & Digital Humanities, January 27, 2022, Special Issue on Collecting, Preserving, and Disseminating Endangered Cultural Heritage for New Understandings through Multilingual Approaches. DOI: 10.46298/jdmdh.7223 
 * “The Directory Paradox”. <em>Debates in Digital Humanities: People, Practice, Power: Digital Humanities Outside the Center</em>. Univ. of Minnesota Press. Eds. Anne McGrail et al. 2021.
 * "'Business' is to 'Successful' as 'Babysitter' is to...", with Lee Skallerup Bessette, Katherine Bowers, Maria Sachiko Cecire, Anouk Lang, and Roopika Risam. In <em>We Are the Baby-Sitters Club: Essays and Artwork from Grown-Up Readers</em>. Ed. Marisa Crawford and Megan Milks. 2021.
 * "<a href="https://utpjournals.press/doi/full/10.3138/seminar.57.3.1">Global Medieval Sourcebook</a>", with Mae Velloso-Lyons and Kathryn Starkey. <em>Seminar: A Journal of Germanic Studies</em>. 2021.
@@ -129,6 +130,7 @@ header:
 * Stanford Literary Lab. "The Data-Sitters Club", with Lee Skallerup Bessette, Katherine Bowers, Maria Sachiko Cecire, Anouk Lang, and Roopika Risam. February 18, 2021.
 * DH webinar for Seshadripuram Evening Degree College, Bangalore, India. "Multilingual DH". February 15, 2021.
 * DHARTI Speaks lecture series. "Beyond Defaults: Multilingual DH meets Cultural Analytics. January 15, 2021.
+* TextXD 2020. Lightning talk, "Language is a Domain: Use the Bender Rule". December 10, 2020.
 * Nicholas S. Sawchen Lecture Series in Slavic Studies, University of British Columbia. "Computational Methods for Russian Literature : Current State and Future Directions", with Andrew Janco. November 17, 2020.
 * Spectrums of DH lecture series, McGill University. "What's a 'word': Multilingual DH and the English Default". October 15, 2020.
 * Digital Frontiers Flyover Comics Symposium 2020. "Layered Adaptation and Warped Nostalgia in Francophone Translations of the Baby-Sitters Club Graphic Novels", with Lee Skallerup Bessette. September 24, 2020.

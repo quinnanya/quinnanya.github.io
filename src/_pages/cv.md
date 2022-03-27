@@ -108,6 +108,9 @@ header:
 * <em><a href="http://www.crescatgraffiti.com">Crescat Graffiti, Vita Excolatur: Confessions of the University of Chicago</a></em>, 2009. (ISBN 978-0-557-17205-4)
 
 ## Talks and Presentations
+* Internet Archive all-staff meeting. "SUCHO, the IA, and the Future of Preserving Digital Cultural Heritage". March 25, 2022.
+* Internet Archive's *Library as Laboratory* series. "Libraries, Laboratories, Back Alleys". March 16, 2022.
+* DHARTI 2022. "Diasporic Depictions: India in 21st Century Anglophone Fiction for Young Readers", with Nichole Nomura. February 22, 2022.
 * Digital Approaches to Multilingual Text Analysis, Australian National University. "Non-English DH is Not a Thing". January 27, 2022.
 * EADH 2020-2021. Poster: "Leveraging Computational Methods for Comparing Low-Prestige Translations", with Lee Skallerup Bessette, Katherine Bowers, Mariia Gorshkova, Isabelle Gribomont, Courtney Hodrick, Jennifer Isasi, Maria Massucco, Cosima Wagner, Ella Elbaz, Ona Ona Bantjes-Rafols. September 23, 2021.
 * Max Weber Foundation DH Working Group. Roundtable participant, "Discussing the Seven Seas of DH - A Global Fishbowl". September 17, 2021.

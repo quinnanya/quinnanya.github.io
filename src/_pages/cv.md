@@ -13,8 +13,7 @@ header:
 ## Education
 
 * University of Illinois at Urbana-Champaign, MS in Library and Information Science, August 2009
-* University of Chicago, BA/MA in Slavic Linguistics, June 2006<br />
-<em>BA paper: "Palatalizations in the Old Novgorod dialect: Comparing theory and data"</em>
+* University of Chicago, BA/MA in Slavic Linguistics, June 2006; BA paper: "Palatalizations in the Old Novgorod dialect: Comparing theory and data"
 * Henry Foss High School (Tacoma, WA): International Baccalaureate Program (diploma recipient)
 
 ## Work experience
@@ -33,7 +32,7 @@ header:
 * Research assistant; Humanities Computing, University of Chicago, 2006-2007
 * Computing Assistant/Multimedia Computing Assistant; USITE computing cluster, University of Chicago, 2004-2007
 * Web site designer and/or webmaster, Slavic Languages &amp; Literatures and various faculty members' home pages, 2005-2007
-* Technical director and project manager, various grant projects for University of Chicago faculty members (<em>Medieval Slavic Database</em>; <em>Bosnian-Croatian-Serbian dictionary of aspectual pairs</em>; <em>digitizing Balkan and Caucasian course materials</em>), 2004-2008
+* Technical director and project manager, various grant projects for University of Chicago faculty members (*Medieval Slavic Database*; *Bosnian-Croatian-Serbian dictionary of aspectual pairs*; *digitizing Balkan and Caucasian course materials*), 2004-2008
 * NSIT Student Advisory Committee member, 2006
 * ThoutReader/DotReader XML-based e-book creator, 2005-2007
 
@@ -41,9 +40,9 @@ header:
 
 * Co-VP, Association for Computers and the Humanities, 2020-present
 * Executive board member, Global Outlook::Digital Humanities, 2019-2021
-* Co-founder and group organizer, <a href="http://multilingualdh.org/">Multilingual DH</a>, 2019-present
-* Peer reviewer,&nbsp;<em>Digital Humanities Quarterly</em>, 2019-present
-* Founder and group organizer, <a href="http://www.dhwogem.org/">DH-WoGeM</a>, 2018-present
+* Co-founder and group organizer, [Multilingual DH](http://multilingualdh.org/), 2019-present
+* Peer reviewer,&nbsp;*Digital Humanities Quarterly*, 2019-present
+* Founder and group organizer, [DH-WoGeM](http://www.dhwogem.org/), 2018-present
 * Executive council member, Association for Computers and the Humanities, 2015-2019
 * Peer reviewer, ADHO Digital Humanities conference, 2010-present
 * Co-chair of Women in IT planning committee for UCCSC conference, 2018
@@ -59,10 +58,10 @@ header:
 * DHSI 2021 Most Prolific Tweeter award.
 * DH 2019 innovative poster award for "Gender and Intersectional Identities in the Digital Humanities", with Rachel Hendery, Katie McDonough, and Tassie Gniady
 * UC Berkeley STAR Award recipient (for exceptional performance) 2014, 2016, 2017, 2018
-* <a href="http://www.lis.illinois.edu/about-gslis/awards/student-awards#rediger">Hazel C. Rediger Award</a>, University of Illinois at Urbana-Champaign Graduate School of Library and Information Science, 2010
-* Winner, Beer and Demo Jam at <em>Balisage: The Markup Conference 2009</em> (sponsored by Mark Logic)
-* Student Support Award, <em>Balisage: The Markup Conference</em>, 2009
-* 4th Year Winner, <a href="http://www.lib.uchicago.edu/e/alumnifriends/brooker/">T. Kimball Brooker Prize for Undergraduate Book Collecting</a>, 2006
+* Hazel C. Rediger Award, University of Illinois at Urbana-Champaign Graduate School of Library and Information Science, 2010
+* Winner, Beer and Demo Jam at *Balisage: The Markup Conference 2009* (sponsored by Mark Logic)
+* Student Support Award, *Balisage: The Markup Conference*, 2009
+* 4th Year Winner, T. Kimball Brooker Prize for Undergraduate Book Collecting, 2006
 * Dean's List, 2002-2006
 * Solomon-Manaster Scholarship, 2002
 * University of Chicago Honor Scholarship (full undergraduate tuition), 2002-2006
@@ -75,37 +74,37 @@ header:
 
 ## Publications
 
-* "Personal Entanglements and Graceful Relationship Degradation in Collaborative Projects", with Erica Cavanaugh. Forthcoming in <em>Revealing Meaning: Feminist Methods in Digital Scholarship</em>. Ed. Heather Froehlich and Kim Martin.
-* "Multilingual Digital Humanities", with Pedro Nilsson-Fernàndez. Forthcoming in <em>Bloomsbury Handbook to DH</em>, ed. James O'Sullivan.
-* "Does Coding Matter?". Forthcoming in <em>Bloomsbury Handbook to DH</em>, ed. James O'Sullivan.
-* "Minimizing Computing Maximizes Labor". Forthcoming in <em>Digital Humanities Quarterly</em> cluster on minimal computing.
-* "Voices from the Server Room: Humanists in HPC", with Tassie Gniady, David Kloster, Megan Meredith-Lobay, Jeffrey Tharsen, Lee Zickel. Forthcoming in <em>Debates in DH: Computational Humanities</em>. Univ. of Minnesota Press. Eds. Jessica Marie Johnson, David Mimno, and Lauren Tilton.
-* "Academia is a Dice Roll", with Agnieszka Backman, Sabrina Grimberg, and Melissa Hosek. Forthcoming in <em>Debates in DH: The Digital Futures of Graduate Study in the Humanities</em>. Univ. of Minnesota Press. Eds. Simon Appleford, Gabriel Hankins, and Anouk Lang.
-* "Bringing Languages into the DH Classroom". Forthcoming in <em>Debates in DH: Pedagogy</em>. Ed. Brian Croxall and Diane Jakacki.
-* "Language is not a Default Setting: Countering Digital Humanities’ English Problem", with Patrick Burns. Forthcoming in&nbsp;<em>Debates in DH 2022</em>. Univ. of Minnesota Press. Eds. Matthew Gold and Lauren Klein.
+* "Personal Entanglements and Graceful Relationship Degradation in Collaborative Projects", with Erica Cavanaugh. Forthcoming in *Revealing Meaning: Feminist Methods in Digital Scholarship*. Ed. Heather Froehlich and Kim Martin.
+* "Multilingual Digital Humanities", with Pedro Nilsson-Fernàndez. Forthcoming in *Bloomsbury Handbook to DH*, ed. James O'Sullivan.
+* "Does Coding Matter?". Forthcoming in *Bloomsbury Handbook to DH*, ed. James O'Sullivan.
+* "Minimizing Computing Maximizes Labor". Forthcoming in *Digital Humanities Quarterly* cluster on minimal computing.
+* "Voices from the Server Room: Humanists in HPC", with Tassie Gniady, David Kloster, Megan Meredith-Lobay, Jeffrey Tharsen, Lee Zickel. Forthcoming in *Debates in DH: Computational Humanities*. Univ. of Minnesota Press. Eds. Jessica Marie Johnson, David Mimno, and Lauren Tilton.
+* "Academia is a Dice Roll", with Agnieszka Backman, Sabrina Grimberg, and Melissa Hosek. Forthcoming in *Debates in DH: The Digital Futures of Graduate Study in the Humanities*. Univ. of Minnesota Press. Eds. Simon Appleford, Gabriel Hankins, and Anouk Lang.
+* "Bringing Languages into the DH Classroom". Forthcoming in *Debates in DH: Pedagogy*. Ed. Brian Croxall and Diane Jakacki.
+* "Language is not a Default Setting: Countering Digital Humanities’ English Problem", with Patrick Burns. Forthcoming in&nbsp;*Debates in DH 2022*. Univ. of Minnesota Press. Eds. Matthew Gold and Lauren Klein.
 * "[Rolling the Dice on Project Management](https://ideah.pubpub.org/pub/9xiyfz6h/release/3)". IDEAH, vol. 2, issue 2. Nov 25, 2021. DOI: 10.21428/f1f23564.0f419bf4.
 * "[Linguistic Fingerprints on Translation's Lens](https://jdmdh.episciences.org/9008)", with J.D. Porter and Yulia Ilchuk. Journal of Data Mining & Digital Humanities, January 27, 2022, Special Issue on Collecting, Preserving, and Disseminating Endangered Cultural Heritage for New Understandings through Multilingual Approaches. DOI: 10.46298/jdmdh.7223 
-* “The Directory Paradox”. <em>Debates in Digital Humanities: People, Practice, Power: Digital Humanities Outside the Center</em>. Univ. of Minnesota Press. Eds. Anne McGrail et al. 2021.
-* "'Business' is to 'Successful' as 'Babysitter' is to...", with Lee Skallerup Bessette, Katherine Bowers, Maria Sachiko Cecire, Anouk Lang, and Roopika Risam. In <em>We Are the Baby-Sitters Club: Essays and Artwork from Grown-Up Readers</em>. Ed. Marisa Crawford and Megan Milks. 2021.
-* "<a href="https://utpjournals.press/doi/full/10.3138/seminar.57.3.1">Global Medieval Sourcebook</a>", with Mae Velloso-Lyons and Kathryn Starkey. <em>Seminar: A Journal of Germanic Studies</em>. 2021.
-* "<a href="https://www.modernlanguagesopen.org/articles/10.3828/mlo.v0i0.413/">Afterword</a>". <em>Modern Languages Open</em>, Digital Modern Languages Section Launch Issue. 2021.
-* "<a href="http://e-scripta.ilit.bas.bg/archives/year-2021/issue-21/annotation-modeling-computational-horizons-medieval-slavic-studies">From Annotation to Modeling: Computational Horizons for Medieval Slavic Studies</a>". 2021. <em>Scripta & e-Scripta</em>, vol. 21.
-* "Deprioritizing Meatspace" in <em>OK ZOOMER</em> Stanford University Libraries zine, vol. 2, issue 1. October 30, 2020 
-* "Pattern Review: Ann Person Collectibles Stretch & Sew, Pattern #199: Sweats to Go" in <em>OK ZOOMER</em> Stanford University Libraries zine, vol. 1, issue 2. May 11, 2020.
-* "<a href="https://doi.org/10.3828/mlo.v0i0.294">Preparing Non-English Texts for Computational Analysis</a>". Modern Languages Open, 2020(1): 45 pp. 1–9. DOI: https://doi.org/10.3828/mlo.v0i0.294
-* "<a href="https://doi.org/10.16995/dscn.325">Absorbing DiRT: Tool Directories in the Digital Age</a>", with Kaitlyn Grant, Kamal Ranaweera, Omar Rodriguez-Arenas, Stéfan Sinclair, and Geoffrey Rockwell. <em>Digital Studies/Le champ numérique</em> 10(1): 4, pp. 1–18. 2020. DOI:  10.46430/phen0087
-* "<a href="https://doi.org/10.46430/phen0087">Introduction to Jupyter Notebooks</a>", with Tassie Gniady and David Kloster. <em>The Programming Historian</em>, Dec 8, 2019. DOI: 
-* <a href="https://doi.org/10.16995/dscn.325">"</a><a href="https://dl.acm.org/doi/10.1145/3219104.3219137">Research Facilitation on a Budget</a>", with Jason Christopher, Aaron Culich, Debra McCaffrey, Amy Neeser, and Andrew Wiedlea. <em>PEARC '18: Proceedings of the Practice and Experience on Advanced Research Computing</em>. July 2018. DOI:&nbsp;10.1145/3219104.3219137.
+* “The Directory Paradox”. *Debates in Digital Humanities: People, Practice, Power: Digital Humanities Outside the Center*. Univ. of Minnesota Press. Eds. Anne McGrail et al. 2021.
+* "'Business' is to 'Successful' as 'Babysitter' is to...", with Lee Skallerup Bessette, Katherine Bowers, Maria Sachiko Cecire, Anouk Lang, and Roopika Risam. In *We Are the Baby-Sitters Club: Essays and Artwork from Grown-Up Readers*. Ed. Marisa Crawford and Megan Milks. 2021.
+* "[Global Medieval Sourcebook](https://utpjournals.press/doi/full/10.3138/seminar.57.3.1)", with Mae Velloso-Lyons and Kathryn Starkey. *Seminar: A Journal of Germanic Studies*. 2021.
+* "[Afterword](https://www.modernlanguagesopen.org/articles/10.3828/mlo.v0i0.413/")". *Modern Languages Open*, Digital Modern Languages Section Launch Issue. 2021.
+* "[From Annotation to Modeling: Computational Horizons for Medieval Slavic Studies](http://e-scripta.ilit.bas.bg/archives/year-2021/issue-21/annotation-modeling-computational-horizons-medieval-slavic-studies)". 2021. *Scripta & e-Scripta*, vol. 21.
+* "Deprioritizing Meatspace" in *OK ZOOMER* Stanford University Libraries zine, vol. 2, issue 1. October 30, 2020 
+* "Pattern Review: Ann Person Collectibles Stretch & Sew, Pattern #199: Sweats to Go" in *OK ZOOMER* Stanford University Libraries zine, vol. 1, issue 2. May 11, 2020.
+* "[Preparing Non-English Texts for Computational Analysis](https://doi.org/10.3828/mlo.v0i0.294)". Modern Languages Open, 2020(1): 45 pp. 1–9. DOI: https://doi.org/10.3828/mlo.v0i0.294
+* "[Absorbing DiRT: Tool Directories in the Digital Age](https://doi.org/10.16995/dscn.325)", with Kaitlyn Grant, Kamal Ranaweera, Omar Rodriguez-Arenas, Stéfan Sinclair, and Geoffrey Rockwell. *Digital Studies/Le champ numérique* 10(1): 4, pp. 1–18. 2020. DOI:  10.46430/phen0087
+* "<a href="https://doi.org/10.46430/phen0087">Introduction to Jupyter Notebooks</a>", with Tassie Gniady and David Kloster. *The Programming Historian*, Dec 8, 2019. DOI: 
+* <a href="https://doi.org/10.16995/dscn.325">"</a><a href="https://dl.acm.org/doi/10.1145/3219104.3219137">Research Facilitation on a Budget</a>", with Jason Christopher, Aaron Culich, Debra McCaffrey, Amy Neeser, and Andrew Wiedlea. *PEARC '18: Proceedings of the Practice and Experience on Advanced Research Computing*. July 2018. DOI:&nbsp;10.1145/3219104.3219137.
 * "<a href="https://library.educause.edu/resources/2017/5/building-capacity-for-digital-humanities-a-framework-for-institutional-planning">Building Capacity for Digital Humanities: A Framework for Institutional Planning</a>". A Joint ECAR/CNI Working Group Publication (served as co-chair of working group).
 * "<a href="http://www.digitalhumanities.org/dhq/vol/10/1/000235/000235.html">TaDiRAH: a Case Study in Pragmatic Classification</a>", with Luise Borek, Jody Perkins, and Christof Schöch. DH Quarterly,&nbsp;Volume 10 Number 1.
-* <em><a href="http://drupal.forhumanists.org">Drupal for Humanists</a></em> published by Texas A&amp;M Press, 2016.
-* Chapter "Drupal and other content management systems" in <em>Doing Digital Humanities</em>, Routledge, 2016.
+* *<a href="http://drupal.forhumanists.org">Drupal for Humanists</a>* published by Texas A&amp;M Press, 2016.
+* Chapter "Drupal and other content management systems" in *Doing Digital Humanities*, Routledge, 2016.
 * "<a href="http://dl.acm.org/citation.cfm?id=2657481&amp;CFID=500869429&amp;CFTOKEN=21343628">Digital Humanities Development without Developers: Bulgarian Dialectology as Living Tradition</a>", with Ronelle Alexander. Proceedings of DH-CASE II (DocEng workshop). doi: 10.1145/2657480.2657481.
 * "<a href="http://llc.oxfordjournals.org/content/29/3/326">What Ever Happened to Project Bamboo?</a>" 2014. LLC 29 (3): 326-339.
 * "<a href="https://letterpress.uchicago.edu/index.php/jdhcs/article/view/85">Walls that Talk: Thematic Variation in University Library Graffiti</a>". Journal of the Chicago Colloquium on Digital Humanities and Computer Science, Vol 1, No 3 (2011).
 * Rebecca Frost Davis and Quinn Dombrowski. "<a href="http://www.nitle.org/live/files/36-divided-and-conquered">Divided and Conquered: How Multivarious Isolation is Suppressing Digital Humanities Scholarship</a>" [pdf]. NITLE, Spring 2011.
 * Dombrowski, Andrew, and Quinn Dombrowski. "<a href="http://balisage.net/Proceedings/vol6/html/Dombrowski01/BalisageVol6-Dombrowski01.html">A formal approach to XML semantics: implications for archive standards</a>." Presented at International Symposium on XML for the Long Haul: Issues in the Long-term Preservation of XML, Montréal, Canada, August 2, 2010. In Proceedings of the International Symposium on XML for the Long Haul: Issues in the Long-term Preservation of XML. Balisage Series on Markup Technologies, vol. 6 (2010). doi:10.4242/BalisageVol6.Dombrowski01.
-* <em><a href="http://www.crescatgraffiti.com">Crescat Graffiti, Vita Excolatur: Confessions of the University of Chicago</a></em>, 2009. (ISBN 978-0-557-17205-4)
+* *<a href="http://www.crescatgraffiti.com">Crescat Graffiti, Vita Excolatur: Confessions of the University of Chicago</a>*, 2009. (ISBN 978-0-557-17205-4)
 
 ## Talks and Presentations
 * Internet Archive all-staff meeting. "SUCHO, the IA, and the Future of Preserving Digital Cultural Heritage". March 25, 2022.
@@ -137,7 +136,7 @@ header:
 * Nicholas S. Sawchen Lecture Series in Slavic Studies, University of British Columbia. "Computational Methods for Russian Literature : Current State and Future Directions", with Andrew Janco. November 17, 2020.
 * Spectrums of DH lecture series, McGill University. "What's a 'word': Multilingual DH and the English Default". October 15, 2020.
 * Digital Frontiers Flyover Comics Symposium 2020. "Layered Adaptation and Warped Nostalgia in Francophone Translations of the Baby-Sitters Club Graphic Novels", with Lee Skallerup Bessette. September 24, 2020.
-* DH 2020. Organized an <em>Animal Crossing: New Horizons</em> lightning talk series with Shawn Moore and presented on ACNH humor. July 24, 2020.
+* DH 2020. Organized an *Animal Crossing: New Horizons* lightning talk series with Shawn Moore and presented on ACNH humor. July 24, 2020.
 * DH 2020 Digital Literary Stylistics SIG Tool Criticism 3.0 workshop. "It Doesn't Work:" Failure and DH Tools. July 21, 2020.
 * DHSI 2020 project management workshop. "Rolling the Dice on Project Management". June 20, 2020.
 * Disrupting Digital Monolingualism. Co-organized a weeklong asynchronous discussion of multilingualism and NLP with Kalika Bali. June 15-19, 2020.
@@ -177,8 +176,8 @@ header:
 * Learning Mode: Critical Issues in Online Education, panel presenter on "Experiences, Outcomes and Continuing Education". UC Berkeley, March 2013.
 * American Theological Library Association guest speaker, "Project Bamboo: the Rise and Fall of a Humanities Cyberinfrastructure Project". March 2013.
 * PNC 2012, "<a href="http://www.pnclink.org/pnc2012/english/program.html#18">Communicating Culture: Bulgarian Dialectology as a Living Tradition</a>", with Ronelle Alexander. December 2012.
-* ASEEES 2012, roundtable speaker, <em>New Frontiers in Slavic Studies: Digital Humanities in Theory and Practice</em>. November 2012.
-* ASEEES 2012, "Research Without Travel: Independent Scholarship in the Digital World", as part of <em>Boundaries: the Challenges for Independent Scholars in Slavic and East European Studies</em>. November 2012.
+* ASEEES 2012, roundtable speaker, *New Frontiers in Slavic Studies: Digital Humanities in Theory and Practice*. November 2012.
+* ASEEES 2012, "Research Without Travel: Independent Scholarship in the Digital World", as part of *Boundaries: the Challenges for Independent Scholars in Slavic and East European Studies*. November 2012.
 * BADCamp 2012, "Drupal and Digital Humanities". November 2012.
 * 7th Annual Slavic Linguistics Society Conference, "Digital Publication without Code: the Evolution of the Sofia-Berkeley Archive of Bulgarian Dialectal Speech" with Ronelle Alexander. August 2012.
 * FASL 21: "XML Markup of the Novgorod Birchbark Letter Corpus: Etymology, Morphology, and Sociolinguistic". With Andrew Dombrowski, Rafael Abramovitz, and Anton Melnikov. May 2012.
@@ -209,7 +208,7 @@ header:
 
 ## Selected Past Projects
 
-* Co-editor of <em><a href="http://coding.forhumanists.org/">Coding for Humanists</a></em> book series, published by Texas A&amp;M Press, 2015-2020.
+* Co-editor of *<a href="http://coding.forhumanists.org/">Coding for Humanists</a>* book series, published by Texas A&amp;M Press, 2015-2020.
 * Director and developer of the <a href="http://dirtdirectory.org">DiRT (Digital Research Tools) Directory, a centerNet initiative, 2011-2017. </a>
 * <a href="http://dirtdirectory.org">Co-founder and developer of the </a><a href="http://dhcommons.org">DHCommons</a> project directory, a centerNet initiative, 2011-2017.
 * Technical editor of the <a href="http://dhcommons.org/journal">DHCommons journal</a>, centerNet's publication that provides peer review for mid-stage digital projects, 2012-2017.
@@ -228,8 +227,8 @@ header:
 * EDUCAUSE Management Institute; Boulder, CO; July 2010
 * Virtual World Librarianship: Your Second Life, University of Illinois, May-July 2007
 * Slavic Digital Text Workshop, University of Illinois, June 2007
-* <em>International Seminar on Macedonian Language, Literature and Culture</em>; Ohrid, Macedonia; August 2006
-* Ohio State University, <em>Medieval Slavic Summer Institute</em>, June-July 2006
+* *International Seminar on Macedonian Language, Literature and Culture*; Ohrid, Macedonia; August 2006
+* Ohio State University, *Medieval Slavic Summer Institute*, June-July 2006
 
 ## Teaching
 
@@ -254,7 +253,21 @@ header:
 * English (native), Russian (advanced), Spanish (intermediate)
 
 ## Media
-
+* [Berkeley Woman Among Group Preserving Ukraine's History](https://www.nbcbayarea.com/news/local/berkeley-woman-among-group-preserving-ukraines-history/2863069/). *NBC Bay Area*. April 13, 2022.
+* [SUCHO: residente de la Bahía crea proyecto para salvar el patrimonio cultural ucraniano](https://www.telemundoareadelabahia.com/noticias/local/sucho-residente-de-la-bahia-crea-proyecto-para-salvar-el-patrimonio-cultural-ucraniano/2218528/). *Telemundo Area de la Bahía*. April 13, 2022.
+* [Berkeley Woman Leads Effort To Help Save Ukraine’s Digital History Amid Russian Attacks](https://sanfrancisco.cbslocal.com/2022/04/13/ukraine-saving-digital-history-sucho-project-berkeley/). *CBS SF BayArea*. April 13, 2022.
+* Gollom, Mark. ["Canadian archivists go down the digital rabbit hole to help save Ukrainian culture"](https://www.cbc.ca/news/world/ukraine-digital-cultural-archives-librarians-servers-1.6417367). *CBC*. April 13, 2022.
+* ["The Berkeley archivist on a mission to save Ukrainian digital history￼"](https://www.berkeleyside.org/2022/04/10/berkeley-archivist-mission-save-ukrainian-digital-history). *Berkeleyside*. April 10, 2022.
+* ["Meet the 1,300 librarians racing to back up Ukraine’s digital archives."](https://www.washingtonpost.com/technology/2022/04/08/ukraine-digital-history/) *Washington Post*. April 8, 2022.
+* ["3000個網站的備份之戰，她們的另類烏克蘭救援."](https://www.sehseh.world/article/4276068) *Sehseh*. April 7, 2022.
+* ["How to Stop Ukrainian Websites From Vanishing During War."](https://gizmodo.com/how-sucho-stops-ukrainian-websites-vanishing-in-russias-1848737441) *Gizmodo*. April 2, 2022.
+* ["The race to save everything as war threatens the internet in Ukraine and Russia."](https://www.codastory.com/authoritarian-tech/destruction-internet-russia-ukraine/) *.coda*. March 31, 2022.
+* ["Ukrainian Museums Are Racing to Save Artifacts That Tell the Country’s Story."](https://time.com/6161734/ukraine-war-history-museums/) *Time*. March 29, 2022.
+* ["iSchool alumni play instrumental role in saving Ukrainian cultural heritage online."](https://ischool.illinois.edu/news-events/news/2022/03/ischool-alumni-play-instrumental-role-saving-ukranian-cultural-heritage) *UIUC School of Information Sciences*. March 23, 2022.
+* ["Volunteers Rally to Archive Ukrainian Web Sites."](http://blog.archive.org/2022/03/22/volunteers-rally-to-archive-ukrainian-web-sites/) *Internet Archive Blogs*. March 22, 2022.
+* ["How Tech Experts in the West Are Rushing to Save the Digital Archives of Ukraine’s Museums."](https://news.artnet.com/art-world/saving-ukrainian-cultural-heritage-online-2084036) *Artnet News*. March 14, 2022.
+* March 11, 2022, ABC News (Australia). <a href="https://www.abc.net.au/news/2022-03-12/russia-ukraine-war-artists-fight-for-cultural-identity/100899202">The art world has come under Russia's attack, but the community is fighting back to keep Ukraine's cultural identity alive</a>.
+* March 11, 2022, Marketplace Tech, NPR. <a href="https://www.marketplace.org/shows/marketplace-tech/digital-archivists-race-to-preserve-ukrainian-heritage/">Digital archivists race to preserve Ukrainian heritage</a>.
 * November 20, 2020, "<a href="https://news.stanford.edu/2020/11/20/makerspaces-get-creative-coronavirus-pandemic/">Makerspaces get creative during coronavirus pandemic</a>", Stanford News article.
 * April 15, 2020, "<a href="https://www.insidehighered.com/news/2020/04/15/we-need-fun-more-ever-digital-humanities-meets-baby-sitters-club-books">The Data-Sitters Club</a>", Inside Higher Ed.
 * December 9, 2019, featured in "<a href="https://news.stanford.edu/2019/12/09/makerspaces-at-stanford/">The many makerspaces of the Stanford campus</a>", Stanford News article.

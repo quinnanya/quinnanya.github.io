@@ -109,6 +109,7 @@ header:
 ## Talks and Presentations
 * CUDAN Open Lab Lecture, Tallinn University. "Coding, Childcare, and Badly-Behaved Tools: Adventures in Multilingual 'Data-Sitting'". May 5, 2022.
 * Day of DH 2022 keynote, University of North Texas. "Taking Fun Seriously." April 29, 2022.
+* Fiesole Retreat 2022. "[Nimble Tents and Bunkers: Safeguarding Digital Cultural Heritage](https://www.youtube.com/watch?v=woOwXva0Yfs)". April 6, 2022.
 * Internet Archive all-staff meeting. "SUCHO, the IA, and the Future of Preserving Digital Cultural Heritage". March 25, 2022.
 * Internet Archive's *Library as Laboratory* series. "Libraries, Laboratories, Back Alleys". March 16, 2022.
 * DHARTI 2022. "Diasporic Depictions: India in 21st Century Anglophone Fiction for Young Readers", with Nichole Nomura. February 22, 2022.

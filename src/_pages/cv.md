@@ -107,6 +107,8 @@ header:
 * *<a href="http://www.crescatgraffiti.com">Crescat Graffiti, Vita Excolatur: Confessions of the University of Chicago</a>*, 2009. (ISBN 978-0-557-17205-4)
 
 ## Talks and Presentations
+* CUDAN Open Lab Lecture, Tallinn University. "Coding, Childcare, and Badly-Behaved Tools: Adventures in Multilingual 'Data-Sitting'". May 5, 2022.
+* Day of DH 2022 keynote, University of North Texas. "Taking Fun Seriously." April 29, 2022.
 * Internet Archive all-staff meeting. "SUCHO, the IA, and the Future of Preserving Digital Cultural Heritage". March 25, 2022.
 * Internet Archive's *Library as Laboratory* series. "Libraries, Laboratories, Back Alleys". March 16, 2022.
 * DHARTI 2022. "Diasporic Depictions: India in 21st Century Anglophone Fiction for Young Readers", with Nichole Nomura. February 22, 2022.
@@ -253,6 +255,7 @@ header:
 * English (native), Russian (advanced), Spanish (intermediate)
 
 ## Media
+* [Preserving Ukraine’s cultural treasures with digital tools](https://www.pbs.org/newshour/show/preserving-ukraines-cultural-treasures-with-digital-tools). *PBS NewsHour*. April 28, 2022.
 * [Berkeley Woman Among Group Preserving Ukraine's History](https://www.nbcbayarea.com/news/local/berkeley-woman-among-group-preserving-ukraines-history/2863069/). *NBC Bay Area*. April 13, 2022.
 * [SUCHO: residente de la Bahía crea proyecto para salvar el patrimonio cultural ucraniano](https://www.telemundoareadelabahia.com/noticias/local/sucho-residente-de-la-bahia-crea-proyecto-para-salvar-el-patrimonio-cultural-ucraniano/2218528/). *Telemundo Area de la Bahía*. April 13, 2022.
 * [Berkeley Woman Leads Effort To Help Save Ukraine’s Digital History Amid Russian Attacks](https://sanfrancisco.cbslocal.com/2022/04/13/ukraine-saving-digital-history-sucho-project-berkeley/). *CBS SF BayArea*. April 13, 2022.

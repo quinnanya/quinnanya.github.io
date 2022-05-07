@@ -147,7 +147,7 @@
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
     
     
-    <meta itemprop="datePublished" content="Mon May 02 2022 02:00:12 GMT+0000 (Coordinated Universal Time)">
+    <meta itemprop="datePublished" content="Sat May 07 2022 16:27:11 GMT+0000 (Coordinated Universal Time)">
     
 
     <div class="page__inner-wrap">
@@ -168,11 +168,45 @@
   <subtitle></subtitle>
   <link href="" rel="self"/>
   <link href=""/>
-  <updated>2022-02-23T00:00:00Z</updated>
+  <updated>2022-05-07T00:00:00Z</updated>
   <id>http://www.quinndombrowski.com</id>
   <author>
     <name>Quinn Dombrowski</name>
   </author>
+  
+  <entry>
+    <title>Hosting Eleventy on GitHub Pages</title>
+    <link href="http://www.quinndombrowski.com/blog/2022/05/07/hosting-eleventy-on-github-pages/"/>
+    <updated>2022-05-07T00:00:00Z</updated>
+    <id>http://www.quinndombrowski.com/blog/2022/05/07/hosting-eleventy-on-github-pages/</id>
+    <content type="html">&lt;p&gt;I&#39;ve really been enjoying building sites with Eleventy instead of Jekyll. I&#39;m still learning my way around some of the cool data capabilities, but NodeJS has been much more agreeable to wrangle than Ruby, and that alone is worth a lot.&lt;/p&gt;
+&lt;p&gt;I appreciate that Netlify would make hosting Eleventy sites very easy, but I&#39;m reluctant to add yet another platform to the set of things I have to deal with, especially when I&#39;m using GitHub Pages for the Jekyll sites I&#39;m still running. When I looked at the tutorials for hosting Eleventy on GitHub Pages, I wasn&#39;t able to get any of them to work -- there was always something just slightly off for my use case. But with help from &lt;a href=&quot;https://www.cassey.dev/&quot;&gt;Cassey Lottman&lt;/a&gt;, I got it working with my first Eleventy site and I&#39;ve reused that configuration for a handful of other sites since.&lt;/p&gt;
+&lt;h2&gt;The big picture&lt;/h2&gt;
+&lt;p&gt;GitHub Pages assumes you&#39;re using Jekyll unless you tell it otherwise. Instead of using the automatic GitHub Pages workflows for building Jekyll sites, you&#39;ll be using the [Github Pages action by Peace Iris](&lt;a href=&quot;https://github.com/peaceiris/actions-gh-pages&quot;&gt;https://github.com/peaceiris/actions-gh-pages&lt;/a&gt;] that can build other kinds of static sites and move them to the branch where the HTML files will be hosted. You&#39;ll need to add a number of new files to your GitHub repo to make this happen.&lt;/p&gt;
+&lt;h2&gt;New files in your GitHub repo&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;.nojekyll file&lt;/strong&gt;: Open a plain-text editor and save an empty file in the root of your repo (where you have the &lt;em&gt;.eleventy.js&lt;/em&gt;) with the filename &lt;em&gt;.nojekyll&lt;/em&gt;. This will stop GitHub from trying to build your site as a Jekyll site.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;.github directory&lt;/strong&gt;: Create a new directory in the root of your repo and name it &lt;em&gt;.github&lt;/em&gt; (yes, starting with a period). Inside that directory, make a directory named &lt;em&gt;workflows&lt;/em&gt;. Open a plain-text editor and save a file inside the workflows directory called &lt;em&gt;build.yml&lt;/em&gt;. Copy the &lt;a href=&quot;https://github.com/quinnanya/quinnanya.github.io/blob/main/.github/workflows/build.yml&quot;&gt;contents from my build.yml file here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Depending on your Eleventy setup, you may need to change &lt;code&gt;publish_dir&lt;/code&gt; in your build.yml file. My Eleventy site builds to a folder called &lt;em&gt;dist&lt;/em&gt;. If yours builds to a folder with a different name, change it in this file.&lt;/p&gt;
+&lt;h2&gt;GitHub configuration&lt;/h2&gt;
+&lt;h3&gt;Creating a gh-pages branch&lt;/h3&gt;
+&lt;p&gt;Using the GitHub interface, you&#39;ll need to create a new branch of your repo called &lt;em&gt;gh-pages&lt;/em&gt; where the built version of your site will be hosted from. If you&#39;re looking at your repo on GitHub, you should see a little button that says &lt;em&gt;main&lt;/em&gt; towards the upper left, under the &lt;em&gt;&amp;lt;&amp;gt; Code&lt;/em&gt; tab. Click that button, then type &lt;em&gt;gh-pages&lt;/em&gt; into the field that says &lt;em&gt;Find or create a branch&lt;/em&gt;. This will create a new branch called &lt;em&gt;gh-pages&lt;/em&gt;&lt;/p&gt;
+&lt;h3&gt;Actions configuration&lt;/h3&gt;
+&lt;p&gt;Go into the settings for your repo, click on &lt;em&gt;Actions&lt;/em&gt; in the set of tabs on the left, then &lt;em&gt;General&lt;/em&gt;. Make sure that &amp;quot;Allow all actions and reusable workflows&amp;quot; is selected, and at the bottom of that page, under &lt;em&gt;Workflow permissions&lt;/em&gt; make sure that you have &amp;quot;Read and write permissions&amp;quot; selected.&lt;/p&gt;
+&lt;p&gt;If you the &amp;quot;Read and write permissions&amp;quot; is disabled and grayed out so you can&#39;t enable it, you may need to go into the settings for the parent account or organization that owns the repo, and enable &amp;quot;Read and write permissions&amp;quot; at that level first.&lt;/p&gt;
+&lt;h3&gt;GitHub Pages configuration&lt;/h3&gt;
+&lt;p&gt;Go into the settings for your repo, and click on &amp;quot;Pages&amp;quot; in the set of tabs on the left. Use the dropdown under &lt;em&gt;Source&lt;/em&gt; to choose the gh-pages branch.&lt;/p&gt;
+&lt;h3&gt;Custom domain configuration&lt;/h3&gt;
+&lt;p&gt;If you&#39;re using a custom domain (e.g. &lt;a href=&quot;http://something-something.com/&quot;&gt;something-something.com&lt;/a&gt;) for your website, make sure you enter the custom domain in the &lt;em&gt;Custom domain&lt;/em&gt; field in the GitHub Pages configuration, and you &lt;a href=&quot;https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site&quot;&gt;configure the DNS for your domain&lt;/a&gt; to point to GitHub.&lt;/p&gt;
+&lt;p&gt;When you add a custom domain in the &lt;em&gt;Custom domain&lt;/em&gt; field in the GitHub Pages configuration, you&#39;ll get a new file in the root of your repo called &lt;em&gt;CNAME&lt;/em&gt;. It&#39;s a plain text file with one line of text: the custom domain you want to use.&lt;/p&gt;
+&lt;p&gt;You&#39;ll need to make a small change to your &lt;em&gt;.eleventy.js&lt;/em&gt; file to make sure the CNAME file gets moved over to the built version of the site. As part of the &lt;code&gt;module.exports&lt;/code&gt; section, add a line that reads &lt;code&gt;config.addPassthroughCopy(&amp;quot;src/CNAME&amp;quot;);&lt;/code&gt;. (If your function is named something other than &lt;em&gt;config&lt;/em&gt;, like &lt;em&gt;eleventyConfig&lt;/em&gt;, change this line to have the right function name.)&lt;/p&gt;
+&lt;h2&gt;Building the site&lt;/h2&gt;
+&lt;p&gt;In theory, if you&#39;ve set up all these things, anytime you push changes to GitHub, it will trigger an action that will build the site and move those files to the GitHub Pages hosting environment.&lt;/p&gt;
+&lt;p&gt;If everything isn&#39;t set up just right, you&#39;ll get an email that an action failed. Click the &amp;quot;View workflow run&amp;quot; link in the email, which will take you to a page with information on the failed workflow. Click on the text in the middle panel where you see a red circle with an x -- what the text says depends on where exactly it failed. Eventually you&#39;ll see text reflecting where exactly the process failed, and you can search parts of that error message to figure out what&#39;s going wrong.&lt;/p&gt;
+&lt;p&gt;In one case for me, I spent a little while stuck on &amp;quot;Permission to myrepo/myrepo.github.io.git denied to github-actions[bot]&amp;quot;, and it turned out that I hadn&#39;t enabled the &amp;quot;Read and write permissions&amp;quot; under &lt;em&gt;Actions&lt;/em&gt; in the GitHub repo settings.&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Vitty</title>

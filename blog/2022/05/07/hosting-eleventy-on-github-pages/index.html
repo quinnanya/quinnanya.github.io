@@ -1,0 +1,259 @@
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang='en-US' class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html -->
+<title>Hosting Eleventy on GitHub Pages - Quinn Dombrowski</title>
+<meta name="description" content="Example description">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Quinn Dombrowski">
+<meta property="og:title" content="Hosting Eleventy on GitHub Pages">
+<meta property="og:url" content="undefined">
+
+
+  <meta property="og:description" content="Example description">
+
+
+
+  <meta property="og:image" content="undefined">
+
+
+
+
+
+  <meta property="article:published_time" content="Sat May 07 2022 00:00:00 GMT+0000 (Coordinated Universal Time)">
+
+
+
+
+
+
+<link rel="canonical" href="undefined">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Quinn Dombrowski",
+      "url": "/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Quinn Dombrowski Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/styles/minimal-mistakes.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Quinn Dombrowski
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/cv/">CV</a>
+            </li><li class="masthead__menu-item">
+              <a href="/projects/">Projects</a>
+            </li><li class="masthead__menu-item">
+              <a href="/blog/">Blog</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    
+    <meta itemprop="datePublished" content="Sat May 07 2022 00:00:00 GMT+0000 (Coordinated Universal Time)">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="/blog/2022/05/07/hosting-eleventy-on-github-pages/" class="u-url" itemprop="url">Hosting Eleventy on GitHub Pages</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <p>I've really been enjoying building sites with Eleventy instead of Jekyll. I'm still learning my way around some of the cool data capabilities, but NodeJS has been much more agreeable to wrangle than Ruby, and that alone is worth a lot.</p>
+<p>I appreciate that Netlify would make hosting Eleventy sites very easy, but I'm reluctant to add yet another platform to the set of things I have to deal with, especially when I'm using GitHub Pages for the Jekyll sites I'm still running. When I looked at the tutorials for hosting Eleventy on GitHub Pages, I wasn't able to get any of them to work -- there was always something just slightly off for my use case. But with help from <a href="https://www.cassey.dev/">Cassey Lottman</a>, I got it working with my first Eleventy site and I've reused that configuration for a handful of other sites since.</p>
+<h2>The big picture</h2>
+<p>GitHub Pages assumes you're using Jekyll unless you tell it otherwise. Instead of using the automatic GitHub Pages workflows for building Jekyll sites, you'll be using the [Github Pages action by Peace Iris](<a href="https://github.com/peaceiris/actions-gh-pages">https://github.com/peaceiris/actions-gh-pages</a>] that can build other kinds of static sites and move them to the branch where the HTML files will be hosted. You'll need to add a number of new files to your GitHub repo to make this happen.</p>
+<h2>New files in your GitHub repo</h2>
+<ul>
+<li><strong>.nojekyll file</strong>: Open a plain-text editor and save an empty file in the root of your repo (where you have the <em>.eleventy.js</em>) with the filename <em>.nojekyll</em>. This will stop GitHub from trying to build your site as a Jekyll site.</li>
+<li><strong>.github directory</strong>: Create a new directory in the root of your repo and name it <em>.github</em> (yes, starting with a period). Inside that directory, make a directory named <em>workflows</em>. Open a plain-text editor and save a file inside the workflows directory called <em>build.yml</em>. Copy the <a href="https://github.com/quinnanya/quinnanya.github.io/blob/main/.github/workflows/build.yml">contents from my build.yml file here</a>.</li>
+</ul>
+<p>Depending on your Eleventy setup, you may need to change <code>publish_dir</code> in your build.yml file. My Eleventy site builds to a folder called <em>dist</em>. If yours builds to a folder with a different name, change it in this file.</p>
+<h2>GitHub configuration</h2>
+<h3>Creating a gh-pages branch</h3>
+<p>Using the GitHub interface, you'll need to create a new branch of your repo called <em>gh-pages</em> where the built version of your site will be hosted from. If you're looking at your repo on GitHub, you should see a little button that says <em>main</em> towards the upper left, under the <em>&lt;&gt; Code</em> tab. Click that button, then type <em>gh-pages</em> into the field that says <em>Find or create a branch</em>. This will create a new branch called <em>gh-pages</em></p>
+<h3>Actions configuration</h3>
+<p>Go into the settings for your repo, click on <em>Actions</em> in the set of tabs on the left, then <em>General</em>. Make sure that &quot;Allow all actions and reusable workflows&quot; is selected, and at the bottom of that page, under <em>Workflow permissions</em> make sure that you have &quot;Read and write permissions&quot; selected.</p>
+<p>If you the &quot;Read and write permissions&quot; is disabled and grayed out so you can't enable it, you may need to go into the settings for the parent account or organization that owns the repo, and enable &quot;Read and write permissions&quot; at that level first.</p>
+<h3>GitHub Pages configuration</h3>
+<p>Go into the settings for your repo, and click on &quot;Pages&quot; in the set of tabs on the left. Use the dropdown under <em>Source</em> to choose the gh-pages branch.</p>
+<h3>Custom domain configuration</h3>
+<p>If you're using a custom domain (e.g. <a href="http://something-something.com">something-something.com</a>) for your website, make sure you enter the custom domain in the <em>Custom domain</em> field in the GitHub Pages configuration, and you <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site">configure the DNS for your domain</a> to point to GitHub.</p>
+<p>When you add a custom domain in the <em>Custom domain</em> field in the GitHub Pages configuration, you'll get a new file in the root of your repo called <em>CNAME</em>. It's a plain text file with one line of text: the custom domain you want to use.</p>
+<p>You'll need to make a small change to your <em>.eleventy.js</em> file to make sure the CNAME file gets moved over to the built version of the site. As part of the <code>module.exports</code> section, add a line that reads <code>config.addPassthroughCopy(&quot;src/CNAME&quot;);</code>. (If your function is named something other than <em>config</em>, like <em>eleventyConfig</em>, change this line to have the right function name.)</p>
+<h2>Building the site</h2>
+<p>In theory, if you've set up all these things, anytime you push changes to GitHub, it will trigger an action that will build the site and move those files to the GitHub Pages hosting environment.</p>
+<p>If everything isn't set up just right, you'll get an email that an action failed. Click the &quot;View workflow run&quot; link in the email, which will take you to a page with information on the failed workflow. Click on the text in the middle panel where you see a red circle with an x -- what the text says depends on where exactly it failed. Eventually you'll see text reflecting where exactly the process failed, and you can search parts of that error message to figure out what's going wrong.</p>
+<p>In one case for me, I spent a little while stuck on &quot;Permission to myrepo/myrepo.github.io.git denied to github-actions[bot]&quot;, and it turned out that I hadn't enabled the &quot;Read and write permissions&quot; under <em>Actions</em> in the GitHub repo settings.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        <!---->
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="Sat May 07 2022 00:00:00 GMT+0000 (Coordinated Universal Time)">May 7th 2022</time></p>
+
+      </footer>
+
+      
+
+      
+    </div>
+
+   
+  </article>
+
+  
+</div>
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Quinn Dombrowski. Powered by <a href="https://www.11ty.dev/" rel="nofollow">Eleventy</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a> (adapted as <a href="https://github.com/quinnanya/eleven-mistakes">Eleven Mistakes</a>).</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

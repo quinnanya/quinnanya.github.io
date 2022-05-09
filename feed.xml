@@ -147,7 +147,7 @@
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
     
     
-    <meta itemprop="datePublished" content="Sat May 07 2022 16:27:11 GMT+0000 (Coordinated Universal Time)">
+    <meta itemprop="datePublished" content="Mon May 09 2022 17:48:54 GMT+0000 (Coordinated Universal Time)">
     
 
     <div class="page__inner-wrap">
@@ -182,7 +182,7 @@
     <content type="html">&lt;p&gt;I&#39;ve really been enjoying building sites with Eleventy instead of Jekyll. I&#39;m still learning my way around some of the cool data capabilities, but NodeJS has been much more agreeable to wrangle than Ruby, and that alone is worth a lot.&lt;/p&gt;
 &lt;p&gt;I appreciate that Netlify would make hosting Eleventy sites very easy, but I&#39;m reluctant to add yet another platform to the set of things I have to deal with, especially when I&#39;m using GitHub Pages for the Jekyll sites I&#39;m still running. When I looked at the tutorials for hosting Eleventy on GitHub Pages, I wasn&#39;t able to get any of them to work -- there was always something just slightly off for my use case. But with help from &lt;a href=&quot;https://www.cassey.dev/&quot;&gt;Cassey Lottman&lt;/a&gt;, I got it working with my first Eleventy site and I&#39;ve reused that configuration for a handful of other sites since.&lt;/p&gt;
 &lt;h2&gt;The big picture&lt;/h2&gt;
-&lt;p&gt;GitHub Pages assumes you&#39;re using Jekyll unless you tell it otherwise. Instead of using the automatic GitHub Pages workflows for building Jekyll sites, you&#39;ll be using the [Github Pages action by Peace Iris](&lt;a href=&quot;https://github.com/peaceiris/actions-gh-pages&quot;&gt;https://github.com/peaceiris/actions-gh-pages&lt;/a&gt;] that can build other kinds of static sites and move them to the branch where the HTML files will be hosted. You&#39;ll need to add a number of new files to your GitHub repo to make this happen.&lt;/p&gt;
+&lt;p&gt;GitHub Pages assumes you&#39;re using Jekyll unless you tell it otherwise. Instead of using the automatic GitHub Pages workflows for building Jekyll sites, you&#39;ll be using the &lt;a href=&quot;https://github.com/peaceiris/actions-gh-pages&quot;&gt;Github Pages action by Peace Iris&lt;/a&gt; that can build other kinds of static sites and move them to the branch where the HTML files will be hosted. You&#39;ll need to add a number of new files to your GitHub repo to make this happen.&lt;/p&gt;
 &lt;h2&gt;New files in your GitHub repo&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;.nojekyll file&lt;/strong&gt;: Open a plain-text editor and save an empty file in the root of your repo (where you have the &lt;em&gt;.eleventy.js&lt;/em&gt;) with the filename &lt;em&gt;.nojekyll&lt;/em&gt;. This will stop GitHub from trying to build your site as a Jekyll site.&lt;/li&gt;

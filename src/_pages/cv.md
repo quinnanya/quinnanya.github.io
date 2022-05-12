@@ -107,6 +107,7 @@ header:
 * *<a href="http://www.crescatgraffiti.com">Crescat Graffiti, Vita Excolatur: Confessions of the University of Chicago</a>*, 2009. (ISBN 978-0-557-17205-4)
 
 ## Talks and Presentations
+* Charleston In-Between. Speaker on "In the News" panel on the Ukraine Conflict and its chilling impact on the conduct of research, scholarship, education. May 11, 2022. 
 * CUDAN Open Lab Lecture, Tallinn University. "Coding, Childcare, and Badly-Behaved Tools: Adventures in Multilingual 'Data-Sitting'". May 5, 2022.
 * Day of DH 2022 keynote, University of North Texas. "Taking Fun Seriously." April 29, 2022.
 * Fiesole Retreat 2022. "[Nimble Tents and Bunkers: Safeguarding Digital Cultural Heritage](https://www.youtube.com/watch?v=woOwXva0Yfs)". April 6, 2022.

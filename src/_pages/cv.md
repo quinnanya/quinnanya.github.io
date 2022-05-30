@@ -107,9 +107,15 @@ header:
 * *<a href="http://www.crescatgraffiti.com">Crescat Graffiti, Vita Excolatur: Confessions of the University of Chicago</a>*, 2009. (ISBN 978-0-557-17205-4)
 
 ## Talks and Presentations
+* IIPC Web Archiving 2022 conference. "[Saving Ukrainian Cultural Heritage Online](https://netpreserve.org/ga2022/wac/abstracts/#Session_17)" panelist. May 25, 2022.
+* CIFNAL speaker series. "Corpus Hebdo: Building Infrastructure for Multilingual Digital Humanities". May 20, 2022.
+* DH Unbound 2022. "My Tags, Your Avvertimenti, Their Предупреждения: Self-Censorship and Metadata Across Fanfic Archives", with Steele Douris and Masha Gorshkova. May 19, 2022.
+* DH Unbound 2022. "Checking In: Digital Humanities Librarian Staff Summer Chat" discussion panel with Alex Gil, Claudia Berger, and Scott Weingart. May 18, 2022.
+* DH Unbound 2022. "Rip it! New Developments in US Copyright Law to Enable Text and Data Mining" panel with Lauren Tilton, Erik Stallman, and Rachael Samberg. May 17, 2022.
 * Charleston In-Between. Speaker on "In the News" panel on the Ukraine Conflict and its chilling impact on the conduct of research, scholarship, education. May 11, 2022. 
 * CUDAN Open Lab Lecture, Tallinn University. "Coding, Childcare, and Badly-Behaved Tools: Adventures in Multilingual 'Data-Sitting'". May 5, 2022.
 * Day of DH 2022 keynote, University of North Texas. "Taking Fun Seriously." April 29, 2022.
+* An IFAR Evening in the Afternoon. Panelist for presentation on "Ukrainian Cultural Heritage: What's Damaged; Destroyed; Documented; and Being Done". April 27, 2022.
 * Fiesole Retreat 2022. "[Nimble Tents and Bunkers: Safeguarding Digital Cultural Heritage](https://www.youtube.com/watch?v=woOwXva0Yfs)". April 6, 2022.
 * Internet Archive all-staff meeting. "SUCHO, the IA, and the Future of Preserving Digital Cultural Heritage". March 25, 2022.
 * Internet Archive's *Library as Laboratory* series. "Libraries, Laboratories, Back Alleys". March 16, 2022.
@@ -257,6 +263,7 @@ header:
 * English (native), Russian (advanced), Spanish (intermediate)
 
 ## Media
+* [On Humante Tech: Saving Ukrainian Cultural Heritage Online with guest Quinn Dombrowski](https://medium.com/@lincolncenterappliedethics/on-humane-tech-saving-ukrainian-cultural-heritage-online-with-guest-quinn-dombrowski-791504112a63). Lincoln Center for Applied Ethics, Arizona State University. May 25, 2022.
 * [Sucho: el proyecto con miles de voluntarios para salvar la cultura digital de Ucrania](https://www.newtral.es/sucho-ucrania-cultura-digital/20220511/). *Newtral.es*. May 11, 2022.
 * [Preserving Ukraine’s cultural treasures with digital tools](https://www.pbs.org/newshour/show/preserving-ukraines-cultural-treasures-with-digital-tools). *PBS NewsHour*. April 28, 2022.
 * [Berkeley Woman Among Group Preserving Ukraine's History](https://www.nbcbayarea.com/news/local/berkeley-woman-among-group-preserving-ukraines-history/2863069/). *NBC Bay Area*. April 13, 2022.

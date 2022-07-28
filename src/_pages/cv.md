@@ -37,13 +37,14 @@ header:
 * ThoutReader/DotReader XML-based e-book creator, 2005-2007
 
 ## Service
-
-* Co-VP, Association for Computers and the Humanities, 2020-present
+* Co-President, Association for Computers and the Humanities (ACH), 2022-2024
+* ACH Constituent Organization Board representative to the Alliance of Digital Humanities Organizations (ACH), 2022-present
+* Co-VP, ACH, 2020-2022
 * Executive board member, Global Outlook::Digital Humanities, 2019-2021
 * Co-founder and group organizer, [Multilingual DH](http://multilingualdh.org/), 2019-present
 * Peer reviewer,&nbsp;*Digital Humanities Quarterly*, 2019-present
 * Founder and group organizer, [DH-WoGeM](http://www.dhwogem.org/), 2018-present
-* Executive council member, Association for Computers and the Humanities, 2015-2019
+* Executive council member, ACH, 2015-2019
 * Peer reviewer, ADHO Digital Humanities conference, 2010-present
 * Co-chair of Women in IT planning committee for UCCSC conference, 2018
 * Co-chair of ECAR/CNI working group on digital humanities, 2016-2017
@@ -80,7 +81,7 @@ header:
 * "Minimizing Computing Maximizes Labor". Forthcoming in *Digital Humanities Quarterly* cluster on minimal computing.
 * "Voices from the Server Room: Humanists in HPC", with Tassie Gniady, David Kloster, Megan Meredith-Lobay, Jeffrey Tharsen, Lee Zickel. Forthcoming in *Debates in DH: Computational Humanities*. Univ. of Minnesota Press. Eds. Jessica Marie Johnson, David Mimno, and Lauren Tilton.
 * "Academia is a Dice Roll", with Agnieszka Backman, Sabrina Grimberg, and Melissa Hosek. Forthcoming in *Debates in DH: The Digital Futures of Graduate Study in the Humanities*. Univ. of Minnesota Press. Eds. Simon Appleford, Gabriel Hankins, and Anouk Lang.
-* "Bringing Languages into the DH Classroom". Forthcoming in *Debates in DH: Pedagogy*. Ed. Brian Croxall and Diane Jakacki.
+* "Bringing Languages into the DH Classroom". Forthcoming in *What We Teach When We Teach DH: Digital Humanities in the Classroom*. Ed. Brian Croxall and Diane Jakacki.
 * "Language is not a Default Setting: Countering Digital Humanities’ English Problem", with Patrick Burns. Forthcoming in&nbsp;*Debates in DH 2022*. Univ. of Minnesota Press. Eds. Matthew Gold and Lauren Klein.
 * "[Rolling the Dice on Project Management](https://ideah.pubpub.org/pub/9xiyfz6h/release/3)". IDEAH, vol. 2, issue 2. Nov 25, 2021. DOI: 10.21428/f1f23564.0f419bf4.
 * "[Linguistic Fingerprints on Translation's Lens](https://jdmdh.episciences.org/9008)", with J.D. Porter and Yulia Ilchuk. Journal of Data Mining & Digital Humanities, January 27, 2022, Special Issue on Collecting, Preserving, and Disseminating Endangered Cultural Heritage for New Understandings through Multilingual Approaches. DOI: 10.46298/jdmdh.7223 
@@ -263,7 +264,12 @@ header:
 * English (native), Russian (advanced), Spanish (intermediate)
 
 ## Media
-* [On Humante Tech: Saving Ukrainian Cultural Heritage Online with guest Quinn Dombrowski](https://medium.com/@lincolncenterappliedethics/on-humane-tech-saving-ukrainian-cultural-heritage-online-with-guest-quinn-dombrowski-791504112a63). Lincoln Center for Applied Ethics, Arizona State University. May 25, 2022.
+
+### Saving Ukrainian Cultural Heritage Online
+* [Meet the group seeking to preserve Ukrainian culture by rescuing Ukrainian websites](https://www.cbsnews.com/video/meet-the-group-seeking-to-preserve-ukrainian-culture-by-rescuing-ukrainian-websites/#x). *CBS News*. July 16, 2022.
+* Salim, Gisela. ["As the War Drags On, a Race Is Afoot to Preserve Ukraine History"](https://newlinesmag.com/reportage/as-the-war-drags-on-a-race-is-afoot-to-preserve-ukraine-history/). *New/Lines Magazine*. June 21, 2022.
+* [On Humane Tech: Saving Ukrainian Cultural Heritage Online with guest Quinn Dombrowski](https://medium.com/@lincolncenterappliedethics/on-humane-tech-saving-ukrainian-cultural-heritage-online-with-guest-quinn-dombrowski-791504112a63). Lincoln Center for Applied Ethics, Arizona State University. May 25, 2022.
+* [Saving Ukrainian Heritage: Episodes 1 to 4](https://www.npr.org/podcasts/811625591/augmented-humanity). *Augmented Humanity*. May 2 - 23, 2022.
 * [Sucho: el proyecto con miles de voluntarios para salvar la cultura digital de Ucrania](https://www.newtral.es/sucho-ucrania-cultura-digital/20220511/). *Newtral.es*. May 11, 2022.
 * [Preserving Ukraine’s cultural treasures with digital tools](https://www.pbs.org/newshour/show/preserving-ukraines-cultural-treasures-with-digital-tools). *PBS NewsHour*. April 28, 2022.
 * [Berkeley Woman Among Group Preserving Ukraine's History](https://www.nbcbayarea.com/news/local/berkeley-woman-among-group-preserving-ukraines-history/2863069/). *NBC Bay Area*. April 13, 2022.
@@ -280,10 +286,17 @@ header:
 * ["Volunteers Rally to Archive Ukrainian Web Sites."](http://blog.archive.org/2022/03/22/volunteers-rally-to-archive-ukrainian-web-sites/) *Internet Archive Blogs*. March 22, 2022.
 * ["How Tech Experts in the West Are Rushing to Save the Digital Archives of Ukraine’s Museums."](https://news.artnet.com/art-world/saving-ukrainian-cultural-heritage-online-2084036) *Artnet News*. March 14, 2022.
 * March 11, 2022, ABC News (Australia). <a href="https://www.abc.net.au/news/2022-03-12/russia-ukraine-war-artists-fight-for-cultural-identity/100899202">The art world has come under Russia's attack, but the community is fighting back to keep Ukraine's cultural identity alive</a>.
+
+### Data-Sitters Club
+* April 15, 2020, "<a href="https://www.insidehighered.com/news/2020/04/15/we-need-fun-more-ever-digital-humanities-meets-baby-sitters-club-books">The Data-Sitters Club</a>", Inside Higher Ed.
+
+### Makerspaces
+
 * March 11, 2022, Marketplace Tech, NPR. <a href="https://www.marketplace.org/shows/marketplace-tech/digital-archivists-race-to-preserve-ukrainian-heritage/">Digital archivists race to preserve Ukrainian heritage</a>.
 * November 20, 2020, "<a href="https://news.stanford.edu/2020/11/20/makerspaces-get-creative-coronavirus-pandemic/">Makerspaces get creative during coronavirus pandemic</a>", Stanford News article.
-* April 15, 2020, "<a href="https://www.insidehighered.com/news/2020/04/15/we-need-fun-more-ever-digital-humanities-meets-baby-sitters-club-books">The Data-Sitters Club</a>", Inside Higher Ed.
 * December 9, 2019, featured in "<a href="https://news.stanford.edu/2019/12/09/makerspaces-at-stanford/">The many makerspaces of the Stanford campus</a>", Stanford News article.
+
+### Graffiti 
 * March 30, 2010, interview on WTTW’s local news show, “<a href="http://www.wttw.com/main.taf?p=42,2,1,1&amp;date=03/30/2010">Chicago Tonight</a>“
 * March 24, 2010, Chicago Tribune, “<a href="http://www.chicagotribune.com/news/education/ct-live-0324-graffiti-book-20100324,0,3291709.story">U. of C. grad hunts for nerdy graffiti</a>“
 * March 17, 2010, Spiegel Online, “<a href="http://www.spiegel.de/unispiegel/wunderbar/0,1518,684099,00.html">Graffiti in Uni-Bibliotheken: “Wir haben’s am Morgen zweimal gemacht”</a>” (<a href="http://www.spiegel.de/fotostrecke/fotostrecke-52756.html">Slideshow: “Studentische Wand-Kritzelei: Liebe, Sex und Abschlussprüfungen”</a>)

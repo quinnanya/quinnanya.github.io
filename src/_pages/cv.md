@@ -1,7 +1,7 @@
 ---
 permalink: /cv/
 title: "Curriculum Vitae"
-date: 2021-01-17
+date: 2022-08-31
 toc: false
 toc_label: Contents
 layout: archive
@@ -40,6 +40,7 @@ header:
 * Co-President, Association for Computers and the Humanities (ACH), 2022-2024
 * ACH Constituent Organization Board representative to the Alliance of Digital Humanities Organizations (ACH), 2022-present
 * Co-VP, ACH, 2020-2022
+* Digital Ethnic Futures mentor, 2022
 * Executive board member, Global Outlook::Digital Humanities, 2019-2021
 * Co-founder and group organizer, [Multilingual DH](http://multilingualdh.org/), 2019-present
 * Peer reviewer,&nbsp;*Digital Humanities Quarterly*, 2019-present
@@ -56,6 +57,7 @@ header:
 
 ## Awards
 
+* [Society of American Archivists Council Resolution](https://archives2022.us2.pathable.com/meetings/XPibmp2M5jkJNgrQ5) Honoring SUCHO, 2022
 * DHSI 2021 Most Prolific Tweeter award.
 * DH 2019 innovative poster award for "Gender and Intersectional Identities in the Digital Humanities", with Rachel Hendery, Katie McDonough, and Tassie Gniady
 * UC Berkeley STAR Award recipient (for exceptional performance) 2014, 2016, 2017, 2018
@@ -75,10 +77,11 @@ header:
 
 ## Publications
 
+* ["A Conversation with the Organizers of Saving Ukrainian Cultural Heritage Online (SUCHO)"](https://iopn.library.illinois.edu/journals/jloe/article/view/969), with Zoe LeBlanc, Andrew Janco, Alex Wermer-Colan, Anna Kijas, Sebastian Majstorovic, Dena Strong & Erica Peaslee. *Journal of Library Outreach and Engagement*, vol. 2, no. 1.
 * "Personal Entanglements and Graceful Relationship Degradation in Collaborative Projects", with Erica Cavanaugh. Forthcoming in *Revealing Meaning: Feminist Methods in Digital Scholarship*. Ed. Heather Froehlich and Kim Martin.
 * "Multilingual Digital Humanities", with Pedro Nilsson-Fernàndez. Forthcoming in *Bloomsbury Handbook to DH*, ed. James O'Sullivan.
 * "Does Coding Matter?". Forthcoming in *Bloomsbury Handbook to DH*, ed. James O'Sullivan.
-* "Minimizing Computing Maximizes Labor". Forthcoming in *Digital Humanities Quarterly* cluster on minimal computing.
+* "[Minimizing Computing Maximizes Labor](http://www.digitalhumanities.org/dhq/vol/16/2/000594/000594.html)". *Digital Humanities Quarterly* vol. 16, no. 2 (cluster on minimal computing).
 * "Voices from the Server Room: Humanists in HPC", with Tassie Gniady, David Kloster, Megan Meredith-Lobay, Jeffrey Tharsen, Lee Zickel. Forthcoming in *Debates in DH: Computational Humanities*. Univ. of Minnesota Press. Eds. Jessica Marie Johnson, David Mimno, and Lauren Tilton.
 * "Academia is a Dice Roll", with Agnieszka Backman, Sabrina Grimberg, and Melissa Hosek. Forthcoming in *Debates in DH: The Digital Futures of Graduate Study in the Humanities*. Univ. of Minnesota Press. Eds. Simon Appleford, Gabriel Hankins, and Anouk Lang.
 * "Bringing Languages into the DH Classroom". Forthcoming in *What We Teach When We Teach DH: Digital Humanities in the Classroom*. Ed. Brian Croxall and Diane Jakacki.
@@ -108,6 +111,12 @@ header:
 * *<a href="http://www.crescatgraffiti.com">Crescat Graffiti, Vita Excolatur: Confessions of the University of Chicago</a>*, 2009. (ISBN 978-0-557-17205-4)
 
 ## Talks and Presentations
+
+* European Summer University in Digital Humanities, public lecture, "Collaborative Volunteering in the Digital Humanities: Saving Ukrainian Cultural Heritage Online (SUCHO)", with Sebastian Majstorovic. August 8, 2022.
+* FCSI 2022 closing keynote, "Saving Ukrainian Cultural Heritage Online (SUCHO) and the Future of Archivable Scholarly Communication". July 29, 2022.
+* DH 2022 panel, "The (Im)Possibilities of Multilingual DH in Theory and Practice: Translation, Metadata, Pedagogy", with Cecily Raynor, Lidia Ponce de la Vega, Marie-France Guénette, Eric Kim, and Samya Brata Roy. July 27, 2022.
+* DH 2022 short paper, "Quantifying Representation of Asian Identity in 21st-century Anglophone Fiction", with Nichole Nomura. July 27, 2022.
+* Coherent Digital ALA Breakfast presentation, "[The extraordinary story of SUCHO: Saving Ukrainian Cultural Heritage Online](https://www.youtube.com/watch?v=wERkU8ZIbHk&ab_channel=CoherentDigital)", with Anna Kijas and Sebastian Majstorovic. June 26, 2022.
 * IIPC Web Archiving 2022 conference. "[Saving Ukrainian Cultural Heritage Online](https://netpreserve.org/ga2022/wac/abstracts/#Session_17)" panelist. May 25, 2022.
 * CIFNAL speaker series. "Corpus Hebdo: Building Infrastructure for Multilingual Digital Humanities". May 20, 2022.
 * DH Unbound 2022. "My Tags, Your Avvertimenti, Their Предупреждения: Self-Censorship and Metadata Across Fanfic Archives", with Steele Douris and Masha Gorshkova. May 19, 2022.
@@ -266,6 +275,7 @@ header:
 ## Media
 
 ### Saving Ukrainian Cultural Heritage Online
+
 * [Meet the group seeking to preserve Ukrainian culture by rescuing Ukrainian websites](https://www.cbsnews.com/video/meet-the-group-seeking-to-preserve-ukrainian-culture-by-rescuing-ukrainian-websites/#x). *CBS News*. July 16, 2022.
 * Salim, Gisela. ["As the War Drags On, a Race Is Afoot to Preserve Ukraine History"](https://newlinesmag.com/reportage/as-the-war-drags-on-a-race-is-afoot-to-preserve-ukraine-history/). *New/Lines Magazine*. June 21, 2022.
 * [On Humane Tech: Saving Ukrainian Cultural Heritage Online with guest Quinn Dombrowski](https://medium.com/@lincolncenterappliedethics/on-humane-tech-saving-ukrainian-cultural-heritage-online-with-guest-quinn-dombrowski-791504112a63). Lincoln Center for Applied Ethics, Arizona State University. May 25, 2022.

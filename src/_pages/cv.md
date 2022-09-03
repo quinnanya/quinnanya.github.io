@@ -297,6 +297,9 @@ header:
 * ["How Tech Experts in the West Are Rushing to Save the Digital Archives of Ukraine’s Museums."](https://news.artnet.com/art-world/saving-ukrainian-cultural-heritage-online-2084036) *Artnet News*. March 14, 2022.
 * March 11, 2022, ABC News (Australia). <a href="https://www.abc.net.au/news/2022-03-12/russia-ukraine-war-artists-fight-for-cultural-identity/100899202">The art world has come under Russia's attack, but the community is fighting back to keep Ukraine's cultural identity alive</a>.
 
+### The Humanities
+* Septemner 2, 2022. Quoted in "[The most-regretted (and lowest-paying) college majors](https://www.washingtonpost.com/business/2022/09/02/college-major-regrets/)", by Andrew Van Dam.  *Washington Post*.
+
 ### Data-Sitters Club
 * April 15, 2020, "<a href="https://www.insidehighered.com/news/2020/04/15/we-need-fun-more-ever-digital-humanities-meets-baby-sitters-club-books">The Data-Sitters Club</a>", Inside Higher Ed.
 

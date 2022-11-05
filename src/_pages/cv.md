@@ -78,6 +78,7 @@ header:
 ## Publications
 
 * ["A Conversation with the Organizers of Saving Ukrainian Cultural Heritage Online (SUCHO)"](https://iopn.library.illinois.edu/journals/jloe/article/view/969), with Zoe LeBlanc, Andrew Janco, Alex Wermer-Colan, Anna Kijas, Sebastian Majstorovic, Dena Strong & Erica Peaslee. *Journal of Library Outreach and Engagement*, vol. 2, no. 1.
+* "Stylometric investigations into translationese: The Baby-Sitters Club Across Languages", with Joanna Byszuk. In *16th International Conference on Statistical Analysis of Textual Data Proceedings.* [PDF, see p. 208](http://lexicometrica.univ-paris3.fr/jadt/JADT2022/VOL1.pdf)
 * "Personal Entanglements and Graceful Relationship Degradation in Collaborative Projects", with Erica Cavanaugh. Forthcoming in *Revealing Meaning: Feminist Methods in Digital Scholarship*. Ed. Heather Froehlich and Kim Martin.
 * "Multilingual Digital Humanities", with Pedro Nilsson-Fernàndez. Forthcoming in *Bloomsbury Handbook to DH*, ed. James O'Sullivan.
 * "Does Coding Matter?". Forthcoming in *Bloomsbury Handbook to DH*, ed. James O'Sullivan.

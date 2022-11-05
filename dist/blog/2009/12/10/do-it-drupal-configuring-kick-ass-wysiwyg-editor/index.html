@@ -1,0 +1,313 @@
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang='en-US' class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html -->
+<title>Do It With Drupal: Configuring a Kick-Ass WYSIWYG Editor - Quinn Dombrowski</title>
+<meta name="description" content="Example description">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Quinn Dombrowski">
+<meta property="og:title" content="Do It With Drupal: Configuring a Kick-Ass WYSIWYG Editor">
+<meta property="og:url" content="undefined">
+
+
+  <meta property="og:description" content="Example description">
+
+
+
+  <meta property="og:image" content="undefined">
+
+
+
+
+
+  <meta property="article:published_time" content="Tue Dec 08 2009 16:00:00 GMT-0800 (Pacific Standard Time)">
+
+
+
+
+
+
+<link rel="canonical" href="undefined">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Quinn Dombrowski",
+      "url": "/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Quinn Dombrowski Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/styles/minimal-mistakes.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Quinn Dombrowski
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/cv/">CV</a>
+            </li><li class="masthead__menu-item">
+              <a href="/projects/">Projects</a>
+            </li><li class="masthead__menu-item">
+              <a href="/blog/">Blog</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    
+    <meta itemprop="datePublished" content="Tue Dec 08 2009 16:00:00 GMT-0800 (Pacific Standard Time)">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="/blog/2009/12/10/do-it-drupal-configuring-kick-ass-wysiwyg-editor/" class="u-url" itemprop="url">Do It With Drupal: Configuring a Kick-Ass WYSIWYG Editor</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <ul>
+<li>To make it easier for people to format text without knowing HTML, you could do filters, and/or editors</li>
+<li>Filters change stuff - people type things, filter changes that on output</li>
+<li>A ton of modules that provide filters in addition to the core</li>
+<li>Filter only makes its transformations on output: this means that whatever your user puts in the text box, it's stored right the way they did it, and you can transform it any way you want after the fact
+<ul>
+<li>Transformation happens <strong>after</strong> it gets stored, so you don't lose the data the person input; also, what if you want to filter it a different way later?</li>
+<li>Change the filter settings, you're not changing your data</li>
+</ul>
+</li>
+<li>"Input formats" become "text formats" in Drupal 7
+<ul>
+<li>A format is a way to group a bunch of filters together</li>
+<li>This is an important distinction (format = collection of filters) when reading documentation</li>
+<li>Drupal Core comes with some formats: filtered html (default), full html</li>
+<li>Filtered html helps with security, strips things down - otherwise, you can put javascript in the text box (dangerous)</li>
+<li>Filtered html works as a whitelist</li>
+<li>Don't get frustrated and switch to "full html" - security nightmare; people do Google searches for text that allows full html for comments for anonymous users</li>
+<li>Core also offers PHP format - you have to turn on PHP filter module first (BIG DANGER)</li>
+<li>Filtered HTML: URL filter, HTML filter, line break converter, HTML corrector</li>
+<li>Full HTML has the same, but removes the whitelist</li>
+</ul>
+</li>
+</ul>
+<p><strong>An example</strong></p>
+<ul>
+<li>Even when you're using filtered HTML, if you put a script tag in there, it's still saved in the database just like you typed it</li>
+<li>The database also specifies what format to use</li>
+<li>URL filter, HTML filter, line break converter, HTML corrector fire in that order - order can be important (one filter can "clobber" another)</li>
+<li>Filtered HTML also strips attribute tags - sorry</li>
+</ul>
+<p><strong>Markup filters</strong></p>
+<ul>
+<li>Markdown, Textile, BBCode, Wiki Markups (Mediawiki, TikiWiki, etc)</li>
+<li>Other cool filters: code filter/GeSHi, SpamSpan (to avoid e-mail scraping), Paging, Pirate (Talk Like A Pirate Day), Typogrify (turns two dashes into an em-dash, etc)</li>
+<li>It depends on your user: if your users are used to Wikipedia and they want Drupal to be a wiki, you can do that</li>
+<li>Sometimes you don't need a WYSIWYG - a filter might get you what you need</li>
+</ul>
+<p><strong>WYSIWYG: just gimme what I want</strong></p>
+<ul>
+<li>There are also HTML helpers - it'll insert the HTML tags for you, that might be a good compromise for some people (BU Editor is the most popular one, probably going onto drupal.org)</li>
+<li>Back in the day: tinymce (awesome cool javascript thing)</li>
+<li>For a while, tinymce was what everyone used</li>
+<li>Also out there: fckeditor (name is changing to "ckeditor"; fck are the guy's initials, non-native speaker of English...)</li>
+<li>Huge threads on whether tinymce or fckeditor is better - comes down to preferences</li>
+<li>New: WYSIWYG API (actually just called WYSIWYG)
+<ul>
+<li>Central place for you to plug in whatever editor you want</li>
+<li>Flexibility to be able to have any editor, and more than one at a time - say when you want to use what</li>
+</ul>
+</li>
+<li>Dealing with images (arrrrrghhh!!!)
+<ul>
+<li>Things are getting better</li>
+<li>imagefield - can actually stick them in the body text</li>
+<li>imce - image browser integration</li>
+</ul>
+</li>
+</ul>
+<p><strong>Questions</strong></p>
+<ul>
+<li>How to strip out content from Word
+<ul>
+<li>People who want to just copy and paste stuff from Word - some of the WYSIWYG have a "strip Word crap out" button</li>
+<li>Alas, there's no module that does it right (been there, tried it all)</li>
+</ul>
+</li>
+</ul>
+<p><strong>Demo time</strong></p>
+<ul>
+<li>"Input formats" under "Admin" - filters are part of formats, so go looking there
+<ul>
+<li>If you go to modify a format, you can turn filters on/off (image resize filter, markdown, others can be added)</li>
+<li>Every filter can have its own configuration - things like maximum link text length</li>
+<li>"Rearrange" lets you specify what order the filters fire</li>
+<li>Check out the readme for filters; many of them will tell you what order they should be in</li>
+<li>Markdown should be before HTML for security, to strip out anything weird that Markup generates that's not on your whitelist</li>
+</ul>
+</li>
+</ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        <!---->
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="Tue Dec 08 2009 16:00:00 GMT-0800 (Pacific Standard Time)">December 9th 2009</time></p>
+
+      </footer>
+
+      
+
+      
+    </div>
+
+   
+  </article>
+
+  
+</div>
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Quinn Dombrowski. Powered by <a href="https://www.11ty.dev/" rel="nofollow">Eleventy</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a> (adapted as <a href="https://github.com/quinnanya/eleven-mistakes">Eleven Mistakes</a>).</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

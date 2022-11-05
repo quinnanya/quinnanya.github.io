@@ -1,0 +1,238 @@
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang='en-US' class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html -->
+<title>Building a virtual research environment (VRE) in Drupal (in under 5 hours) - Quinn Dombrowski</title>
+<meta name="description" content="Example description">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Quinn Dombrowski">
+<meta property="og:title" content="Building a virtual research environment (VRE) in Drupal (in under 5 hours)">
+<meta property="og:url" content="undefined">
+
+
+  <meta property="og:description" content="Example description">
+
+
+
+  <meta property="og:image" content="undefined">
+
+
+
+
+
+  <meta property="article:published_time" content="Mon Mar 07 2011 16:00:00 GMT-0800 (Pacific Standard Time)">
+
+
+
+
+
+
+<link rel="canonical" href="undefined">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Quinn Dombrowski",
+      "url": "/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Quinn Dombrowski Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/styles/minimal-mistakes.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Quinn Dombrowski
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/cv/">CV</a>
+            </li><li class="masthead__menu-item">
+              <a href="/projects/">Projects</a>
+            </li><li class="masthead__menu-item">
+              <a href="/blog/">Blog</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    
+    <meta itemprop="datePublished" content="Mon Mar 07 2011 16:00:00 GMT-0800 (Pacific Standard Time)">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="/blog/2011/03/08/building-virtual-research-environment-vre-drupal-under-5-hours/" class="u-url" itemprop="url">Building a virtual research environment (VRE) in Drupal (in under 5 hours)</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <p><em>Note: this post has been moved to the new Drupal-specific section of the site. <a href="/drupal/site-breakdowns/building-virtual-research-environment-vre-drupal-under-5-hours">Read the full post here</a>.</em></p>
+<p>I recently sat down with a fresh Drupal install, and by the time the winter sun was setting, I'd made a lightweight custom virtual research environment (VRE) for a collaborative project. It took about eight hours, but if you cut out the e-mail answering, eating, false starts, and rethinking how I wanted to structure things, I bet I could re-do it in under five hours-- and so can you.</p>
+<p>It was a familiar story-- two scholars, separated by geography and a time zone, gathering data from a variety of sources to illuminate a common set of real-world things from different angles. They had been passing Word documents back and forth, and had recently switched to Google Docs, but that wasn't doing what they needed, either. They had a data problem.</p>
+<p>I've been using Drupal for website projects for years. It has a way of making my programmers sob when they look at the database. Sometimes it refuses to cooperate. I've never done a major version update (I abandoned my 4.x project before 5.x was released, and my 5.x project was winding down when 6.x came out), but I hear it's agony. That said, it's amazing what you can spin up given a single day of work, without writing a line of PHP, and keep running for quite some time with little attention or effort.</p>
+<p>The custom VRE is I built very emphatically <em>custom</em>, with content types, taxonomies, and data views specific to a particular project. As such, I don't think it would be a good candidate for an <a href="http://drupal.org/project/installation%2Bprofiles">installation profile</a>, but my goal here is to write out the general steps for what I did, so anyone can repeat them with some tweaks for a different project.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        <!---->
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="Mon Mar 07 2011 16:00:00 GMT-0800 (Pacific Standard Time)">March 8th 2011</time></p>
+
+      </footer>
+
+      
+
+      
+    </div>
+
+   
+  </article>
+
+  
+</div>
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Quinn Dombrowski. Powered by <a href="https://www.11ty.dev/" rel="nofollow">Eleventy</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a> (adapted as <a href="https://github.com/quinnanya/eleven-mistakes">Eleven Mistakes</a>).</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

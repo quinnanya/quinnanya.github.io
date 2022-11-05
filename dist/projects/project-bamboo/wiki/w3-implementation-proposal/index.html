@@ -1,0 +1,654 @@
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang='en-US' class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html -->
+<title>Project Bamboo wiki: W3- Implementation Proposal - Quinn Dombrowski</title>
+<meta name="description" content="Example description">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Quinn Dombrowski">
+<meta property="og:title" content="Project Bamboo wiki: W3- Implementation Proposal">
+<meta property="og:url" content="undefined">
+
+
+  <meta property="og:description" content="Example description">
+
+
+
+  <meta property="og:image" content="/assets/images/header_bamboologo.jpg">
+
+
+
+
+
+  <meta property="article:published_time" content="Mon Mar 11 2013 17:00:00 GMT-0700 (Pacific Daylight Time)">
+
+
+
+
+
+
+<link rel="canonical" href="undefined">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Quinn Dombrowski",
+      "url": "/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Quinn Dombrowski Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/styles/minimal-mistakes.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Quinn Dombrowski
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/cv/">CV</a>
+            </li><li class="masthead__menu-item">
+              <a href="/projects/">Projects</a>
+            </li><li class="masthead__menu-item">
+              <a href="/blog/">Blog</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+  
+
+
+  
+  
+
+
+
+  
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/images/header_bamboologo.jpg');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          Project Bamboo wiki: W3- Implementation Proposal
+        
+      </h1>
+      
+      
+
+
+      
+      
+    </div>
+  
+  
+</div>
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    
+    <meta itemprop="datePublished" content="Mon Mar 11 2013 17:00:00 GMT-0700 (Pacific Daylight Time)">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="/projects/project-bamboo/wiki/w3-implementation-proposal/" class="u-url" itemprop="url">Project Bamboo wiki: W3- Implementation Proposal</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <p><strong>This was originally posted on the Project Bamboo wiki, at <a href="https://wiki.projectbamboo.org/display/BPUB/W3-+Implementation+Proposal">https://wiki.projectbamboo.org/display/BPUB/W3-+Implementation+Proposal</a> (<a href="https://wiki.projectbamboo.org/x/qARL">https://wiki.projectbamboo.org/x/qARL</a>) by Quinn Dombrowski, last edited Jan 23, 2009.</strong></p>
+<h2 id="W3-ImplementationProposal-StrawProposalOutline">Straw Proposal Outline</h2>
+<p><a href="/sites/default/files/bamboo/Bamboo_W3_Proposal_Slides.pdf">Slides</a> (pdf)</p>
+<ul>
+<li>Context:
+<ul>
+<li>Midway through an 18-month planning project</li>
+<li>Expecting to submit implementation proposal in October</li>
+<li>Big goals: consortium of institutions/organizations to develop what's of most  value to support evolution of research using digital technologies & submit proposal at end</li>
+<li>2010: begin implementation (if proposal works)</li>
+<li>Keep at a forefront what Bamboo does to move forward teaching and research</li>
+<li>Seen very important modifications/additions from where we started</li>
+<li>Community itself defines levels of community responsibility</li>
+</ul>
+</li>
+<li>When you hear about consortial model, tell us if we're getting that right</li>
+<li>Firmly respecting the "we" - different kinds of constituencies, audiences, etc brought to the table</li>
+<li>We're working on building a common language</li>
+<li>From what we've heard from workshop 1, there's a lot of interest in what we're trying to do here</li>
+<li>This could be 7-10+ year effort</li>
+<li>Framing it as something that could end is important</li>
+<li>Moving in dimensions that pull at each other--services infrastructure, exploring/demonstrating/learning how technology can inform and shape teaching/research</li>
+<li>Important to not have it get too big</li>
+<li>We want implementation proposal on 3-year timeframe-- right level of concreteness, ability to deliver</li>
+<li>Proposal will be more compelling if we tell that larger story</li>
+<li>Focus bulk of work on what happens in 3-year timeframe</li>
+</ul>
+<ul>
+<li>Major areas of work we can imagine submitting as part of this proposal</li>
+</ul>
+<ol>
+<li>Infrastructure of shared tech services for arts/humanities/interpretive social science<br />
+Could be in a "cloud" model</li>
+<li>Scholarly network for people/projects/tools/services<br />
+Driving it from the people side first is important</li>
+<li>Exploration and Demonstration "Labs": Sandbox and Support
+<ul>
+<li>Exploration of interoperability possibilities between tools/content sources/infrastructure</li>
+<li>Give faculty and others a chance to learn how to use these tools to build mashups, share hands-on training materials and projects</li>
+</ul>
+</li>
+<li>Stories/Educational Opportunities/Best Practices Hub</li>
+<li>Build and Sustain Bamboo Consortium</li>
+</ol>
+<ul>
+<li>These areas may be reconfigured/resized in the proposal (see chart)</li>
+</ul>
+<ul>
+<li>"What is Bamboo" poster (1a) - many of same themes as mentioned above</li>
+<li>Workshop 2 - series of working groups</li>
+</ul>
+<ul>
+<li>Relationship between major areas of implementaiton proposal and working groups:</li>
+</ul>
+<ol>
+<li>informed by stories, shared services, tools and content</li>
+<li>scholarly networking</li>
+<li>exploration and demonstration: tools and content, education, institutional support</li>
+<li>stories/educational/best practices: stories, educational, tool and content partners</li>
+<li>build and sustain - institutional support</li>
+</ol>
+<ul>
+<li>We said we'd publish a number of documents - these will be folded into the proposal</li>
+<li>We want to use the proposal as a major driver for this work</li>
+<li>Services roadmap: important for how we can map it out, based on stories/activities, a series of services</li>
+<li>Consortium discussion will feed into smaller document</li>
+<li>Ecosystem of partnerships- many of you are the leaders of these efforts</li>
+<li>Tie into, build, reinforce, leverage, support these efforts</li>
+<li>As we make things more concrete, we'll be able to put actual figures on this</li>
+<li>Re: financial crisis- is this the time to do this? Do we huddle back into our institutions, or is this proposal more compelling-- working together</li>
+<li>Scale back, phase over longer periods of time</li>
+<li>Value proposition becomes important (institutional support group) - what is the institution getting? what's the value to whom?</li>
+</ul>
+<ul>
+<li>Build, plan, explore - important to keep in mind vis a vis roles for consortial model</li>
+</ul>
+<h3 id="W3-ImplementationProposal-Q&A">Q & A</h3>
+<p><em>Q: We've had to take feedback to our institutions and tell them this is an iterative process, this is what the idea is, this is the plan, at the end of the 5 workshops there'll be implementation</em><br />
+<em>At the last meeting, if I take back a plan saying that in the next 3 years there'll be an infrastructure of shared services, we'd have a response from the chancellery who'd been involved in every stage of national projects, and we'd be pushed to actually say "tell us more specifics"</em><br />
+<em>We've taken all this info from the wiki exercises and had meetings, so what would be good in discussing the implementation proposal and consortium model would be what was suggested by support group: some really strong statement from leadership council that would back up the info we bring home</em><br />
+<em>We're with you - we're convinced there's a lot there</em><br />
+<em>But our institutions need more info to commit resources in all the ways Chad mentioned, we need something really concrete and coherent</em></p>
+<ul>
+<li>Different ways to explain/discuss value proposition</li>
+<li>Paper ways of doing that, and video stories too</li>
+<li>Services piece requires a lot of work still. Say how that's been driven and informed by the whole process</li>
+<li>Need to push on materials used to tell the stories in different ways</li>
+</ul>
+<p><em>Q: This is just a heuristic exercise</em><br />
+<em>"Technological sublimity" - it can be everything</em><br />
+<em>Have you articulated what Bamboo will NOT be?</em><br />
+<em>Are there borders? Important to say where boundary lines are</em></p>
+<ul>
+<li>This came from W2 - while I talk about standards, we decided it won't be a standards organization</li>
+<li>Needs to adopt standards as part of its community, select some specs, could select a profile (here's 10 if you're going to launch an X)</li>
+<li>Portfolio of guidelines</li>
+<li>Bamboo should draw attention to activities in that scope</li>
+<li>Vis a vis 'build' part - PB should build as little as possible</li>
+<li>Reuse what's out there - there's a rich set of things that already exist</li>
+<li>Only develop things when something else just isn't available</li>
+<li>You could say that Sourceforge garage projects may or may not count</li>
+<li>Should use technologies we have been using in the community, being developed by community</li>
+<li>Another area of focus - related to Euro projects-  notion of in these large infrastructure projects (outside US) - where does PB fit in? Is it doing what DARIAH is doing?</li>
+<li>How do we advance through shared tech services - advanced != make content, make tool</li>
+<li>Enabling possibilities, connections - how do you hook things together and tackle those problems</li>
+<li>It's not sexy - it's trench work that a handful of IT people in this room might really enjoy</li>
+<li>But there's other things we could do that aren't being done elsewhere that we should pick up</li>
+<li>DAG: In W1, Bamboo should build "The Ultimate X" - this is not what we're trying to do</li>
+<li>Would be a very difficult thing to do</li>
+<li>In W1 discussions (also W2) - this is something that comes up in discussions, but PB isn't trying to solve tenure problem or what gets recognized</li>
+<li>It's important, but it's not our primary focus</li>
+<li>Strong proposal would talk about not only what we;re going to do, but also what we're not and why</li>
+<li>Help with scope definition (short term 3 years, long term 7+)</li>
+<li>Walking into an airplane, and the pilot says "where do you want to go today?"</li>
+</ul>
+<p><em>Q: Might have misunderstood, but we just heard you say you're not going to be building things...</em></p>
+<ul>
+<li>CJK: We're gonna build as little as possible - different than not building things</li>
+<li><em>Q: Wasn't one of your goals a "cloud-based environment?"</em></li>
+<li>DAG: More on this tomorrow, but idea that we're making a distinction between tools/applications and services that tools/content sources could draw upon</li>
+<li>Part of our ongoing discussion, part of our value proposition is that there's valuable tools out there, can't we help invest - moving from lowest to highest level of value - to create shared services that could be used by different people</li>
+<li>Cloud model - is one way of building out that</li>
+<li>Build up a language to explain what we mean</li>
+<li>If we can enable reuse and connection and understanding and ease around existing applications - we're trying to help with that</li>
+</ul>
+<p><em>Q: You're going to build as few tools as possible, could you talk about intent for offering particular services? where's that going?</em></p>
+<ul>
+<li>Is there intent for PB as a consortium to offer particular services or, do it as little as possible</li>
+<li>DAG: With services, there's strong arguments for offering a set of services ("web services" to general community, cloud model = so each institution doesn't have to run a set of things on their own)</li>
+<li>Available and guaranteed services to participating members of that community - that might be a more sustainable way to handle these challenges</li>
+<li>CJK: This gets into why consortial model talks about what resources an institution could contribute</li>
+<li>An institution could say "we're already working on this, might as well"</li>
+<li>Multiple institutions could offer storage - this benefits institution that doesn't have that resource</li>
+<li>Someone received funding for a project, then realized they had no infrastructure to make it happen - how can we help with that?</li>
+<li>We need to explore those opportunities, figure out what things we shouldn't do</li>
+<li>This is different from Building Software</li>
+</ul>
+<p><em>Q: Distinction between facilitating services and availability vs. actually providing them</em><br />
+<em>In your model, if Bamboo provides services, you'll need an operations level</em><br />
+<em>Implications of getting into service provisioning business, ramifications not just for organization but for whole landscape of people who might be interested/collaborators</em></p>
+<p><em>Q: For PB being successful in the long term, participant institutions are at an advantage because their faculty are in a position to embark on research efforts and teaching efforts that they wouldn't be able to otherwise</em><br />
+<em>Another way of framing the success - speaks to people like provosts who are allocating resources, strengthens institution, its ability to attract/maintain the best faculty</em><br />
+<em>Don't overlook that formulation</em><br />
+<em>Going back to wise statement about needing to build as little as possible, would urge PB to think in build/not portfolio set of activities around evaluating and recommending</em><br />
+<em>One of the problems right now is there are too may choices, none of which have reached critical mass, most of which don't interoperate</em><br />
+<em>What's needed (nasty position to be in) is to pick winners and losers, or coordinate community activity to do that</em><br />
+<em>Urge you to include that in your toolkit of infrastructure building activities</em></p>
+<p><em>Role and appearance of the people who are contributing, and the services/tools/etc layered on top</em></p>
+<p><em>Layers allowing those of us who aren't from resource-plentiful universities</em><br />
+<em>My institution's economy relies on high price of oil - we don't have much money at all right now</em><br />
+<em>I like the ability for institutions to commit different kinds of investments, allows my smaller university to stay in the game</em></p>
+<h2 id="W3-ImplementationProposal-DetailsofStrawProposalOutline">Details of Straw Proposal Outline</h2>
+<ul>
+<li>Some of the major sections of the proposal:</li>
+<li>"Value proposition" - statement of need and opportunity, what's the story that can be told to institutions?</li>
+<li>Investments we're already making in humanities scholarship, how that can be leveraged</li>
+<li>Important to have a case statement or value proposition as soon as possible after this workshop</li>
+<li>What do partner institutions look like? What are their roles?</li>
+<li>Work plan and budget</li>
+<li>Series of documents that may overlap with parts of the proposal</li>
+<li>Current work from working groups - inst. support talked about key questions around value proposition</li>
+<li>Exploration/labs is a new way of framing this - there's multiple working groups pushing towards this</li>
+<li>What the future working groups will be towards workshop 4?
+<ul>
+<li>Stories working group is trying to generate scholar stories so we can derive activities</li>
+</ul>
+</li>
+<li>Tools/content and services/interaction are important</li>
+<li>Trying to figure out the right kind of alignment</li>
+<li>Does there need to be reconfiguring the charters of working groups?</li>
+<li>Other kinds of discussions that have to happen</li>
+<li>Value proposition- so leadership council is trying to shape that</li>
+<li>Long-term vision: trying to talk to other community leaders</li>
+<li>Shared services - need to have series of discussions with other technical leaders in SOA and other areas</li>
+<li>Balance between enterprise and other approaches</li>
+<li>Importance of connecting w/ other tech consortia, info led by digital humanities centers</li>
+<li>Important to begin discussions w/ institutions, might be valuable to talk with institutions at higher level</li>
+<li>Map of where we might put focus between 3 and 4 - not focusing on everything in detail</li>
+<li>Value proposition is important, long-term vision</li>
+<li>Major areas of work: lots we want to push towards; if we're still framing work that way at the end of this workshop</li>
+<li>Begin discussion w/ other institutions about how they see their roles</li>
+<li>Workplan/budget: post-workshop 4</li>
+<li>We need info before we can write that out</li>
+<li>We haven't fleshed out between 4 and 5 - taking info to then revise the work plan</li>
+<li>After this workshop, a quick reflection on what we've heard/learned, and send out an update</li>
+<li>Slide with pink boxes: these resonate with different people based on institutional interests</li>
+<li>Could start by talking about exploration labs - ways to build and invest in centers of local campuses</li>
+<li>Shared services:
+<ul>
+<li>What is meant by "services"? In W2 we tried to do a more narrow definition - building discrete modular reusable web service,s used to discover and consume (from tool and data sources)</li>
+</ul>
+</li>
+<li>Not broader definition of all services and applications</li>
+<li>Idea of cloud-based approach: we think we're going to derive services of high value to community</li>
+<li>If there's 10-20-50 members of community who are going to want to use those services, what's the best way to provide them?</li>
+<li>Does each institution do local instantiations? One or two institutions to whole community?</li>
+<li>Could be corporate or other partners brokered by Bamboo?</li>
+<li>Services could range from a whole set of things, could look like common services available to developers, or services that deal with storage, authentication, etc</li>
+<li>Complex topic: any group in the business of providing services people are relying on, have to think carefully about how one does that</li>
+<li>By banding together, we can provide some common services/efforts that many people need, rather than local instantiations</li>
+<li>Still in the process of figuring on based on analysis of scholarly practice what the services should be</li>
+<li>By the time proposal is written, going from what could be done to what PB will do</li>
+<li>Defining, then mining/grouping scholarly activities</li>
+<li>Finding key candidates, then figuring out business model</li>
+<li>Some comes from the model we have - defining and mining comes from W1 + stories group to derive set of activities that we think are particularly important to build services around</li>
+<li>Partnership and interplay with tools/content projects is fundamental</li>
+<li>Discussion with existing developers: what would be of value to you, so you don't have to build that into your future roadmap of software development</li>
+<li>Services roadmap: can draw a picture of what's needed/possible, what are areas of high value?</li>
+<li>What are we going to get by investing in them?</li>
+<li>What's the business model for how we provide that?</li>
+<li>Fair amount of work that has to happen related to working groups and program staff</li>
+<li>Scholarly networking - thanks to John for yesterday's presentation</li>
+<li>Yesterday: validating that this is important</li>
+<li>Heard this strongly in W1 - something fundamental that needs to be done; but what is the "it" and how is it done?</li>
+<li>Importance of people finding people they can collaborate with</li>
+<li>Relatedly - finding and discovering other kinds of tools/projects/content/services</li>
+<li>Trying to think of a model where we can weave this together to allow discovery and sharing across a broad community</li>
+<li>The "pub problem" - I find out about the best things when having a drink with someone after a workshop</li>
+<li>Connected across places/spaces w/o being face-to-face</li>
+<li>Existing tools and platforms that are out there for scholarly networking: can we use some of those, what will that get us?</li>
+<li>Connections to what's happening elsewhere that provide platforms for higher education</li>
+<li>Good opportunity for alignment between PB and Sakai - high value to communities</li>
+<li>Connections to how scholarly networking derived from and adds value to scholarly communication/societies</li>
+<li>Conversations with more people leading those efforts</li>
+<li>Exploration labs:
+<ul>
+<li>Opportunity for this group to help figure out if this is the right thing to focus on/conceptualize</li>
+</ul>
+</li>
+<li>Number of different ideas layered here</li>
+<li>What PB is finally trying to do - at each of our campuses/people we support, within 3-5 years, when a faculty member/student are looking for some way to learn about digital tech, scholarly practice, figuring out which tools to use - should be substantially easier/better to do that at local institutions</li>
+<li>Centers libraries, IT where you can go, be able to learn/explore/build</li>
+<li>Should be easier to use the tech so you spend most of your time on the teaching/research, less time mastering tech problems</li>
+<li>Help with some of those issues, the way the rich set of tools/applications/content sources can be interconnected</li>
+<li>Guidance around narrower set of infrastructure we provide to the community</li>
+<li>Going from interoperability to how research is changing</li>
+<li>Is this the right way to conceptualize this? Or that every institution would do? Or groups of institutions?</li>
+</ul>
+<ul>
+<li>Stories/education op/best practices</li>
+<li>Could be manifest across whole PB community</li>
+<li>Gathering, documenting, sharing these</li>
+<li>These materials serve a number of purposes: growing body of materials that can be shaped in different ways</li>
+<li>Discussion about interconnection of these stories and how to look at practices that cut across disciplines</li>
+<li>Things that can benefit students and faculty</li>
+<li>Stories as a way to help us derive a sense of the best investments around services</li>
+<li>Ways that can help institutions make a more compelling case of the value of doing this work</li>
+<li>Stories/education materials are service particular ends in some cases, from improving research to building infrastructure</li>
+</ul>
+<h3 id="W3-ImplementationProposal-Q&A.1">Q&A</h3>
+<p><em>Q: Exp labs - centers and activity centers, does the money go to the centers for projects, or service helping provide things?</em></p>
+<ul>
+<li>Want to figure out how people who are doing that investment, what they need</li>
+<li>If someone is trying to lead that across multiple institutions, that might be a better place to distribute money than giving it to each individual institutions</li>
+<li>This is preliminary, based on shape of proposal/total resources</li>
+</ul>
+<h2 id="W3-ImplementationProposal-TableDiscussionsofProposal">Table Discussions of Proposal</h2>
+<h4 id="W3-ImplementationProposal-Table1">Table 1</h4>
+<ul>
+<li>Hard to respond to the proposal; we were intrigued</li>
+<li>A lot was about political organization; our natural response was trying to imagine what such a group could do</li>
+<li>Where between a completely social consortium that does no building, and one that's just a development</li>
+<li>Somewhere in the middle</li>
+</ul>
+<h4 id="W3-ImplementationProposal-Table2">Table 2</h4>
+<ul>
+<li>Tension between focus of small group of builders and the rest of the consortium</li>
+<li>How do we make sure we don't come apart with builders doing building, and losing connection w/ connection with scholars</li>
+</ul>
+<h4 id="W3-ImplementationProposal-Table3">Table 3</h4>
+<ul>
+<li>Focusing on point 3 - keeping phase 1 in mind</li>
+<li>Most important things, building on value proposition of what's in it for my institution</li>
+<li>Looked at shared services, scholarly network</li>
+<li>Needs to be creative link between form of services created and how we need to build the network because there's so much work needed to be done nationally</li>
+<li>Bringing together groups of people working in their institutions w/o knowing larger context</li>
+</ul>
+<h4 id="W3-ImplementationProposal-Table4">Table 4</h4>
+<ul>
+<li>Added an item related to value proposition - is this the time and place to add measures of success? Evlaution/assessment piece</li>
+<li>When we're selling it, we can say "here's how to know it was a worthwhile investment</li>
+</ul>
+<h4 id="W3-ImplementationProposal-Table5">Table 5</h4>
+<ul>
+<li>Building on idea of broadening reach of project, possibility of making query to various institutions with idea of asking what they'd be willing to contribute</li>
+<li>Not just what do you want, but what are you wiling to contribute</li>
+<li>What do you want from other members of the project?</li>
+<li>Outreach to companies (commercial) as well as our "safety zone" of academic community given realities of financial situation</li>
+<li>companies might have more resources available</li>
+<li>Would like to see a pie chart added to wiki - what sort of representation by disciplines at these workshops</li>
+<li>success of project going to depend on faculty vehicle - better idea of who's showing up, where they're coming from</li>
+</ul>
+<h4 id="W3-ImplementationProposal-Table6">Table 6</h4>
+<ul>
+<li>Kept coming back to issues of scope</li>
+<li>Hard to evaluate proposal w/o agreement on scope, what scope of consortium would be</li>
+<li>We have ideas, things like "wouldn't want to provide services, S3 Amazon Cloud Provider" but understanding statement made yesterday that we want to reuse rather than build wherever possible</li>
+<li>From tech point of view, might be more possible to provide services that people compose into tools rather than a bunch of tools</li>
+<li>Those expectations need to be set so people coming to community need to understand where their needs fit in</li>
+<li>Ties into value proposition and long-term vision</li>
+</ul>
+<h4 id="W3-ImplementationProposal-Table7">Table 7</h4>
+<ul>
+<li>Focused in on scholarly networks and exploration labs</li>
+<li>Discussion around whether arrows between areas was scholarly network - is it on its own, or does it connect other areas?</li>
+<li>Thinking not just discovering info/resources, but what happens through use, networks become smarter</li>
+<li>Do scholarly networks lack spaces for collaboration?</li>
+<li>Scholarly networking developed via the exploratory labs, or parallel thing?</li>
+<li>Could there be a help desk that scholars could go to to find things quicker and faster than a discussion list?</li>
+<li>Exploratory labs - discussion about whether these, based on our own experiences, research labs - spaces where scholars can get together, and also pedagogical labs</li>
+<li>Should those be separate or unified?</li>
+<li>Are exploratory labs a tension between integrating IT into existing pedagogical forms (lectures, seminars) or developing new pedagogical forms?</li>
+<li>MIT moving way from giant lectures to smaller spaces (whiteboards, small tables, clickers)</li>
+<li>Exploratory labs are physical spaces at universities, or virtual and allowing universities to connect</li>
+</ul>
+<h4 id="W3-ImplementationProposal-Table8">Table 8</h4>
+<ul>
+<li>What's happened to standards and best practices area that existed in W2?</li>
+<li>Need to coordinate and agree on interfaces</li>
+<li>If we need to link data, we have to recommend ways to do it</li>
+<li>This cross-cuts a lot of the areas, but hasn't been explicitly mentioned in any way</li>
+<li>Need to articulate how that fits in</li>
+</ul>
+<h4 id="W3-ImplementationProposal-Table9">Table 9</h4>
+<ul>
+<li>Two principle areas - stories, interested where this fits in</li>
+<li>What's meant by that?</li>
+<li>Consider a variety of views</li>
+<li>One consensus: collection of use case scenarios and people's needs and pieces of stories should continue to feed into the processes of design and build</li>
+<li>Important to articulate that in the proposal - not just gathering the stories, and then building, but a constant iterative revisiting and collection of new inputs from users too</li>
+<li>Second area: value proposition(s) - identified 3</li>
+<li>Reaffirmation of original project goal of reversing amount of time spent on building tools vs doing research</li>
+<li>Second: enabling and supporting the 95% of scholara who don't normally work on DHum to be able to access and work with these tools/services in the normal course of their work</li>
+<li>More speculative - potential to open up transformations for ways of working in the Humanities</li>
+<li>Not just enable them to do what they're doing on a computer, but work with much more diverse range of materials. Produce new sorts of outputs, be assessed in new ways</li>
+<li>How the evaluation is to be determined</li>
+</ul>
+<h4 id="W3-ImplementationProposal-Table10">Table 10</h4>
+<ul>
+<li>Focused on value proposition</li>
+<li>Really needs to start saying what it is</li>
+<li>Need to be more specific concrete things on the table</li>
+<li>Need data - can't do computation w/o it</li>
+<li>One of the corporations that exist, challenges they pose - what sort of opportunities do those challenges represent?</li>
+<li>References to certain kinds of tools that we can agree on have general utility across disciplines</li>
+<li>Lots of things involving text processing For this to have clearly perceived value - need to start saying what those things are</li>
+<li>Also some consensus that just from social perspective, begins to be important to go back home after receiving funding to go to these things, "here's what we're going to do"</li>
+</ul>
+<h4 id="W3-ImplementationProposal-Table11">Table 11</h4>
+<ul>
+<li>There is no art without constraint</li>
+<li>Haven't yet found the constraints on what could be done here</li>
+<li>All has a blue-sky feel to it</li>
+<li>Never been involved in a proposal w/o fairly concrete sense of finiteness of resources</li>
+<li>This forced us to make hard choices about what we're going to do</li>
+<li>Lack of that is impeding our ability to push forward</li>
+<li>As far as stories, we want to encourage you to include stories about success but also failure and frustration</li>
+<li>Out of these can come your value proposition</li>
+<li>Where are you getting your stories from?</li>
+<li>Other communities outside the humanities that have faced these issues, had successes and failures</li>
+<li>Would be useful to learn from their stories, not repeat their failures</li>
+<li>Exploration labs -  useful to think concretely</li>
+<li>Think hard about where are the labs now for exploration, how can they be pulled together, work most efficiently, convergence of humanities centers i-schools, libraries, dig hum centers</li>
+<li>Should be drawn together, lab should be spaces where different generations of scholars work together on projects</li>
+</ul>
+<h4 id="W3-ImplementationProposal-Table12">Table 12</h4>
+<ul>
+<li>Finiteness of resources, and realities of what have to be accomplished</li>
+<li>Have to tel stories about people who could put resources in</li>
+<li>Need more finite sense of what is involved</li>
+<li>A little concerned that we haven't had that focusing-in phase</li>
+</ul>
+<h4 id="W3-ImplementationProposal-Table13">Table 13</h4>
+<ul>
+<li>Need to iterate - if Bamboo is ambitious, will fail over and over</li>
+<li>Will succeed only if there' a sustainability model that will allow for tweaking and redesigning</li>
+</ul>
+<ul>
+<li>A lot is learned when things blow up</li>
+<li>'Prototyping' = 'blowing up'</li>
+</ul>
+<ul>
+<li>Fleshing out things that you've said, these are important issues</li>
+<li>This is why it's a straw proposal</li>
+<li>All of your comments have been captured</li>
+</ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        <!---->
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="Mon Mar 11 2013 17:00:00 GMT-0700 (Pacific Daylight Time)">March 12th 2013</time></p>
+
+      </footer>
+
+      
+
+      
+    </div>
+
+   
+  </article>
+
+  
+</div>
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Quinn Dombrowski. Powered by <a href="https://www.11ty.dev/" rel="nofollow">Eleventy</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a> (adapted as <a href="https://github.com/quinnanya/eleven-mistakes">Eleven Mistakes</a>).</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

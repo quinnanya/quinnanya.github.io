@@ -1,0 +1,243 @@
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang='en-US' class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html -->
+<title>Eleventy and Me - Quinn Dombrowski</title>
+<meta name="description" content="Example description">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Quinn Dombrowski">
+<meta property="og:title" content="Eleventy and Me">
+<meta property="og:url" content="undefined">
+
+
+  <meta property="og:description" content="Example description">
+
+
+
+  <meta property="og:image" content="undefined">
+
+
+
+
+
+  <meta property="article:published_time" content="Wed Feb 09 2022 16:00:00 GMT-0800 (Pacific Standard Time)">
+
+
+
+
+
+
+<link rel="canonical" href="undefined">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Quinn Dombrowski",
+      "url": "/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Quinn Dombrowski Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/styles/minimal-mistakes.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Quinn Dombrowski
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/cv/">CV</a>
+            </li><li class="masthead__menu-item">
+              <a href="/projects/">Projects</a>
+            </li><li class="masthead__menu-item">
+              <a href="/blog/">Blog</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    
+    <meta itemprop="datePublished" content="Wed Feb 09 2022 16:00:00 GMT-0800 (Pacific Standard Time)">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="/blog/2022/02/10/eleventy-and-me/" class="u-url" itemprop="url">Eleventy and Me</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <p>Like most folks roughly my age who spent their youth and adolescence as &quot;computer people&quot;, my personal website has gone through multiple generations of technology, starting with hand-coded HTML, moving to WordPress, Drupal, then <a href="https://backdropcms.org/">Backdrop</a> once Drupal jumped the shark and went all Enterprise PHP. It's been a few years since I've done much with CMS-based websites that I've had to manage myself, going either for centrally-run infrastructure at work or static site generators.</p>
+<p>The first static-site generator I was introduced to, and the default (if you ask GitHub Pages), is Jekyll. I have struggled mightily with Jekyll -- to the point where you'll soon be able to formally cite me on that in a peer-reviewed article! But between the number of pre-built themes available for Jekyll (which is a big deal, if you loathe CSS as much as I do), and DH-oriented systems built on top of Jekyll (like Alex Gil's <a href="https://elotroalex.github.io/ed/">Ed</a> and his and Marii Nyröp's <a href="https://minicomp.github.io/wax/">Wax</a>), it didn't seem worth fighting it. After all, I believe in reusability, and contributing back to technology communities, especially when it's part of a field that's relatively small within a technology's user base -- that's why I wrote <em>Drupal for Humanists</em>, so DH people could see themselves (and not e-commerce) in the pedagogical materials they were using. But I can't say I've ever <em>liked</em> Jekyll, even when I was able to get it to work. I struggled to get a basic hang of Liquid, and the layouts-and-includes(-with-includes) situation felt like a labrynth where I might become a minotaur's lunch at any moment. And don't get me started with Ruby, which I'm pretty sure just hates me because every third time I tried to serve a site locally, everything inexplicably broke.</p>
+<p>It was a Friday night in mid-December when all I wanted to do was rebuild my website, and instead found myself fighting with Ruby, when I complained about this state of affairs on Twitter. And I got some thought-provoking advice about other options. Non-Jekyll options. Options that wouldn't make me placate Ruby. When I needed a break from ragefully Googling error messages I started exploring some of these possibilities, but after a couple of hours, I had Ruby working again and I figured, &quot;Why mess with what works (even if only for the moment)?&quot; I really liked the <a href="https://mmistakes.github.io/minimal-mistakes/">Minimal Mistakes</a> theme I had picked out, and I just wanted to get on with things, not start over from scratch.</p>
+<p>I spent the first week of the holiday break carefully hand-migrating most of my old content, choosing just the right thumbnail image for some old projects and the Project Bamboo data write-ups, and on Christmas Eve it was all ready to go. I was at a cabin where internet was hit-or-miss (mostly miss), so I resolved to actually publish it when I got home. Before bed, I cleaned up some files from a previous iteration of the site, and emptied the trash on my lapotp. Another project wrapped up!</p>
+<p>The next day, I wanted to fiddle with something on my CV, so I fired up the new site locally and... the earlier iteration appeared instead. Somehow, in some way I still do not understand, I managed to hard-delete the new website I'd spent a week making. (And because I'm less good at data management with my own stuff, I didn't have any almost-done versions committed to the repo or anything salvagable.) Data recovery tools, such as I could find, did not help. It was gone.</p>
+<p>I try to not give in to superstition, but accidentally deleting my Jekyll site on Chrsitmas Eve sure felt like an omen. Was this a message from the Ghost of Christmas Futures that if I continue down this path, I'll be spending more Christmases cursing Ruby? I wasn't going to take the chance. Inertia overcome, it was time for something different.</p>
+<p>And what I found, thanks to Cassey Lottman, was <a href="https://www.11ty.dev/">Eleventy</a>. Even the website, whimsically featuring a cluster of possums floating along the screen attached to a red balloon, spoke to me. That said, there was a lot of jargon to figure out at first; I've never done much with JavaScript, and honestly, I find it more than a little nerve-wracking. Cassey kindly put together this <a href="https://www.cassey.dev/posts/2021-12-25-just-enough-javascript-11ty/">Just Enough JavaScript for Eleventy</a> to help me over that hurdle, and once I had my bearings, I realized that even though there's not a lot of pre-built themes / template sites for Eleventy (at least, not ones I was able to get to work), you can also <a href="https://www.cassey.dev/posts/2021-10-23-converting-an-html-file-to-eleventy/">work from HTML templates</a>, and Eleventy can work with Liquid templates, so with a non-insurmountable number of tweaks, you can adapt a Jekyll theme to Eleventy. And that's what I ended up doing, with some help from this <a href="https://alexpearce.me/2020/06/jekyll-to-eleventy/">Moving from Jekyll to Eleventy</a> blog post by Alex Pearce, taking the things I wanted most from the Minimal Mistakes theme I'd been using in Jekyll. One caveat: SASS doesn't work out-of-the-box, and I needed some help from Philip Allfrey to get the site-generating code to process the right set of SASS files, but that's a topic for another blog post.</p>
+<p>Not everything works quite yet, and I've got some things I'd like to explore further (like using a data file to dynamically generate a gallery of spiffy things I've sewn), but with some debugging help from Cassey I've now managed to build two Eleventy sites and get them running on GitHub. And I have <em>enjoyed doing it</em>, even the debugging and fiddly bits. The Eleventy blog posts and documentation and issues feel like a community of people trying to figure out a way to do things that centers flexibility and choice -- honestly, to a greater extent than I was always comfortable with, as someone who lacked the knowledge to have preferences or make informed choices. But there was less of the &quot;X is just like Y, next topic!&quot; (where X and Y are things I knew zero about) vibe I often got from trying to make sense of Jekyll.</p>
+<p>Eleventy and, more recently, <a href="https://obsidian.md/">Obsidian</a> for note-taking (thanks to <a href="https://electricarchaeology.ca/2020/12/30/knowledge-management/">Shawn Graham</a>), have gotten me thinking about the role of enjoyment in selecting tools and platforms. Despite being a general advocate for more <em>fun</em> in DH, I had never considered fun as a worthwhile consideration when choosing tools and platforms. Do you think about fun much when you choose a washing machine? Factors like cost, effectiveness, use of resources, compatibility with your preferred soap all come to mind, but not fun. <a href="https://voyant-tools.org/">Voyant</a> is a rare exception of a tool that puts fun front and center, but these days, I'm more likely to use <a href="https://www.laurenceanthony.net/software/antconc/">AntConc</a> to get the data I'm looking for because of its efficiency with giant corpora. I'm wary of fun as an influencing factor, after seeing too many years (decades, now) of CS undergrads building websites using the latest hot (fun) framework, resulting in something utterly unmaintainable in the medium-term, let alone the long-term. Those reservations leave me reluctant to sub out Jekyll in projects with scholar-collaborators at work, at least for the time being. But my own website and notetaking practices feel like the ideal place to embrace enjoyment as a guiding principle in tool selection, since no one but me has to deal with any unintended consequences. How much of it will make its way into collaborative projects down the road remains to be seen.</p>
+<p>In the meantime, I've got a handful of Eleventy tips and tricks and explainers I hope to put together in the next few months for anyone who wants to join me on this path.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        <!---->
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="Wed Feb 09 2022 16:00:00 GMT-0800 (Pacific Standard Time)">February 10th 2022</time></p>
+
+      </footer>
+
+      
+
+      
+    </div>
+
+   
+  </article>
+
+  
+</div>
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Quinn Dombrowski. Powered by <a href="https://www.11ty.dev/" rel="nofollow">Eleventy</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a> (adapted as <a href="https://github.com/quinnanya/eleven-mistakes">Eleven Mistakes</a>).</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

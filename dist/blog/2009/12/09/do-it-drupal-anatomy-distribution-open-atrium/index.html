@@ -1,0 +1,308 @@
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang='en-US' class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html -->
+<title>Do It With Drupal: Anatomy of a Distribution: Open Atrium - Quinn Dombrowski</title>
+<meta name="description" content="Example description">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Quinn Dombrowski">
+<meta property="og:title" content="Do It With Drupal: Anatomy of a Distribution: Open Atrium">
+<meta property="og:url" content="undefined">
+
+
+  <meta property="og:description" content="Example description">
+
+
+
+  <meta property="og:image" content="undefined">
+
+
+
+
+
+  <meta property="article:published_time" content="Mon Dec 07 2009 16:00:00 GMT-0800 (Pacific Standard Time)">
+
+
+
+
+
+
+<link rel="canonical" href="undefined">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Quinn Dombrowski",
+      "url": "/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Quinn Dombrowski Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/styles/minimal-mistakes.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Quinn Dombrowski
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/cv/">CV</a>
+            </li><li class="masthead__menu-item">
+              <a href="/projects/">Projects</a>
+            </li><li class="masthead__menu-item">
+              <a href="/blog/">Blog</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    
+    <meta itemprop="datePublished" content="Mon Dec 07 2009 16:00:00 GMT-0800 (Pacific Standard Time)">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="/blog/2009/12/09/do-it-drupal-anatomy-distribution-open-atrium/" class="u-url" itemprop="url">Do It With Drupal: Anatomy of a Distribution: Open Atrium</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <ul>
+<li>Open Atrium is a "team portal in a box" (AKA Basecamp alternative)</li>
+<li>Can be behind a firewall, is free, openatrium.com</li>
+<li>Putting people in different groups</li>
+<li>Comes with six features:</li>
+<ul>
+<li>Blog: turned on/off on a group-by-group basis</li>
+<li>Wiki</li>
+<li>Calendar- iCal feeds too</li>
+<li>Shoutbox - like private Twitter</li>
+<li>Case Tracker - ticketing system</li>
+<li>Group dashboard</li>
+</ul>
+</li>
+<li>75,000 downloads since July 17</li>
+<li>translate.openatrium.com - 31+ levels to various extents; get updates that don't overwrite your custom updates</li>
+</ul>
+<p><strong>What are people doing with it</strong></p>
+<ul>
+<li>Basic project management tool set</li>
+<li>Sprite-based theme (5.5 kb, 13.7 kb)</li>
+<li>Tailoring the system to your own needs</li>
+<li>Drupal Core, modules, plus Features module power Open Atrium</li>
+<li>People can customize their own dashboard</li>
+<li>Cross-posting to different groups disabled; also, Organic Group configuration much more simple (clear distinction between public and private)</li>
+</ul>
+<p><strong>Migrating into Open Atrium</strong></p>
+<ul>
+<li>It's just a Drupal site, so in theory you can turn on the Open Atrium modules around your existing site (but this isn't suggested) - use some other way (Feeds module?) to aggregate existing content and put it into the new framework</li>
+<li>Migration is a solvable problem, but probably not in a generic way useful for the core project</li>
+</ul>
+<p><strong>Extended features</strong></p>
+<ul>
+<li>Project status - time tracking and approval flow for a web shop</li>
+<li>World Bank did a highly customzied version; integration with Lotus Notes - their own internet behind a firewall; faceted search across their pre-existing staff directory; extended events system to help with scheduling</li>
+<li>Some custom coding went into the World Bank site, but a lot of what goes into it comes from configuring existing modules</li>
+</ul>
+<p><strong>How we use it</strong></p>
+<ul>
+<li>Over 50% tickets</li>
+<li>Use blog instead of e-mail for the most part</li>
+</ul>
+<p><strong>Atrium's rules</strong></p>
+<ul>
+<li>Works out of the box</li>
+<li>At least as simple as running straight from drupal.org</li>
+<li>Once you install it, it's clear what the next step is - unlike Drupal, where you install it and wonder "what now?"</li>
+<li>Works with Aegir</li>
+<li>Doesn't hack core or contrib (except occasionally- there's a hack to Views that makes it translatable)</li>
+<li>Doesn't do everything - does a few things that are widely useful for intranets, and you can extend it</li>
+</ul>
+<p><strong>Things we'll never do</strong></p>
+<ul>
+<li>Add a WYSIWYG; BUT, you can do that</li>
+<li>Add CVS integration (but see features.blackstormsstudios.com)</li>
+<li>Add Alfressco integration - but someone else has tried this</li>
+<li>Investing some time in Google Docs integration</li>
+<li>Won't ever clone Basecamp - but someone wrote a theme that looks a lot like it (drupal.org/project/atrium_simple)</li>
+<li>Add Sharepoint integration to base package</li>
+</ul>
+<p><strong>Things we will do</strong></p>
+<ul>
+<li>Clearer branding- Drupalisms & Atriumisms beware!</li>
+<li>Drag and drop dashboards (vimeo.com/7643255)</li>
+<li>Better admin experience (drupal.org/project/admin)</li>
+<li>Pluggable search</li>
+<li>Improved l10n support- Drupal only supports one language at a time, we want to fix this</li>
+<li>Rewriting core functionality - upgrading to Context and Spaces, when we say "beta", we mean it</li>
+<li>Rework the "user space"</li>
+<li>A calendar with a user story</li>
+<li>Rewrite Case Tracker - this powers the to-do system, people want to customize the states cases can be in, kinds of cases, etc. (github.com/miccolis/casetracker)</li>
+<li>This is going to be painful, we'll provide upgrade paths</li>
+<li>Move to drush make (drupal.org/project/drush_make)</li>
+<li>New on drupal.org: install profiles: lists of things that, all together, make a site</li>
+</ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        <!---->
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="Mon Dec 07 2009 16:00:00 GMT-0800 (Pacific Standard Time)">December 8th 2009</time></p>
+
+      </footer>
+
+      
+
+      
+    </div>
+
+   
+  </article>
+
+  
+</div>
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Quinn Dombrowski. Powered by <a href="https://www.11ty.dev/" rel="nofollow">Eleventy</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a> (adapted as <a href="https://github.com/quinnanya/eleven-mistakes">Eleven Mistakes</a>).</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

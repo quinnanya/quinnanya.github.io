@@ -1,0 +1,301 @@
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang='en-US' class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html -->
+<title>Do It With Drupal: jQuery - Quinn Dombrowski</title>
+<meta name="description" content="Example description">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Quinn Dombrowski">
+<meta property="og:title" content="Do It With Drupal: jQuery">
+<meta property="og:url" content="undefined">
+
+
+  <meta property="og:description" content="Example description">
+
+
+
+  <meta property="og:image" content="undefined">
+
+
+
+
+
+  <meta property="article:published_time" content="Tue Dec 08 2009 16:00:00 GMT-0800 (Pacific Standard Time)">
+
+
+
+
+
+
+<link rel="canonical" href="undefined">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Quinn Dombrowski",
+      "url": "/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Quinn Dombrowski Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/styles/minimal-mistakes.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Quinn Dombrowski
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/cv/">CV</a>
+            </li><li class="masthead__menu-item">
+              <a href="/projects/">Projects</a>
+            </li><li class="masthead__menu-item">
+              <a href="/blog/">Blog</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    
+    <meta itemprop="datePublished" content="Tue Dec 08 2009 16:00:00 GMT-0800 (Pacific Standard Time)">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="/blog/2009/12/10/do-it-drupal-jquery/" class="u-url" itemprop="url">Do It With Drupal: jQuery</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <p>See slides <a href="http://www.doitwithdrupal.com/2009/sessions/jquery-drupal">here</a>.</p>
+<ul>
+<li>What's jQuery: javascript library, circumvents browser incompatibility</li>
+<li>Known for things like opacity, AJAX requests that work across all browsers</li>
+<li>Visual effects and "wow factor"</li>
+<li>Reducing javascript code: getting elements by class name - 15 lines of javascript, 1-line snippet of jQuery $(".classname");</li>
+</ul>
+<p><strong>Selectors</strong></p>
+<li>jQuery selectors: CSS selectors by class (.), by ID (#), child elements/multiple elements ($('.sidebar a, .content a');), CSS3 select by attribute: $('input[type=text]'); also regular expressions on properties - see docs.jquery.com/Selectors</li>
+<p><strong>Effects</strong></p>
+<ul>
+<li>$('h1').hide(); - hides all h1's</li>
+<li>can also do .hide('slow'); or .hide(3000) - milliseconds</li>
+<li>.fadeOut('slow'), .slideUp('slow') - more at docs.jquery.com/Effects</li>
+</ul>
+<p><strong>Events</strong></p>
+<ul>
+<li>Trigger an action in response to user (click, change, toggle, hover)</li>
+<li>Toggle: two function names, the first time you click it does A, and the second time you click it does B</li>
+<li>You can do it inline (not suggested)</li>
+<li><em>return false</em> is useful if you want the hand icon to show up to click, but not take the person anywhere (ie AJAX toggle; degrades gracefully if javascript is turned off)</li>
+<li>Declared: gives a name to the function</li>
+<li>Take all your PHP knowledge, apply it to Javascript really easily - but there's lots of things that Javascript can do that PHP can't</li>
+</ul>
+<p><strong>Libraries and modules</strong></p>
+<ul>
+<li>Lots and lots of "wrapper" modules - so many nice jQuery plugins (equivalent of Drupal modules); make a module for every jQuery plugin (jCarousel, Lightbox, jqModal, Juitter, hoverIntent etc.) - there's a whole module for just one function</li>
+<li>People want to have dependencies - jCarouselViews module relies on jCarousel, even though there's only one function there</li>
+<li>You can end up with multiple copies of jQuery plugins all over the place</li>
+<li>"We need an API to handle all these javascript libraries!" - so now we have wrapper-wrapper modules! (Plugins, JQP, jQ, jQuery UI the module)</li>
+<li>Competing ways of adding multiple javascript libraries - different modules require different things</li>
+<li>jQuery UI isn't as bad as the other ones - so many modules need it</li>
+<li>In short, some modules have great implementation (jCarouselViews); a lot more modules do things in a totally unnecessary way - not worth having a module if it only does one thing and you only need it in one place</li>
+</ul>
+<p><strong>Adding JS in a theme</strong></p>
+<ul>
+<li>"It's not hacking, it's theming!"</li>
+<li>Open up info file, add some scripts (scripts[] = utilities.js)</li>
+<li>Name is always relative to the root of your theme</li>
+<li>After you do that, clear Drupal caches</li>
+</ul>
+<p><strong>drupal_add_js()</strong></p>
+<ul>
+<li>What if you only need it in certain places?</li>
+<li>Put this function in template.php; same thing that the .info file is doing for you</li>
+<li>Don't just put it in page.tpl.php</li>
+<li>Can aggregate and compress your CSS files - a lot less work for the web server</li>
+<li>Javascript can be all aggregated together</li>
+<li>Hosting your javascript elsewhere - well, it's only 15k, it'll slow down performance, it'll update to the latest version (but this might break your site</li>
+<li>If you add any javascript using drupal_add_js(), it'll add jquery and drupal.js - provides some extra functionality, utility functions, global variables</li>
+<li>drupal_add_js($data, $type); - $data is path to js, $type = 'module' (default) or 'theme'; theme stuff always goes last because it's assumed to be more important</li>
+<li>Pass PHP variables to JavaScript: drupal_add_js($data, 'setting'), where $data is an array of strings</li>
+<li>$(document).ready() - execute js when the page has finished loading</li>
+<li>Prevents content hang-ups, degrade gracefully; replaces body(onload)</li>
+</ul>
+<p><strong>References</strong></p>
+<ul>
+<li>visualjquery.com - whole library referenced on a single page</li>
+<li>docs.jquery.com - official documentation</li>
+<li>Drupal 6 uses 1.2.6 - there was an API change, and Drupal doesn't break APIs between major versions</li>
+</ul>
+<p><strong>jGarland</strong></p>
+<ul>
+<li>Can create a base theme in your info file, uses the stuff from the base module when you haven't written something custom</li>
+<li>Adding a bunch of javascript (jquery.countdown.js, cufon-yui.js - the new, hot thing in the world of fonts)</li>
+<li><a href="http://cufon.shoqolate.com/generate/">Cufon</a> is awesome</li>
+<li>Behaviors works on AJAX requests as well as page load</li>
+</ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        <!---->
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="Tue Dec 08 2009 16:00:00 GMT-0800 (Pacific Standard Time)">December 9th 2009</time></p>
+
+      </footer>
+
+      
+
+      
+    </div>
+
+   
+  </article>
+
+  
+</div>
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Quinn Dombrowski. Powered by <a href="https://www.11ty.dev/" rel="nofollow">Eleventy</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a> (adapted as <a href="https://github.com/quinnanya/eleven-mistakes">Eleven Mistakes</a>).</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

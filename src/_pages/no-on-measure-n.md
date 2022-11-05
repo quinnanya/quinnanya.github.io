@@ -1,6 +1,6 @@
 ---
 title: "Vote No on Measure N"
-permalink: /no-on-n/
+permalink: /no-on-n
 date: 2014-10-29
 layout: single
 classes: wide

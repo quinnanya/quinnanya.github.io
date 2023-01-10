@@ -80,8 +80,8 @@ header:
 * ["A Conversation with the Organizers of Saving Ukrainian Cultural Heritage Online (SUCHO)"](https://iopn.library.illinois.edu/journals/jloe/article/view/969), with Zoe LeBlanc, Andrew Janco, Alex Wermer-Colan, Anna Kijas, Sebastian Majstorovic, Dena Strong & Erica Peaslee. *Journal of Library Outreach and Engagement*, vol. 2, no. 1.
 * "Stylometric investigations into translationese: The Baby-Sitters Club Across Languages", with Joanna Byszuk. In *16th International Conference on Statistical Analysis of Textual Data Proceedings.* [PDF, see p. 208](http://lexicometrica.univ-paris3.fr/jadt/JADT2022/VOL1.pdf)
 * "Personal Entanglements and Graceful Relationship Degradation in Collaborative Projects", with Erica Cavanaugh. Forthcoming in *Revealing Meaning: Feminist Methods in Digital Scholarship*. Ed. Heather Froehlich and Kim Martin.
-* "Multilingual Digital Humanities", with Pedro Nilsson-Fernàndez. Forthcoming in *Bloomsbury Handbook to DH*, ed. James O'Sullivan.
-* "Does Coding Matter?". Forthcoming in *Bloomsbury Handbook to DH*, ed. James O'Sullivan.
+* "Multilingual Digital Humanities", with Pedro Nilsson-Fernàndez. In *Bloomsbury Handbook to DH*, ed. James O'Sullivan.
+* "Does Coding Matter?". In *Bloomsbury Handbook to DH*, ed. James O'Sullivan.
 * "[Minimizing Computing Maximizes Labor](http://www.digitalhumanities.org/dhq/vol/16/2/000594/000594.html)". *Digital Humanities Quarterly* vol. 16, no. 2 (cluster on minimal computing).
 * "Voices from the Server Room: Humanists in HPC", with Tassie Gniady, David Kloster, Megan Meredith-Lobay, Jeffrey Tharsen, Lee Zickel. Forthcoming in *Debates in DH: Computational Humanities*. Univ. of Minnesota Press. Eds. Jessica Marie Johnson, David Mimno, and Lauren Tilton.
 * "Academia is a Dice Roll", with Agnieszka Backman, Sabrina Grimberg, and Melissa Hosek. Forthcoming in *Debates in DH: The Digital Futures of Graduate Study in the Humanities*. Univ. of Minnesota Press. Eds. Simon Appleford, Gabriel Hankins, and Anouk Lang.
@@ -113,6 +113,7 @@ header:
 
 ## Talks and Presentations
 
+* Coalition for Networked Information (CNI), "[Reactive and Proactive Archiving of Crisis](https://www.cni.org/topics/special-collections/reactive-and-proactive-archiving-of-crisis)". December 13, 2022.
 * Цифровая среда lecture series, DHRI @ Сибирский федеральный университет. &quot;[Directories as Utopian Infrastructure](https://dhri.timepad.ru/event/2224905/)&quot;. November 16, 2022.
 * Reframing Failure seminar, Digital Humanities Research Hub at the School of Advanced Study, University of London. Panelist for &quot;Setting the Failure Agenda&quot; with David De Roure and Jane Winters. November 15, 2022.
 * Building Digital Humanities, Western Sydney University speaker series. Panelist on &quot;Designing user-friendly Platforms and Toolkits for Digital Humanities&quot;, with Tim Sherratt, Ruth Mostern, Michael Haugh, Martin Schweinberger, and Ian Johnson. November 14, 2022.
@@ -218,7 +219,7 @@ header:
 * 2011 Chicago Colloquium on Digital Humanities and Computer Science: poster, "DHCommons and Bamboo DiRT: integrating digital humanities directories". With <a href="http://ryan.cordells.us/">Ryan Cordell</a>. [<a href="http://www.flickr.com/photos/quinnanya/6368652141/sizes/l">poster</a>]
 * University of Chicago Medical Education Day 2011: poster, "Integration of the "Virtual Human Embryo" into the First Year Anatomy Curriculum". With <a href="http://rosslab.uchicago.edu/">Callum F. Ross</a>, Jim C. O'Reilly, and Sam Quinan. [<a href="http://www.flickr.com/photos/quinnanya/6368645963/sizes/l">poster</a>]
 * 14th Annual Midwest Medieval Slavic Workshop: "From Theory to Practice: An Update on the Medieval Slavic Wiki". With Monica Vickers, The Ohio State University. [<a href="https://docs.google.com/present/view?id=ddd22j37_129cmv3d2f4">Slides</a>]
-* 2010 Chicago Colloquium on Digital Humanities and Computer Science: "A 'Wikipedia model' for modernizing scholarly reference" [<a href="/blog/2010/11/21/a-wikipedia-model-for-modernizing-scholarly-reference/">Slides</a>]
+* 2010 Chicago Colloquium on Digital Humanities and Computer Science: "A 'Wikipedia model' for modernizing scholarly reference" <a href="/blog/2010/11/21/a-wikipedia-model-for-modernizing-scholarly-reference/">Slides</a>
 * 2010 Chicago Colloquium on Digital Humanities and Computer Science: poster, "Crescat Graffiti, Vita Excolatur: an examination of university library graffiti"
 * 5th Annual Slavic Linguistic Society Conference, "Modernizing Research through Collaborative Reference Tools: The Medieval Slavic Linguistics Wiki". 2010.
 * International Symposium on XML for the Long Haul: Issues in the Long-term Preservation of XML (at Balisage 2010), "A formal approach to XML semantics: implications for archive standards".

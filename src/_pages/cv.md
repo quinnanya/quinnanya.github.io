@@ -113,6 +113,14 @@ header:
 
 ## Talks and Presentations
 
+* Цифровая среда lecture series, DHRI @ Сибирский федеральный университет. &quot;[Directories as Utopian Infrastructure](https://dhri.timepad.ru/event/2224905/)&quot;. November 16, 2022.
+* Reframing Failure seminar, Digital Humanities Research Hub at the School of Advanced Study, University of London. Panelist for &quot;Setting the Failure Agenda&quot; with David De Roure and Jane Winters. November 15, 2022.
+* Building Digital Humanities, Western Sydney University speaker series. Panelist on &quot;Designing user-friendly Platforms and Toolkits for Digital Humanities&quot;, with Tim Sherratt, Ruth Mostern, Michael Haugh, Martin Schweinberger, and Ian Johnson. November 14, 2022.
+* Animating Text, Newcastle University speaker series. &quot;Computational Analysis of Youth Fiction with the Young Readers Database of Literature&quot;, with Nichole Nomura. November 9, 2022.
+* Stanford Literary Lab. &quot;Star Wars Episode II: Attack of the Coreference&quot;, with Mark Algee-Hewitt, Nichole Nomura, and Matt Warner. October 31, 2022.
+* Austrian Center for Digital Humanities and Cultural Heritage. &quot;SUCHO: Protecting Digital Cultural Heritage in Times of Crisis&quot;, with Anna Kijas, Sebastian Majstorovic, Andreas Segerberg. October 18, 2022.
+* Austrian Center for Digital Humanities and Cultural Heritage. Presenter at <em>ACDH-CH Tool Gallery 8.2: Teaching Digital Humanities</em>. October 18, 2022.
+* University of Gothenburg, public lecture, &quot;Saving Ukrainian Cultural Heritage Online&quot;, with Anna Kijas, Sebastian Majstorovic, Andreas Segerberg. October 14, 2022.
 * European Summer University in Digital Humanities, public lecture, "Collaborative Volunteering in the Digital Humanities: Saving Ukrainian Cultural Heritage Online (SUCHO)", with Sebastian Majstorovic. August 8, 2022.
 * FCSI 2022 closing keynote, "Saving Ukrainian Cultural Heritage Online (SUCHO) and the Future of Archivable Scholarly Communication". July 29, 2022.
 * DH 2022 panel, "The (Im)Possibilities of Multilingual DH in Theory and Practice: Translation, Metadata, Pedagogy", with Cecily Raynor, Lidia Ponce de la Vega, Marie-France Guénette, Eric Kim, and Samya Brata Roy. July 27, 2022.

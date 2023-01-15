@@ -80,8 +80,8 @@ header:
 * ["A Conversation with the Organizers of Saving Ukrainian Cultural Heritage Online (SUCHO)"](https://iopn.library.illinois.edu/journals/jloe/article/view/969), with Zoe LeBlanc, Andrew Janco, Alex Wermer-Colan, Anna Kijas, Sebastian Majstorovic, Dena Strong & Erica Peaslee. *Journal of Library Outreach and Engagement*, vol. 2, no. 1.
 * "Stylometric investigations into translationese: The Baby-Sitters Club Across Languages", with Joanna Byszuk. In *16th International Conference on Statistical Analysis of Textual Data Proceedings.* [PDF, see p. 208](http://lexicometrica.univ-paris3.fr/jadt/JADT2022/VOL1.pdf)
 * "Personal Entanglements and Graceful Relationship Degradation in Collaborative Projects", with Erica Cavanaugh. Forthcoming in *Revealing Meaning: Feminist Methods in Digital Scholarship*. Ed. Heather Froehlich and Kim Martin.
-* "Multilingual Digital Humanities", with Pedro Nilsson-Fernàndez. In *Bloomsbury Handbook to DH*, ed. James O'Sullivan.
-* "Does Coding Matter?". In *Bloomsbury Handbook to DH*, ed. James O'Sullivan.
+* "Multilingual Digital Humanities", with Pedro Nilsson-Fernàndez. In *Bloomsbury Handbook to DH*, ed. James O'Sullivan. 2022.
+* "Does Coding Matter?". In *Bloomsbury Handbook to DH*, ed. James O'Sullivan. 2022.
 * "[Minimizing Computing Maximizes Labor](http://www.digitalhumanities.org/dhq/vol/16/2/000594/000594.html)". *Digital Humanities Quarterly* vol. 16, no. 2 (cluster on minimal computing).
 * "Voices from the Server Room: Humanists in HPC", with Tassie Gniady, David Kloster, Megan Meredith-Lobay, Jeffrey Tharsen, Lee Zickel. Forthcoming in *Debates in DH: Computational Humanities*. Univ. of Minnesota Press. Eds. Jessica Marie Johnson, David Mimno, and Lauren Tilton.
 * "Academia is a Dice Roll", with Agnieszka Backman, Sabrina Grimberg, and Melissa Hosek. Forthcoming in *Debates in DH: The Digital Futures of Graduate Study in the Humanities*. Univ. of Minnesota Press. Eds. Simon Appleford, Gabriel Hankins, and Anouk Lang.
@@ -113,6 +113,7 @@ header:
 
 ## Talks and Presentations
 
+* Jewish Historical Society of Michigan, "Warrior Librarians for Ukraine: Saving Jewish & Ukrainian Cultural Heritage", with Kiley Jolicoeur and Anna Kijas. January 12, 2023.
 * Coalition for Networked Information (CNI), "[Reactive and Proactive Archiving of Crisis](https://www.cni.org/topics/special-collections/reactive-and-proactive-archiving-of-crisis)". December 13, 2022.
 * Цифровая среда lecture series, DHRI @ Сибирский федеральный университет. &quot;[Directories as Utopian Infrastructure](https://dhri.timepad.ru/event/2224905/)&quot;. November 16, 2022.
 * Reframing Failure seminar, Digital Humanities Research Hub at the School of Advanced Study, University of London. Panelist for &quot;Setting the Failure Agenda&quot; with David De Roure and Jane Winters. November 15, 2022.

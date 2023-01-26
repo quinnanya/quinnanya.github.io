@@ -16,15 +16,36 @@ pagination:
 <p>{{ post.templateContent | description }} <a href="{{post.data.permalink}}"><em>read more</em></a></p>
 {%- endfor -%}
 
-
 <ul class="pagination">
-    <li><a href="{{ pagination.href.first }}" class="pagination">First</a></li>
-    <li>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}" class="pagination">Previous</a>{% else %}Previous{% endif %}</li>
+  <li>
+      {% if pagination.href.first and pagination.href.previous %}
+          <a href="{{ pagination.href.first }}" class="pagination">First</a>
+      {% else %}
+          <a href="#" class="pagination disabled">{{ "First" }}</a>
+      {% endif %}
+  <li>
+      {% if pagination.href.previous %}
+          <a href="{{ pagination.href.previous }}" class="pagination">Previous</a>
+      {% else %}
+          <a href="#" class="pagination disabled">{{ ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
+      {% endif %}
+  </li>
 
-    <li>
-    <a href="#" class="pagination current">Page {{ pagination.pageNumber | plus: 1 }}</a>
-    </li>
+  <li>
+  <a href="#" class="pagination current">Page {{ pagination.pageNumber | plus: 1 }}</a>
+  </li>
 
-    <li>{% if pagination.href.next %}<a href="{{ pagination.href.next }}" class="pagination">Next</a>{% else %}Next{% endif %}</li>
-    <li><a href="{{ pagination.href.last }}" class="pagination">Last</a></li>
+  <li>{% if pagination.href.next %}
+          <a href="{{ pagination.href.next }}" class="pagination">Next</a>
+      {% else %}
+          <a href="#" class="pagination disabled">{{ ui-text[site.locale].pagination_next | default: "Next" }}</a>
+      {% endif %}
+  </li>
+  <li>
+      {% if pagination.href.first and pagination.href.next %}
+          <a href="{{ pagination.href.last }}" class="pagination">Last</a>
+      {% else %}
+          <a href="#" class="pagination disabled">{{ "Last" }}</a>
+      {% endif %}
+  </li>
 </ul>

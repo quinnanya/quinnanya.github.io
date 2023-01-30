@@ -8,12 +8,20 @@ const pluginTOC = require('eleventy-plugin-toc');
 const moment = require("moment");
 const description = require('eleventy-plugin-description');
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const Eleventy = require("@11ty/eleventy");
+
 
 // Below for relativeUrl
 const path = require("path");
 const urlFilter = require("@11ty/eleventy/src/Filters/Url");
 
 module.exports = function (config) {
+
+
+config.addGlobalData("config", () => {
+  return { version: Eleventy.getVersion() };
+});
+
     config.addPlugin(pluginRss);
 
     config.setLiquidOptions({

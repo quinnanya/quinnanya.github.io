@@ -9,24 +9,26 @@ const moment = require("moment");
 const description = require('eleventy-plugin-description');
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 
-
-	
-
-
+// Below for relativeUrl
+const path = require("path");
+const urlFilter = require("@11ty/eleventy/src/Filters/Url");
 
 module.exports = function (config) {
-	
-	config.addPlugin(pluginRss);
-	
-	config.setLibrary(
-	    'md',
-	    markdownIt().use(markdownItAnchor)
-	  )
-//Copy CNAME
-config.addPassthroughCopy("src/CNAME");
+    config.addPlugin(pluginRss);
+
+    config.setLiquidOptions({
+        dynamicPartials: false,
+        strictVariables: false,
+        strictFilters: false,
+        jekyllInclude: true,
+    });
+
+    config.setLibrary("md", markdownIt().use(markdownItAnchor));
+    //Copy CNAME
+    config.addPassthroughCopy("src/CNAME");
 
     // don't use .gitignore (allows compiling sass to css into a monitored folder WITHOUT committing it to repo)
-    config.setUseGitIgnore(false)
+    config.setUseGitIgnore(false);
 
     // Processing configuration
     config.addPassthroughCopy('src/favicon.ico');
@@ -34,9 +36,9 @@ config.addPassthroughCopy("src/CNAME");
     config.addPassthroughCopy('src/assets');
 
 
-//Blog excerpts
-	config.addPlugin(description);
-	
+    //Blog excerpts
+    config.addPlugin(description);
+
 
     // Eleventy Navigation (https://www.11ty.dev/docs/plugins/navigation/)
     config.addPlugin(require('@11ty/eleventy-navigation'));
@@ -44,10 +46,10 @@ config.addPassthroughCopy("src/CNAME");
     // Eleventy RSS Feed (https://www.11ty.dev/docs/plugins/rss/)
     config.addPlugin(require('@11ty/eleventy-plugin-rss'));
 
-	config.addLiquidFilter("toUTCString", (date) => {
-	  const utc = date.toUTCString();
-	  return moment.utc(utc).format("MMMM Do YYYY");
-	})
+    config.addLiquidFilter("toUTCString", (date) => {
+        const utc = date.toUTCString();
+        return moment.utc(utc).format("MMMM Do YYYY");
+    });
 
     // Filter to generate a Table of Contents from page content
     config.addPlugin(pluginTOC, {
@@ -74,14 +76,14 @@ config.addPassthroughCopy("src/CNAME");
     config.addCollection('posts', collection => collection
         .getFilteredByGlob('./src/posts/**/*')
         .filter(item => item.data.draft !== true && item.date <= new Date())
-        .reverse()
-        .map((cur, i, all) => {
+            .reverse()
+            .map((cur, i, all) => {
             cur.data['siblings'] = {
                 'next': all[i - 1],
                 'prev': all[i + 1],
-            };
-            return cur;
-        })
+                };
+                return cur;
+            })
     );
 
     config.addCollection('projects', collection => collection
@@ -175,15 +177,14 @@ config.addPassthroughCopy("src/CNAME");
                     res.write(content_404);
                     res.end();
                 });
-            }
-        }
+            },
+        },
     });
 
-	config.setBrowserSyncConfig({
+    config.setBrowserSyncConfig({
 			files: './dist/assets/styles/**/*.css'
-		});
+    });
 
-    
     return {
         templateFormats: ['html', 'liquid', 'md', 'njk'],
 
@@ -199,3 +200,66 @@ config.addPassthroughCopy("src/CNAME");
         }
     };
 };
+
+// Below is from NPM plugin eleventy-filter-relative-url, however its
+// tied to v0.12, using it with eleventy 1.x or 2.x requires providing
+// --legacy-peer-deps any time you add a new package. Therefore I took
+// the code and inlined it. Although better would be an external file.
+
+/**
+ * Heuristic to detect if an URL needs an index file; either because it ends
+ * with a slash, or its last component has no dots in it.
+ *
+ * @param {string} url
+ * @returns trailing `/index.html` if url looks like a directory.
+ */
+const indexify = (url) => url.replace(/(\/[^.]*)$/, "$1index.html");
+
+/**
+ * Just `{{ '/something' | url }}` will return the relative path to
+ * `/something/index.html`.
+ *
+ * `{{ '/something.with.dots' | url }}` will return the relative path to
+ * `/something.with.dots`.
+ *
+ * @param {string} url the URL to transform
+ * @param {string} [pathPrefix] optional path prefix to force an absolute URL
+ * @returns {string} resulting URL
+ */
+function relativeUrl(url, pathPrefix = undefined) {
+    //      console.log(url);
+    //      console.log(pathPrefix);
+    //      console.log(this.page);
+    if (pathPrefix !== undefined) {
+        // Fall back on original url filter if pathPrefix is set.
+        return urlFilter(url, pathPrefix);
+    }
+
+    if (pathPrefix == undefined && this.page == undefined) {
+        //      added by RMCG
+        return urlFilter(url, "");
+    }
+
+    // Look up the url of the current rendering page, which is accessible via
+    // `this`.
+    console.log(this);
+    const currentDir = this.page.url;
+    const filteredUrl = urlFilter(url, "/");
+
+    // Make sure the index.html is expressed.
+    const indexUrl = indexify(filteredUrl);
+
+    // Check that the url doesn't specify a protocol.
+    const u = new URL(indexUrl, "make-relative://");
+    if (u.protocol !== "make-relative:") {
+        // It has a protocol, so just return the filtered URL output.
+        return filteredUrl;
+    }
+
+    // Return the relative path, or `index.html` if it's the same as the current
+    // page's directory.
+    const relativePath = `${
+        path.relative(currentDir, u.pathname) || "index.html"
+    }`;
+    return relativePath;
+}

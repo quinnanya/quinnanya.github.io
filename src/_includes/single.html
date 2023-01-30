@@ -54,9 +54,11 @@ layout: default
         {% include components/page__date.html %}
       </footer>
 
-      {% if page.share %}{% include components/social-share.html %}{% endif %}
+      {% if share %}{% include components/social-share.html %}{% endif %}
 
+      {% comment %}
       {% include components/post_pagination.njk %}
+      {% endcomment %}
     </div>
 
    

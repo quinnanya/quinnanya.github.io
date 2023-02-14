@@ -1,4 +1,4 @@
-const siteURL = "https://tarasis.net";
+const siteURL = "https://www.quinndombrowski.com/";
 
 const fs = require("fs-extra");
 const sass = require("sass");
@@ -52,7 +52,7 @@ module.exports = function (eleventyConfig) {
 
         alwaysWrapLineHighlights: true,
                 // Change which Eleventy template formats use syntax highlighters
-        // templateFormats: ["*"], // default
+        templateFormats: ["liquid", "njk", "md"]}); // default
 
         // Use only a subset of template types (11ty.js added in v4.0.0)
         // templateFormats: ["liquid", "njk", "md", "11ty.js"],
@@ -60,30 +60,33 @@ module.exports = function (eleventyConfig) {
         // init callback lets you customize Prism
         // init: function({ Prism }) {
         //   Prism.languages.myCustomLanguage = /* */;
-        // },
 
+
+
+//QAD
         // Added in 3.1.1, add HTML attributes to the <pre> or <code> tags
-        preAttributes: {
-          tabindex: 0,
+       // preAttributes: {
+         // tabindex: 0,
 
+//QAD: Trying to fix this
           // Added in 4.1.0 you can use callback functions too
-          "data-language": function({ language, content, options }) {
-            return language;
-          }
-        },
-        codeAttributes: {},
-      });
+          //"data-language": function({ language, content, options }) {
+          //  return language;
+         // }
+        //},
+        //codeAttributes: {},
+      //});
 
     eleventyConfig.addPlugin(xmlFiltersPlugin);
 
     // Custom Collections
     eleventyConfig.addCollection("pages", (collection) =>
-        collection.getFilteredByGlob("./src/_pages/**/*")
+        collection.getFilteredByGlob("./src/pages/**/*")
     );
 
     eleventyConfig.addCollection("posts", (collection) =>
         collection
-            .getFilteredByGlob("./src/_posts/**/*")
+            .getFilteredByGlob("./src/posts/**/*")
             .filter(
                 (item) => item.data.draft !== true && item.date <= new Date()
             )
@@ -370,13 +373,14 @@ module.exports = function (eleventyConfig) {
 
         environment: "production",
 
-        // absolute_url: "https://tarasis.net/",
+        // absolute_url: "https://www.quinndombrowski.com//",
         passthroughFileCopy: true,
 
         dir: {
             input: "src",
-            includes: "_includes",
-            data: "_data",
+			layouts: "layouts",
+            includes: "includes",
+            data: "data",
             output: "dist",
             // input: "./", // Equivalent to Jekyll's source property
             // output: "./_site", // Equivalent to Jekyll's destination property

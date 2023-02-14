@@ -1,0 +1,20 @@
+---
+layout: default.html
+---
+
+{% if header.overlay_color or header.overlay_image or header.image %}
+  {% include components/page__hero.html %}
+{% elsif header.video.id and header.video.provider %}
+  {% include components/page__hero_video.html %}
+{% endif %}
+
+<div id="main" role="main">
+  <!--{% include components/sidebar.html %}-->
+
+  <div class="archive">
+    {% unless header.overlay_color or header.overlay_image %}
+      <h1 id="page-title" class="page__title">{{ title }}</h1>
+    {% endunless %}
+    {{ content }}
+  </div>
+</div>

@@ -1,0 +1,11 @@
+---
+layout: single.html
+---
+
+{{ content }}
+
+<ul>
+{%- for post in collections.post -%}
+  <li>{{ post.data.title }}</li>
+{%- endfor -%}
+</ul>

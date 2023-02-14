@@ -1,0 +1,22 @@
+---
+layout: default.html
+---
+
+{% if header.overlay_color or header.overlay_image or header.image %}
+  {% include components/page__hero.html %}
+{% elsif header.video.id and header.video.provider %}
+  {% include components/page__hero_video.html %}
+{% endif %}
+
+<div id="main" role="main">
+  <article class="splash" itemscope itemtype="https://schema.org/CreativeWork">
+    {% if title %}<meta itemprop="headline" content="{{ title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if excerpt %}<meta itemprop="description" content="{{ excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if date %}<meta itemprop="datePublished" content="{{ date | date_to_xmlschema }}">{% endif %}
+    {% if last_modified_at %}<meta itemprop="dateModified" content="{{ last_modified_at | date_to_xmlschema }}">{% endif %}
+
+    <section class="page__content" itemprop="text">
+      {{ content }}
+    </section>
+  </article>
+</div>

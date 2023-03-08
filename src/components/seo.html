@@ -17,10 +17,11 @@
 {% if canonical_url %}
   {%- assign canonical_url = canonical_url %}
 {% else %}
-  {%- assign canonical_url = url | replace: "index.html", "" | absolute_url %}
+  {%- assign canonical_url = page.url | replace: "index.html", "" | absolute_url %}
 {% endif %}
 
-{%- assign seo_description = description | default: excerpt | default: site.description -%}
+{%- assign auto_description = content | description | default: site.description -%}
+{%- assign seo_description = excerpt | default: auto_description -%}
 {%- if seo_description -%}
   {%- assign seo_description = seo_description | markdownify | strip_html | newline_to_br | strip_newlines | replace: '<br />', ' ' | escape_once | strip -%}
 {%- endif -%}

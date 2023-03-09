@@ -20,7 +20,7 @@
   {%- assign canonical_url = page.url | replace: "index.html", "" | absolute_url %}
 {% endif %}
 
-{%- assign auto_description = content | description | default: site.description -%}
+{%- assign auto_description = content | replace: title, '' | description | default: site.description -%}
 {%- assign seo_description = excerpt | default: auto_description -%}
 {%- if seo_description -%}
   {%- assign seo_description = seo_description | markdownify | strip_html | newline_to_br | strip_newlines | replace: '<br />', ' ' | escape_once | strip -%}

@@ -1,4 +1,4 @@
-const siteURL = "https://www.quinndombrowski.com/";
+const siteURL = "https://www.quinndombrowski.com"; // don't include trailing slash as the arguments passed to absoluteUrl function start with a slash
 
 const fs = require("fs-extra");
 const sass = require("sass");
@@ -205,26 +205,6 @@ module.exports = function (eleventyConfig) {
       });
 
     eleventyConfig.addFilter('group_by', groupBy)
-
-    eleventyConfig.addLayoutAlias(
-        "archive-taxonomy",
-        "layouts/archive-taxonomy.html"
-    );
-    eleventyConfig.addLayoutAlias("archive", "layouts/archive.html");
-    eleventyConfig.addLayoutAlias("categories", "layouts/categories.html");
-    eleventyConfig.addLayoutAlias("category", "layouts/category.html");
-    eleventyConfig.addLayoutAlias("collection", "layouts/collection.html");
-    eleventyConfig.addLayoutAlias("compress", "layouts/compress.html");
-    eleventyConfig.addLayoutAlias("default", "layouts/default.html");
-    eleventyConfig.addLayoutAlias("home", "layouts/home.html");
-    eleventyConfig.addLayoutAlias("posts", "layouts/posts.html");
-    eleventyConfig.addLayoutAlias("search", "layouts/search.html");
-    eleventyConfig.addLayoutAlias("single", "layouts/single.html");
-    eleventyConfig.addLayoutAlias("splash", "layouts/splash.html");
-    eleventyConfig.addLayoutAlias("tag", "layouts/tag.html");
-    eleventyConfig.addLayoutAlias("tags", "layouts/tags.html");
-    eleventyConfig.addLayoutAlias("gallery", "layouts/gallery");
-    eleventyConfig.addLayoutAlias("drafts", "layouts/drafts");
 
     // Passthrough copy
     // don't use .gitignore (allows compiling sass to css into a monitored folder WITHOUT committing it to repo)
@@ -505,4 +485,3 @@ function groupBy(array, key) {
       []
     )
   }
-

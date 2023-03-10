@@ -4,7 +4,7 @@ title: "Curriculum Vitae"
 date: 2022-08-31
 toc: false
 toc_label: Contents
-layout: archive.html
+layout: single.html
 header:
   overlay_image: /assets/images/header_dsc.jpg
   overlay_filter: 0.5
@@ -113,6 +113,11 @@ header:
 
 ## Talks and Presentations
 
+* DHNB 2023. "Våran klubb, Barnvaktsklubben or The Baby-Sitters Club: The Data-Sitters Club as an International Community", with Agnieszka Backman. March 10, 2023.
+* DHNB 2023 workshop *Challenges of long-term sustainability of DH projects: the LAM (Libraries, Archives and Museums) perspective*. "(Re)Considering Digital Preservation 10 Years after Bamboo". March 7, 2023.
+* University of Tennessee, Ready for the World Series Program: Ukraine. "Saving Ukrainian Cultural Heritage Online (SUCHO)". February 24, 2023.
+* University of Buffalo, Digital Scholarship Studio & Network (DSSN): *“We've been here all along.”: DH and invisible labor*. "The Currency of DH". February 16, 2023.
+* *Comics: More Than Words* DLCL working group. "Saving Ukrainian Cultural Heritage Online and SUCHO Memes". February 14, 2023.
 * Panelist, "Digital Archives", with Anna Kijas, Andreas Segerberg, Naya Sucha-xaya, and K.J. Rawson. Association of Canadian Archivists Student Chapter at the University of British Columbia, 14th Annual International Seminar. February 10, 2023.
 * Jewish Historical Society of Michigan, "Warrior Librarians for Ukraine: Saving Jewish & Ukrainian Cultural Heritage", with Kiley Jolicoeur and Anna Kijas. January 12, 2023.
 * Coalition for Networked Information (CNI), "[Reactive and Proactive Archiving of Crisis](https://www.cni.org/topics/special-collections/reactive-and-proactive-archiving-of-crisis)". December 13, 2022.

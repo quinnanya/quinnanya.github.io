@@ -166,103 +166,103 @@
 
       <section class="page__content e-content" itemprop="text">
         
-        <p>To enable a more interesting proof-of-concept for the birchbark letter XML project, I've spent the last week making a new, limited data set (all documents from 1100-1120, plus some documents with the same names from the 12th century, and all the documents that include the name Boris) that lists all the names that occur in a given document and characterizes their role in the document. For the time being, I'm calling it "names in context" (NIC).</p>
-<p>I've been adapting the schema every time I come across some new aspect that seems significant. Each document contains one or more</p>
-<person> elements, which include:</person>
-<ul>
-<li>A name</li>
-<li>Optionally, a "second name"-- sometimes a patronymic or city of residence used to specify <em>which</em> Ivan is being referred to</li>
-<li>A role ("to", "from", or "3p" for 3rd party), and more optional details:
-<ul>
-<li><em>financial</em>
-<ul>
-<li>gen - general, mostly for lists of names and amounts without any context</li>
-<li>owes</li>
-<li>owed</li>
-</ul>
-</li>
-<li><em>orders</em>
-<ul>
-<li>giving</li>
-<li>receiving</li>
-<li>report</li>
-<li>an optional "polite" attribute to indicate particularly deferential language</li>
-</ul>
-</li>
-<li><em>personal</em> -- might get renamed to <em>other</em> if the "scope creep" continues like this
-<ul>
-<li>advice</li>
-<li>complaint</li>
-<li>news</li>
-<li>death</li>
-<li>religious-- for when the names refer to saints</li>
-<li>gen</li>
-<li>optional "polite" attribute here, too</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>A section for relatives of the person:
-<ul>
-<li>Their relation (mother, father, brother, etc.)</li>
-<li>All options for the relative's role, as listed above</li>
-</ul>
-</li>
-</ul>
-<p>To illustrate, here's a few sample entries:</p>
-<h5><a href="http://gramoty.ru/index.php?no=49&act=full&key=bb">BBL 49</a>: from Nast'ja to her brother</h5>
-<p>Conveying the news of her husband's death</p>
-<p><code>    <bbl_names><br />
-        <id>49</id></bbl_names></code></p>
-<person>
-            <name>Настасья</name><br />
-            <role pos="to">
-<personal>news</personal>
-            </role><br />
-            <fam><br />
-                <relative><br />
-                    <relationship>brother</relationship><br />
-                    <role pos="to">
-<personal tone="polite">news</personal>
-                    </role><br />
-                </relative><br />
-            </fam><br />
-        </person>
-<person>
-            <name>Борисъ</name><br />
-            <role pos="3p">
-<personal>death</personal>
-            </role><br />
-        </person>
-<h5>BBL 736а: Ivan and Dristliv</h5>
-<p>Ivan tells Dristliv to collect money from Pavel and Prokopii.</p>
-<p><code>    <bbl_names><br />
-        <id>736а</id></bbl_names></code></p>
-<person>
-            <name>Иванъ</name><br />
-            <role pos="from"><br />
-                <orders>giving</orders><br />
-            </role><br />
-        </person>
-<person>
-            <name>Дристливъ</name><br />
-            <role pos="to"><br />
-                <orders>receiving</orders><br />
-                <financial>owed</financial><br />
-            </role><br />
-        </person>
-<person>
-            <name type="adj">Павелъ</name><br />
-            <role pos="3p"><br />
-                <financial>owes</financial><br />
-            </role><br />
-        </person>
-<person>
-            <name>Прокопии</name><br />
-            <role pos="3p"><br />
-                <financial>owes</financial><br />
-            </role><br />
-        </person>
+        <p>&lt;p&gt;To enable a more interesting proof-of-concept for the birchbark letter XML project, I've spent the last week making a new, limited data set (all documents from 1100-1120, plus some documents with the same names from the 12th century, and all the documents that include the name Boris) that lists all the names that occur in a given document and characterizes their role in the document. For the time being, I'm calling it &quot;names in context&quot; (NIC).&lt;/p&gt;
+&lt;p&gt;I've been adapting the schema every time I come across some new aspect that seems significant. Each document contains one or more&lt;/p&gt;
+&lt;person&gt; elements, which include:&lt;/person&gt;
+&lt;ul&gt;
+&lt;li&gt;A name&lt;/li&gt;
+&lt;li&gt;Optionally, a &quot;second name&quot;-- sometimes a patronymic or city of residence used to specify &lt;em&gt;which&lt;/em&gt; Ivan is being referred to&lt;/li&gt;
+&lt;li&gt;A role (&quot;to&quot;, &quot;from&quot;, or &quot;3p&quot; for 3rd party), and more optional details:
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;financial&lt;/em&gt;
+&lt;ul&gt;
+&lt;li&gt;gen - general, mostly for lists of names and amounts without any context&lt;/li&gt;
+&lt;li&gt;owes&lt;/li&gt;
+&lt;li&gt;owed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;orders&lt;/em&gt;
+&lt;ul&gt;
+&lt;li&gt;giving&lt;/li&gt;
+&lt;li&gt;receiving&lt;/li&gt;
+&lt;li&gt;report&lt;/li&gt;
+&lt;li&gt;an optional &quot;polite&quot; attribute to indicate particularly deferential language&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;personal&lt;/em&gt; -- might get renamed to &lt;em&gt;other&lt;/em&gt; if the &quot;scope creep&quot; continues like this
+&lt;ul&gt;
+&lt;li&gt;advice&lt;/li&gt;
+&lt;li&gt;complaint&lt;/li&gt;
+&lt;li&gt;news&lt;/li&gt;
+&lt;li&gt;death&lt;/li&gt;
+&lt;li&gt;religious-- for when the names refer to saints&lt;/li&gt;
+&lt;li&gt;gen&lt;/li&gt;
+&lt;li&gt;optional &quot;polite&quot; attribute here, too&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;A section for relatives of the person:
+&lt;ul&gt;
+&lt;li&gt;Their relation (mother, father, brother, etc.)&lt;/li&gt;
+&lt;li&gt;All options for the relative's role, as listed above&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To illustrate, here's a few sample entries:&lt;/p&gt;
+&lt;h5&gt;&lt;a href=&quot;http://gramoty.ru/index.php?no=49&amp;act=full&amp;key=bb&quot;&gt;BBL 49&lt;/a&gt;: from Nast'ja to her brother&lt;/h5&gt;
+&lt;p&gt;Conveying the news of her husband's death&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;    &lt;bbl_names&gt;&lt;br /&gt;
+&lt;id&gt;49&lt;/id&gt;&lt;/bbl_names&gt;&lt;/code&gt;&lt;/p&gt;
+&lt;person&gt;
+&lt;name&gt;Настасья&lt;/name&gt;&lt;br /&gt;
+&lt;role pos=&quot;to&quot;&gt;
+&lt;personal&gt;news&lt;/personal&gt;
+&lt;/role&gt;&lt;br /&gt;
+&lt;fam&gt;&lt;br /&gt;
+&lt;relative&gt;&lt;br /&gt;
+&lt;relationship&gt;brother&lt;/relationship&gt;&lt;br /&gt;
+&lt;role pos=&quot;to&quot;&gt;
+&lt;personal tone=&quot;polite&quot;&gt;news&lt;/personal&gt;
+&lt;/role&gt;&lt;br /&gt;
+&lt;/relative&gt;&lt;br /&gt;
+&lt;/fam&gt;&lt;br /&gt;
+&lt;/person&gt;
+&lt;person&gt;
+&lt;name&gt;Борисъ&lt;/name&gt;&lt;br /&gt;
+&lt;role pos=&quot;3p&quot;&gt;
+&lt;personal&gt;death&lt;/personal&gt;
+&lt;/role&gt;&lt;br /&gt;
+&lt;/person&gt;</p>
+<p>&lt;h5&gt;BBL 736а: Ivan and Dristliv&lt;/h5&gt;
+&lt;p&gt;Ivan tells Dristliv to collect money from Pavel and Prokopii.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;    &lt;bbl_names&gt;&lt;br /&gt;
+&lt;id&gt;736а&lt;/id&gt;&lt;/bbl_names&gt;&lt;/code&gt;&lt;/p&gt;
+&lt;person&gt;
+&lt;name&gt;Иванъ&lt;/name&gt;&lt;br /&gt;
+&lt;role pos=&quot;from&quot;&gt;&lt;br /&gt;
+&lt;orders&gt;giving&lt;/orders&gt;&lt;br /&gt;
+&lt;/role&gt;&lt;br /&gt;
+&lt;/person&gt;
+&lt;person&gt;
+&lt;name&gt;Дристливъ&lt;/name&gt;&lt;br /&gt;
+&lt;role pos=&quot;to&quot;&gt;&lt;br /&gt;
+&lt;orders&gt;receiving&lt;/orders&gt;&lt;br /&gt;
+&lt;financial&gt;owed&lt;/financial&gt;&lt;br /&gt;
+&lt;/role&gt;&lt;br /&gt;
+&lt;/person&gt;
+&lt;person&gt;
+&lt;name type=&quot;adj&quot;&gt;Павелъ&lt;/name&gt;&lt;br /&gt;
+&lt;role pos=&quot;3p&quot;&gt;&lt;br /&gt;
+&lt;financial&gt;owes&lt;/financial&gt;&lt;br /&gt;
+&lt;/role&gt;&lt;br /&gt;
+&lt;/person&gt;
+&lt;person&gt;
+&lt;name&gt;Прокопии&lt;/name&gt;&lt;br /&gt;
+&lt;role pos=&quot;3p&quot;&gt;&lt;br /&gt;
+&lt;financial&gt;owes&lt;/financial&gt;&lt;br /&gt;
+&lt;/role&gt;&lt;br /&gt;
+&lt;/person&gt;</p>
 
         
       </section>

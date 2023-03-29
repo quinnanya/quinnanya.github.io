@@ -41,10 +41,8 @@ module.exports = function (eleventyConfig) {
     // Eleventy RSS Feed (https://www.11ty.dev/docs/plugins/rss/)
     eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-rss"));
     // Filter to generate a Table of Contents from page content
-    eleventyConfig.addPlugin(pluginTOC, {
-        tags: ["h2", "h3"],
-        wrapper: "div",
-    });
+    //NB parameters don't seem to work here, see single.html
+    eleventyConfig.addPlugin(pluginTOC);
     // TODO https://www.npmjs.com/package/eleventy-plugin-meta-generator
     // Eleventy Syntax Highlighting (https://www.11ty.dev/docs/plugins/syntaxhighlight/)
     // eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-syntaxhighlight"));
@@ -273,8 +271,6 @@ module.exports = function (eleventyConfig) {
         excerpt: true,
     });
 
-    eleventyConfig.setLibrary("md", markdownIt().use(markdownItAnchor));
-
     eleventyConfig.setLiquidOptions({
         // dynamicPartials: false,
         // strictVariables: false,
@@ -289,9 +285,15 @@ module.exports = function (eleventyConfig) {
         linkify: true,
     });
 
+    const mdAnchorOpts = {
+      permalink: false,
+      level: [1, 2, 3, 4]
+    }
+
     eleventyConfig.setLibrary(
         "md",
-        md
+        markdownIt()
+
             .use(require("markdown-it-attrs"))
             .use(require("markdown-it-container"), "", {
                 validate: () => true,
@@ -306,6 +308,8 @@ module.exports = function (eleventyConfig) {
             })
             .use(require("markdown-it-fontawesome"))
             .use(require("markdown-it-footnote"))
+
+            .use(markdownItAnchor, mdAnchorOpts)
     );
 
     // override markdown-it-footnote anchor template to use a different unicode character

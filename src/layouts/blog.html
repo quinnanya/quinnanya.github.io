@@ -2,7 +2,7 @@
 layout: single.html
 ---
 
-{{ content }}
+{{ content | safe }}
 
 <ul>
 {%- for post in collections.post -%}

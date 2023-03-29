@@ -4,7 +4,7 @@ title: "Sorry for all the Drupal: Reflections on the 3rd anniversary of 'Drupal 
 date: 2019-11-08
 classes: wide
 show_date: true
-html: true
+templateFormats: html
 ---
 When I finished writing Drupal for Humanists on July 15, 2015, my Magic-the-Gathering-playing, arithmetic-doing kindergartener was a barely-verbal toddler. The night I finished the manuscript was memorable in more ways than one: I was four months pregnant with my second kid, and it was the first time I felt him kick. When I sent in that manuscript, Donald Trump had announced his presidential campaign just a month earlier, but I paid it no mind as anything but a sideshow, because we all knew there was no way he’d win.
 

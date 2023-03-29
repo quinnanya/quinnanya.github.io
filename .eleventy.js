@@ -50,7 +50,7 @@ module.exports = function (eleventyConfig) {
 
         alwaysWrapLineHighlights: true,
                 // Change which Eleventy template formats use syntax highlighters
-        templateFormats: ["liquid", "njk", "md"]}); // default
+        templateFormats: ["liquid", "njk", "md", "html"]}); // default
 
         // Use only a subset of template types (11ty.js added in v4.0.0)
         // templateFormats: ["liquid", "njk", "md", "11ty.js"],

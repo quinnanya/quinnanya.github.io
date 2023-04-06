@@ -113,6 +113,7 @@ header:
 
 ## Talks and Presentations
 
+* San Jose State University, *Ukrainian libraries during the wartime: A year in review* event. "Preserving Digital Cultural Heritage: Lessons and Perspectives from SUCHO", with Anna Kijas and Sebastian Majstorovic. April 5, 2023.
 * DHNB 2023. "Våran klubb, Barnvaktsklubben or The Baby-Sitters Club: The Data-Sitters Club as an International Community", with Agnieszka Backman. March 10, 2023.
 * DHNB 2023 workshop *Challenges of long-term sustainability of DH projects: the LAM (Libraries, Archives and Museums) perspective*. "(Re)Considering Digital Preservation 10 Years after Bamboo". March 7, 2023.
 * University of Tennessee, Ready for the World Series Program: Ukraine. "Saving Ukrainian Cultural Heritage Online (SUCHO)". February 24, 2023.

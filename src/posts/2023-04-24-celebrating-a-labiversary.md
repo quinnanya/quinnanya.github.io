@@ -6,7 +6,7 @@ classes: wide
 show_date: true
 header:
   overlay_image: /assets/images/header_bread.jpg
-  overlay_filter: 0.3
+  overlay_filter: 0.2
 ---
 
 I woke up this morning to the news that it's Amanda Visconti and Brandon Walsh's 6-year anniversary at the [Scholars' Lab](https://scholarslab.lib.virginia.edu/). Were I closer to UVA, I'd have spent lunchtime hunting down whatever local variety of celebratory snack is the custom, and bringing it by for some impromptu celebrating. Being in California, however, the best I can do is spend lunchtime in my writing hammock, typing out a little blog post.

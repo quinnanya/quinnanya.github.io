@@ -12,7 +12,7 @@
 
 <!-- begin _includes/seo.html -->
 <title>Do It With Drupal: jQuery - Quinn Dombrowski</title>
-<meta name="description" content="Example description">
+<meta name="description" content="See slides here.  What&#39;s jQuery: javascript library, circumvents browser incompatibility Known for things like opacity...">
 
 
 
@@ -20,14 +20,14 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Quinn Dombrowski">
 <meta property="og:title" content="Do It With Drupal: jQuery">
-<meta property="og:url" content="https://www.quinndombrowski.com/">
+<meta property="og:url" content="https://www.quinndombrowski.com/blog/2009/12/10/do-it-drupal-jquery/">
 
 
-  <meta property="og:description" content="Example description">
+  <meta property="og:description" content="See slides here.  What&#39;s jQuery: javascript library, circumvents browser incompatibility Known for things like opacity...">
 
 
 
-  <meta property="og:image" content="https://www.quinndombrowski.com/">
+  <meta property="og:image" content="https://www.quinndombrowski.com">
 
 
 
@@ -40,7 +40,7 @@
 
 
 
-<link rel="canonical" href="https://www.quinndombrowski.com/">
+<link rel="canonical" href="https://www.quinndombrowski.com/blog/2009/12/10/do-it-drupal-jquery/">
 
 
 
@@ -51,7 +51,7 @@
     
       "@type": "Person",
       "name": "Quinn Dombrowski",
-      "url": "https://www.quinndombrowski.com//"
+      "url": "https://www.quinndombrowski.com/"
     
   }
 </script>
@@ -116,16 +116,6 @@
           
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
-              <a href="/docs/quick-start-guide/">Quick-Start Guide</a>
-            </li><li class="masthead__menu-item">
-              <a href="/about/">About</a>
-            </li><li class="masthead__menu-item">
-              <a href="/year-archive/">Sample Posts</a>
-            </li><li class="masthead__menu-item">
-              <a href="/collection-archive/">Sample Collections</a>
-            </li><li class="masthead__menu-item">
-              <a href="/terms/">Terms &amp; Privacy Policy</a>
-            </li><li class="masthead__menu-item">
               <a href="/about/">About</a>
             </li><li class="masthead__menu-item">
               <a href="/cv/">CV</a>
@@ -166,7 +156,7 @@
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="https://www.quinndombrowski.com//blog/2009/12/10/do-it-drupal-jquery/" class="u-url" itemprop="url">Do It With Drupal: jQuery</a>
+            <a href="https://www.quinndombrowski.com/blog/2009/12/10/do-it-drupal-jquery/" class="u-url" itemprop="url">Do It With Drupal: jQuery</a>
           </h1>
           
 
@@ -176,74 +166,74 @@
 
       <section class="page__content e-content" itemprop="text">
         
-        <p>See slides <a href="http://www.doitwithdrupal.com/2009/sessions/jquery-drupal">here</a>.</p>
-<ul>
-<li>What's jQuery: javascript library, circumvents browser incompatibility</li>
-<li>Known for things like opacity, AJAX requests that work across all browsers</li>
-<li>Visual effects and "wow factor"</li>
-<li>Reducing javascript code: getting elements by class name - 15 lines of javascript, 1-line snippet of jQuery $(".classname");</li>
-</ul>
-<p><strong>Selectors</strong></p>
-<li>jQuery selectors: CSS selectors by class (.), by ID (#), child elements/multiple elements ($('.sidebar a, .content a');), CSS3 select by attribute: $('input[type=text]'); also regular expressions on properties - see docs.jquery.com/Selectors</li>
-<p><strong>Effects</strong></p>
-<ul>
-<li>$('h1').hide(); - hides all h1's</li>
-<li>can also do .hide('slow'); or .hide(3000) - milliseconds</li>
-<li>.fadeOut('slow'), .slideUp('slow') - more at docs.jquery.com/Effects</li>
-</ul>
-<p><strong>Events</strong></p>
-<ul>
-<li>Trigger an action in response to user (click, change, toggle, hover)</li>
-<li>Toggle: two function names, the first time you click it does A, and the second time you click it does B</li>
-<li>You can do it inline (not suggested)</li>
-<li><em>return false</em> is useful if you want the hand icon to show up to click, but not take the person anywhere (ie AJAX toggle; degrades gracefully if javascript is turned off)</li>
-<li>Declared: gives a name to the function</li>
-<li>Take all your PHP knowledge, apply it to Javascript really easily - but there's lots of things that Javascript can do that PHP can't</li>
-</ul>
-<p><strong>Libraries and modules</strong></p>
-<ul>
-<li>Lots and lots of "wrapper" modules - so many nice jQuery plugins (equivalent of Drupal modules); make a module for every jQuery plugin (jCarousel, Lightbox, jqModal, Juitter, hoverIntent etc.) - there's a whole module for just one function</li>
-<li>People want to have dependencies - jCarouselViews module relies on jCarousel, even though there's only one function there</li>
-<li>You can end up with multiple copies of jQuery plugins all over the place</li>
-<li>"We need an API to handle all these javascript libraries!" - so now we have wrapper-wrapper modules! (Plugins, JQP, jQ, jQuery UI the module)</li>
-<li>Competing ways of adding multiple javascript libraries - different modules require different things</li>
-<li>jQuery UI isn't as bad as the other ones - so many modules need it</li>
-<li>In short, some modules have great implementation (jCarouselViews); a lot more modules do things in a totally unnecessary way - not worth having a module if it only does one thing and you only need it in one place</li>
-</ul>
-<p><strong>Adding JS in a theme</strong></p>
-<ul>
-<li>"It's not hacking, it's theming!"</li>
-<li>Open up info file, add some scripts (scripts[] = utilities.js)</li>
-<li>Name is always relative to the root of your theme</li>
-<li>After you do that, clear Drupal caches</li>
-</ul>
-<p><strong>drupal_add_js()</strong></p>
-<ul>
-<li>What if you only need it in certain places?</li>
-<li>Put this function in template.php; same thing that the .info file is doing for you</li>
-<li>Don't just put it in page.tpl.php</li>
-<li>Can aggregate and compress your CSS files - a lot less work for the web server</li>
-<li>Javascript can be all aggregated together</li>
-<li>Hosting your javascript elsewhere - well, it's only 15k, it'll slow down performance, it'll update to the latest version (but this might break your site</li>
-<li>If you add any javascript using drupal_add_js(), it'll add jquery and drupal.js - provides some extra functionality, utility functions, global variables</li>
-<li>drupal_add_js($data, $type); - $data is path to js, $type = 'module' (default) or 'theme'; theme stuff always goes last because it's assumed to be more important</li>
-<li>Pass PHP variables to JavaScript: drupal_add_js($data, 'setting'), where $data is an array of strings</li>
-<li>$(document).ready() - execute js when the page has finished loading</li>
-<li>Prevents content hang-ups, degrade gracefully; replaces body(onload)</li>
-</ul>
-<p><strong>References</strong></p>
-<ul>
-<li>visualjquery.com - whole library referenced on a single page</li>
-<li>docs.jquery.com - official documentation</li>
-<li>Drupal 6 uses 1.2.6 - there was an API change, and Drupal doesn't break APIs between major versions</li>
-</ul>
-<p><strong>jGarland</strong></p>
-<ul>
-<li>Can create a base theme in your info file, uses the stuff from the base module when you haven't written something custom</li>
-<li>Adding a bunch of javascript (jquery.countdown.js, cufon-yui.js - the new, hot thing in the world of fonts)</li>
-<li><a href="http://cufon.shoqolate.com/generate/">Cufon</a> is awesome</li>
-<li>Behaviors works on AJAX requests as well as page load</li>
-</ul>
+        <p>&lt;p&gt;See slides &lt;a href=&quot;http://www.doitwithdrupal.com/2009/sessions/jquery-drupal&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What's jQuery: javascript library, circumvents browser incompatibility&lt;/li&gt;
+&lt;li&gt;Known for things like opacity, AJAX requests that work across all browsers&lt;/li&gt;
+&lt;li&gt;Visual effects and &quot;wow factor&quot;&lt;/li&gt;
+&lt;li&gt;Reducing javascript code: getting elements by class name - 15 lines of javascript, 1-line snippet of jQuery $(&quot;.classname&quot;);&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Selectors&lt;/strong&gt;&lt;/p&gt;
+&lt;li&gt;jQuery selectors: CSS selectors by class (.), by ID (#), child elements/multiple elements ($('.sidebar a, .content a');), CSS3 select by attribute: $('input[type=text]'); also regular expressions on properties - see docs.jquery.com/Selectors&lt;/li&gt;
+&lt;p&gt;&lt;strong&gt;Effects&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$('h1').hide(); - hides all h1's&lt;/li&gt;
+&lt;li&gt;can also do .hide('slow'); or .hide(3000) - milliseconds&lt;/li&gt;
+&lt;li&gt;.fadeOut('slow'), .slideUp('slow') - more at docs.jquery.com/Effects&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Events&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Trigger an action in response to user (click, change, toggle, hover)&lt;/li&gt;
+&lt;li&gt;Toggle: two function names, the first time you click it does A, and the second time you click it does B&lt;/li&gt;
+&lt;li&gt;You can do it inline (not suggested)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;return false&lt;/em&gt; is useful if you want the hand icon to show up to click, but not take the person anywhere (ie AJAX toggle; degrades gracefully if javascript is turned off)&lt;/li&gt;
+&lt;li&gt;Declared: gives a name to the function&lt;/li&gt;
+&lt;li&gt;Take all your PHP knowledge, apply it to Javascript really easily - but there's lots of things that Javascript can do that PHP can't&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Libraries and modules&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lots and lots of &quot;wrapper&quot; modules - so many nice jQuery plugins (equivalent of Drupal modules); make a module for every jQuery plugin (jCarousel, Lightbox, jqModal, Juitter, hoverIntent etc.) - there's a whole module for just one function&lt;/li&gt;
+&lt;li&gt;People want to have dependencies - jCarouselViews module relies on jCarousel, even though there's only one function there&lt;/li&gt;
+&lt;li&gt;You can end up with multiple copies of jQuery plugins all over the place&lt;/li&gt;
+&lt;li&gt;&quot;We need an API to handle all these javascript libraries!&quot; - so now we have wrapper-wrapper modules! (Plugins, JQP, jQ, jQuery UI the module)&lt;/li&gt;
+&lt;li&gt;Competing ways of adding multiple javascript libraries - different modules require different things&lt;/li&gt;
+&lt;li&gt;jQuery UI isn't as bad as the other ones - so many modules need it&lt;/li&gt;
+&lt;li&gt;In short, some modules have great implementation (jCarouselViews); a lot more modules do things in a totally unnecessary way - not worth having a module if it only does one thing and you only need it in one place&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Adding JS in a theme&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&quot;It's not hacking, it's theming!&quot;&lt;/li&gt;
+&lt;li&gt;Open up info file, add some scripts (scripts[] = utilities.js)&lt;/li&gt;
+&lt;li&gt;Name is always relative to the root of your theme&lt;/li&gt;
+&lt;li&gt;After you do that, clear Drupal caches&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;drupal_add_js()&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What if you only need it in certain places?&lt;/li&gt;
+&lt;li&gt;Put this function in template.php; same thing that the .info file is doing for you&lt;/li&gt;
+&lt;li&gt;Don't just put it in page.tpl.php&lt;/li&gt;
+&lt;li&gt;Can aggregate and compress your CSS files - a lot less work for the web server&lt;/li&gt;
+&lt;li&gt;Javascript can be all aggregated together&lt;/li&gt;
+&lt;li&gt;Hosting your javascript elsewhere - well, it's only 15k, it'll slow down performance, it'll update to the latest version (but this might break your site&lt;/li&gt;
+&lt;li&gt;If you add any javascript using drupal_add_js(), it'll add jquery and drupal.js - provides some extra functionality, utility functions, global variables&lt;/li&gt;
+&lt;li&gt;drupal_add_js($data, $type); - $data is path to js, $type = 'module' (default) or 'theme'; theme stuff always goes last because it's assumed to be more important&lt;/li&gt;
+&lt;li&gt;Pass PHP variables to JavaScript: drupal_add_js($data, 'setting'), where $data is an array of strings&lt;/li&gt;
+&lt;li&gt;$(document).ready() - execute js when the page has finished loading&lt;/li&gt;
+&lt;li&gt;Prevents content hang-ups, degrade gracefully; replaces body(onload)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;References&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;visualjquery.com - whole library referenced on a single page&lt;/li&gt;
+&lt;li&gt;docs.jquery.com - official documentation&lt;/li&gt;
+&lt;li&gt;Drupal 6 uses 1.2.6 - there was an API change, and Drupal doesn't break APIs between major versions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;jGarland&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Can create a base theme in your info file, uses the stuff from the base module when you haven't written something custom&lt;/li&gt;
+&lt;li&gt;Adding a bunch of javascript (jquery.countdown.js, cufon-yui.js - the new, hot thing in the world of fonts)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://cufon.shoqolate.com/generate/&quot;&gt;Cufon&lt;/a&gt; is awesome&lt;/li&gt;
+&lt;li&gt;Behaviors works on AJAX requests as well as page load&lt;/li&gt;
+&lt;/ul&gt;</p>
 
         
       </section>

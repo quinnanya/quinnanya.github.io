@@ -12,7 +12,7 @@
 
 <!-- begin _includes/seo.html -->
 <title>From rooted Evo 4G to Unrevoked Forever + Froyo - Quinn Dombrowski</title>
-<meta name="description" content="Example description">
+<meta name="description" content="Thanks to a clever Sprint employee who secretly stockpiled the coveted phone for new customers, I&#39;ve had an Evo 4G since the day after it was released. Despite foolishly accepting the first OTA upgrade...">
 
 
 
@@ -20,14 +20,14 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Quinn Dombrowski">
 <meta property="og:title" content="From rooted Evo 4G to Unrevoked Forever + Froyo">
-<meta property="og:url" content="https://www.quinndombrowski.com/">
+<meta property="og:url" content="https://www.quinndombrowski.com/blog/2010/08/16/from-rooted-evo-4g-to-unrevoked-forever-froyo/">
 
 
-  <meta property="og:description" content="Example description">
+  <meta property="og:description" content="Thanks to a clever Sprint employee who secretly stockpiled the coveted phone for new customers, I&#39;ve had an Evo 4G since the day after it was released. Despite foolishly accepting the first OTA upgrade...">
 
 
 
-  <meta property="og:image" content="https://www.quinndombrowski.com/">
+  <meta property="og:image" content="https://www.quinndombrowski.com">
 
 
 
@@ -40,7 +40,7 @@
 
 
 
-<link rel="canonical" href="https://www.quinndombrowski.com/">
+<link rel="canonical" href="https://www.quinndombrowski.com/blog/2010/08/16/from-rooted-evo-4g-to-unrevoked-forever-froyo/">
 
 
 
@@ -51,7 +51,7 @@
     
       "@type": "Person",
       "name": "Quinn Dombrowski",
-      "url": "https://www.quinndombrowski.com//"
+      "url": "https://www.quinndombrowski.com/"
     
   }
 </script>
@@ -116,16 +116,6 @@
           
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
-              <a href="/docs/quick-start-guide/">Quick-Start Guide</a>
-            </li><li class="masthead__menu-item">
-              <a href="/about/">About</a>
-            </li><li class="masthead__menu-item">
-              <a href="/year-archive/">Sample Posts</a>
-            </li><li class="masthead__menu-item">
-              <a href="/collection-archive/">Sample Collections</a>
-            </li><li class="masthead__menu-item">
-              <a href="/terms/">Terms &amp; Privacy Policy</a>
-            </li><li class="masthead__menu-item">
               <a href="/about/">About</a>
             </li><li class="masthead__menu-item">
               <a href="/cv/">CV</a>
@@ -166,7 +156,7 @@
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="https://www.quinndombrowski.com//blog/2010/08/16/from-rooted-evo-4g-to-unrevoked-forever-froyo/" class="u-url" itemprop="url">From rooted Evo 4G to Unrevoked Forever + Froyo</a>
+            <a href="https://www.quinndombrowski.com/blog/2010/08/16/from-rooted-evo-4g-to-unrevoked-forever-froyo/" class="u-url" itemprop="url">From rooted Evo 4G to Unrevoked Forever + Froyo</a>
           </h1>
           
 
@@ -176,57 +166,57 @@
 
       <section class="page__content e-content" itemprop="text">
         
-        <p>Thanks to a clever Sprint employee who secretly stockpiled the coveted phone for new customers, I've had an Evo 4G since the day after it was released. Despite foolishly accepting the first OTA upgrade, I was still able to use the original <a href="http://www.unrevoked.com">Unrevoked</a> to gain enough root access to get <a href="http://code.google.com/p/android-wifi-tether/">android-wifi-tether</a> working (thanks to this <a href="http://forum.xda-developers.com/showthread.php?t=698137">XDA thread</a>), which has been fantastic while traveling.</p>
-<p><a href="http://farm5.static.flickr.com/4143/4900122470_ce3aa10cbc.jpg" rel="lightbox" title="Evo bootloader"><img src="http://farm5.static.flickr.com/4143/4900122470_ce3aa10cbc_m.jpg" class="alignright" /></a>It's been over two months, and the release of Froyo and <a href="http://www.unrevoked.com/forever">Unrevoked Forever</a> motivated me to do some upgrading. The following is the step-by-step tutorial I wish I'd had going into the process. The assumption is that you've rooted, but not using Unrevoked3. The entire walkthrough is written with the goal of being as simple as possible for users who are new to doing their own updates, flashing new images, or even using Ubuntu.</p>
-<h3>Unrevoked3 on Ubuntu (9.10)</h3>
-<p>Installing Unrevoked3 on the Mac is easy-- you download an installer package, drag it to <em>Applications</em> and run it. If you're on Windows, I'd recommend using <a href="http://forum.xda-developers.com/showthread.php?t=741824">Ubuntu LiveCD</a> with instructions by shad0wf0x. Since I run Ubuntu (Karmic/9.10, but should work equally well for Lynx/10.04), here are some instructions:</p>
-<ul>
-<li>Download <a href="http://unrevoked.com/recovery/">Unrevoked 3</a></li>
-<li><a href="http://farm5.static.flickr.com/4122/4900184618_e9d120ce0e.jpg" rel="lightbox" title="Launching Unrevoked3 in Ubuntu"><img src="http://farm5.static.flickr.com/4122/4900184618_e9d120ce0e_m.jpg" class="alignright" /></a>Unzip <em>reflash.tar.gz</em> (you can double-click on it to open File Roller, and hit the extract button); the result is an executable called <em>reflash</em>. Let's assume you extracted it in your Downloads folder. Now, run it as root by opening Terminal (Applications > Accessories > Terminal) and typing in <code>sudo Downloads/reflash</code>. It'll ask you for your password, and then it'll launch Unrevoked3.</li>
-<li>The UI that comes up has the Unrevoked logo and the message "Waiting for device. Plug phone in now and enable USB debugging. You may require Linux root access."</li>
-<li>Enable USB debugging on your Evo by going to <em>Settings > Applications > Development > USB debugging</em> and plug in your phone.</li>
-<li>From there Unrevoked3 just runs-- it reboots a couple times, and drops you off in ClockworkMod recovery (a dark-colored screen with greenish text.) Select "reboot system now" by pressing the power button, and your system will restart.</li>
-</ul>
-<h3>Radio baseband and Wimax updates</h3>
-<p>When I compared my radio baseband version to those <a href="http://unrevoked.com/rootwiki/doku.php/public/forever#supported_devices">supported for Unrevoked Forever</a>, I was dismayed to discover that mine wasn't listed. Time for a radio update, and a Wimax update for good measure. Conveniently, after I installed these two updates I no longer had to remove the battery before I could turn my Evo on after turning it off-- an annoying quirk that'd plagued me since I got the phone.</p>
-<p>How can you tell what baseband version you're running? You could restart your phone while holding the "volume down" button like the Unrevoked folks suggest, but it's easier to look in the Evo UI: <em>Settings > About phone > Software information > Baseband version</em>.</p>
-<ul>
-<li>Go to <a href="http://forum.xda-developers.com/showthread.php?t=743352">this XDA thread</a> and download <em>Radio update: 2.15.00.07.28</em> and <em>Wimax Update 26023</em> from the first post. These are two zip files, <em>Radio-2.15.00.07.28.zip</em> and <em>Wimax26023.zip</em>. Save them to the root of your SD card.</li>
-<li><a href="http://farm5.static.flickr.com/4079/4899532791_b61b883e53.jpg" rel="lightbox" title="Evo bootloader, after using Unrevoked Forever-- note S-OFF at the top"><img src="http://farm5.static.flickr.com/4079/4899532791_b61b883e53_m.jpg" class="alignright" /></a>Turn off your phone, and turn it back on while holding the volume-down button. This will take you to the bootloader, a white screen with some Androids on skateboards at the bottom.</li>
-<li>The instructions say you can use the volume keys to navigate between options; on my Evo, it wouldn't let me do this for a few seconds, then it'd run HBOOT (a bunch of green text saying it's looking for various things and not finding them), and when HBOOT couldn't find anything <em>then</em> it would let me navigate to the other options.</li>
-<li><a href="http://farm5.static.flickr.com/4080/4899540611_d630b5c7cb.jpg" rel="lightbox" title="ClockworkMod Recovery"><img src="http://farm5.static.flickr.com/4080/4899540611_d630b5c7cb_m.jpg" class="alignright" /></a>Choose <em>Recovery</em>, and press the power button. This will launch ClockworkMod Recovery (the same dark screen with green text as before.)</li>
-<li>Select <em>install zip from sdcard</em>, then <em>choose zip from sdcard</em>. Scroll down until you see either of the update zip files you've just added to your SD card. (Depending on how many files and folders you have on the root of your SD card, this may take a while.)</li>
-<li><a href="http://farm5.static.flickr.com/4096/4899542487_b14b0d18f2.jpg" rel="lightbox" title="You can't install it accidentally"><img src="http://farm5.static.flickr.com/4096/4899542487_b14b0d18f2_m.jpg" class="alignright" /></a>Select the update zip file, scroll through all the "no"'s and select "yes". The update will run.</li>
-<li>Be sure to reboot after <strong>each</strong> update-- select <em>+++++Go Back+++++</em>, then <em>reboot system now</em></li>
-<li>Repeat this same process with the other update zip file.</li>
-<li>To double-check if the update went through, check on your radio baseband version again, like before.</li>
-</ul>
-<h3>Unrevoked Forever and custom splash screen</h3>
-<p>One of my irrational fears is that one morning, as the alarm is going off on my Evo, I'll fumble and accidentally hit the button accepting an unrootable OTA update. With <a href="http://unrevoked.com/rootwiki/doku.php/public/forever">Unrevoked Forever</a>, you can still flash a custom recovery image if that happens, so I went to install it. <em>(Update: it also lets you install <a href="http://lifehacker.com/5612338/adfree-blocks-ads-on-your-rooted-android-phone">AdFree</a>, which you can't do with a normal Unrevoked root.)</em> <strong>This step isn't necessary if you just want a rooted Froyo</strong>.</p>
-<ul>
-<li>Download the <a href="http://unrevoked.com/rootwiki/doku.php/public/forever#installation_instructions">latest version</a> -- it's a zip file, just like the radio and Wimax updates-- and put it on the root of your SD card.</li>
-<li>Follow the same process as before, using ClockworkMod Recovery to <em>install zip from sdcard</em>.</li>
-<li><a href="http://farm5.static.flickr.com/4080/4900130200_9458804877.jpg" rel="lightbox" title="Custom splash screen, courtesy of Unrevoked Forever"><img src="http://farm5.static.flickr.com/4080/4900130200_9458804877_m.jpg" class="alignright" /></a>When you reboot, if you hold down the volume-down button and go into the bootloader, you'll see <em>SUPERSONIC EVT2-2 SHIP <strong>S-OFF</strong></em> at the top if it's been successful.</li>
-<li>If you want a custom Unrevoked splash screen (their Unrevoked Forever logo in black, very tasteful, which will replace the HTC Evo 4G logo on startup), download PC36IMG.ZIP from their website. Put that exact file, same filename and all, in the root of your SD card.</li>
-<li>Reboot into the bootloader (holding down the volume-down key); this time, HBOOT will find what it's looking for when it runs, and it will ask if you want to start the update. Choose 'yes', and then say yes to rebooting the device.</li>
-</ul>
-<h3>Installing rooted Froyo</h3>
-<p>I didn't want to re-install all my apps and reconfigure my phone from scratch, so I first went in search of a backup option.</p>
-<ul>
-<li><strong>Backing up your data:</strong> download and install <a href="http://www.androidzoom.com/android_applications/tools/mybackup_dao.html">MyBackup</a> from the Marketplace. (The free version should be fine, so long as you're not planning on taking more than 30 days to finish this tutorial.)</li>
-<li>Choose <em>Backup</em>, then <em>Applications</em> (or <em>Data</em>-- you'll probably want to do them both), then <em>Local (SD Card)</em>. Select the apps you want to backup, give your backup a name and choose <em>APKs + DATA</em>. The process is essentially the same for backing up data.</li>
-<li><strong>Acquiring the ROM:</strong> Download <em>HTC OTA Froyo 2.2, *FINAL*, build 3.36.651.6 (Rooted) Odexed</em> from <a href="http://forum.xda-developers.com/showthread.php?t=743352">the first post</a> on XDA. It's about 167 MB. Move it to the root of your SD card.</li>
-<li><strong>Flashing the ROM:</strong> download and install <a href="http://www.androidzoom.com/android_applications/tools/rom-manager_fjxs.html">ROM Manager</a> from the Marketplace.</li>
-<li>Select <em>Flash ClockworkMod recovery</em>-- it's counterintuitive, if you've already run Unrevoked3, but necessary. Confirm your phone model, confirm the Superuser Request, and the app will do the rest of the work.</li>
-<li>Choose <em>Install ROM from SD card</em> and select the Froyo ROM you previously downloaded. It'll give you check-box options for backing up your existing ROM and wiping the phone; certainly agree to wipe it, and you might want to back up your current ROM just to be safe.</li>
-<li>This will reboot your phone into ClockworkMod Recovery, where the backup, phone wiping, and Froyo installation will happen</li>
-<li>When the Froyo installation is done, your phone will go black, and you'll see the HTC logo in Android green. My screen flickered to the horrible rainbow-colored default home screen for a moment, before going back to the HTC logo, when it kicked me into the setup screens for Froyo (using the onscreen keyboard, whether or not to allow Google location services, configuring e-mail clients, etc.)</li>
-<li><strong>Getting your stuff back</strong>: download and install MyBackup again, and this time choose <em>Restore</em>. You can choose between <em>Applications</em> and <em>Data</em>, and then select the backup you made before.</li>
-<li>Restoring from MyBackup will return all of your apps and data, including your home screen layout and saved logins for your apps. I still had to re-configure the home screen for my browser, allowing the installation of non-Marketplace apps, etc., but it still saved me a lot of time.</li>
-<li><strong>Wifi tethering</strong>: Froyo's native wifi tethering is still under Sprint's thumb, but <a href="http://code.google.com/p/android-wifi-tether/">android-wifi-tether</a> didn't let me down-- I installed <em>wireless_tether_2_0_5-pre8.apk</em>, and it works great.</li>
-</ul>
-<p><strong>Addendum</strong>: I initially had problems connecting to 4G after doing all this, and it seems I wasn't alone. The fix, helpfully suggested by cyberenz on the XDA forum, is to re-flash the Wimax update.</p>
-<p><em>Many, many thanks to the <a href="http://www.unrevoked.com">Unrevoked</a> team: Matt Mastracci, Eric Smaxwill, Matthew Fogle, Joshua Wise, Ryan Pearl, and Koush Dutta. Not only do they do incredibly awesome work, they also direct all donations to the <a href="http://action.eff.org/goto/unrevoked">Electronic Frontier Foundation</a>. You guys are my heroes.</em></p>
+        <p>&lt;p&gt;Thanks to a clever Sprint employee who secretly stockpiled the coveted phone for new customers, I've had an Evo 4G since the day after it was released. Despite foolishly accepting the first OTA upgrade, I was still able to use the original &lt;a href=&quot;http://www.unrevoked.com&quot;&gt;Unrevoked&lt;/a&gt; to gain enough root access to get &lt;a href=&quot;http://code.google.com/p/android-wifi-tether/&quot;&gt;android-wifi-tether&lt;/a&gt; working (thanks to this &lt;a href=&quot;http://forum.xda-developers.com/showthread.php?t=698137&quot;&gt;XDA thread&lt;/a&gt;), which has been fantastic while traveling.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://farm5.static.flickr.com/4143/4900122470_ce3aa10cbc.jpg&quot; rel=&quot;lightbox&quot; title=&quot;Evo bootloader&quot;&gt;&lt;img src=&quot;http://farm5.static.flickr.com/4143/4900122470_ce3aa10cbc_m.jpg&quot; class=&quot;alignright&quot; /&gt;&lt;/a&gt;It's been over two months, and the release of Froyo and &lt;a href=&quot;http://www.unrevoked.com/forever&quot;&gt;Unrevoked Forever&lt;/a&gt; motivated me to do some upgrading. The following is the step-by-step tutorial I wish I'd had going into the process. The assumption is that you've rooted, but not using Unrevoked3. The entire walkthrough is written with the goal of being as simple as possible for users who are new to doing their own updates, flashing new images, or even using Ubuntu.&lt;/p&gt;
+&lt;h3&gt;Unrevoked3 on Ubuntu (9.10)&lt;/h3&gt;
+&lt;p&gt;Installing Unrevoked3 on the Mac is easy-- you download an installer package, drag it to &lt;em&gt;Applications&lt;/em&gt; and run it. If you're on Windows, I'd recommend using &lt;a href=&quot;http://forum.xda-developers.com/showthread.php?t=741824&quot;&gt;Ubuntu LiveCD&lt;/a&gt; with instructions by shad0wf0x. Since I run Ubuntu (Karmic/9.10, but should work equally well for Lynx/10.04), here are some instructions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Download &lt;a href=&quot;http://unrevoked.com/recovery/&quot;&gt;Unrevoked 3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://farm5.static.flickr.com/4122/4900184618_e9d120ce0e.jpg&quot; rel=&quot;lightbox&quot; title=&quot;Launching Unrevoked3 in Ubuntu&quot;&gt;&lt;img src=&quot;http://farm5.static.flickr.com/4122/4900184618_e9d120ce0e_m.jpg&quot; class=&quot;alignright&quot; /&gt;&lt;/a&gt;Unzip &lt;em&gt;reflash.tar.gz&lt;/em&gt; (you can double-click on it to open File Roller, and hit the extract button); the result is an executable called &lt;em&gt;reflash&lt;/em&gt;. Let's assume you extracted it in your Downloads folder. Now, run it as root by opening Terminal (Applications &gt; Accessories &gt; Terminal) and typing in &lt;code&gt;sudo Downloads/reflash&lt;/code&gt;. It'll ask you for your password, and then it'll launch Unrevoked3.&lt;/li&gt;
+&lt;li&gt;The UI that comes up has the Unrevoked logo and the message &quot;Waiting for device. Plug phone in now and enable USB debugging. You may require Linux root access.&quot;&lt;/li&gt;
+&lt;li&gt;Enable USB debugging on your Evo by going to &lt;em&gt;Settings &gt; Applications &gt; Development &gt; USB debugging&lt;/em&gt; and plug in your phone.&lt;/li&gt;
+&lt;li&gt;From there Unrevoked3 just runs-- it reboots a couple times, and drops you off in ClockworkMod recovery (a dark-colored screen with greenish text.) Select &quot;reboot system now&quot; by pressing the power button, and your system will restart.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Radio baseband and Wimax updates&lt;/h3&gt;
+&lt;p&gt;When I compared my radio baseband version to those &lt;a href=&quot;http://unrevoked.com/rootwiki/doku.php/public/forever#supported_devices&quot;&gt;supported for Unrevoked Forever&lt;/a&gt;, I was dismayed to discover that mine wasn't listed. Time for a radio update, and a Wimax update for good measure. Conveniently, after I installed these two updates I no longer had to remove the battery before I could turn my Evo on after turning it off-- an annoying quirk that'd plagued me since I got the phone.&lt;/p&gt;
+&lt;p&gt;How can you tell what baseband version you're running? You could restart your phone while holding the &quot;volume down&quot; button like the Unrevoked folks suggest, but it's easier to look in the Evo UI: &lt;em&gt;Settings &gt; About phone &gt; Software information &gt; Baseband version&lt;/em&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Go to &lt;a href=&quot;http://forum.xda-developers.com/showthread.php?t=743352&quot;&gt;this XDA thread&lt;/a&gt; and download &lt;em&gt;Radio update: 2.15.00.07.28&lt;/em&gt; and &lt;em&gt;Wimax Update 26023&lt;/em&gt; from the first post. These are two zip files, &lt;em&gt;Radio-2.15.00.07.28.zip&lt;/em&gt; and &lt;em&gt;Wimax26023.zip&lt;/em&gt;. Save them to the root of your SD card.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://farm5.static.flickr.com/4079/4899532791_b61b883e53.jpg&quot; rel=&quot;lightbox&quot; title=&quot;Evo bootloader, after using Unrevoked Forever-- note S-OFF at the top&quot;&gt;&lt;img src=&quot;http://farm5.static.flickr.com/4079/4899532791_b61b883e53_m.jpg&quot; class=&quot;alignright&quot; /&gt;&lt;/a&gt;Turn off your phone, and turn it back on while holding the volume-down button. This will take you to the bootloader, a white screen with some Androids on skateboards at the bottom.&lt;/li&gt;
+&lt;li&gt;The instructions say you can use the volume keys to navigate between options; on my Evo, it wouldn't let me do this for a few seconds, then it'd run HBOOT (a bunch of green text saying it's looking for various things and not finding them), and when HBOOT couldn't find anything &lt;em&gt;then&lt;/em&gt; it would let me navigate to the other options.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://farm5.static.flickr.com/4080/4899540611_d630b5c7cb.jpg&quot; rel=&quot;lightbox&quot; title=&quot;ClockworkMod Recovery&quot;&gt;&lt;img src=&quot;http://farm5.static.flickr.com/4080/4899540611_d630b5c7cb_m.jpg&quot; class=&quot;alignright&quot; /&gt;&lt;/a&gt;Choose &lt;em&gt;Recovery&lt;/em&gt;, and press the power button. This will launch ClockworkMod Recovery (the same dark screen with green text as before.)&lt;/li&gt;
+&lt;li&gt;Select &lt;em&gt;install zip from sdcard&lt;/em&gt;, then &lt;em&gt;choose zip from sdcard&lt;/em&gt;. Scroll down until you see either of the update zip files you've just added to your SD card. (Depending on how many files and folders you have on the root of your SD card, this may take a while.)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://farm5.static.flickr.com/4096/4899542487_b14b0d18f2.jpg&quot; rel=&quot;lightbox&quot; title=&quot;You can't install it accidentally&quot;&gt;&lt;img src=&quot;http://farm5.static.flickr.com/4096/4899542487_b14b0d18f2_m.jpg&quot; class=&quot;alignright&quot; /&gt;&lt;/a&gt;Select the update zip file, scroll through all the &quot;no&quot;'s and select &quot;yes&quot;. The update will run.&lt;/li&gt;
+&lt;li&gt;Be sure to reboot after &lt;strong&gt;each&lt;/strong&gt; update-- select &lt;em&gt;+++++Go Back+++++&lt;/em&gt;, then &lt;em&gt;reboot system now&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Repeat this same process with the other update zip file.&lt;/li&gt;
+&lt;li&gt;To double-check if the update went through, check on your radio baseband version again, like before.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Unrevoked Forever and custom splash screen&lt;/h3&gt;
+&lt;p&gt;One of my irrational fears is that one morning, as the alarm is going off on my Evo, I'll fumble and accidentally hit the button accepting an unrootable OTA update. With &lt;a href=&quot;http://unrevoked.com/rootwiki/doku.php/public/forever&quot;&gt;Unrevoked Forever&lt;/a&gt;, you can still flash a custom recovery image if that happens, so I went to install it. &lt;em&gt;(Update: it also lets you install &lt;a href=&quot;http://lifehacker.com/5612338/adfree-blocks-ads-on-your-rooted-android-phone&quot;&gt;AdFree&lt;/a&gt;, which you can't do with a normal Unrevoked root.)&lt;/em&gt; &lt;strong&gt;This step isn't necessary if you just want a rooted Froyo&lt;/strong&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Download the &lt;a href=&quot;http://unrevoked.com/rootwiki/doku.php/public/forever#installation_instructions&quot;&gt;latest version&lt;/a&gt; -- it's a zip file, just like the radio and Wimax updates-- and put it on the root of your SD card.&lt;/li&gt;
+&lt;li&gt;Follow the same process as before, using ClockworkMod Recovery to &lt;em&gt;install zip from sdcard&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://farm5.static.flickr.com/4080/4900130200_9458804877.jpg&quot; rel=&quot;lightbox&quot; title=&quot;Custom splash screen, courtesy of Unrevoked Forever&quot;&gt;&lt;img src=&quot;http://farm5.static.flickr.com/4080/4900130200_9458804877_m.jpg&quot; class=&quot;alignright&quot; /&gt;&lt;/a&gt;When you reboot, if you hold down the volume-down button and go into the bootloader, you'll see &lt;em&gt;SUPERSONIC EVT2-2 SHIP &lt;strong&gt;S-OFF&lt;/strong&gt;&lt;/em&gt; at the top if it's been successful.&lt;/li&gt;
+&lt;li&gt;If you want a custom Unrevoked splash screen (their Unrevoked Forever logo in black, very tasteful, which will replace the HTC Evo 4G logo on startup), download PC36IMG.ZIP from their website. Put that exact file, same filename and all, in the root of your SD card.&lt;/li&gt;
+&lt;li&gt;Reboot into the bootloader (holding down the volume-down key); this time, HBOOT will find what it's looking for when it runs, and it will ask if you want to start the update. Choose 'yes', and then say yes to rebooting the device.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Installing rooted Froyo&lt;/h3&gt;
+&lt;p&gt;I didn't want to re-install all my apps and reconfigure my phone from scratch, so I first went in search of a backup option.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Backing up your data:&lt;/strong&gt; download and install &lt;a href=&quot;http://www.androidzoom.com/android_applications/tools/mybackup_dao.html&quot;&gt;MyBackup&lt;/a&gt; from the Marketplace. (The free version should be fine, so long as you're not planning on taking more than 30 days to finish this tutorial.)&lt;/li&gt;
+&lt;li&gt;Choose &lt;em&gt;Backup&lt;/em&gt;, then &lt;em&gt;Applications&lt;/em&gt; (or &lt;em&gt;Data&lt;/em&gt;-- you'll probably want to do them both), then &lt;em&gt;Local (SD Card)&lt;/em&gt;. Select the apps you want to backup, give your backup a name and choose &lt;em&gt;APKs + DATA&lt;/em&gt;. The process is essentially the same for backing up data.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Acquiring the ROM:&lt;/strong&gt; Download &lt;em&gt;HTC OTA Froyo 2.2, <em>FINAL</em>, build 3.36.651.6 (Rooted) Odexed&lt;/em&gt; from &lt;a href=&quot;http://forum.xda-developers.com/showthread.php?t=743352&quot;&gt;the first post&lt;/a&gt; on XDA. It's about 167 MB. Move it to the root of your SD card.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Flashing the ROM:&lt;/strong&gt; download and install &lt;a href=&quot;http://www.androidzoom.com/android_applications/tools/rom-manager_fjxs.html&quot;&gt;ROM Manager&lt;/a&gt; from the Marketplace.&lt;/li&gt;
+&lt;li&gt;Select &lt;em&gt;Flash ClockworkMod recovery&lt;/em&gt;-- it's counterintuitive, if you've already run Unrevoked3, but necessary. Confirm your phone model, confirm the Superuser Request, and the app will do the rest of the work.&lt;/li&gt;
+&lt;li&gt;Choose &lt;em&gt;Install ROM from SD card&lt;/em&gt; and select the Froyo ROM you previously downloaded. It'll give you check-box options for backing up your existing ROM and wiping the phone; certainly agree to wipe it, and you might want to back up your current ROM just to be safe.&lt;/li&gt;
+&lt;li&gt;This will reboot your phone into ClockworkMod Recovery, where the backup, phone wiping, and Froyo installation will happen&lt;/li&gt;
+&lt;li&gt;When the Froyo installation is done, your phone will go black, and you'll see the HTC logo in Android green. My screen flickered to the horrible rainbow-colored default home screen for a moment, before going back to the HTC logo, when it kicked me into the setup screens for Froyo (using the onscreen keyboard, whether or not to allow Google location services, configuring e-mail clients, etc.)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Getting your stuff back&lt;/strong&gt;: download and install MyBackup again, and this time choose &lt;em&gt;Restore&lt;/em&gt;. You can choose between &lt;em&gt;Applications&lt;/em&gt; and &lt;em&gt;Data&lt;/em&gt;, and then select the backup you made before.&lt;/li&gt;
+&lt;li&gt;Restoring from MyBackup will return all of your apps and data, including your home screen layout and saved logins for your apps. I still had to re-configure the home screen for my browser, allowing the installation of non-Marketplace apps, etc., but it still saved me a lot of time.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Wifi tethering&lt;/strong&gt;: Froyo's native wifi tethering is still under Sprint's thumb, but &lt;a href=&quot;http://code.google.com/p/android-wifi-tether/&quot;&gt;android-wifi-tether&lt;/a&gt; didn't let me down-- I installed &lt;em&gt;wireless_tether_2_0_5-pre8.apk&lt;/em&gt;, and it works great.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Addendum&lt;/strong&gt;: I initially had problems connecting to 4G after doing all this, and it seems I wasn't alone. The fix, helpfully suggested by cyberenz on the XDA forum, is to re-flash the Wimax update.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Many, many thanks to the &lt;a href=&quot;http://www.unrevoked.com&quot;&gt;Unrevoked&lt;/a&gt; team: Matt Mastracci, Eric Smaxwill, Matthew Fogle, Joshua Wise, Ryan Pearl, and Koush Dutta. Not only do they do incredibly awesome work, they also direct all donations to the &lt;a href=&quot;http://action.eff.org/goto/unrevoked&quot;&gt;Electronic Frontier Foundation&lt;/a&gt;. You guys are my heroes.&lt;/em&gt;&lt;/p&gt;</p>
 
         
       </section>

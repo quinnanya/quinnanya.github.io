@@ -12,7 +12,7 @@
 
 <!-- begin _includes/seo.html -->
 <title>Project Bamboo wiki: Book Model (Draft) - Quinn Dombrowski</title>
-<meta name="description" content="Example description">
+<meta name="description" content="This was originally posted to the Project Bamboo wiki at https://wiki.projectbamboo.org/pages/viewpage.action?pageId=24643102 (https://wiki.projectbamboo.org/x/HgZ4AQ)...">
 
 
 
@@ -20,14 +20,14 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Quinn Dombrowski">
 <meta property="og:title" content="Project Bamboo wiki: Book Model (Draft)">
-<meta property="og:url" content="https://www.quinndombrowski.com/">
+<meta property="og:url" content="https://www.quinndombrowski.com/projects/project-bamboo/wiki/book-model-draft/">
 
 
-  <meta property="og:description" content="Example description">
+  <meta property="og:description" content="This was originally posted to the Project Bamboo wiki at https://wiki.projectbamboo.org/pages/viewpage.action?pageId=24643102 (https://wiki.projectbamboo.org/x/HgZ4AQ)...">
 
 
 
-  <meta property="og:image" content="https://www.quinndombrowski.com//assets/images/header_bamboologo.jpg">
+  <meta property="og:image" content="https://www.quinndombrowski.com/assets/images/header_bamboologo.jpg">
 
 
 
@@ -40,7 +40,7 @@
 
 
 
-<link rel="canonical" href="https://www.quinndombrowski.com/">
+<link rel="canonical" href="https://www.quinndombrowski.com/projects/project-bamboo/wiki/book-model-draft/">
 
 
 
@@ -51,7 +51,7 @@
     
       "@type": "Person",
       "name": "Quinn Dombrowski",
-      "url": "https://www.quinndombrowski.com//"
+      "url": "https://www.quinndombrowski.com/"
     
   }
 </script>
@@ -116,16 +116,6 @@
           
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
-              <a href="/docs/quick-start-guide/">Quick-Start Guide</a>
-            </li><li class="masthead__menu-item">
-              <a href="/about/">About</a>
-            </li><li class="masthead__menu-item">
-              <a href="/year-archive/">Sample Posts</a>
-            </li><li class="masthead__menu-item">
-              <a href="/collection-archive/">Sample Collections</a>
-            </li><li class="masthead__menu-item">
-              <a href="/terms/">Terms &amp; Privacy Policy</a>
-            </li><li class="masthead__menu-item">
               <a href="/about/">About</a>
             </li><li class="masthead__menu-item">
               <a href="/cv/">CV</a>
@@ -200,7 +190,7 @@
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="https://www.quinndombrowski.com//projects/project-bamboo/wiki/book-model-draft/" class="u-url" itemprop="url">Project Bamboo wiki: Book Model (Draft)</a>
+            <a href="https://www.quinndombrowski.com/projects/project-bamboo/wiki/book-model-draft/" class="u-url" itemprop="url">Project Bamboo wiki: Book Model (Draft)</a>
           </h1>
           
 
@@ -210,186 +200,186 @@
 
       <section class="page__content e-content" itemprop="text">
         
-        <p><strong>This was originally posted to the Project Bamboo wiki at <a href="https://wiki.projectbamboo.org/pages/viewpage.action?pageId=24643102">https://wiki.projectbamboo.org/pages/viewpage.action?pageId=24643102</a> (<a href="https://wiki.projectbamboo.org/x/HgZ4AQ">https://wiki.projectbamboo.org/x/HgZ4AQ</a>), last edited 1 June 2011</strong></p>
-<p>(Drafted with Claire Stewart and Karen Miller)</p>
-<h1 id="BookModelDraft-BookModelWorkingDraft">Book Model (Working Draft)</h1>
-<p>The Bamboo Book Model is a set of recommendations for providing a core set of standard content for any text represented in Bamboo accessed via Collections Interoperability Services.</p>
-<p>The Book Model is built on Content Management Interoperability Services (CMIS) standard. A book will be accessed as a set of CMIS documents, folders, and references. Since CMIS provides a web-service interface, many of the details for access are provided by the CMIS standard and need not be repeated here.</p>
-<p>In this recommendation, a package of original content documents retrieved from a source repository are always provided without modification. Additional metadata properties and generated content is added to insure that tools can use a single set of conventions for navigation and display functions.</p>
-<p>The software, under development by the Bamboo CI group extends the OpenCMIS server library to provide a CMIS interface to clients. This CMIS interface is not an actual repository, but provides a virtual representation of the content objects that will be available from the source repository on request.</p>
-<p>For performance purposes, content that has been acquired and processed will be cached for a limited period of time.</p>
-<h2 id="BookModelDraft-SourceContent"><strong>Source Content</strong></h2>
-<p>At a minimum, source content should include:</p>
-<p>1. Source repository id and an identifier for the items within that repository.</p>
-<p>1. Metadata to supply the required item-level fields: title, creator, and date.</p>
-<p>2. Full text of the book. This might be TEI, HTML, or OCR text files.</p>
-<p>Optionally a book might include:</p>
-<p>3. Additional item-level metadata: publisher, publication date(s)</p>
-<p>4. Identifier for another book if this is a version. If this is a volume in a series, an identifier for that series.</p>
-<p>5. Structural information about the book, divisions (chapters, acts, etc)</p>
-<p>6. Scanned images of individual pages</p>
-<h2 id="BookModelDraft-OrganizingBookMaterials"><strong>Organizing Book Materials</strong></h2>
-<p><strong> </strong> <img src="/sites/default/files/bamboo/bamboo-model-1.jpg" /></p>
-<p>The organization of a book is shown in the diagram "Bamboo CI Book Model". A book is represented as a CMIS folder of type bamboo:book. Within this folder are subfolders that contain the original source material and derived page HTML, TEI, page and thumbnail images, and indexes. Item-level metadata is attached as property values on the item folder. Item level metadata fields include:</p>
-<div class="table-wrap">
-<table class="confluenceTable">
-<tbody>
-<tr>
-<td class="confluenceTd">
-<p> dc:title <br class="atl-forced-newline" /> </p>
-</td>
-<td class="confluenceTd">
-<p> Dublin Core title (required) <br class="atl-forced-newline" /> </p>
-</td>
-</tr>
-<tr>
-<td class="confluenceTd">
-<p> dc:creator <br class="atl-forced-newline" /> </p>
-</td>
-<td class="confluenceTd">
-<p> Dublin Core creator (required) <br class="atl-forced-newline" /> </p>
-</td>
-</tr>
-<tr>
-<td class="confluenceTd">
-<p> dc:date <br class="atl-forced-newline" /> </p>
-</td>
-<td class="confluenceTd">
-<p> Dublin Core date (required, ISO 8601 date range) <br class="atl-forced-newline" /> </p>
-</td>
-</tr>
-<tr>
-<td class="confluenceTd">
-<p> dc:publisher <br class="atl-forced-newline" /> </p>
-</td>
-<td class="confluenceTd">
-<p> Dublin Core publisher <br class="atl-forced-newline" /> </p>
-</td>
-</tr>
-<tr>
-<td class="confluenceTd">
-<p> dc:issued <br class="atl-forced-newline" /> </p>
-</td>
-<td class="confluenceTd">
-<p> Dublin Core publication or issue date <br class="atl-forced-newline" /> </p>
-</td>
-</tr>
-<tr>
-<td class="confluenceTd">
-<p> dc:isPartOf <br class="atl-forced-newline" /> </p>
-</td>
-<td class="confluenceTd">
-<p> Identifier for volume that includes this item <br class="atl-forced-newline" /> </p>
-</td>
-</tr>
-<tr>
-<td class="confluenceTd">
-<p> dc:isVersionOf  <br class="atl-forced-newline" /> </p>
-</td>
-<td class="confluenceTd">
-<p> Identifier for text that this is a version of <br class="atl-forced-newline" /> </p>
-</td>
-</tr>
-<tr>
-<td class="confluenceTd">
-<p> dc:identifier <br class="atl-forced-newline" /> </p>
-</td>
-<td class="confluenceTd">
-<p> Set only if there is a permanent URL for the item. The value of dc:identifier is the permanent URL <br class="atl-forced-newline" /><br />
-in the contributing repository </p>
-</td>
-</tr>
-<tr>
-<td class="confluenceTd">
-<p> bamboo:source <br class="atl-forced-newline" /> </p>
-</td>
-<td class="confluenceTd">
-<p> Short identifier of contributing repository </p>
-</td>
-</tr>
-<tr>
-<td class="confluenceTd">
-<p> bamboo:uri </p>
-</td>
-<td class="confluenceTd">
-<p> Bamboo assigned, unique URI for the item. The URI includes a short identifier for the <br class="atl-forced-newline" /><br />
-contributing repository and an identifier for the item in that repository. </p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>The "dc:" prefix represents the dublin core namespace (<a href="http://dublincore.org/documents/2007/07/02/dcmi-namespace/" class="external-link" rel="nofollow">http://dublincore.org/documents/2007/07/02/dcmi-namespace/</a>), and the "bamboo:" prefix represents the bamboo namespace (URI to be determined).</p>
-<p>The values of bamboo:uri, dc:isPartOf, and dc:isVersionOf properties are bamboo identifiers. Bamboo identifiers are URIs in the form "<source>/<item-id>" where <source> is a short Bamboo-assigned URI for the contributing repository and <item-id> is the same as, or a slightly modified version of the contributing repository's identifier for the item. The source identifier is modified only so far as is needed to make it a legal component of the URI.</p>
-<p>Dates (dc:date and dc:issued) as ISO 8601 dates or a range of ISO 8601 dates in the format "<d1> to <d2>". A date may be followed by a " ?" string if the original date was marked as uncertain. For example:</p>
-<p>    1099 to 1100 ?</p>
-<p>Represents an uncertain year between 1099 and 1100 inclusive.</p>
-<h2 id="BookModelDraft-PageContent "><strong>Page Content</strong> </h2>
-<p>Book pages are rendered in a number of formats depending on the materials available. Book pages will always be available as XHTML 1.0 and TEI page files. If page scans images are available, each page will also include a full image and thumbnail.</p>
-<p>Every representation of a page appears in a sub-folder of the item folder depending by type. Page sub-folders are named: XHTML, TEI, images, and thumbnails. The following CMIS types are used to represent page content:</p>
-<p><strong><em>bamboo:page-image (name "<sequence>.jpg")</em></strong></p>
-<p>A high quality jpg image of a book page with width 800 pixels. Aspect ratio is the same as the original scan.</p>
-<p><strong><em>bamboo:page-tei (name "<sequence>.tei.xml")</em></strong></p>
-<p>TEI representation of book page</p>
-<p><strong><em>bamboo:page-xhtml (name "<sequence>.html")</em></strong></p>
-<p>Semantic XHTML (that is without formatting tags) of a book's page text. CSS classes will be mappable to TEI elements.</p>
-<p><strong><em>bamboo:page-thumb150 (name "<sequence>w150.jpg")</em></strong></p>
-<p>Thumbnail for page as a jpeg image with width 150 pixels. Aspect ratio is the same as the original scan.</p>
-<p>Each page document (any of the above types) has the following properties:</p>
-<div class="table-wrap">
-<table class="confluenceTable">
-<tbody>
-<tr>
-<td class="confluenceTd">
-<p> bamboo:seq <br class="atl-forced-newline" /> </p>
-</td>
-<td class="confluenceTd">
-<p> Assigned sequence number <br class="atl-forced-newline" /> </p>
-</td>
-</tr>
-<tr>
-<td class="confluenceTd">
-<p> bamboo:page <br class="atl-forced-newline" /> </p>
-</td>
-<td class="confluenceTd">
-<p> Page identifier as it appears in the source content <br class="atl-forced-newline" /> </p>
-</td>
-</tr>
-<tr>
-<td class="confluenceTd">
-<p> bamboo:div </p>
-</td>
-<td class="confluenceTd">
-<p> <span style="color: rgb(0,0,0);">Identifier for the division (chapter, act, etc) that includes the page. This may have multiple values if </span><br class="atl-forced-newline" /><br />
-<span style="color: rgb(0,0,0);">the page includes content belonging to more than one division.</span><br class="atl-forced-newline" /> </p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>These properties are attached to each page representation as well as any separate source object (OCR text, image.) that was used in generating the derived content, so that the original source objects can be matched with generated content via a join.</p>
-<h2 id="BookModelDraft-OriginalSourceContent"><strong>Original Source Content</strong></h2>
-<p>The original content as obtained from the contributing repository is located in a subfolder of the item folded named "source". This content is exactly as obtained from the contributing repository. Additional property fields are added to the source objects to allow them to be matched with generated content (see page properties above). The following CMIS types are used to identify source content:</p>
-<p><strong><em>bamboo:source-mets (name as original)</em></strong></p>
-<p>METS document describing the Book as supplied by contributing repository</p>
-<p><strong><em>bamboo:source-page-image (name as original)</em></strong></p>
-<p>A scanned image of a page (any image format) as supplied by contributing repository</p>
-<p><strong><em>bamboo:source-page-ocr (name as original)</em></strong></p>
-<p>Raw OCR text of a book page as supplied by a contributing repository</p>
-<p><strong><em>bamboo:source-page-xml (name as original)</em></strong></p>
-<p>XML text and/or metadata for a book page as supplied by a contributing repository (usually TEI.)</p>
-<p>Additional types will be added as needed.</p>
-<h2 id="BookModelDraft-ContentsFolderandIndexing"><strong>Contents Folder and Indexing</strong></h2>
-<p><strong> </strong> <img src="/sites/default/files/bamboo/bamboo-model-2.jpg" /><br />
-Each item folder will contain a "contents" sub-folder, with multiple index folders. Each index provides an alternative way of navigating generated content. Indexes are (possibly nested) folders containing documents that reference content documents.</p>
-<p>Indexes are sets of annotations of source and/or generated content, similar to (and available as) an Atom feed. Even though generated content is organized by page, index items may refer to a selected portion of a range of pages so as to allow divisions and other indexed units to overlap page boundaries. Indexes are described in the diagram labeled "Contents / Indexing".</p>
-<p><strong>Page Index</strong></p>
-<p>The page index provides a way of navigating to each page. The page index provides an easy way to examine all of the content (generated, and original source) that is related to a page.</p>
-<p><strong>Div Index</strong></p>
-<p>The div index provides a structural view of book content. (For example by chapter, scene and act). This index is built using the structure map in a METS file or TEI div structure depending on the content source.</p>
-<p><strong>Genre Indexes</strong></p>
-<p>Items may include one or more Genre Indexes. Each Genre Index resembles the div index, but will organize content using a standardized set of div types that will be consistant across source repositories. The types used will depend on the type of content (book, drama, essay.)</p>
-<p>Genre indexes should be considered a research topic and may or might not exist for any particular book.</p>
+        <p>&lt;p&gt;&lt;strong&gt;This was originally posted to the Project Bamboo wiki at &lt;a href=&quot;https://wiki.projectbamboo.org/pages/viewpage.action?pageId=24643102&quot;&gt;https://wiki.projectbamboo.org/pages/viewpage.action?pageId=24643102&lt;/a&gt; (&lt;a href=&quot;https://wiki.projectbamboo.org/x/HgZ4AQ&quot;&gt;https://wiki.projectbamboo.org/x/HgZ4AQ&lt;/a&gt;), last edited 1 June 2011&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;(Drafted with Claire Stewart and Karen Miller)&lt;/p&gt;
+&lt;h1 id=&quot;BookModelDraft-BookModelWorkingDraft&quot;&gt;Book Model (Working Draft)&lt;/h1&gt;
+&lt;p&gt;The Bamboo Book Model is a set of recommendations for providing a core set of standard content for any text represented in Bamboo accessed via Collections Interoperability Services.&lt;/p&gt;
+&lt;p&gt;The Book Model is built on Content Management Interoperability Services (CMIS) standard. A book will be accessed as a set of CMIS documents, folders, and references. Since CMIS provides a web-service interface, many of the details for access are provided by the CMIS standard and need not be repeated here.&lt;/p&gt;
+&lt;p&gt;In this recommendation, a package of original content documents retrieved from a source repository are always provided without modification. Additional metadata properties and generated content is added to insure that tools can use a single set of conventions for navigation and display functions.&lt;/p&gt;
+&lt;p&gt;The software, under development by the Bamboo CI group extends the OpenCMIS server library to provide a CMIS interface to clients. This CMIS interface is not an actual repository, but provides a virtual representation of the content objects that will be available from the source repository on request.&lt;/p&gt;
+&lt;p&gt;For performance purposes, content that has been acquired and processed will be cached for a limited period of time.&lt;/p&gt;
+&lt;h2 id=&quot;BookModelDraft-SourceContent&quot;&gt;&lt;strong&gt;Source Content&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;At a minimum, source content should include:&lt;/p&gt;
+&lt;p&gt;1. Source repository id and an identifier for the items within that repository.&lt;/p&gt;
+&lt;p&gt;1. Metadata to supply the required item-level fields: title, creator, and date.&lt;/p&gt;
+&lt;p&gt;2. Full text of the book. This might be TEI, HTML, or OCR text files.&lt;/p&gt;
+&lt;p&gt;Optionally a book might include:&lt;/p&gt;
+&lt;p&gt;3. Additional item-level metadata: publisher, publication date(s)&lt;/p&gt;
+&lt;p&gt;4. Identifier for another book if this is a version. If this is a volume in a series, an identifier for that series.&lt;/p&gt;
+&lt;p&gt;5. Structural information about the book, divisions (chapters, acts, etc)&lt;/p&gt;
+&lt;p&gt;6. Scanned images of individual pages&lt;/p&gt;
+&lt;h2 id=&quot;BookModelDraft-OrganizingBookMaterials&quot;&gt;&lt;strong&gt;Organizing Book Materials&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt; &lt;/strong&gt; &lt;img src=&quot;/sites/default/files/bamboo/bamboo-model-1.jpg&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;The organization of a book is shown in the diagram &quot;Bamboo CI Book Model&quot;. A book is represented as a CMIS folder of type bamboo:book. Within this folder are subfolders that contain the original source material and derived page HTML, TEI, page and thumbnail images, and indexes. Item-level metadata is attached as property values on the item folder. Item level metadata fields include:&lt;/p&gt;
+&lt;div class=&quot;table-wrap&quot;&gt;
+&lt;table class=&quot;confluenceTable&quot;&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&quot;confluenceTd&quot;&gt;
+&lt;p&gt; dc:title &lt;br class=&quot;atl-forced-newline&quot; /&gt; &lt;/p&gt;
+&lt;/td&gt;
+&lt;td class=&quot;confluenceTd&quot;&gt;
+&lt;p&gt; Dublin Core title (required) &lt;br class=&quot;atl-forced-newline&quot; /&gt; &lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;confluenceTd&quot;&gt;
+&lt;p&gt; dc:creator &lt;br class=&quot;atl-forced-newline&quot; /&gt; &lt;/p&gt;
+&lt;/td&gt;
+&lt;td class=&quot;confluenceTd&quot;&gt;
+&lt;p&gt; Dublin Core creator (required) &lt;br class=&quot;atl-forced-newline&quot; /&gt; &lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;confluenceTd&quot;&gt;
+&lt;p&gt; dc:date &lt;br class=&quot;atl-forced-newline&quot; /&gt; &lt;/p&gt;
+&lt;/td&gt;
+&lt;td class=&quot;confluenceTd&quot;&gt;
+&lt;p&gt; Dublin Core date (required, ISO 8601 date range) &lt;br class=&quot;atl-forced-newline&quot; /&gt; &lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;confluenceTd&quot;&gt;
+&lt;p&gt; dc:publisher &lt;br class=&quot;atl-forced-newline&quot; /&gt; &lt;/p&gt;
+&lt;/td&gt;
+&lt;td class=&quot;confluenceTd&quot;&gt;
+&lt;p&gt; Dublin Core publisher &lt;br class=&quot;atl-forced-newline&quot; /&gt; &lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;confluenceTd&quot;&gt;
+&lt;p&gt; dc:issued &lt;br class=&quot;atl-forced-newline&quot; /&gt; &lt;/p&gt;
+&lt;/td&gt;
+&lt;td class=&quot;confluenceTd&quot;&gt;
+&lt;p&gt; Dublin Core publication or issue date &lt;br class=&quot;atl-forced-newline&quot; /&gt; &lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;confluenceTd&quot;&gt;
+&lt;p&gt; dc:isPartOf &lt;br class=&quot;atl-forced-newline&quot; /&gt; &lt;/p&gt;
+&lt;/td&gt;
+&lt;td class=&quot;confluenceTd&quot;&gt;
+&lt;p&gt; Identifier for volume that includes this item &lt;br class=&quot;atl-forced-newline&quot; /&gt; &lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;confluenceTd&quot;&gt;
+&lt;p&gt; dc:isVersionOf  &lt;br class=&quot;atl-forced-newline&quot; /&gt; &lt;/p&gt;
+&lt;/td&gt;
+&lt;td class=&quot;confluenceTd&quot;&gt;
+&lt;p&gt; Identifier for text that this is a version of &lt;br class=&quot;atl-forced-newline&quot; /&gt; &lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;confluenceTd&quot;&gt;
+&lt;p&gt; dc:identifier &lt;br class=&quot;atl-forced-newline&quot; /&gt; &lt;/p&gt;
+&lt;/td&gt;
+&lt;td class=&quot;confluenceTd&quot;&gt;
+&lt;p&gt; Set only if there is a permanent URL for the item. The value of dc:identifier is the permanent URL &lt;br class=&quot;atl-forced-newline&quot; /&gt;&lt;br /&gt;
+in the contributing repository &lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;confluenceTd&quot;&gt;
+&lt;p&gt; bamboo:source &lt;br class=&quot;atl-forced-newline&quot; /&gt; &lt;/p&gt;
+&lt;/td&gt;
+&lt;td class=&quot;confluenceTd&quot;&gt;
+&lt;p&gt; Short identifier of contributing repository &lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;confluenceTd&quot;&gt;
+&lt;p&gt; bamboo:uri &lt;/p&gt;
+&lt;/td&gt;
+&lt;td class=&quot;confluenceTd&quot;&gt;
+&lt;p&gt; Bamboo assigned, unique URI for the item. The URI includes a short identifier for the &lt;br class=&quot;atl-forced-newline&quot; /&gt;&lt;br /&gt;
+contributing repository and an identifier for the item in that repository. &lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;p&gt;The &quot;dc:&quot; prefix represents the dublin core namespace (&lt;a href=&quot;http://dublincore.org/documents/2007/07/02/dcmi-namespace/&quot; class=&quot;external-link&quot; rel=&quot;nofollow&quot;&gt;http://dublincore.org/documents/2007/07/02/dcmi-namespace/&lt;/a&gt;), and the &quot;bamboo:&quot; prefix represents the bamboo namespace (URI to be determined).&lt;/p&gt;
+&lt;p&gt;The values of bamboo:uri, dc:isPartOf, and dc:isVersionOf properties are bamboo identifiers. Bamboo identifiers are URIs in the form &quot;&lt;source&gt;/&lt;item-id&gt;&quot; where &lt;source&gt; is a short Bamboo-assigned URI for the contributing repository and &lt;item-id&gt; is the same as, or a slightly modified version of the contributing repository's identifier for the item. The source identifier is modified only so far as is needed to make it a legal component of the URI.&lt;/p&gt;
+&lt;p&gt;Dates (dc:date and dc:issued) as ISO 8601 dates or a range of ISO 8601 dates in the format &quot;&lt;d1&gt; to &lt;d2&gt;&quot;. A date may be followed by a &quot; ?&quot; string if the original date was marked as uncertain. For example:&lt;/p&gt;
+&lt;p&gt;    1099 to 1100 ?&lt;/p&gt;
+&lt;p&gt;Represents an uncertain year between 1099 and 1100 inclusive.&lt;/p&gt;
+&lt;h2 id=&quot;BookModelDraft-PageContent &quot;&gt;&lt;strong&gt;Page Content&lt;/strong&gt; &lt;/h2&gt;
+&lt;p&gt;Book pages are rendered in a number of formats depending on the materials available. Book pages will always be available as XHTML 1.0 and TEI page files. If page scans images are available, each page will also include a full image and thumbnail.&lt;/p&gt;
+&lt;p&gt;Every representation of a page appears in a sub-folder of the item folder depending by type. Page sub-folders are named: XHTML, TEI, images, and thumbnails. The following CMIS types are used to represent page content:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;bamboo:page-image (name &quot;&lt;sequence&gt;.jpg&quot;)&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A high quality jpg image of a book page with width 800 pixels. Aspect ratio is the same as the original scan.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;bamboo:page-tei (name &quot;&lt;sequence&gt;.tei.xml&quot;)&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;TEI representation of book page&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;bamboo:page-xhtml (name &quot;&lt;sequence&gt;.html&quot;)&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Semantic XHTML (that is without formatting tags) of a book's page text. CSS classes will be mappable to TEI elements.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;bamboo:page-thumb150 (name &quot;&lt;sequence&gt;w150.jpg&quot;)&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Thumbnail for page as a jpeg image with width 150 pixels. Aspect ratio is the same as the original scan.&lt;/p&gt;
+&lt;p&gt;Each page document (any of the above types) has the following properties:&lt;/p&gt;
+&lt;div class=&quot;table-wrap&quot;&gt;
+&lt;table class=&quot;confluenceTable&quot;&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&quot;confluenceTd&quot;&gt;
+&lt;p&gt; bamboo:seq &lt;br class=&quot;atl-forced-newline&quot; /&gt; &lt;/p&gt;
+&lt;/td&gt;
+&lt;td class=&quot;confluenceTd&quot;&gt;
+&lt;p&gt; Assigned sequence number &lt;br class=&quot;atl-forced-newline&quot; /&gt; &lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;confluenceTd&quot;&gt;
+&lt;p&gt; bamboo:page &lt;br class=&quot;atl-forced-newline&quot; /&gt; &lt;/p&gt;
+&lt;/td&gt;
+&lt;td class=&quot;confluenceTd&quot;&gt;
+&lt;p&gt; Page identifier as it appears in the source content &lt;br class=&quot;atl-forced-newline&quot; /&gt; &lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;confluenceTd&quot;&gt;
+&lt;p&gt; bamboo:div &lt;/p&gt;
+&lt;/td&gt;
+&lt;td class=&quot;confluenceTd&quot;&gt;
+&lt;p&gt; &lt;span style=&quot;color: rgb(0,0,0);&quot;&gt;Identifier for the division (chapter, act, etc) that includes the page. This may have multiple values if &lt;/span&gt;&lt;br class=&quot;atl-forced-newline&quot; /&gt;&lt;br /&gt;
+&lt;span style=&quot;color: rgb(0,0,0);&quot;&gt;the page includes content belonging to more than one division.&lt;/span&gt;&lt;br class=&quot;atl-forced-newline&quot; /&gt; &lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;</p>
+<p>&lt;p&gt;These properties are attached to each page representation as well as any separate source object (OCR text, image.) that was used in generating the derived content, so that the original source objects can be matched with generated content via a join.&lt;/p&gt;
+&lt;h2 id=&quot;BookModelDraft-OriginalSourceContent&quot;&gt;&lt;strong&gt;Original Source Content&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;The original content as obtained from the contributing repository is located in a subfolder of the item folded named &quot;source&quot;. This content is exactly as obtained from the contributing repository. Additional property fields are added to the source objects to allow them to be matched with generated content (see page properties above). The following CMIS types are used to identify source content:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;bamboo:source-mets (name as original)&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;METS document describing the Book as supplied by contributing repository&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;bamboo:source-page-image (name as original)&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A scanned image of a page (any image format) as supplied by contributing repository&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;bamboo:source-page-ocr (name as original)&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Raw OCR text of a book page as supplied by a contributing repository&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;bamboo:source-page-xml (name as original)&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;XML text and/or metadata for a book page as supplied by a contributing repository (usually TEI.)&lt;/p&gt;
+&lt;p&gt;Additional types will be added as needed.&lt;/p&gt;
+&lt;h2 id=&quot;BookModelDraft-ContentsFolderandIndexing&quot;&gt;&lt;strong&gt;Contents Folder and Indexing&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt; &lt;/strong&gt; &lt;img src=&quot;/sites/default/files/bamboo/bamboo-model-2.jpg&quot; /&gt;&lt;br /&gt;
+Each item folder will contain a &quot;contents&quot; sub-folder, with multiple index folders. Each index provides an alternative way of navigating generated content. Indexes are (possibly nested) folders containing documents that reference content documents.&lt;/p&gt;
+&lt;p&gt;Indexes are sets of annotations of source and/or generated content, similar to (and available as) an Atom feed. Even though generated content is organized by page, index items may refer to a selected portion of a range of pages so as to allow divisions and other indexed units to overlap page boundaries. Indexes are described in the diagram labeled &quot;Contents / Indexing&quot;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Page Index&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The page index provides a way of navigating to each page. The page index provides an easy way to examine all of the content (generated, and original source) that is related to a page.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Div Index&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The div index provides a structural view of book content. (For example by chapter, scene and act). This index is built using the structure map in a METS file or TEI div structure depending on the content source.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Genre Indexes&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Items may include one or more Genre Indexes. Each Genre Index resembles the div index, but will organize content using a standardized set of div types that will be consistant across source repositories. The types used will depend on the type of content (book, drama, essay.)&lt;/p&gt;
+&lt;p&gt;Genre indexes should be considered a research topic and may or might not exist for any particular book.&lt;/p&gt;</p>
 
         
       </section>

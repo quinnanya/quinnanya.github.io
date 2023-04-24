@@ -12,7 +12,7 @@
 
 <!-- begin _includes/seo.html -->
 <title>Do It With Drupal: Drupal In The Cloud - Quinn Dombrowski</title>
-<meta name="description" content="Example description">
+<meta name="description" content="Josh Koenig drupal.org/user/3313 josh - at - chapterthree.com getpantheon.com About the cloud  &amp;quot;Cloud&amp;quot; as new model for hosting Traditional hosting = real estate (rack space) Most real estate customers are renters...">
 
 
 
@@ -20,14 +20,14 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Quinn Dombrowski">
 <meta property="og:title" content="Do It With Drupal: Drupal In The Cloud">
-<meta property="og:url" content="https://www.quinndombrowski.com/">
+<meta property="og:url" content="https://www.quinndombrowski.com/blog/2009/12/11/do-it-drupal-drupal-cloud/">
 
 
-  <meta property="og:description" content="Example description">
+  <meta property="og:description" content="Josh Koenig drupal.org/user/3313 josh - at - chapterthree.com getpantheon.com About the cloud  &amp;quot;Cloud&amp;quot; as new model for hosting Traditional hosting = real estate (rack space) Most real estate customers are renters...">
 
 
 
-  <meta property="og:image" content="https://www.quinndombrowski.com/">
+  <meta property="og:image" content="https://www.quinndombrowski.com">
 
 
 
@@ -40,7 +40,7 @@
 
 
 
-<link rel="canonical" href="https://www.quinndombrowski.com/">
+<link rel="canonical" href="https://www.quinndombrowski.com/blog/2009/12/11/do-it-drupal-drupal-cloud/">
 
 
 
@@ -51,7 +51,7 @@
     
       "@type": "Person",
       "name": "Quinn Dombrowski",
-      "url": "https://www.quinndombrowski.com//"
+      "url": "https://www.quinndombrowski.com/"
     
   }
 </script>
@@ -116,16 +116,6 @@
           
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
-              <a href="/docs/quick-start-guide/">Quick-Start Guide</a>
-            </li><li class="masthead__menu-item">
-              <a href="/about/">About</a>
-            </li><li class="masthead__menu-item">
-              <a href="/year-archive/">Sample Posts</a>
-            </li><li class="masthead__menu-item">
-              <a href="/collection-archive/">Sample Collections</a>
-            </li><li class="masthead__menu-item">
-              <a href="/terms/">Terms &amp; Privacy Policy</a>
-            </li><li class="masthead__menu-item">
               <a href="/about/">About</a>
             </li><li class="masthead__menu-item">
               <a href="/cv/">CV</a>
@@ -166,7 +156,7 @@
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="https://www.quinndombrowski.com//blog/2009/12/11/do-it-drupal-drupal-cloud/" class="u-url" itemprop="url">Do It With Drupal: Drupal In The Cloud</a>
+            <a href="https://www.quinndombrowski.com/blog/2009/12/11/do-it-drupal-drupal-cloud/" class="u-url" itemprop="url">Do It With Drupal: Drupal In The Cloud</a>
           </h1>
           
 
@@ -176,134 +166,134 @@
 
       <section class="page__content e-content" itemprop="text">
         
-        <p>Josh Koenig<br />
-drupal.org/user/3313<br />
-josh - at - chapterthree.com<br />
-getpantheon.com<br />
-<strong>About the cloud</strong></p>
-<ul>
-<li>"Cloud" as new model for hosting</li>
-<li>Traditional hosting = real estate (rack space)</li>
-<li>Most real estate customers are renters, few love their landlord - landlords sometimes cut corners and do the bare minimum to keep you happy... but you need this</li>
-<li>Owning comes with lots of responsibilities and hidden costs</li>
-<li>Large scale projects are expensive, slow, and prone to setbacks</li>
-<li>"The Cloud" = hosting as an API: on-demand availability</li>
-<li>Hourly pricing</li>
-<li>Reliable, reusable start-states: people make mistakes vs. programs that do things and you know exactly what they're going to give you</li>
-<li>You can say: I want a new server, here's the distro, here's the information, here's the configuration - and I want five of them</li>
-<li>The cloud = less waste, more freedom, flexibility... but not a silver bullet</li>
-<li>Performance can vary (don't use it for scientifically accurate benchmarks)</li>
-<li>Abstractions aren't the same as the real thing (not the same as physical servers - but for what it's worth this hasn't been a problem for Drupal)</li>
-<li>New tricks to learn - power of API</li>
-<li>The Cloud is Drupal's destiny - increasing Drupal's reach; you can start with pennies, scale to millions</li>
-<li>Create products cheaply</li>
-<li>Grow organically, but still grow fast</li>
-</ul>
-<p><strong>Launch a server in the cloud</strong></p>
-<ul>
-<li>ElasticFox - Amazon control panel for Firefox</li>
-<li>Amazon just added locations for US west coast</li>
-<li>Pantheon project: create images for cloud services that are targeted towards Drupal</li>
-<li>Three images: high performance production hosting image (all the tricks already done), another for an Aegir, another for a continuous integration environment for Drupal</li>
-<li>Grand vision for world-class Drupal infrastructure for pennies an hour</li>
-<li>High performance production has the most work since people have been the most interested</li>
-<li>Ubuntu 9.04 base config, whole LAMP stack, Pressflow pre-installed, memcached, APC, all of it is already there</li>
-<li>Can monitor processes, do everything you like to do as root</li>
-<li>v0.8.1 beta - but people are using it in production (in spite of disclaimer)</li>
-</ul>
-<p><strong>Who are the cloud providers</strong></p>
-<ul>
-<li>AWS: most mature, a lot of features, still moving quickly, added a load balancer earlier in the year; they're a utility, not interested in your particular use case; they don't tell people what they're working on or how it works</li>
-<li>AWS has infrastructure for giving away free images - most don't</li>
-<li>Rackspace - has Rackspace Cloud Sites (you don't get root, you put your Drupal in there, they scale it for you with mixed results); scaling any particular site requires deep knowledge of it; Rackspace Cloud Servers is better (Slicehost is built on top of Rackspace Cloud Servers)</li>
-<li>Rackspace is looking to break into the space; willing to do deals, talk to you, etc</li>
-<li>Voxel: smaller/smarter, also in Asia; cloud product just emerging from beta, but it's good - also lets you intermingle cloud and physical infrastructure</li>
-<li>And more every day!</li>
-<li>VPS is becoming quite cloudy (linode.com, slicehost, vps.net)</li>
-<li>Custom/managed cloud services (security, regulatory compliance issues - people will build a cloud for you: Eucalyptus, Neospire, others)
-</li>
-<li>Cloud value-adders: Rightscale, Scalr - cloud/cluster management services</li>
-<li>Cloudkick - cross-cloud services, managing different cloud providers (want to be able to move servers from one service to another); it's free; open-source LibCloud project to prevent people from getting locked into one provider</li>
-<li>Cloud tools for Drupal - getpantheon.com</li>
-</ul>
-<p><strong>Questions</strong></p>
-<ul>
-<li>How do you do a cost-analysis? You probably won't see the financial benefits right away, if you're going to leave it on all the time. But scaling with changing use patterns, adding/removing new instances.</li>
-<li>Cost/benefit comes in disk speed performance - most cloud providers have poorer I/O performance than a physical server</li>
-<li>How do you solve that problem for Drupal? - All performance/scalability work is about making Drupal do less work</li>
-<li>Oriented around Drupal doing only what it needs to, and not bogging it down with things like showing the user the same page he saw a minute ago</li>
-<li>Database replication for read-only queries</li>
-<li>Use other tools that are better at repeated-action type jobs for those things</li>
-</ul>
-<p><strong>What is it good for</strong></p>
-<ul>
-<li>Testing/continuous integration</li>
-<li>testing.drupal.org (Drupal testing Drupal) - not in the cloud, but will soon release cloud image of it</li>
-<li>People can spin these up if Drupal finds itself in a testing bottleneck, just for the day</li>
-<li>Development infrastructure: new server for each site</li>
-<li>Putting things like version control (unfuddle, beanstalk)</li>
-<li>Products and services: Lefora (forums), crowdfactory, olark (start with pennies, scale to millions)</li>
-<li>Database layer for Drupal can be a choke point - you can duplicate it</li>
-<li>High availability production hosting: Acquia is on EC2</li>
-<li>Most cloud infrastructure isn't cheap at this level (running many servers, keeping them always on-line), if you're really big you'll find yourself at the top end going to traditional managed hosting because there's some levels of performance that are capped by the virtualization layer</li>
-<li>Control costs for traffic patterns - geographically centralized audience for most people</li>
-<li>Turning things on and off to deal with daily peaks - two more servers only on during the day</li>
-<li>Instances fail, though not much more often than real servers (and remember that instances exist on real servers that do break)</li>
-<li>Performance can be impacted by other local activity</li>
-<li>Virtual disks tend to have relatively poor I/O performance</li>
-<li>Accept the inevitability of failure, embrace the paradigm of "rapid recovery", develop architecture with modular, replaceable parts (images for each server), minimize disk/CPU utilization for menial tasks</li>
-<li>"RAM is cheap" - the more you can push to things that read/write out of memory, the better</li>
-</ul>
-<p><strong>Production hosting in the cloud</strong></p>
-<ul>
-<li>Monitor your load - you have to look more carefully than just hits</li>
-<li>Spin up more instances (scale horizontally) as you need more power
-<ul>
-<li>How does this work?</li>
-<li>Could be manual process ("we need a server, let's do it") - does need some manual intervention somewhere, though in theory you could script it</li>
-<li>Amazon offers an auto-scaling feature (when we need more, add servers, up to X number of features - Amazon AutoScale)</li>
-<li>AutoScale is simple (doesn't cost anything, too)</li>
-<li>How does this work? How do the pieces work together?</li>
-<li>You need to have an image with all the pieces needed at the system level; you should use version control and have a boot script as part of the image (when the image start, the script checks out the current code base from the database and all the necessary connections), then AutoScale makes the pieces aware of what's out there</li>
-<li>You can also do load balancing more manually</li>
-<li>Role of sysadmin is changing - new set of things where now you don't have to worry about hard drives, but scaling up/down, saving money</li>
-<li>When you're doing horizontal scaling, you trigger your image to be built, it checks out the code; Amazon also offers virtual drive service (if you're working with an application with a lot of data in file system) - can connect that data quickly</li>
-<li>Bake in as much as you can to the image, then have automatic processes that fire that get the latest information, check it into infrastructure, start distributing load there</li>
-</ul>
-</li>
-<li>Add layers (scale vertically) when bottlenecks emerge</li>
-<li>Create images for each layer in your infrastructure</li>
-<li>Use best practices to keep things speedy</li>
-</ul>
-<p><strong>About best practices</strong></p>
-<ul>
-<li>Front-side caching: use Pressflow with Varnish and/or NgineX (Drupal 7 will support some of this natively)</li>
-<li>Drupal is slow: complex, wonderful, brainy tool - if you're looking at the same thing over and over again, go get a tool that does only that, and quickly</li>
-<li>Use APC and/or Memcached to minimize queries and the database to eliminate costly unserialize() calls</li>
-<li>Drupal's native caches are good, but it does it in the database (this isn't the highest performance option, serializing/unserializing big arrays/objects)</li>
-<li>Architect for vertical scaling by utilizing all service layers, even if it's one box</li>
-<li>This is what "Mercury" is about</li>
-<li>CREAM: Cache rules everything around me</li>
-</ul>
-<p><strong>Mercury</strong></p>
-<ul>
-<li>Freely available on Amazon, as VMWare image, in as many ways as we can</li>
-<li>Also on-demand as a service</li>
-<li>"Drupal hosting, 200 times faster"</li>
-<li>Standardized high-performance stack: single server image with everything you want for cluster infrastructure</li>
-<li>Features: Varnish, HTTP/PHP, APC Cache, Apache Solr, MySQL</li>
-<li>Make Drupal run fast, hold up under large traffic spikes</li>
-<li>From one box to cluster</li>
-<li>If you're running all four layers and are still falling down, or you're doing something horribly write (Twitter) or horribly wrong (all code embedded in php content nodes)</li>
-</ul>
-<p><strong>Questions</strong></p>
-<ul>
-<li>Mercury: going to implement configuration management system (BCFG2, probably)</li>
-<li>Mercury/Pantheon - not Amazon-centric, can roll the stack out anywhere (physical hardware, whatever)</li>
-<li>You'd probably make your own variant image, and sync as necessary using the configuration management system</li>
-<li>If you haven't customized things heavily, you can take the latest version of Mercury, re-apply changes, and you're done (if you don't want to use the config management)</li>
-<li>You can keep old images around for pennies a month</li>
-</ul>
+        <p>&lt;p&gt;Josh Koenig&lt;br /&gt;
+drupal.org/user/3313&lt;br /&gt;
+josh - at - chapterthree.com&lt;br /&gt;
+getpantheon.com&lt;br /&gt;
+&lt;strong&gt;About the cloud&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&quot;Cloud&quot; as new model for hosting&lt;/li&gt;
+&lt;li&gt;Traditional hosting = real estate (rack space)&lt;/li&gt;
+&lt;li&gt;Most real estate customers are renters, few love their landlord - landlords sometimes cut corners and do the bare minimum to keep you happy... but you need this&lt;/li&gt;
+&lt;li&gt;Owning comes with lots of responsibilities and hidden costs&lt;/li&gt;
+&lt;li&gt;Large scale projects are expensive, slow, and prone to setbacks&lt;/li&gt;
+&lt;li&gt;&quot;The Cloud&quot; = hosting as an API: on-demand availability&lt;/li&gt;
+&lt;li&gt;Hourly pricing&lt;/li&gt;
+&lt;li&gt;Reliable, reusable start-states: people make mistakes vs. programs that do things and you know exactly what they're going to give you&lt;/li&gt;
+&lt;li&gt;You can say: I want a new server, here's the distro, here's the information, here's the configuration - and I want five of them&lt;/li&gt;
+&lt;li&gt;The cloud = less waste, more freedom, flexibility... but not a silver bullet&lt;/li&gt;
+&lt;li&gt;Performance can vary (don't use it for scientifically accurate benchmarks)&lt;/li&gt;
+&lt;li&gt;Abstractions aren't the same as the real thing (not the same as physical servers - but for what it's worth this hasn't been a problem for Drupal)&lt;/li&gt;
+&lt;li&gt;New tricks to learn - power of API&lt;/li&gt;
+&lt;li&gt;The Cloud is Drupal's destiny - increasing Drupal's reach; you can start with pennies, scale to millions&lt;/li&gt;
+&lt;li&gt;Create products cheaply&lt;/li&gt;
+&lt;li&gt;Grow organically, but still grow fast&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Launch a server in the cloud&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ElasticFox - Amazon control panel for Firefox&lt;/li&gt;
+&lt;li&gt;Amazon just added locations for US west coast&lt;/li&gt;
+&lt;li&gt;Pantheon project: create images for cloud services that are targeted towards Drupal&lt;/li&gt;
+&lt;li&gt;Three images: high performance production hosting image (all the tricks already done), another for an Aegir, another for a continuous integration environment for Drupal&lt;/li&gt;
+&lt;li&gt;Grand vision for world-class Drupal infrastructure for pennies an hour&lt;/li&gt;
+&lt;li&gt;High performance production has the most work since people have been the most interested&lt;/li&gt;
+&lt;li&gt;Ubuntu 9.04 base config, whole LAMP stack, Pressflow pre-installed, memcached, APC, all of it is already there&lt;/li&gt;
+&lt;li&gt;Can monitor processes, do everything you like to do as root&lt;/li&gt;
+&lt;li&gt;v0.8.1 beta - but people are using it in production (in spite of disclaimer)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Who are the cloud providers&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;AWS: most mature, a lot of features, still moving quickly, added a load balancer earlier in the year; they're a utility, not interested in your particular use case; they don't tell people what they're working on or how it works&lt;/li&gt;
+&lt;li&gt;AWS has infrastructure for giving away free images - most don't&lt;/li&gt;
+&lt;li&gt;Rackspace - has Rackspace Cloud Sites (you don't get root, you put your Drupal in there, they scale it for you with mixed results); scaling any particular site requires deep knowledge of it; Rackspace Cloud Servers is better (Slicehost is built on top of Rackspace Cloud Servers)&lt;/li&gt;
+&lt;li&gt;Rackspace is looking to break into the space; willing to do deals, talk to you, etc&lt;/li&gt;
+&lt;li&gt;Voxel: smaller/smarter, also in Asia; cloud product just emerging from beta, but it's good - also lets you intermingle cloud and physical infrastructure&lt;/li&gt;
+&lt;li&gt;And more every day!&lt;/li&gt;
+&lt;li&gt;VPS is becoming quite cloudy (linode.com, slicehost, vps.net)&lt;/li&gt;
+&lt;li&gt;Custom/managed cloud services (security, regulatory compliance issues - people will build a cloud for you: Eucalyptus, Neospire, others)
+&lt;/li&gt;
+&lt;li&gt;Cloud value-adders: Rightscale, Scalr - cloud/cluster management services&lt;/li&gt;
+&lt;li&gt;Cloudkick - cross-cloud services, managing different cloud providers (want to be able to move servers from one service to another); it's free; open-source LibCloud project to prevent people from getting locked into one provider&lt;/li&gt;
+&lt;li&gt;Cloud tools for Drupal - getpantheon.com&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Questions&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;How do you do a cost-analysis? You probably won't see the financial benefits right away, if you're going to leave it on all the time. But scaling with changing use patterns, adding/removing new instances.&lt;/li&gt;
+&lt;li&gt;Cost/benefit comes in disk speed performance - most cloud providers have poorer I/O performance than a physical server&lt;/li&gt;
+&lt;li&gt;How do you solve that problem for Drupal? - All performance/scalability work is about making Drupal do less work&lt;/li&gt;
+&lt;li&gt;Oriented around Drupal doing only what it needs to, and not bogging it down with things like showing the user the same page he saw a minute ago&lt;/li&gt;
+&lt;li&gt;Database replication for read-only queries&lt;/li&gt;
+&lt;li&gt;Use other tools that are better at repeated-action type jobs for those things&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;What is it good for&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Testing/continuous integration&lt;/li&gt;
+&lt;li&gt;testing.drupal.org (Drupal testing Drupal) - not in the cloud, but will soon release cloud image of it&lt;/li&gt;
+&lt;li&gt;People can spin these up if Drupal finds itself in a testing bottleneck, just for the day&lt;/li&gt;
+&lt;li&gt;Development infrastructure: new server for each site&lt;/li&gt;
+&lt;li&gt;Putting things like version control (unfuddle, beanstalk)&lt;/li&gt;
+&lt;li&gt;Products and services: Lefora (forums), crowdfactory, olark (start with pennies, scale to millions)&lt;/li&gt;
+&lt;li&gt;Database layer for Drupal can be a choke point - you can duplicate it&lt;/li&gt;
+&lt;li&gt;High availability production hosting: Acquia is on EC2&lt;/li&gt;
+&lt;li&gt;Most cloud infrastructure isn't cheap at this level (running many servers, keeping them always on-line), if you're really big you'll find yourself at the top end going to traditional managed hosting because there's some levels of performance that are capped by the virtualization layer&lt;/li&gt;
+&lt;li&gt;Control costs for traffic patterns - geographically centralized audience for most people&lt;/li&gt;
+&lt;li&gt;Turning things on and off to deal with daily peaks - two more servers only on during the day&lt;/li&gt;
+&lt;li&gt;Instances fail, though not much more often than real servers (and remember that instances exist on real servers that do break)&lt;/li&gt;
+&lt;li&gt;Performance can be impacted by other local activity&lt;/li&gt;
+&lt;li&gt;Virtual disks tend to have relatively poor I/O performance&lt;/li&gt;
+&lt;li&gt;Accept the inevitability of failure, embrace the paradigm of &quot;rapid recovery&quot;, develop architecture with modular, replaceable parts (images for each server), minimize disk/CPU utilization for menial tasks&lt;/li&gt;
+&lt;li&gt;&quot;RAM is cheap&quot; - the more you can push to things that read/write out of memory, the better&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Production hosting in the cloud&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Monitor your load - you have to look more carefully than just hits&lt;/li&gt;
+&lt;li&gt;Spin up more instances (scale horizontally) as you need more power
+&lt;ul&gt;
+&lt;li&gt;How does this work?&lt;/li&gt;
+&lt;li&gt;Could be manual process (&quot;we need a server, let's do it&quot;) - does need some manual intervention somewhere, though in theory you could script it&lt;/li&gt;
+&lt;li&gt;Amazon offers an auto-scaling feature (when we need more, add servers, up to X number of features - Amazon AutoScale)&lt;/li&gt;
+&lt;li&gt;AutoScale is simple (doesn't cost anything, too)&lt;/li&gt;
+&lt;li&gt;How does this work? How do the pieces work together?&lt;/li&gt;
+&lt;li&gt;You need to have an image with all the pieces needed at the system level; you should use version control and have a boot script as part of the image (when the image start, the script checks out the current code base from the database and all the necessary connections), then AutoScale makes the pieces aware of what's out there&lt;/li&gt;
+&lt;li&gt;You can also do load balancing more manually&lt;/li&gt;
+&lt;li&gt;Role of sysadmin is changing - new set of things where now you don't have to worry about hard drives, but scaling up/down, saving money&lt;/li&gt;
+&lt;li&gt;When you're doing horizontal scaling, you trigger your image to be built, it checks out the code; Amazon also offers virtual drive service (if you're working with an application with a lot of data in file system) - can connect that data quickly&lt;/li&gt;
+&lt;li&gt;Bake in as much as you can to the image, then have automatic processes that fire that get the latest information, check it into infrastructure, start distributing load there&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Add layers (scale vertically) when bottlenecks emerge&lt;/li&gt;
+&lt;li&gt;Create images for each layer in your infrastructure&lt;/li&gt;
+&lt;li&gt;Use best practices to keep things speedy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;About best practices&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Front-side caching: use Pressflow with Varnish and/or NgineX (Drupal 7 will support some of this natively)&lt;/li&gt;
+&lt;li&gt;Drupal is slow: complex, wonderful, brainy tool - if you're looking at the same thing over and over again, go get a tool that does only that, and quickly&lt;/li&gt;
+&lt;li&gt;Use APC and/or Memcached to minimize queries and the database to eliminate costly unserialize() calls&lt;/li&gt;
+&lt;li&gt;Drupal's native caches are good, but it does it in the database (this isn't the highest performance option, serializing/unserializing big arrays/objects)&lt;/li&gt;
+&lt;li&gt;Architect for vertical scaling by utilizing all service layers, even if it's one box&lt;/li&gt;
+&lt;li&gt;This is what &quot;Mercury&quot; is about&lt;/li&gt;
+&lt;li&gt;CREAM: Cache rules everything around me&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Mercury&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Freely available on Amazon, as VMWare image, in as many ways as we can&lt;/li&gt;
+&lt;li&gt;Also on-demand as a service&lt;/li&gt;
+&lt;li&gt;&quot;Drupal hosting, 200 times faster&quot;&lt;/li&gt;
+&lt;li&gt;Standardized high-performance stack: single server image with everything you want for cluster infrastructure&lt;/li&gt;
+&lt;li&gt;Features: Varnish, HTTP/PHP, APC Cache, Apache Solr, MySQL&lt;/li&gt;
+&lt;li&gt;Make Drupal run fast, hold up under large traffic spikes&lt;/li&gt;
+&lt;li&gt;From one box to cluster&lt;/li&gt;
+&lt;li&gt;If you're running all four layers and are still falling down, or you're doing something horribly write (Twitter) or horribly wrong (all code embedded in php content nodes)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Questions&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Mercury: going to implement configuration management system (BCFG2, probably)&lt;/li&gt;
+&lt;li&gt;Mercury/Pantheon - not Amazon-centric, can roll the stack out anywhere (physical hardware, whatever)&lt;/li&gt;
+&lt;li&gt;You'd probably make your own variant image, and sync as necessary using the configuration management system&lt;/li&gt;
+&lt;li&gt;If you haven't customized things heavily, you can take the latest version of Mercury, re-apply changes, and you're done (if you don't want to use the config management)&lt;/li&gt;
+&lt;li&gt;You can keep old images around for pennies a month&lt;/li&gt;
+&lt;/ul&gt;</p>
 
         
       </section>

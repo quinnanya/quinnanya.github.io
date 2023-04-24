@@ -1,5 +1,5 @@
 ---
-permalink: /blog/2023/04/24/celebraing-a-labiversary/
+permalink: /blog/2023/04/24/celebrating-a-labiversary/
 title: "Celebrating a Labiversary"
 date: 2023-04-24
 classes: wide

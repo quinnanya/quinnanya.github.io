@@ -12,7 +12,7 @@
 
 <!-- begin _includes/seo.html -->
 <title>Do It With Drupal: The Power of Features - Quinn Dombrowski</title>
-<meta name="description" content="See also Features on drupal.org  Jeff Miccolis &amp; Eric Gundersen - Development Seed, building a lot of products (things like Open Atrium) Drupal is very configurable - but that&#39;s also a weakness...">
+<meta name="description" content="See also Features on drupal.org  * Jeff Miccolis &amp; Eric Gundersen - Development Seed, building a lot of products (things like Open Atrium) * Drupal is very configurable - but that&#39;s also a weakness: ...">
 
 
 
@@ -23,7 +23,7 @@
 <meta property="og:url" content="https://www.quinndombrowski.com/blog/2009/12/10/do-it-drupal-power-features/">
 
 
-  <meta property="og:description" content="See also Features on drupal.org  Jeff Miccolis &amp; Eric Gundersen - Development Seed, building a lot of products (things like Open Atrium) Drupal is very configurable - but that&#39;s also a weakness...">
+  <meta property="og:description" content="See also Features on drupal.org  * Jeff Miccolis &amp; Eric Gundersen - Development Seed, building a lot of products (things like Open Atrium) * Drupal is very configurable - but that&#39;s also a weakness: ...">
 
 
 
@@ -166,65 +166,65 @@
 
       <section class="page__content e-content" itemprop="text">
         
-        <p>&lt;p&gt;See also &lt;a href=&quot;http://drupal.org/project/features&quot;&gt;Features&lt;/a&gt; on drupal.org&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Jeff Miccolis &amp; Eric Gundersen - Development Seed, building a lot of products (things like Open Atrium)&lt;/li&gt;
-&lt;li&gt;Drupal is very configurable - but that's also a weakness: no distinction between what's configuration (views settings) and what's content&lt;/li&gt;
-&lt;li&gt;Workflow problem: when you build a site, you build in a dev environment, but client/boss wants to see what it looks like before it goes live
-&lt;ul&gt;
-&lt;li&gt;So, you stage it somewhere, then move it over&lt;/li&gt;
-&lt;li&gt;Development: where the action happens (possibly your laptop)&lt;/li&gt;
-&lt;li&gt;Staging: where it's reviewed (much closer to where it's going to live)&lt;/li&gt;
-&lt;li&gt;Production: where it's live. (developing on the live site is always a bad idea)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Three people working on a project that needs to go live
-&lt;ul&gt;
-&lt;li&gt;Musician, developer, themer&lt;/li&gt;
-&lt;li&gt;Round 1 goes great - everyone works together and the site goes live&lt;/li&gt;
-&lt;li&gt;Round two is a PITA: new views build on dev, rebuild on staging, rebuild on dev, rebuild on staging, over and over, rebuild on prod&lt;/li&gt;
-&lt;li&gt;Extensive note taking, prone to human error, loads of repeated tasks&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;The solution? Make a distinction between config and content - views and settings are heavily and clearly distinguished from the actual content - then write this configuration to code and get it out of the database&lt;/li&gt;
-&lt;li&gt;You can do version control with your config - this lets you track changes&lt;/li&gt;
-&lt;li&gt;Node types, CCK fields, menu, blocks, views - these are config&lt;/li&gt;
-&lt;li&gt;You can say &quot;these components taken together define a feature&quot; - something the site does&lt;/li&gt;
-&lt;li&gt;&quot;Features&quot; module - Feature = Drupal parts that do something specific (Views, ImageCache presets, content types, fields, etc.)&lt;/li&gt;
-&lt;li&gt;Features = Drupal module that allows for the capture of configuration into code&lt;/li&gt;
-&lt;li&gt;(Sorry about the name; the Feature module makes Feature modules which have things)&lt;/li&gt;
-&lt;li&gt;Feature modules have Core exportables: content types, permissions, input filters, menu items&lt;/li&gt;
-&lt;li&gt;Contrib support: contexts, views, ImageCache, Ctools (panels, feeds, etc.)&lt;/li&gt;
-&lt;li&gt;Features is a system to capture the various components that describe how your site behaves&lt;/li&gt;
-&lt;li&gt;Features should be used throughout the development process - you can take a live site and capture existing features, but it requires you to change your thinking about how users interact with the site&lt;/li&gt;
-&lt;li&gt;Concepting what's part of which feature, what's shared, etc. gives you stronger features&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Making Features&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Create a Feature: you can add components, cycle through various elements, clickthe ones you want in your module&lt;/li&gt;
-&lt;li&gt;Features come as a nice tarball - turn it on in your website, you get all the stuff that comes with it&lt;/li&gt;
-&lt;li&gt;But then people start changing the view - you can see the status in the Features module (has it been changed?)&lt;/li&gt;
-&lt;li&gt;If something has been changed, it'll show you what&lt;/li&gt;
-&lt;li&gt;&quot;Recreate&quot; button will give you another tarball, with the current state of things&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Create, Update, Revert&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Drush commands - features, features export, features update, features revert&lt;/li&gt;
-&lt;li&gt;Views changes are made only once, each change has a commit log, if you check it into SVN like you should&lt;/li&gt;
-&lt;li&gt;If you move your development to a real dev environment, and leave the staging site as a staging site (that you can show clients, etc without worrying it broke in the last five minutes) this is good&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Distributing Features&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Are your features appropriate for drupal.org?&lt;/li&gt;
-&lt;li&gt;Is the configuration an IP issue?&lt;/li&gt;
-&lt;li&gt;How can I get that nifty update status thing behind the firewall?&lt;/li&gt;
-&lt;li&gt;If you can't/don't want to send it to drupal.org, but want to manage it internally over time: Features server&lt;/li&gt;
-&lt;li&gt;code.developmentseed.org/featureserver&lt;/li&gt;
-&lt;li&gt;Create projects, make new releases, subscribe to updates, etc&lt;/li&gt;
-&lt;li&gt;For automatic packaging, try the Project module&lt;/li&gt;
-&lt;li&gt;Feature server is much simpler, lets you get off the ground fast&lt;/li&gt;
-&lt;li&gt;Based on implicit standards: update status xml, exportables, drush make&lt;/li&gt;
-&lt;/ul&gt;</p>
+        <p>See also <a href="http://drupal.org/project/features">Features</a> on drupal.org</p>
+<ul>
+<li>Jeff Miccolis & Eric Gundersen - Development Seed, building a lot of products (things like Open Atrium)</li>
+<li>Drupal is very configurable - but that's also a weakness: no distinction between what's configuration (views settings) and what's content</li>
+<li>Workflow problem: when you build a site, you build in a dev environment, but client/boss wants to see what it looks like before it goes live
+<ul>
+<li>So, you stage it somewhere, then move it over</li>
+<li>Development: where the action happens (possibly your laptop)</li>
+<li>Staging: where it's reviewed (much closer to where it's going to live)</li>
+<li>Production: where it's live. (developing on the live site is always a bad idea)</li>
+</ul>
+</li>
+<li>Three people working on a project that needs to go live
+<ul>
+<li>Musician, developer, themer</li>
+<li>Round 1 goes great - everyone works together and the site goes live</li>
+<li>Round two is a PITA: new views build on dev, rebuild on staging, rebuild on dev, rebuild on staging, over and over, rebuild on prod</li>
+<li>Extensive note taking, prone to human error, loads of repeated tasks</li>
+</ul>
+</li>
+<li>The solution? Make a distinction between config and content - views and settings are heavily and clearly distinguished from the actual content - then write this configuration to code and get it out of the database</li>
+<li>You can do version control with your config - this lets you track changes</li>
+<li>Node types, CCK fields, menu, blocks, views - these are config</li>
+<li>You can say "these components taken together define a feature" - something the site does</li>
+<li>"Features" module - Feature = Drupal parts that do something specific (Views, ImageCache presets, content types, fields, etc.)</li>
+<li>Features = Drupal module that allows for the capture of configuration into code</li>
+<li>(Sorry about the name; the Feature module makes Feature modules which have things)</li>
+<li>Feature modules have Core exportables: content types, permissions, input filters, menu items</li>
+<li>Contrib support: contexts, views, ImageCache, Ctools (panels, feeds, etc.)</li>
+<li>Features is a system to capture the various components that describe how your site behaves</li>
+<li>Features should be used throughout the development process - you can take a live site and capture existing features, but it requires you to change your thinking about how users interact with the site</li>
+<li>Concepting what's part of which feature, what's shared, etc. gives you stronger features</li>
+</ul>
+<p><strong>Making Features</strong></p>
+<ul>
+<li>Create a Feature: you can add components, cycle through various elements, clickthe ones you want in your module</li>
+<li>Features come as a nice tarball - turn it on in your website, you get all the stuff that comes with it</li>
+<li>But then people start changing the view - you can see the status in the Features module (has it been changed?)</li>
+<li>If something has been changed, it'll show you what</li>
+<li>"Recreate" button will give you another tarball, with the current state of things</li>
+</ul>
+<p><strong>Create, Update, Revert</strong></p>
+<ul>
+<li>Drush commands - features, features export, features update, features revert</li>
+<li>Views changes are made only once, each change has a commit log, if you check it into SVN like you should</li>
+<li>If you move your development to a real dev environment, and leave the staging site as a staging site (that you can show clients, etc without worrying it broke in the last five minutes) this is good</li>
+</ul>
+<p><strong>Distributing Features</strong></p>
+<ul>
+<li>Are your features appropriate for drupal.org?</li>
+<li>Is the configuration an IP issue?</li>
+<li>How can I get that nifty update status thing behind the firewall?</li>
+<li>If you can't/don't want to send it to drupal.org, but want to manage it internally over time: Features server</li>
+<li>code.developmentseed.org/featureserver</li>
+<li>Create projects, make new releases, subscribe to updates, etc</li>
+<li>For automatic packaging, try the Project module</li>
+<li>Feature server is much simpler, lets you get off the ground fast</li>
+<li>Based on implicit standards: update status xml, exportables, drush make</li>
+</ul>
 
         
       </section>

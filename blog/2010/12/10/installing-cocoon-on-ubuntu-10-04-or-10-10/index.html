@@ -12,7 +12,7 @@
 
 <!-- begin _includes/seo.html -->
 <title>Installing Cocoon on Ubuntu 10.04 or 10.10 - Quinn Dombrowski</title>
-<meta name="description" content="This is an updated version of a how-to written for Intrepid (8.10), now horrendously out-of-date. It was written for Maverick (10.10) but should also work on Lucid (10.04). No knowledge of Ubuntu or Linux is assumed...">
+<meta name="description" content="This is an updated version of a how-to written for Intrepid (8.10), now horrendously out-of-date. It was written for Maverick (10.10) but should also work on Lucid (10.04).  No knowledge of Ubuntu or Linux is assumed...">
 
 
 
@@ -23,7 +23,7 @@
 <meta property="og:url" content="https://www.quinndombrowski.com/blog/2010/12/10/installing-cocoon-on-ubuntu-10-04-or-10-10/">
 
 
-  <meta property="og:description" content="This is an updated version of a how-to written for Intrepid (8.10), now horrendously out-of-date. It was written for Maverick (10.10) but should also work on Lucid (10.04). No knowledge of Ubuntu or Linux is assumed...">
+  <meta property="og:description" content="This is an updated version of a how-to written for Intrepid (8.10), now horrendously out-of-date. It was written for Maverick (10.10) but should also work on Lucid (10.04).  No knowledge of Ubuntu or Linux is assumed...">
 
 
 
@@ -166,185 +166,193 @@
 
       <section class="page__content e-content" itemprop="text">
         
-        <p>&lt;p&gt;This is an updated version of a &lt;a href=&quot;/blog/2010/04/15/installing-cocoon-on-ubuntu/&quot;&gt;how-to written for Intrepid (8.10)&lt;/a&gt;, now horrendously out-of-date. It was written for Maverick (10.10) but should also work on Lucid (10.04).&lt;/p&gt;
-&lt;p&gt;No knowledge of Ubuntu or Linux is assumed; the intended audience is someone who's managed to install Ubuntu and isn't too intimidated by the Terminal. &lt;em&gt;(Hint: You can copy and paste, but in Terminal, pasting is Ctrl + &lt;strong&gt;Shift&lt;/strong&gt; +C)&lt;/em&gt;&lt;/p&gt;
-&lt;h3&gt;Step 1: Installing Java SDK&lt;/h3&gt;
-&lt;p&gt;&lt;em&gt;(Thanks to &lt;a href=&quot;http://happy-coding.com/install-sun-java6-jdk-on-ubuntu-10-04-lucid/&quot;&gt;Daniel Bruegge&lt;/a&gt; for the tip)&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Open the Terminal (Applications &gt; Accessories &gt; Terminal)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;On Maverick:&lt;/strong&gt; type:&lt;br /&gt;
-&lt;pre&gt;sudo add-apt-repository &quot;deb &lt;a href=&quot;http://archive.canonical.com/&quot; title=&quot;http://archive.canonical.com/&quot;&gt;http://archive.canonical.com/&lt;/a&gt; maverick partner&quot;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;On Lucid:&lt;/strong&gt; type:&lt;br /&gt;
-&lt;pre&gt;sudo add-apt-repository &quot;deb &lt;a href=&quot;http://archive.canonical.com/&quot; title=&quot;http://archive.canonical.com/&quot;&gt;http://archive.canonical.com/&lt;/a&gt; lucid partner&quot;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;Type:&lt;br /&gt;
-&lt;pre&gt;sudo apt-get update&lt;/pre&gt;&lt;p&gt; This will check all the software repositories for what updates are available, including java.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;Type:&lt;br /&gt;
-&lt;pre&gt;sudo apt-get install sun-java6-jdk&lt;/pre&gt;&lt;p&gt; It will ask you if you want to continue; type &lt;em&gt;y&lt;/em&gt; to confirm.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;You'll have to agree to the TOS and license (you can use the tab key to move between the options) and then it'll install on its own.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Step 2: Installing Maven&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Open Terminal, and type&lt;br /&gt;
-&lt;pre&gt;sudo apt-get install maven2&lt;/pre&gt;&lt;p&gt; This will list all the packages that need to be installed; type &lt;em&gt;y&lt;/em&gt; to proceed&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Step 3: Installing Cocoon&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Open the Terminal and type&lt;br /&gt;
-&lt;pre&gt;mvn archetype:generate -DarchetypeCatalog=http://cocoon.apache.org&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;This begins the install process.
-&lt;ul&gt;
-&lt;li&gt;For archetype, choose 2&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Define value for groupId:&lt;/em&gt; - This should be a unique value. A classic value to use is, if you own the namespace myurl.com, you could type &lt;em&gt;com.myurl&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Define value for artifactId:&lt;/em&gt; cocoon&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Define value for version: 1.0-SNAPSHOT:&lt;/em&gt; 1.0.0&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Define value for package:&lt;/em&gt; - groupID.cocoon (i.e. &lt;em&gt;com.myurl.cocoon&lt;/em&gt;)&lt;/li&gt;
-&lt;li&gt;Confirm the properties&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;After everything's done installing, you should see &lt;em&gt;[INFO] BUILD SUCCESSFUL&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Cocoon will install in your Home folder, in a folder named the same thing as whatever you put for your artifactID. Here, the folder is named &lt;em&gt;cocoon&lt;/em&gt;.&lt;/p&gt;
-&lt;h3&gt;Step 4: Starting Jetty&lt;/h3&gt;
-&lt;p&gt;You need to make a configuration change in the Maven &lt;em&gt;settings.xml&lt;/em&gt; to be able to run Jetty. &lt;em&gt;(Thanks to &lt;a href=&quot;http://ganeshgembali.wordpress.com/2008/12/29/maven-jetty-org-apache-maven-plugins/&quot;&gt;Ganesh Gembali&lt;/a&gt; for the tip.)&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Open up Terminal and type&lt;br /&gt;
-&lt;pre&gt;sudo gedit /etc/maven2/settings.xml&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;This will pop up a text editor with &lt;em&gt;settings.xml&lt;/em&gt;. Search for &lt;em&gt;pluginGroups&lt;/em&gt;, and between&lt;br /&gt;
-&lt;plugingroups&gt; and &lt;/plugingroups&gt;, add
-&lt;pre&gt;&lt;plugingroup&gt;org.mortbay.jetty&lt;/plugingroup&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;Make sure you're in your cocoon directory in Terminal (does it say &lt;em&gt;~/cocoon$&lt;/em&gt; right before the cursor?), and type&lt;br /&gt;
-&lt;pre&gt;mvn jetty:run&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;There'll be a lot more installing, but it should conclude with &lt;em&gt;[INFO] Started Jetty Server&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Open a browser and go to &lt;a href=&quot;http://localhost:8888/cocoon&quot; title=&quot;http://localhost:8888/cocoon&quot;&gt;http://localhost:8888/cocoon&lt;/a&gt; - you should see a message saying Apache Cocoon: Welcome&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Step 5: Cocoon Add-ons&lt;/h3&gt;
-&lt;p&gt;There are a couple add-ons for Cocoon that are essentials-- like generators for HTML. If you want to use XSLT 2.0, Saxon 9 is also critical. Possibly less important are the FOP processor (to generate PDFs from XSL-FO), Batik (for SVG) and Forms (to genrate forms). If you don't need to use XSLT 2.0, you can skip the first part of this section.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Installing Saxon 9 &lt;em&gt;- a good idea&lt;/em&gt;
-&lt;ul&gt;
-&lt;li&gt;Open your &lt;em&gt;cocoon&lt;/em&gt; directory and navigate to src/main/resources/META-INF/cocoon&lt;/li&gt;
-&lt;li&gt;Create directory &lt;em&gt;avalon&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Create the following files in Text Editor (Applications &gt; Accessories &gt; Text Editor), and place them in the avalon directory:
-&lt;ul&gt;
-&lt;li&gt;File named &lt;strong&gt;cocoon-core-xslt-saxon.xconf&lt;/strong&gt;&lt;br /&gt;
-&lt;pre&gt;&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;??&gt;
-&lt;components&gt;
-&lt;component role=&quot;org.apache.excalibur.xml.xslt.XSLTProcessor/saxon&quot; class=&quot;org.apache.cocoon.components.xslt.TraxProcessor&quot;&gt;</p>
-<p>&lt;parameter name=&quot;use-store&quot; value=&quot;true&quot;&gt;&lt;/parameter&gt;
-&lt;parameter name=&quot;transformer-factory&quot; value=&quot;net.sf.saxon.TransformerFactoryImpl&quot;&gt;&lt;/parameter&gt;<br>
-&lt;/component&gt;
-&lt;/components&gt;
-&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;File named &lt;strong&gt;sitemap-transformers-saxon-transformer.xconf&lt;/strong&gt;&lt;br /&gt;
-&lt;pre&gt;&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;??&gt;</p>
-<p>&lt;components xmlns:map=&quot;http://apache.org/cocoon/sitemap/1.0&quot;&gt;
-&lt;transformers&gt;
-&lt;transformer name=&quot;xslt2&quot; src=&quot;org.apache.cocoon.transformation.TraxTransformer&quot;&gt;
-&lt;xslt-processor-role&gt;saxon&lt;/xslt-processor-role&gt;
-&lt;/transformer&gt;<br>
-&lt;/transformers&gt;
-&lt;/components&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Download &lt;a href=&quot;http://saxon.sourceforge.net/#F9.2HE&quot;&gt;Saxon-HE 9.2 for Java&lt;/a&gt;. By default, this will go into your Downloads folder.&lt;/li&gt;
-&lt;li&gt;Extract the zip file; you can delete everything but &lt;em&gt;saxon9he.jar&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Open a new Terminal&lt;br /&gt;
-&lt;pre&gt;cd cocoon
-mvn install:install-file -DgroupId=net.sf.saxon -DartifactId=saxon -Dversion=9.2.1.2 -Dpackaging=jar -Dfile=../Downloads/saxon9he.jar&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;Go to &lt;em&gt;cocoon&lt;/em&gt; and open pom.xml&lt;/li&gt;
-&lt;li&gt;At the bottom of &lt;dependencies&gt;, add:&lt;br /&gt;
-&lt;pre&gt;
-&lt;dependency&gt;<br>
-&lt;groupid&gt;net.sf.saxon&lt;/groupid&gt;<br>
-&lt;artifactid&gt;saxon&lt;/artifactid&gt;<br>
-&lt;version&gt;9.2.1.2&lt;/version&gt;<br>
-&lt;/dependency&gt;  &lt;/pre&gt;&lt;/dependencies&gt;&lt;/li&gt;
-&lt;li&gt;If for some reason you only want Saxon 9 and not the ability to generate HTML, skip to the bottom of this section&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Installing HTML support
-&lt;ul&gt;
-&lt;li&gt;Still in pom.xml, at the bottom of &lt;dependencies&gt;, add:&lt;br /&gt;
-&lt;pre&gt;
-&lt;dependency&gt;
-&lt;groupid&gt;org.apache.cocoon&lt;/groupid&gt;</p>
-<p>&lt;artifactid&gt;cocoon-html-impl&lt;/artifactid&gt;
-&lt;version&gt;1.0.0&lt;/version&gt;
-&lt;/dependency&gt;&lt;/pre&gt;&lt;/dependencies&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Installing FOP (for PDFs)
-&lt;ul&gt;
-&lt;li&gt;Still in pom.xml, at the bottom of &lt;dependencies&gt;, add:&lt;br /&gt;
-&lt;pre&gt;
-&lt;dependency&gt;
-&lt;groupid&gt;org.apache.cocoon&lt;/groupid&gt;
-&lt;artifactid&gt;cocoon-fop-impl&lt;/artifactid&gt;
-&lt;version&gt;1.0.0&lt;/version&gt;
-&lt;/dependency&gt;</p>
-<p>&lt;/pre&gt;&lt;/dependencies&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Installing Batik (SVG)
-&lt;ul&gt;
-&lt;li&gt;Still in pom.xml, at the bottom of &lt;dependencies&gt;, add:&lt;br /&gt;
-&lt;pre&gt;
-&lt;dependency&gt;
-&lt;groupid&gt;org.apache.cocoon&lt;/groupid&gt;</p>
-<p>&lt;artifactid&gt;cocoon-batik-impl&lt;/artifactid&gt;
-&lt;version&gt;1.0.0&lt;/version&gt;
-&lt;/dependency&gt;
-&lt;/pre&gt;&lt;/dependencies&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Installing Forms
-&lt;ul&gt;
-&lt;li&gt;Still in pom.xml, at the bottom of &lt;dependencies&gt;, add:&lt;br /&gt;
-&lt;pre&gt;
-&lt;dependency&gt;
-&lt;groupid&gt;org.apache.cocoon&lt;/groupid&gt;
-&lt;artifactid&gt;cocoon-forms-impl&lt;/artifactid&gt;
-&lt;version&gt;1.0.0-RC1&lt;/version&gt;</p>
-<p>&lt;/dependency&gt;
-&lt;/pre&gt;&lt;/dependencies&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;There's &lt;a href=&quot;http://cocoon.apache.org/2.2/blocks/1204_1_1.html&quot;&gt;a list of all blocks&lt;/a&gt;, and the syntax for the dependency code is in there someplace.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;li&gt;&lt;strong&gt;Once you're done adding dependencies:&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;If you have a Terminal open with &lt;em&gt;[INFO] Started Jetty Server&lt;/em&gt;, close it.&lt;/li&gt;
-&lt;li&gt;Open a new Terminal&lt;br /&gt;
-&lt;pre&gt;cd cocoon</p>
-<p>mvn compile&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;After it's done...&lt;br /&gt;
-&lt;pre&gt;mvn jetty:run&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;h3&gt;Redirecting the Sitemap&lt;/h3&gt;
-&lt;p&gt;You can add your pipelines to the &lt;em&gt;sitemap.xmap&lt;/em&gt; in cocoon/src/main/resources/COB-INF, or (more conveniently) you can tell that base sitemap to look elsewhere for your files.&lt;/p&gt;
-&lt;p&gt;I'm assuming here that you have a folder called &lt;em&gt;myproject&lt;/em&gt; in your Home folder where you have all your files and your sitemap. Please change that, and your user name, accordingly.&lt;/p&gt;
-&lt;p&gt;Included here is also the code to generate more useful error messages than a blank pages.&lt;/p&gt;
-&lt;p&gt;In &lt;em&gt;sitemap.xmap&lt;/em&gt; in cocoon/src/main/resources/COB-INF, at the bottom of the&lt;br /&gt;
-&lt;pipelines&gt; section, add:&lt;/pipelines&gt;&lt;/p&gt;
-&lt;pre&gt;
-&lt;pipeline&gt;
-&lt;handle-errors&gt;
-&lt;generate type=&quot;exception&quot;&gt;&lt;/generate&gt;</p>
-<p>&lt;serialize type=&quot;xml&quot;&gt;&lt;/serialize&gt;
-&lt;/handle-errors&gt;<br>
-&lt;match pattern=&quot;myproject/<strong>&quot;&gt;
-&lt;mount uri-prefix=&quot;myproject/&quot; check-reload=&quot;yes&quot; src=&quot;/home/YOUR_USER_NAME/myproject/sitemap.xmap&quot; reload-method=&quot;synchron&quot;&gt;&lt;/mount&gt;
-&lt;/match&gt;
-&lt;/pipeline&gt;&lt;/pre&gt;&lt;p&gt;In this case, your project will be found at &lt;a href=&quot;http://localhost:8888/cocoon/myproject/[things&quot;&gt;http://localhost:8888/cocoon/myproject/[things&lt;/a&gt; that match your pipelines]. But it doesn't have to match the folder name with your files. You can change the URL by chanigng &lt;match pattern=&quot;myproject/</strong>&quot;&gt; to &lt;match pattern=&quot;whatever_you_want/**&quot;&gt;&lt;/match&gt;&lt;/match&gt;&lt;/p&gt;
-&lt;h3&gt;Hints and Tips&lt;/h3&gt;
-&lt;p&gt;Every time you restart Ubuntu, you have to restart Cocoon:&lt;/p&gt;
-&lt;pre&gt;cd cocoon
-mvn jetty:run&lt;/pre&gt;&lt;p&gt;            Be sure to keep that Terminal window open while you're working with Cocoon. You can always check if Cocoon is working by going to: &lt;a href=&quot;http://localhost:8888/cocoon&quot; title=&quot;http://localhost:8888/cocoon&quot;&gt;http://localhost:8888/cocoon&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;This guide was prepared with help from a guide written on the GSLIS wiki by &lt;a href=&quot;http://piez.org/wendell/&quot;&gt;Wendell Piez&lt;/a&gt;. If you try it and something doesn't work, please post a comment. This document is licensed &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/us/&quot;&gt;Creative Commons Attribution&lt;/a&gt;.&lt;/p&gt;</p>
+        <p>This is an updated version of a <a href="/blog/2010/04/15/installing-cocoon-on-ubuntu/">how-to written for Intrepid (8.10)</a>, now horrendously out-of-date. It was written for Maverick (10.10) but should also work on Lucid (10.04).</p>
+<p>No knowledge of Ubuntu or Linux is assumed; the intended audience is someone who's managed to install Ubuntu and isn't too intimidated by the Terminal. <em>(Hint: You can copy and paste, but in Terminal, pasting is Ctrl + <strong>Shift</strong> +C)</em></p>
+<h3>Step 1: Installing Java SDK</h3>
+<p><em>(Thanks to <a href="http://happy-coding.com/install-sun-java6-jdk-on-ubuntu-10-04-lucid/">Daniel Bruegge</a> for the tip)</em></p>
+<ul>
+<li>Open the Terminal (Applications > Accessories > Terminal)</li>
+<li><strong>On Maverick:</strong> type:<br />
+<pre>sudo add-apt-repository "deb <a href="http://archive.canonical.com/" title="http://archive.canonical.com/">http://archive.canonical.com/</a> maverick partner"</pre></li>
+<li><strong>On Lucid:</strong> type:<br />
+<pre>sudo add-apt-repository "deb <a href="http://archive.canonical.com/" title="http://archive.canonical.com/">http://archive.canonical.com/</a> lucid partner"</pre></li>
+<li>Type:<br />
+<pre>sudo apt-get update</pre><p> This will check all the software repositories for what updates are available, including java.</p>
+</li>
+<li>Type:<br />
+<pre>sudo apt-get install sun-java6-jdk</pre><p> It will ask you if you want to continue; type <em>y</em> to confirm.</p>
+</li>
+<li>You'll have to agree to the TOS and license (you can use the tab key to move between the options) and then it'll install on its own.</li>
+</ul>
+<h3>Step 2: Installing Maven</h3>
+<ul>
+<li>Open Terminal, and type<br />
+<pre>sudo apt-get install maven2</pre><p> This will list all the packages that need to be installed; type <em>y</em> to proceed</p>
+</li>
+</ul>
+<h3>Step 3: Installing Cocoon</h3>
+<ul>
+<li>Open the Terminal and type<br />
+<pre>mvn archetype:generate -DarchetypeCatalog=http://cocoon.apache.org</pre></li>
+<li>This begins the install process.
+<ul>
+<li>For archetype, choose 2</li>
+<li><em>Define value for groupId:</em> - This should be a unique value. A classic value to use is, if you own the namespace myurl.com, you could type <em>com.myurl</em></li>
+<li><em>Define value for artifactId:</em> cocoon</li>
+<li><em>Define value for version: 1.0-SNAPSHOT:</em> 1.0.0</li>
+<li><em>Define value for package:</em> - groupID.cocoon (i.e. <em>com.myurl.cocoon</em>)</li>
+<li>Confirm the properties</li>
+</ul>
+</li>
+<li>After everything's done installing, you should see <em>[INFO] BUILD SUCCESSFUL</em></li>
+</ul>
+<p>Cocoon will install in your Home folder, in a folder named the same thing as whatever you put for your artifactID. Here, the folder is named <em>cocoon</em>.</p>
+<h3>Step 4: Starting Jetty</h3>
+<p>You need to make a configuration change in the Maven <em>settings.xml</em> to be able to run Jetty. <em>(Thanks to <a href="http://ganeshgembali.wordpress.com/2008/12/29/maven-jetty-org-apache-maven-plugins/">Ganesh Gembali</a> for the tip.)</em></p>
+<ul>
+<li>Open up Terminal and type<br />
+<pre>sudo gedit /etc/maven2/settings.xml</pre></li>
+<li>This will pop up a text editor with <em>settings.xml</em>. Search for <em>pluginGroups</em>, and between<br />
+<plugingroups> and </plugingroups>, add
+<pre><plugingroup>org.mortbay.jetty</plugingroup></pre></li>
+<li>Make sure you're in your cocoon directory in Terminal (does it say <em>~/cocoon$</em> right before the cursor?), and type<br />
+<pre>mvn jetty:run</pre></li>
+<li>There'll be a lot more installing, but it should conclude with <em>[INFO] Started Jetty Server</em></li>
+<li>Open a browser and go to <a href="http://localhost:8888/cocoon" title="http://localhost:8888/cocoon">http://localhost:8888/cocoon</a> - you should see a message saying Apache Cocoon: Welcome</li>
+</ul>
+<h3>Step 5: Cocoon Add-ons</h3>
+<p>There are a couple add-ons for Cocoon that are essentials-- like generators for HTML. If you want to use XSLT 2.0, Saxon 9 is also critical. Possibly less important are the FOP processor (to generate PDFs from XSL-FO), Batik (for SVG) and Forms (to genrate forms). If you don't need to use XSLT 2.0, you can skip the first part of this section.</p>
+<ul>
+<li>Installing Saxon 9 <em>- a good idea</em>
+<ul>
+<li>Open your <em>cocoon</em> directory and navigate to src/main/resources/META-INF/cocoon</li>
+<li>Create directory <em>avalon</em></li>
+<li>Create the following files in Text Editor (Applications > Accessories > Text Editor), and place them in the avalon directory:
+<ul>
+<li>File named <strong>cocoon-core-xslt-saxon.xconf</strong><br />
+<pre><?xml version="1.0" encoding="UTF-8"??>
+<components>
+<component role="org.apache.excalibur.xml.xslt.XSLTProcessor/saxon" class="org.apache.cocoon.components.xslt.TraxProcessor">
+
+<parameter name="use-store" value="true"></parameter>
+<parameter name="transformer-factory" value="net.sf.saxon.TransformerFactoryImpl"></parameter>  
+</component> 
+</components>
+</pre></li>
+<li>File named <strong>sitemap-transformers-saxon-transformer.xconf</strong><br />
+<pre><?xml version="1.0" encoding="UTF-8"??>
+
+<components xmlns:map="http://apache.org/cocoon/sitemap/1.0">
+<transformers>
+<transformer name="xslt2" src="org.apache.cocoon.transformation.TraxTransformer"> 
+<xslt-processor-role>saxon</xslt-processor-role>
+</transformer>  
+</transformers>
+</components></pre></li>
+</ul>
+</li>
+<li>Download <a href="http://saxon.sourceforge.net/#F9.2HE">Saxon-HE 9.2 for Java</a>. By default, this will go into your Downloads folder.</li>
+<li>Extract the zip file; you can delete everything but <em>saxon9he.jar</em></li>
+<li>Open a new Terminal<br />
+<pre>cd cocoon
+mvn install:install-file -DgroupId=net.sf.saxon -DartifactId=saxon -Dversion=9.2.1.2 -Dpackaging=jar -Dfile=../Downloads/saxon9he.jar</pre></li>
+<li>Go to <em>cocoon</em> and open pom.xml</li>
+<li>At the bottom of <dependencies>, add:<br />
+<pre>
+<dependency>  
+<groupid>net.sf.saxon</groupid>    
+<artifactid>saxon</artifactid>    
+<version>9.2.1.2</version>  
+</dependency>  </pre></dependencies></li>
+<li>If for some reason you only want Saxon 9 and not the ability to generate HTML, skip to the bottom of this section</li>
+</ul>
+</li>
+<li>Installing HTML support
+<ul>
+<li>Still in pom.xml, at the bottom of <dependencies>, add:<br />
+<pre>
+<dependency>
+<groupid>org.apache.cocoon</groupid>
+
+<artifactid>cocoon-html-impl</artifactid>
+<version>1.0.0</version>
+</dependency></pre></dependencies></li>
+</ul>
+</li>
+<li>Installing FOP (for PDFs)
+<ul>
+<li>Still in pom.xml, at the bottom of <dependencies>, add:<br />
+<pre>
+<dependency>
+<groupid>org.apache.cocoon</groupid>
+<artifactid>cocoon-fop-impl</artifactid>
+<version>1.0.0</version>
+</dependency>
+
+</pre></dependencies></li>
+</ul>
+</li>
+<li>Installing Batik (SVG)
+<ul>
+<li>Still in pom.xml, at the bottom of <dependencies>, add:<br />
+<pre>
+<dependency>
+<groupid>org.apache.cocoon</groupid>
+
+<artifactid>cocoon-batik-impl</artifactid>
+<version>1.0.0</version>
+</dependency>
+</pre></dependencies></li>
+</ul>
+</li>
+<li>Installing Forms
+<ul>
+<li>Still in pom.xml, at the bottom of <dependencies>, add:<br />
+<pre>
+<dependency>
+<groupid>org.apache.cocoon</groupid>
+<artifactid>cocoon-forms-impl</artifactid>
+<version>1.0.0-RC1</version>
+
+</dependency>
+            </pre></dependencies></li>
+</ul>
+</li>
+<li>There's <a href="http://cocoon.apache.org/2.2/blocks/1204_1_1.html">a list of all blocks</a>, and the syntax for the dependency code is in there someplace.</li>
+</ul>
+<li><strong>Once you're done adding dependencies:</strong>
+<ul>
+<li>If you have a Terminal open with <em>[INFO] Started Jetty Server</em>, close it.</li>
+<li>Open a new Terminal<br />
+<pre>cd cocoon
+            
+mvn compile</pre></li>
+<li>After it's done...<br />
+<pre>mvn jetty:run</pre></li>
+</ul>
+</li>
+<h3>Redirecting the Sitemap</h3>
+<p>You can add your pipelines to the <em>sitemap.xmap</em> in cocoon/src/main/resources/COB-INF, or (more conveniently) you can tell that base sitemap to look elsewhere for your files.</p>
+<p>I'm assuming here that you have a folder called <em>myproject</em> in your Home folder where you have all your files and your sitemap. Please change that, and your user name, accordingly.</p>
+<p>Included here is also the code to generate more useful error messages than a blank pages.</p>
+<p>In <em>sitemap.xmap</em> in cocoon/src/main/resources/COB-INF, at the bottom of the<br />
+<pipelines> section, add:</pipelines></p>
+<pre>
+<pipeline>
+<handle-errors>
+<generate type="exception"></generate> 
+
+<serialize type="xml"></serialize>
+</handle-errors>   
+<match pattern="myproject/**">
+<mount uri-prefix="myproject/" check-reload="yes" src="/home/YOUR_USER_NAME/myproject/sitemap.xmap" reload-method="synchron"></mount>
+</match>
+</pipeline></pre><p>In this case, your project will be found at <a href="http://localhost:8888/cocoon/myproject/[things">http://localhost:8888/cocoon/myproject/[things</a> that match your pipelines]. But it doesn't have to match the folder name with your files. You can change the URL by chanigng <match pattern="myproject/**"> to <match pattern="whatever_you_want/**"></match></match></p>
+<h3>Hints and Tips</h3>
+<p>Every time you restart Ubuntu, you have to restart Cocoon:</p>
+<pre>cd cocoon
+mvn jetty:run</pre><p>            Be sure to keep that Terminal window open while you're working with Cocoon. You can always check if Cocoon is working by going to: <a href="http://localhost:8888/cocoon" title="http://localhost:8888/cocoon">http://localhost:8888/cocoon</a>.</p>
+<p>This guide was prepared with help from a guide written on the GSLIS wiki by <a href="http://piez.org/wendell/">Wendell Piez</a>. If you try it and something doesn't work, please post a comment. This document is licensed <a href="http://creativecommons.org/licenses/by/3.0/us/">Creative Commons Attribution</a>.</p>
 
         
       </section>

@@ -192,6 +192,7 @@
 &lt;li&gt;&lt;strong&gt;.nojekyll file&lt;/strong&gt;: Open a plain-text editor and save an empty file in the root of your repo (where you have the &lt;em&gt;.eleventy.js&lt;/em&gt;) with the filename &lt;em&gt;.nojekyll&lt;/em&gt;. This will stop GitHub from trying to build your site as a Jekyll site.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;.github directory&lt;/strong&gt;: Create a new directory in the root of your repo and name it &lt;em&gt;.github&lt;/em&gt; (yes, starting with a period). Inside that directory, make a directory named &lt;em&gt;workflows&lt;/em&gt;. Open a plain-text editor and save a file inside the workflows directory called &lt;em&gt;build.yml&lt;/em&gt;. Copy the &lt;a href=&quot;https://github.com/quinnanya/quinnanya.github.io/blob/main/.github/workflows/build.yml&quot;&gt;contents from my build.yml file here&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Note: my build.yml file was updated 6/14/23 with Node version improvements thanks to Simon Wiles&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Depending on your Eleventy setup, you may need to change &lt;code&gt;publish_dir&lt;/code&gt; in your build.yml file. My Eleventy site builds to a folder called &lt;em&gt;dist&lt;/em&gt;. If yours builds to a folder with a different name, change it in this file.&lt;/p&gt;
 &lt;h2 id=&quot;github-configuration&quot; tabindex=&quot;-1&quot;&gt;GitHub configuration&lt;/h2&gt;
 &lt;h3 id=&quot;creating-a-gh-pages-branch&quot; tabindex=&quot;-1&quot;&gt;Creating a gh-pages branch&lt;/h3&gt;

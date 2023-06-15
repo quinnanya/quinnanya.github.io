@@ -17,6 +17,9 @@ GitHub Pages assumes you're using Jekyll unless you tell it otherwise. Instead o
 - **.nojekyll file**: Open a plain-text editor and save an empty file in the root of your repo (where you have the *.eleventy.js*) with the filename *.nojekyll*. This will stop GitHub from trying to build your site as a Jekyll site.
 - **.github directory**: Create a new directory in the root of your repo and name it *.github* (yes, starting with a period). Inside that directory, make a directory named *workflows*. Open a plain-text editor and save a file inside the workflows directory called *build.yml*. Copy the [contents from my build.yml file here](https://github.com/quinnanya/quinnanya.github.io/blob/main/.github/workflows/build.yml).
 
+*Note: my build.yml file was updated 6/14/23 with Node version improvements thanks to Simon Wiles*
+
+
 Depending on your Eleventy setup, you may need to change `publish_dir` in your build.yml file. My Eleventy site builds to a folder called *dist*. If yours builds to a folder with a different name, change it in this file.
 
 

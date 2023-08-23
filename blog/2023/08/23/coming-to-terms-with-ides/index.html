@@ -1,0 +1,283 @@
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang='en-US' class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html -->
+<title>Coming to Terms with IDEs - Quinn Dombrowski</title>
+<meta name="description" content="This week Brandon Walsh finished up his summer of blogging, a series I very much enjoyed following along with. It was a refreshing reminder that a blog post doesn&#39;t need to be a whole production: jotting down and sharing a few thoughts or a tip or a workflow can have a lot of value for yourself and others...">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Quinn Dombrowski">
+<meta property="og:title" content="Coming to Terms with IDEs">
+<meta property="og:url" content="https://www.quinndombrowski.com/blog/2023/08/23/coming-to-terms-with-ides/">
+
+
+  <meta property="og:description" content="This week Brandon Walsh finished up his summer of blogging, a series I very much enjoyed following along with. It was a refreshing reminder that a blog post doesn&#39;t need to be a whole production: jotting down and sharing a few thoughts or a tip or a workflow can have a lot of value for yourself and others...">
+
+
+
+  <meta property="og:image" content="https://www.quinndombrowski.com/assets/images/header_code.jpg">
+
+
+
+
+
+  <meta property="article:published_time" content="2023-08-23T00:00:00+00:00">
+
+
+
+
+
+
+<link rel="canonical" href="https://www.quinndombrowski.com/blog/2023/08/23/coming-to-terms-with-ides/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Quinn Dombrowski",
+      "url": "https://www.quinndombrowski.com/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Quinn Dombrowski Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/styles/minimal-mistakes.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Quinn Dombrowski
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/cv/">CV</a>
+            </li><li class="masthead__menu-item">
+              <a href="/projects/">Projects</a>
+            </li><li class="masthead__menu-item">
+              <a href="/blog/">Blog</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+  
+
+
+  
+  
+
+
+
+  
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/images/header_code.jpg');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          Coming to Terms with IDEs
+        
+      </h1>
+      
+      
+
+
+      
+      
+    </div>
+  
+  
+</div>
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    
+    <meta itemprop="datePublished" content="2023-08-23T00:00:00+00:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="https://www.quinndombrowski.com/blog/2023/08/23/coming-to-terms-with-ides/" class="u-url" itemprop="url">Coming to Terms with IDEs</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <p>This week Brandon Walsh finished up his <a href="https://scholarslab.lib.virginia.edu/blog/blogging-summer-2023-in-review/">summer of blogging</a>, a series I very much enjoyed following along with. It was a refreshing reminder that a blog post doesn't need to be a whole production: jotting down and sharing a few thoughts or a tip or a workflow can have a lot of value for yourself and others. So much of that kind of casual writing ended up on Twitter over the last decade, where it now sits in people's individual archives, has been deleted, or is juxtaposed with increasingly dubious ads on something called &quot;X&quot;.</p>
+<p>I've been greatly enjoying my time over on Bluesky (where Brandon and I have been working on <a href="https://scholarslab.lib.virginia.edu/blog/finding-the-community-after-twitter/">getting invite codes to any DH folks who want them</a>), but there's no denying the increasingly fractured nature of the broad DH community, and I'd rather write things in a place that are easier to find and reference in the future. So, a return to deliberate blogging -- with any luck, at the &quot;once every two weeks&quot; pace Brandon suggested.</p>
+<p>Today's anecdote and DH pro-tip come out of my own efforts to learn to code, which I've written a lot about over on the Data-Sitters Club (<a href="https://datasittersclub.github.io/site/dsc12.html">DSC 12: The DSC and the New Programming Language</a> especially, but &quot;<a href="https://datasittersclub.github.io/site/genindex.html#L">learning to code</a>&quot; is also one of the longest entries in the DSC index) and elsewhere, including <a href="https://purl.stanford.edu/ck442sc7933">arguing that learning to code should be weighed against learning myriad other things</a> for people interested in DH.</p>
+<p>I've written <a href="https://programminghistorian.org/en/lessons/jupyter-notebooks">about Jupyter Notebooks</a> and shortly after DSC 8 we switched to publishing the Data-Sitters Club using <a href="https://jupyterbook.org/en/stable/intro.html">Jupyter Book</a>, but I've never talked about IDEs or the software I use to write code because... I didn't use one. For the last five years, I've been writing all my code using the Jupyter Notebook environment. No plugins, nothing fancy, not even a whiff of autocomplete. Except when I was in a hurry, I wouldn't let myself copy and paste code from Stack Overflow: if I wanted to use it, I had to retype it. <em>This</em>, I reckoned, was how I learned human languages, and this was how I was going to learn to code.</p>
+<p>If you've seriously studied another human language, you'll remember that passive recognition is much, much easier than production. The less thoughtfully produced Duolinguo courses (looking at you, Duolinguo Ukrainian) cut corners in the same way: in all the exercises, the answers are already there in front of your eyes. You just need to string the words together in the right order, or form a plausible translated English sentence. If you have the vaguest sense of what any of the words are, you'll rack up the gamified points.</p>
+<p>Staring at a blank page and trying to summon from the depths of your brain what the word is -- and then sorting out the right form of the word and producing it from nothing, one letter at a time -- is an entirely different experience. Doing that same thing, but faster and verbally, is another challenge. And I thought to myself that if I was ever going to get good enough to do what I imagined to be the coding equivalent of fluent speech, I could allow myself no shortcuts. No copy/paste, no autocomplete, certainly no spicy AI autocomplete. It had to be me staring down a blank screen.</p>
+<p>I can't say it didn't work: I am, after several years of work, much more comfortable and capable with writing code. During some phases of the year, I do it regularly; like most things, to keep your skill you have to practice. But it can be a bit of a mental stretch, especially when I return to it after a break. <em>How many equals signs do I need here? What was the syntax for wrangling those CSVs?</em> I've written enough code by now that I can crib from older projects, but I have to fight inertia to get started. There is a particular kind of energy and focus I need to <em>want to</em> tackle writing code, and its supply is far from infinite or reliable.</p>
+<p>It felt like defeat, or at least indulging in some kind of heresy that would surely lead to perdition, when I mentioned my coding setup to my DH developer colleague Simon Wiles and his first response was to encourage me to use an IDE. How would I get better at writing code myself if I accepted becoming a thrall of code completion? But on the last night of the DH conference in Graz, we sat down together and he patiently showed me around VS Code (which I had spurned for years, associating it with bad high school programming classes that taught Visual Basic .NET), and helped me find useful extensions to install. Because Simon is usually the one to straighten out my code when I've caused a bigger wreck than a child with a wooden railway set and Godzilla fantasies, I promised to use VS Code in order to give him code disasters that were at least reasonably formatted.</p>
+<p>This morning I found myself struggling with the latest Data-Sitters Club book, needing to extract 100 rows from a spreadsheet where the filename column matched a list of filenames. I kicked myself for not simply flagging them all in OpenRefine when I had looked them up yesterday, which would've made an export easy. I seriously considered doing it manually on the train. It's not that I didn't know basically how to write the code-- it's just that I dreaded sorting out all the punctuation and fiddling with it until it went from &quot;basically right, should more or less work&quot; to &quot;actually does the thing&quot;.</p>
+<p>I opened VS Code. I wrote a couple lines to open my source CSV and output file. I typed <code>reader</code> and began scratching my way through the recesses of my brain, trying to remember the syntax for reading in a CSV that way.</p>
+<p>The rest of the code appeared in gray. The Codium plugin I had installed had seen this story before, more times even than I'd heard scholars say, &quot;I want to build a database&quot;, and it filled in the rest of the story.</p>
+<p>I hit tab and accepted the additions.</p>
+<p>In three minutes -- where it probably would have taken me 15 -- I had a new file with the 100 rows I needed and could get back to work on the actual project.</p>
+<p>I had my qualms about using an IDE with code completion, and on some gut level, it still makes me squeamish. (My oldest kid is very into Baldur's Gate 3, and code completion is the closest thing to Illithid Powers in my daily life.) But ultimately, I write code in order to <em>accomplish things</em>, not to pull off parlor tricks. My awe at people who can code fluently without reference materials doesn't make that a sensible end goal for myself. As Simon pointed out, &quot;There's no situation where you'd <em>have to</em> write code without an IDE&quot; -- and short of some kind of super-minimal computing post-ecological-disaster scenario, I imagine he's right. If this setup lowers the mental hurdles I have to navigate to sit down and produce some code, it's a good one, given my actual goals and priorities. If I'm going to wrack my brain to produce something from scratch, let it be Ukrainian, not Python.</p>
+<p><em>Cross-posted to the <a href="https://digitalhumanities.stanford.edu/">Stanford DH blog</a></em></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        <!---->
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2023-08-23T00:00:00+00:00">August 23rd 2023</time></p>
+
+      </footer>
+
+      
+
+      
+    </div>
+
+   
+  </article>
+
+  
+</div>
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2023 Quinn Dombrowski. Powered by <a href="https://www.11ty.dev/" rel="nofollow">Eleventy</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a> (adapted as <a href="https://github.com/quinnanya/eleven-mistakes">Eleven Mistakes</a>).
+<p>Also on <a rel="me" href="https://mstdn.social/@quinnanya">Mastodon</a></p>
+</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

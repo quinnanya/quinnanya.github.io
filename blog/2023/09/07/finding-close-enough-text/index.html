@@ -11,34 +11,36 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html -->
-<title>What ever happened to this page? - Quinn Dombrowski</title>
-<meta name="description" content="Maybe a panda ate it.">
+<title>Finding &#39;close enough&#39; text - Quinn Dombrowski</title>
+<meta name="description" content="For people new to text analysis, it can be hard to wrap your head around the gap between what&#39;s completely obvious to you as a human and what&#39;s easily detectible by a computer. Especially when working with humanities data...">
 
 
 
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Quinn Dombrowski">
-<meta property="og:title" content="What ever happened to this page?">
-<meta property="og:url" content="https://www.quinndombrowski.com/404.html">
+<meta property="og:title" content="Finding &#39;close enough&#39; text">
+<meta property="og:url" content="https://www.quinndombrowski.com/blog/2023/09/07/finding-close-enough-text/">
 
 
-  <meta property="og:description" content="Maybe a panda ate it.">
-
-
-
-  <meta property="og:image" content="https://www.quinndombrowski.com">
+  <meta property="og:description" content="For people new to text analysis, it can be hard to wrap your head around the gap between what&#39;s completely obvious to you as a human and what&#39;s easily detectible by a computer. Especially when working with humanities data...">
 
 
 
+  <meta property="og:image" content="https://www.quinndombrowski.com/assets/images/header_dsc.jpg">
 
 
 
 
 
+  <meta property="article:published_time" content="2023-09-07T00:00:00+00:00">
 
 
-<link rel="canonical" href="https://www.quinndombrowski.com/404.html">
+
+
+
+
+<link rel="canonical" href="https://www.quinndombrowski.com/blog/2023/09/07/finding-close-enough-text/">
 
 
 
@@ -137,40 +139,58 @@
     <div class="initial-content">
       
 
+  
+
+
+  
+  
+
+
+
+  
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/images/header_dsc.jpg');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          Finding 'close enough' text
+        
+      </h1>
+      
+      
+
+
+      
+      
+    </div>
+  
+  
+</div>
+
+
 
 
 
 <div id="main" role="main">
   
-  <div class="sidebar sticky">
-  
-  
-    
-      
-        <img src="/assets/images/404_panda.jpg"
-             alt="">
-      
-      
-      
-      
-    
-    
-  
-  </div>
-
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
     
     
-    <meta itemprop="datePublished" content="2023-09-07T13:27:11+00:00">
+    <meta itemprop="datePublished" content="2023-09-07T00:00:00+00:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="https://www.quinndombrowski.com/404.html" class="u-url" itemprop="url">What ever happened to this page?</a>
+            <a href="https://www.quinndombrowski.com/blog/2023/09/07/finding-close-enough-text/" class="u-url" itemprop="url">Finding 'close enough' text</a>
           </h1>
           
 
@@ -180,7 +200,10 @@
 
       <section class="page__content e-content" itemprop="text">
         
-        <p>Looks like you've found another example of digital humanities failure!</p>
+        <p>For people new to text analysis, it can be hard to wrap your head around the gap between what's completely obvious to you as a human and what's easily detectible by a computer. Especially when working with humanities data, there's a lot of &quot;almosts&quot;. Is <em>Pale Fire</em> the same as <em>Pale Fire: A Novel</em>? Unless you're researching the nuances of book titles (or rather, <a href="https://www.vox.com/the-goods/2019/2/14/18223954/a-novel-book-cover-reading-line">book cover conventions</a> that can find their way into metadata), those are functionally the same -- but if you search for duplicate rows in your spreadsheet, this pair won't come up because they're not <strong>exactly</strong> the same.</p>
+<p>One of my favorite Python libraries for finding these near-matches is the adorably-named <a href="https://pypi.org/project/fuzzywuzzy/">FuzzyWuzzy</a>, which has some simple and effective options for &quot;fuzzy string matching&quot;, the name for the problem we're trying to solve here. It uses Levenshtein distance -- a way to measure the difference between two sequences -- to calculate a score between two strings, or pieces of text. The simple ratio (<code>fuzz.ratio</code>) gets you the distance between your two pieces of text in their entirety, so if one of them contains extra information (e.g. <em>The Baby-Sitters Club #1: Kristy's Great Idea</em> vs <em>Kristy's Great Idea</em>), it will push the score down because that information is missing from one of the texts, which makes them less similar. What I usually use instead is the partial ratio (<code>fuzz.partial_ratio</code>), which takes the shortest piece of text, and scores to what extent that text exists (in its entirety, or altered) within the longer text.</p>
+<p>As an example, I've used this with a metadata sheet that has a column with what a matching filename <em>should</em> look like (author last name, hyphen, then the title with words lower-cased and separated by underscores). I've compared the values in the metadata sheet with the actual list of files that <em>actually exist</em> in a directory (which may have some extra cruft attached, like book series or series number), and then had the code print out all matches above a certain threshold -- 90 to start, then skimming the results for 80 to pick up anything I missed (<code>if fuzz.partial_ratio(line, file) &gt; 90:</code>)</p>
+<p>Data cleaning is always a slog, but FuzzyWuzzy cuts down on the pain by bringing the computer's evaluation of what's &quot;the same&quot; to something a little closer to mine.</p>
 
         
       </section>
@@ -191,6 +214,8 @@
 
 
         <!---->
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2023-09-07T00:00:00+00:00">September 7th 2023</time></p>
 
       </footer>
 

@@ -4,11 +4,23 @@
   <subtitle></subtitle>
   <link href="" rel="self"/>
   <link href=""/>
-  <updated>2023-08-23T00:00:00Z</updated>
+  <updated>2023-09-07T00:00:00Z</updated>
   <id>http://www.quinndombrowski.com</id>
   <author>
     <name>Quinn Dombrowski</name>
   </author>
+  
+  <entry>
+    <title>Finding &#39;close enough&#39; text</title>
+    <link href="http://www.quinndombrowski.com/blog/2023/09/07/finding-close-enough-text/"/>
+    <updated>2023-09-07T00:00:00Z</updated>
+    <id>http://www.quinndombrowski.com/blog/2023/09/07/finding-close-enough-text/</id>
+    <content type="html">&lt;p&gt;For people new to text analysis, it can be hard to wrap your head around the gap between what&#39;s completely obvious to you as a human and what&#39;s easily detectible by a computer. Especially when working with humanities data, there&#39;s a lot of &amp;quot;almosts&amp;quot;. Is &lt;em&gt;Pale Fire&lt;/em&gt; the same as &lt;em&gt;Pale Fire: A Novel&lt;/em&gt;? Unless you&#39;re researching the nuances of book titles (or rather, &lt;a href=&quot;https://www.vox.com/the-goods/2019/2/14/18223954/a-novel-book-cover-reading-line&quot;&gt;book cover conventions&lt;/a&gt; that can find their way into metadata), those are functionally the same -- but if you search for duplicate rows in your spreadsheet, this pair won&#39;t come up because they&#39;re not &lt;strong&gt;exactly&lt;/strong&gt; the same.&lt;/p&gt;
+&lt;p&gt;One of my favorite Python libraries for finding these near-matches is the adorably-named &lt;a href=&quot;https://pypi.org/project/fuzzywuzzy/&quot;&gt;FuzzyWuzzy&lt;/a&gt;, which has some simple and effective options for &amp;quot;fuzzy string matching&amp;quot;, the name for the problem we&#39;re trying to solve here. It uses Levenshtein distance -- a way to measure the difference between two sequences -- to calculate a score between two strings, or pieces of text. The simple ratio (&lt;code&gt;fuzz.ratio&lt;/code&gt;) gets you the distance between your two pieces of text in their entirety, so if one of them contains extra information (e.g. &lt;em&gt;The Baby-Sitters Club #1: Kristy&#39;s Great Idea&lt;/em&gt; vs &lt;em&gt;Kristy&#39;s Great Idea&lt;/em&gt;), it will push the score down because that information is missing from one of the texts, which makes them less similar. What I usually use instead is the partial ratio (&lt;code&gt;fuzz.partial_ratio&lt;/code&gt;), which takes the shortest piece of text, and scores to what extent that text exists (in its entirety, or altered) within the longer text.&lt;/p&gt;
+&lt;p&gt;As an example, I&#39;ve used this with a metadata sheet that has a column with what a matching filename &lt;em&gt;should&lt;/em&gt; look like (author last name, hyphen, then the title with words lower-cased and separated by underscores). I&#39;ve compared the values in the metadata sheet with the actual list of files that &lt;em&gt;actually exist&lt;/em&gt; in a directory (which may have some extra cruft attached, like book series or series number), and then had the code print out all matches above a certain threshold -- 90 to start, then skimming the results for 80 to pick up anything I missed (&lt;code&gt;if fuzz.partial_ratio(line, file) &amp;gt; 90:&lt;/code&gt;)&lt;/p&gt;
+&lt;p&gt;Data cleaning is always a slog, but FuzzyWuzzy cuts down on the pain by bringing the computer&#39;s evaluation of what&#39;s &amp;quot;the same&amp;quot; to something a little closer to mine.&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Coming to Terms with IDEs</title>

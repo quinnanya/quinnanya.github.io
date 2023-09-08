@@ -80,7 +80,7 @@ header:
 
 - ["A Conversation with the Organizers of Saving Ukrainian Cultural Heritage Online (SUCHO)"](https://iopn.library.illinois.edu/journals/jloe/article/view/969), with Zoe LeBlanc, Andrew Janco, Alex Wermer-Colan, Anna Kijas, Sebastian Majstorovic, Dena Strong & Erica Peaslee. _Journal of Library Outreach and Engagement_, vol. 2, no. 1.
 - "Stylometric investigations into translationese: The Baby-Sitters Club Across Languages", with Joanna Byszuk. In _16th International Conference on Statistical Analysis of Textual Data Proceedings._ [PDF, see p. 208](http://lexicometrica.univ-paris3.fr/jadt/JADT2022/VOL1.pdf).
-- - "Personal Entanglements and Graceful Relationship Degradation in Collaborative Projects", with Erica Cavanaugh. Forthcoming in _Revealing Meaning: Feminist Methods in Digital Scholarship_. Ed. Heather Froehlich and Kim Martin.
+- "Personal Entanglements and Graceful Relationship Degradation in Collaborative Projects", with Erica Cavanaugh. Forthcoming in _Revealing Meaning: Feminist Methods in Digital Scholarship_. Ed. Heather Froehlich and Kim Martin.
 - "[Multilingual Digital Humanities](https://cora.ucc.ie/items/aad3d680-506d-48ab-93d9-e81e3af5bd64)", with Pedro Nilsson-Fernàndez. In _Bloomsbury Handbook to DH_, ed. James O'Sullivan. 2022.
 - "[Does Coding Matter for Doing Digital Humanities?](https://purl.stanford.edu/ck442sc7933)". In _Bloomsbury Handbook to DH_, ed. James O'Sullivan. 2022.
 - "[Minimizing Computing Maximizes Labor](http://www.digitalhumanities.org/dhq/vol/16/2/000594/000594.html)". _Digital Humanities Quarterly_ vol. 16, no. 2 (cluster on minimal computing).
@@ -90,17 +90,17 @@ header:
 - "Language is not a Default Setting: Countering Digital Humanities’ English Problem", with Patrick Burns. Forthcoming in&nbsp;_Debates in DH 2022_. Univ. of Minnesota Press. Eds. Matthew Gold and Lauren Klein.
 - "[Rolling the Dice on Project Management](https://ideah.pubpub.org/pub/9xiyfz6h/release/3)". IDEAH, vol. 2, issue 2. Nov 25, 2021. DOI: 10.21428/f1f23564.0f419bf4.
 - "[Linguistic Fingerprints on Translation's Lens](https://jdmdh.episciences.org/9008)", with J.D. Porter and Yulia Ilchuk. Journal of Data Mining & Digital Humanities, January 27, 2022, Special Issue on Collecting, Preserving, and Disseminating Endangered Cultural Heritage for New Understandings through Multilingual Approaches. DOI: 10.46298/jdmdh.7223
-- “The Directory Paradox”. _Debates in Digital Humanities: People, Practice, Power: Digital Humanities Outside the Center_. Univ. of Minnesota Press. Eds. Anne McGrail et al. 2021.
-- "'Business' is to 'Successful' as 'Babysitter' is to...", with Lee Skallerup Bessette, Katherine Bowers, Maria Sachiko Cecire, Anouk Lang, and Roopika Risam. In _We Are the Baby-Sitters Club: Essays and Artwork from Grown-Up Readers_. Ed. Marisa Crawford and Megan Milks. 2021.
+- “[The Directory Paradox](https://dhdebates.gc.cuny.edu/read/people-practice-power/section/ca87ec4c-23a0-452d-8595-7cfd7e8d6f0c#ch06”. _Debates in Digital Humanities: People, Practice, Power: Digital Humanities Outside the Center_. Univ. of Minnesota Press. Eds. Anne McGrail et al. 2021.
+- "['Business' is to 'Successful' as 'Babysitter' is to...](https://doi.org/10.25740/tj111dp6475)", with Lee Skallerup Bessette, Katherine Bowers, Maria Sachiko Cecire, Anouk Lang, and Roopika Risam. In _We Are the Baby-Sitters Club: Essays and Artwork from Grown-Up Readers_. Ed. Marisa Crawford and Megan Milks. 2021.
 - "[Global Medieval Sourcebook](https://utpjournals.press/doi/full/10.3138/seminar.57.3.1)", with Mae Velloso-Lyons and Kathryn Starkey. _Seminar: A Journal of Germanic Studies_. 2021.
 - "[Afterword](https://www.modernlanguagesopen.org/articles/10.3828/mlo.v0i0.413/")". _Modern Languages Open_, Digital Modern Languages Section Launch Issue. 2021.
-- "[From Annotation to Modeling: Computational Horizons for Medieval Slavic Studies](http://e-scripta.ilit.bas.bg/archives/year-2021/issue-21/annotation-modeling-computational-horizons-medieval-slavic-studies)". 2021. _Scripta & e-Scripta_, vol. 21.
-- "Deprioritizing Meatspace" in _OK ZOOMER_ Stanford University Libraries zine, vol. 2, issue 1. October 30, 2020
-- "Pattern Review: Ann Person Collectibles Stretch & Sew, Pattern #199: Sweats to Go" in _OK ZOOMER_ Stanford University Libraries zine, vol. 1, issue 2. May 11, 2020.
+- "[From Annotation to Modeling: Computational Horizons for Medieval Slavic Studies](https://doi.org/10.25740/np355yt1923)". 2021. _[Scripta & e-Scripta](http://e-scripta.ilit.bas.bg/archives/year-2021/issue-21/annotation-modeling-computational-horizons-medieval-slavic-studies)_, vol. 21.
+- "[Deprioritizing Meatspace](https://purl.stanford.edu/kd787dy2390)" in _OK ZOOMER_ Stanford University Libraries zine, vol. 2, issue 1. October 30, 2020
+- "[Pattern Review: Ann Person Collectibles Stretch & Sew, Pattern #199: Sweats to Go!](https://purl.stanford.edu/jt570sq5884)" in _OK ZOOMER_ Stanford University Libraries zine, vol. 1, issue 2. May 11, 2020.
 - "[Preparing Non-English Texts for Computational Analysis](https://doi.org/10.3828/mlo.v0i0.294)". Modern Languages Open, 2020(1): 45 pp. 1–9. DOI: https://doi.org/10.3828/mlo.v0i0.294
 - "[Absorbing DiRT: Tool Directories in the Digital Age](https://doi.org/10.16995/dscn.325)", with Kaitlyn Grant, Kamal Ranaweera, Omar Rodriguez-Arenas, Stéfan Sinclair, and Geoffrey Rockwell. _Digital Studies/Le champ numérique_ 10(1): 4, pp. 1–18. 2020. DOI: 10.46430/phen0087
 - "[Introduction to Jupyter Notebooks](https://doi.org/10.46430/phen0087)", with Tassie Gniady and David Kloster. _The Programming Historian_, Dec 8, 2019.
-- "Research Facilitation on a Budget", with Jason Christopher, Aaron Culich, Debra McCaffrey, Amy Neeser, and Andrew Wiedlea. _PEARC '18: Proceedings of the Practice and Experience on Advanced Research Computing_. July 2018. DOI: 10.1145/3219104.3219137.
+- "[Research Facilitation on a Budget](https://dl.acm.org/doi/10.1145/3219104.3219137)", with Jason Christopher, Aaron Culich, Debra McCaffrey, Amy Neeser, and Andrew Wiedlea. _PEARC '18: Proceedings of the Practice and Experience on Advanced Research Computing_. July 2018. DOI: 10.1145/3219104.3219137.
 - "[Building Capacity for Digital Humanities: A Framework for Institutional Planning](https://library.educause.edu/resources/2017/5/building-capacity-for-digital-humanities-a-framework-for-institutional-planning)". A Joint ECAR/CNI Working Group Publication (served as co-chair of working group).
 - "[TaDiRAH: a Case Study in Pragmatic Classification](http://www.digitalhumanities.org/dhq/vol/10/1/000235/000235.html)", with Luise Borek, Jody Perkins, and Christof Schöch. DH Quarterly,&nbsp;Volume 10 Number 1.
 - _Drupal for Humanists_ published by Texas A&amp;M Press, 2016.
@@ -338,6 +338,7 @@ header:
 
 ### Textile Makerspace
 
+- August 25, 2023. "[What a Yarn! Journalists Are Turning to Crochet to Tell Data Stories]("https://www.niemanlab.org/2023/08/what-a-yarn-journalists-are-turning-to-crochet-to-tell-data-stories/), Nieman Lab.
 - November 20, 2020, "[Makerspaces get creative during coronavirus pandemic](https://news.stanford.edu/2020/11/20/makerspaces-get-creative-coronavirus-pandemic/)", Stanford News article.
 - December 9, 2019, featured in "[The many makerspaces of the Stanford campus](https://news.stanford.edu/2019/12/09/makerspaces-at-stanford/)", Stanford News article.
 

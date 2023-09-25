@@ -114,6 +114,8 @@ header:
 
 ## Talks and Presentations
 
+- Chinese University of Hong Kong DH Initiative Talk Series, "Who Did What? The Challenges of Multilingual Text Analysis, Grammar, and Copyright". September 25, 2023.
+- iPres 2023 closing keynote, "Takes All Kinds: Grassroots Digital Preservation in a Crisis and Beyond". September 22, 2023.
 - DH 2023 panel, "Readers, Tropes, and Translations: Directions for Digital Research into Youth Literature", with Agnieszka Backman, Joanna Byszuk, Anouk Lang, and Nichole Nomura. July 14, 2023.
 - DH 2023 panel, "Legal Issues in Digital Humanities: Analysis of Recent Advocacy and Continuing and Emerging Issues", with Erik Ketzan, Kim Nayyer, Lauren Tilton, Koenraad de Smedt, Paweł Kamocki, Benito Trollip, and Kiyonori Nagasaki. July 14, 2023.
 - DH 2023 poster, "Saving Ukrainian Cultural Heritage Online: Responsive Emergency DH at Scale", with Anna Kijas, Anna Rakityanskaya, and Alex Wingate. July 12, 2023.

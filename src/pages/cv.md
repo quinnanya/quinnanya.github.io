@@ -43,7 +43,7 @@ header:
 - Co-VP, ACH, 2020-2022
 - Digital Ethnic Futures mentor, 2022
 - Executive board member, Global Outlook::Digital Humanities, 2019-2021
-- Co-founder and group organizer, [Multilingual DH](http://multilingualdh.org/), 2019-present
+- Co-founder and group organizer, [Multilingual DH](http://multilingualdh.org/), 2019-2023
 - Peer reviewer,&nbsp;_Digital Humanities Quarterly_, 2019-present
 - Founder and group organizer, [DH-WoGeM](http://www.dhwogem.org/), 2018-present
 - Executive council member, ACH, 2015-2019

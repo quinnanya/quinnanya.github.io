@@ -78,6 +78,8 @@ header:
 
 ## Publications
 
+- ["The Librarian, The Computer, The Android, and Big Data"](https://vector-bsfa.com/2023/12/02/the-librarian-the-computer-the-android-and-big-data/). _Vector_ 298. December 2, 2023.
+- "[Language is not a Default Setting: Countering Digital Humanities’ English Problem](https://dhdebates.gc.cuny.edu/read/debates-in-the-digital-humanities-2023/section/704fd8ae-99f1-4bfc-a275-7f5ad88b48af#ch19)", with Patrick Burns. _Debates in DH 2023_. Univ. of Minnesota Press. Eds. Matthew Gold and Lauren Klein.
 - ["A Conversation with the Organizers of Saving Ukrainian Cultural Heritage Online (SUCHO)"](https://iopn.library.illinois.edu/journals/jloe/article/view/969), with Zoe LeBlanc, Andrew Janco, Alex Wermer-Colan, Anna Kijas, Sebastian Majstorovic, Dena Strong & Erica Peaslee. _Journal of Library Outreach and Engagement_, vol. 2, no. 1.
 - "Stylometric investigations into translationese: The Baby-Sitters Club Across Languages", with Joanna Byszuk. In _16th International Conference on Statistical Analysis of Textual Data Proceedings._ [PDF, see p. 208](http://lexicometrica.univ-paris3.fr/jadt/JADT2022/VOL1.pdf).
 - "Personal Entanglements and Graceful Relationship Degradation in Collaborative Projects", with Erica Cavanaugh. Forthcoming in _Revealing Meaning: Feminist Methods in Digital Scholarship_. Ed. Heather Froehlich and Kim Martin.
@@ -87,7 +89,6 @@ header:
 - "Voices from the Server Room: Humanists in HPC", with Tassie Gniady, David Kloster, Megan Meredith-Lobay, Jeffrey Tharsen, Lee Zickel. Forthcoming in _Debates in DH: Computational Humanities_. Univ. of Minnesota Press. Eds. Jessica Marie Johnson, David Mimno, and Lauren Tilton.
 - "Academia is a Dice Roll", with Agnieszka Backman, Sabrina Grimberg, and Melissa Hosek. Forthcoming in _Debates in DH: The Digital Futures of Graduate Study in the Humanities_. Univ. of Minnesota Press. Eds. Simon Appleford, Gabriel Hankins, and Anouk Lang.
 - "Bringing Languages into the DH Classroom". Forthcoming in _What We Teach When We Teach DH: Digital Humanities in the Classroom_. Ed. Brian Croxall and Diane Jakacki.
-- "Language is not a Default Setting: Countering Digital Humanities’ English Problem", with Patrick Burns. Forthcoming in&nbsp;_Debates in DH 2022_. Univ. of Minnesota Press. Eds. Matthew Gold and Lauren Klein.
 - "[Rolling the Dice on Project Management](https://ideah.pubpub.org/pub/9xiyfz6h/release/3)". IDEAH, vol. 2, issue 2. Nov 25, 2021. DOI: 10.21428/f1f23564.0f419bf4.
 - "[Linguistic Fingerprints on Translation's Lens](https://jdmdh.episciences.org/9008)", with J.D. Porter and Yulia Ilchuk. Journal of Data Mining & Digital Humanities, January 27, 2022, Special Issue on Collecting, Preserving, and Disseminating Endangered Cultural Heritage for New Understandings through Multilingual Approaches. DOI: 10.46298/jdmdh.7223
 - “[The Directory Paradox](https://dhdebates.gc.cuny.edu/read/people-practice-power/section/ca87ec4c-23a0-452d-8595-7cfd7e8d6f0c#ch06”. _Debates in Digital Humanities: People, Practice, Power: Digital Humanities Outside the Center_. Univ. of Minnesota Press. Eds. Anne McGrail et al. 2021.

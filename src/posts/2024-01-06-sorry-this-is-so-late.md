@@ -1,7 +1,7 @@
 ---
 permalink: /blog/2024/01/06/sorry-this-is-so-late/
 title: "Sorry This Is So Late (Mourning Braids)"
-date: 2024-01-06
+date: 2024-01-08
 classes: wide
 show_date: true
 header:

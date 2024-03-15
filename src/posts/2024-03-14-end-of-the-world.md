@@ -23,7 +23,7 @@ These characters helped me think about the work I do in a different way. We had 
 
 And now it's done. That group of eight and I will probably never sit around a table together again. There's no way to go back to that world; it doesn't exist without those students. 
 
-Throughout the class, we drew from the Academic Tarot Deck for the start of the month (or, by the end, the quarter) we were about to play. Before our final round today, we got "XX. The Defense (Judgement)", reversed:
+Throughout the class, we drew from the [Academic Tarot Deck](https://clairechenette.weebly.com/store/p5/Academic_Tarot.html) for the start of the month (or, by the end, the quarter) we were about to play. Before our final round today, we got "XX. The Defense (Judgement)", reversed:
 
 ![The Defense card from the Academic Tarot Deck, featuring a woman wearing hijab, shining a laser pointer with two cats above her head, and her dissertation committee on Zoom](/assets/images/xx-defense.jpg)
 

@@ -118,6 +118,7 @@ header:
 
 ## Talks and Presentations
 
+- Global DH Symposium 2024, "Bridging the Gap for Digitally Disadvantaged Languages". March 20, 2024.
 - Chinese University of Hong Kong DH Initiative Talk Series, "Who Did What? The Challenges of Multilingual Text Analysis, Grammar, and Copyright". September 25, 2023.
 - iPres 2023 closing keynote, "Takes All Kinds: Grassroots Digital Preservation in a Crisis and Beyond". September 22, 2023.
 - DH 2023 panel, "Readers, Tropes, and Translations: Directions for Digital Research into Youth Literature", with Agnieszka Backman, Joanna Byszuk, Anouk Lang, and Nichole Nomura. July 14, 2023.

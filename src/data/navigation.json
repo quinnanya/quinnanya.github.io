@@ -1,20 +1,24 @@
 {
-   "main": [
+  "main": [
     {
-	   "title": "About",
-       "url": "/about/"
+      "title": "About",
+      "url": "/about/"
     },
     {
-       "title": "CV",
-       "url": "/cv/"
+      "title": "CV",
+      "url": "/cv/"
     },
     {
-       "title": "Projects",
-       "url": "/projects/"
+      "title": "Projects",
+      "url": "/projects/"
     },
     {
-       "title": "Blog",
-       "url": "/blog/"
-   }
-   ]
+      "title": "Textiles",
+      "url": "/textiles/"
+    },
+    {
+      "title": "Blog",
+      "url": "/blog/"
+    }
+  ]
 }

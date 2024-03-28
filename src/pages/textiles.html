@@ -1,0 +1,30 @@
+---
+title: Textiles
+layout: collection.html
+permalink: /textiles/
+collection: textiles
+classes: wide
+header:
+  overlay_image: /assets/images/header_covidscraps.jpg
+  overlay_color: "#5e616c"
+  overlay_filter: 0.5
+---
+
+<p>I am the founder and director of the <a href="/projects/textile-makerspace">Textile Makerspace</a> at Stanford since 2018, and since 2023 I've been teaching Data Visualization with Textiles.</p>
+
+<div class="entries-grid">
+{%- for textile in collections.textiles | sort: "textiles.data.date", "desc" -%}
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    <img src="{{textile.data.header.overlay_image}}" / >
+	<h3 class="archive__item-title no_toc" itemprop="headline">
+      {% if textile.data.permalink %}
+        <a href="{{ textile.data.permalink }}">{{ textile.data.title }}</a> 
+      {% endif %}
+    {% if textile.data.blurb %}<p class="archive__item-excerpt" itemprop="description">{{ textile.data.blurb | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
+  </article>
+</div>
+{% endfor %}
+</div>
+

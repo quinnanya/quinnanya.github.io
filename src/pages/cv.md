@@ -40,6 +40,7 @@ header:
 
 - Co-President, Association for Computers and the Humanities (ACH), 2022-2024
 - ACH Constituent Organization Board representative to the Alliance of Digital Humanities Organizations (ACH), 2022-present
+- Co-founder and organizer, ACH AI working group, 2023-present.
 - Co-VP, ACH, 2020-2022
 - Digital Ethnic Futures mentor, 2022
 - Executive board member, Global Outlook::Digital Humanities, 2019-2021
@@ -116,9 +117,15 @@ header:
 - Dombrowski, Andrew, and Quinn Dombrowski. "[A formal approach to XML semantics: implications for archive standards](http://balisage.net/Proceedings/vol6/html/Dombrowski01/BalisageVol6-Dombrowski01.html)" Presented at International Symposium on XML for the Long Haul: Issues in the Long-term Preservation of XML, Montréal, Canada, August 2, 2010. In Proceedings of the International Symposium on XML for the Long Haul: Issues in the Long-term Preservation of XML. Balisage Series on Markup Technologies, vol. 6 (2010). doi:10.4242/BalisageVol6.Dombrowski01.
 - _Crescat Graffiti, Vita Excolatur: Confessions of the University of Chicago_, 2009. (ISBN 978-0-557-17205-4)
 
+## Exhibitions
+
+- "Future Text" and "#CIDR-Coeur" weavings, and guestbook loom, at _Thread Control_ pop-up exhibition. Roble Arts Gym, Stanford University. March 7-8, 2024.
+
 ## Talks and Presentations
 
+- University of Hong Kong, Guest lecture for CCCH9051: Digitizing Cultural Heritage in Greater China. "Saving Ukrainian Cultural Heritage Online: Socially Engaged Digital Humanities". March 27, 2024.
 - Global DH Symposium 2024, "Bridging the Gap for Digitally Disadvantaged Languages". March 20, 2024.
+- University of Central Florida, guest interview for "Critical Making for Humanist Scholarship" with Anastasia Salter. March 18, 2024.
 - Chinese University of Hong Kong DH Initiative Talk Series, "Who Did What? The Challenges of Multilingual Text Analysis, Grammar, and Copyright". September 25, 2023.
 - iPres 2023 closing keynote, "Takes All Kinds: Grassroots Digital Preservation in a Crisis and Beyond". September 22, 2023.
 - DH 2023 panel, "Readers, Tropes, and Translations: Directions for Digital Research into Youth Literature", with Agnieszka Backman, Joanna Byszuk, Anouk Lang, and Nichole Nomura. July 14, 2023.

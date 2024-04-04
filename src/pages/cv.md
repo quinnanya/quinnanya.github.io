@@ -79,7 +79,8 @@ header:
 
 ## Publications
 
-- ["The Librarian, The Computer, The Android, and Big Data"](https://vector-bsfa.com/2023/12/02/the-librarian-the-computer-the-android-and-big-data/). _Vector_ 298. December 2, 2023.
+- ["Access and Advocacy: Text & Data Mining and DMCA §1201"](https://doi.org/10.16995/dscn.9658), with Lauren Tilton. _Digital Studies / Le champ numérique_, selected papers from DH Unbound 2022. April 3, 2024.
+- ["The Librarian, The Computer, The Android, and Big Data"](https://vector-bsfa.com/2023/12/02/the-librarian-the-computer-the-android-and-big-data/), with Nichole Nomura. _Vector_ 298. December 2, 2023.
 - "[Language is not a Default Setting: Countering Digital Humanities’ English Problem](https://dhdebates.gc.cuny.edu/read/debates-in-the-digital-humanities-2023/section/704fd8ae-99f1-4bfc-a275-7f5ad88b48af#ch19)", with Patrick Burns. _Debates in DH 2023_. Univ. of Minnesota Press. Eds. Matthew Gold and Lauren Klein.
 - "Nimble Tents and Bunkers: The Role of Libraries in Rapid-Response DH", with Alex Gil, Anna Kijas, and Carrie Pirmann. Forthcoming in _Libraries, Archives, and the Digital Humanities_, ed. Isabel Galina Russell and Glen Layne-Worthey.
 - "[Digital Cultural Heritage Under Attack: Saving Ukrainian Cultural Heritage Online (SUCHO)](https://doi.org/10.17721/2519-4801.2022.1.01)", with Anna Kijas and Sebastian Majstorovic. _Text and Image: Essential Problems in Art History_, vol. 1, 13, August 31, 2022.

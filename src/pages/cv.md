@@ -79,10 +79,12 @@ header:
 
 ## Publications
 
+- ["Knot Hard: Accessible Textile Data Visualization with a Circular Knitting Machine"](https://dhandlib.org/2024/04/29/knot-hard-accessible-textile-data-visualization-with-a-circular-knitting-machine/). DH + Lib 2024 special issue, "[Making Research Tactile: Critical Making and Data Physicalization in Digital Humanities](https://dhandlib.org/2024/04/29/making-research-tactile-critical-making-and-data-physicalization-in-digital-humanities/)". April 29, 2024.
 - ["Access and Advocacy: Text & Data Mining and DMCA §1201"](https://doi.org/10.16995/dscn.9658), with Lauren Tilton. _Digital Studies / Le champ numérique_, selected papers from DH Unbound 2022. April 3, 2024.
 - ["The Librarian, The Computer, The Android, and Big Data"](https://vector-bsfa.com/2023/12/02/the-librarian-the-computer-the-android-and-big-data/), with Nichole Nomura. _Vector_ 298. December 2, 2023.
 - "[Language is not a Default Setting: Countering Digital Humanities’ English Problem](https://dhdebates.gc.cuny.edu/read/debates-in-the-digital-humanities-2023/section/704fd8ae-99f1-4bfc-a275-7f5ad88b48af#ch19)", with Patrick Burns. _Debates in DH 2023_. Univ. of Minnesota Press. Eds. Matthew Gold and Lauren Klein.
 - "Nimble Tents and Bunkers: The Role of Libraries in Rapid-Response DH", with Alex Gil, Anna Kijas, and Carrie Pirmann. Forthcoming in _Libraries, Archives, and the Digital Humanities_, ed. Isabel Galina Russell and Glen Layne-Worthey.
+- "[Science Gateways and the Humanities: An Exploratory Study of Their Rare Partnership](https://doi.org/10.1109/MCSE.2023.3272332)", with Kirk F. Kee et al. _Computing in Science & Engineering_, vol. 25, issue 1, Jan-Feb 2023.
 - "[Digital Cultural Heritage Under Attack: Saving Ukrainian Cultural Heritage Online (SUCHO)](https://doi.org/10.17721/2519-4801.2022.1.01)", with Anna Kijas and Sebastian Majstorovic. _Text and Image: Essential Problems in Art History_, vol. 1, 13, August 31, 2022.
 - “[Saving Ukrainian Cultural Heritage Online (SUCHO): Digital relief work relationships more than technology](https://www.ala.org/rt/sites/ala.org.rt/files/content/intlleads/leadsarchive/202206-rev.pdf).” International Leads 37, no. 2 (2022): 3-12.
 - ["A Conversation with the Organizers of Saving Ukrainian Cultural Heritage Online (SUCHO)"](https://iopn.library.illinois.edu/journals/jloe/article/view/969), with Zoe LeBlanc, Andrew Janco, Alex Wermer-Colan, Anna Kijas, Sebastian Majstorovic, Dena Strong & Erica Peaslee. _Journal of Library Outreach and Engagement_, vol. 2, no. 1.

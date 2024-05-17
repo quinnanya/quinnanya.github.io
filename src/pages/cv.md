@@ -103,7 +103,8 @@ header:
 - "[Global Medieval Sourcebook](https://utpjournals.press/doi/full/10.3138/seminar.57.3.1)", with Mae Velloso-Lyons and Kathryn Starkey. _Seminar: A Journal of Germanic Studies_. 2021.
 - "[Afterword](https://www.modernlanguagesopen.org/articles/10.3828/mlo.v0i0.413/")". _Modern Languages Open_, Digital Modern Languages Section Launch Issue. 2021.
 - "[From Annotation to Modeling: Computational Horizons for Medieval Slavic Studies](https://doi.org/10.25740/np355yt1923)". 2021. _[Scripta & e-Scripta](http://e-scripta.ilit.bas.bg/archives/year-2021/issue-21/annotation-modeling-computational-horizons-medieval-slavic-studies)_, vol. 21.
-- "[Deprioritizing Meatspace](https://purl.stanford.edu/kd787dy2390)" in _OK ZOOMER_ Stanford University Libraries zine, vol. 2, issue 1. October 30, 2020
+- "[Deprioritizing Meatspace](https://purl.stanford.edu/kd787dy2390)" in _OK ZOOMER_ Stanford University Libraries zine, vol. 2, issue 1. October 30, 2020. http://dx.doi.org/10.22215/epoiesen/2020.5
+- "[Classicist in Disguise: Second Response](https://epoiesen.carleton.ca/2020/10/30/classicist-in-disguise-response2/)". _Epoiesen: A Journal for Creative Engagement in History and Archaeology_. October 30, 2020.
 - "[Pattern Review: Ann Person Collectibles Stretch & Sew, Pattern #199: Sweats to Go!](https://purl.stanford.edu/jt570sq5884)" in _OK ZOOMER_ Stanford University Libraries zine, vol. 1, issue 2. May 11, 2020.
 - "[Preparing Non-English Texts for Computational Analysis](https://doi.org/10.3828/mlo.v0i0.294)". Modern Languages Open, 2020(1): 45 pp. 1–9. DOI: https://doi.org/10.3828/mlo.v0i0.294
 - "[Absorbing DiRT: Tool Directories in the Digital Age](https://doi.org/10.16995/dscn.325)", with Kaitlyn Grant, Kamal Ranaweera, Omar Rodriguez-Arenas, Stéfan Sinclair, and Geoffrey Rockwell. _Digital Studies/Le champ numérique_ 10(1): 4, pp. 1–18. 2020. DOI: 10.46430/phen0087

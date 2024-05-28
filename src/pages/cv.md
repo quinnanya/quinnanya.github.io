@@ -128,6 +128,7 @@ header:
 
 ## Talks and Presentations
 
+- University of Washington, "Shift Happens: Unlocking Old Corpora with Transkribus" lecture and workshop. May 23, 2024.
 - University of Illinois I-School, [2024 Windsor Lecture](https://ischool.illinois.edu/news-events/events/2024/05/01/2024-windsor-lecture), "What Happens After the End? Crafting Sustainable Librarianship in an Age of AI". May 1, 2024.
 - University of Hong Kong, Guest lecture for CCCH9051: Digitizing Cultural Heritage in Greater China. "Saving Ukrainian Cultural Heritage Online: Socially Engaged Digital Humanities". March 27, 2024.
 - Global DH Symposium 2024, "Bridging the Gap for Digitally Disadvantaged Languages". March 20, 2024.

@@ -7,7 +7,7 @@ show_date: true
 header:
   overlay_image: /assets/images/header_star-trek.jpg
   overlay_filter: 0.5
-blurb: "Information work in Star Trek novels?"
+blurb: "Information work in Star Trek novels"
 ---
 
 This weaving accompanies the article "[The Librarian, the Computer, the Android and Big Data](https://vector-bsfa.com/2023/12/02/the-librarian-the-computer-the-android-and-big-data/)", co-authored with Nichole Nomura for *Vectors*. It is a textile representation of some of the data created from running some [simple word-search computational analysis code](https://github.com/quinnanya/librarian-computer-android-big-data) on a corpus of *Star Trek* novels, looking for the words "the computer", "librarian" and "the archive".

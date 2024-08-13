@@ -9,7 +9,7 @@ header:
   overlay_filter: 0.2
 ---
 
-I found my first gray hair last Friday. At my age, it feels like an echo of puberty anxieties: who hasn't gotten their period yet? Several of my friends are fully and gloriously silver, my husband's hair and beard are speckled with it, and I found it curious that I hadn't noticed a single one during my regular [hair dye as memorial ritual for Rebecca Munson](https://datasittersclub.github.io/site/dsc13.html#the-power-of-purple-quinn).
+I found my first gray hair last Friday. At my age, it feels like an echo of puberty anxieties: who hasn't gotten their period yet? Several of my friends are fully and gloriously silver, but I found it curious that I hadn't noticed a single one during my regular [hair dye as memorial ritual for Rebecca Munson](https://datasittersclub.github.io/site/dsc13.html#the-power-of-purple-quinn).
 
 ![A close-up of the back of Quinn's head, with one gray hair](/assets/images/gray_hair.jpg)
 

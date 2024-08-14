@@ -79,12 +79,15 @@ header:
 
 ## Publications
 
+- "Textile Makerspace: Digital Humanities Meets Craft". *Journal of Modern Craft*, July 2024, issue 17.2.
+- "Voices from the Server Room: Humanists in HPC", with Tassie Gniady, David Kloster, Megan Meredith-Lobay, Jeffrey Tharsen, Lee Zickel. _Computational Humanities_. Univ. of Minnesota Press. Eds. Jessica Marie Johnson, David Mimno, and Lauren Tilton. 2024.
 - [DHMakes: Baking Craft into DH Discourse](https://www.kadh.org/%eb%94%94%ec%a7%80%ed%84%b8%ec%9d%b8%eb%ac%b8%ed%95%99kjdh-%ec%b0%bd%ea%b0%84%ed%98%b8/), with Amanda Visconti and Claudia Berger. *Korean Association of Digital Humanities*, vol. 1, issue 1. May 31, 2024.
 - ["Knot Hard: Accessible Textile Data Visualization with a Circular Knitting Machine"](https://dhandlib.org/2024/04/29/knot-hard-accessible-textile-data-visualization-with-a-circular-knitting-machine/). DH + Lib 2024 special issue, "[Making Research Tactile: Critical Making and Data Physicalization in Digital Humanities](https://dhandlib.org/2024/04/29/making-research-tactile-critical-making-and-data-physicalization-in-digital-humanities/)". April 29, 2024.
 - ["Access and Advocacy: Text & Data Mining and DMCA §1201"](https://doi.org/10.16995/dscn.9658), with Lauren Tilton. _Digital Studies / Le champ numérique_, selected papers from DH Unbound 2022. April 3, 2024. https://doi.org/10.46430/phen0116.
 - ["Understanding and Creating Word Embeddings"](https://programminghistorian.org/en/lessons/understanding-creating-word-embeddings), with Avery Blankenship and Sarah Connell. _Programming Historian_, January 31, 2024.
 - ["The Librarian, The Computer, The Android, and Big Data"](https://vector-bsfa.com/2023/12/02/the-librarian-the-computer-the-android-and-big-data/), with Nichole Nomura. _Vector_ 298. December 2, 2023.
 - "[Language is not a Default Setting: Countering Digital Humanities’ English Problem](https://dhdebates.gc.cuny.edu/read/debates-in-the-digital-humanities-2023/section/704fd8ae-99f1-4bfc-a275-7f5ad88b48af#ch19)", with Patrick Burns. _Debates in DH 2023_. Univ. of Minnesota Press. Eds. Matthew Gold and Lauren Klein.
+- "Bringing Languages into the DH Classroom". In _What We Teach When We Teach DH: Digital Humanities in the Classroom_, ed. Brian Croxall and Diane Jakacki. 2023.
 - "Nimble Tents and Bunkers: The Role of Libraries in Rapid-Response DH", with Alex Gil, Anna Kijas, and Carrie Pirmann. Forthcoming in _Libraries, Archives, and the Digital Humanities_, ed. Isabel Galina Russell and Glen Layne-Worthey.
 - "[Science Gateways and the Humanities: An Exploratory Study of Their Rare Partnership](https://doi.org/10.1109/MCSE.2023.3272332)", with Kirk F. Kee et al. _Computing in Science & Engineering_, vol. 25, issue 1, Jan-Feb 2023.
 - "[Digital Cultural Heritage Under Attack: Saving Ukrainian Cultural Heritage Online (SUCHO)](https://doi.org/10.17721/2519-4801.2022.1.01)", with Anna Kijas and Sebastian Majstorovic. _Text and Image: Essential Problems in Art History_, vol. 1, 13, August 31, 2022.
@@ -95,9 +98,7 @@ header:
 - "[Multilingual Digital Humanities](https://cora.ucc.ie/items/aad3d680-506d-48ab-93d9-e81e3af5bd64)", with Pedro Nilsson-Fernàndez. In _Bloomsbury Handbook to DH_, ed. James O'Sullivan. 2022.
 - "[Does Coding Matter for Doing Digital Humanities?](https://purl.stanford.edu/ck442sc7933)". In _Bloomsbury Handbook to DH_, ed. James O'Sullivan. 2022.
 - "[Minimizing Computing Maximizes Labor](http://www.digitalhumanities.org/dhq/vol/16/2/000594/000594.html)". _Digital Humanities Quarterly_ vol. 16, no. 2 (cluster on minimal computing).
-- "Voices from the Server Room: Humanists in HPC", with Tassie Gniady, David Kloster, Megan Meredith-Lobay, Jeffrey Tharsen, Lee Zickel. Forthcoming in _Debates in DH: Computational Humanities_. Univ. of Minnesota Press. Eds. Jessica Marie Johnson, David Mimno, and Lauren Tilton.
 - "Academia is a Dice Roll", with Agnieszka Backman, Sabrina Grimberg, and Melissa Hosek. Forthcoming in _Debates in DH: The Digital Futures of Graduate Study in the Humanities_. Univ. of Minnesota Press. Eds. Simon Appleford, Gabriel Hankins, and Anouk Lang.
-- "Bringing Languages into the DH Classroom". In _What We Teach When We Teach DH: Digital Humanities in the Classroom_, ed. Brian Croxall and Diane Jakacki. 2023.
 - "[Rolling the Dice on Project Management](https://ideah.pubpub.org/pub/9xiyfz6h/release/3)". IDEAH, vol. 2, issue 2. Nov 25, 2021. DOI: 10.21428/f1f23564.0f419bf4.
 - "[Linguistic Fingerprints on Translation's Lens](https://jdmdh.episciences.org/9008)", with J.D. Porter and Yulia Ilchuk. Journal of Data Mining & Digital Humanities, January 27, 2022, Special Issue on Collecting, Preserving, and Disseminating Endangered Cultural Heritage for New Understandings through Multilingual Approaches. DOI: 10.46298/jdmdh.7223
 - “[The Directory Paradox](https://dhdebates.gc.cuny.edu/read/people-practice-power/section/ca87ec4c-23a0-452d-8595-7cfd7e8d6f0c#ch06)”. _Debates in Digital Humanities: People, Practice, Power: Digital Humanities Outside the Center_. Univ. of Minnesota Press. Eds. Anne McGrail et al. 2021.

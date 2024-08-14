@@ -125,11 +125,14 @@ header:
 - _Crescat Graffiti, Vita Excolatur: Confessions of the University of Chicago_, 2009. (ISBN 978-0-557-17205-4)
 
 ## Exhibitions
-
 - "Future Text" and "#CIDR-Coeur" weavings, and guestbook loom, at _Thread Control_ pop-up exhibition. Roble Arts Gym, Stanford University. March 7-8, 2024.
 
 ## Talks and Presentations
 
+- DH 2024 poster, "SILICON: Supporting Digitally-Disadvantaged Languages". August 7, 2024.
+- DH 2024 workshop, "#DHMakes Mini-Conference", with Claudia Berger, Gabriella Evergreen, Jojo Karlin, Anne Ladyem McDivitt, Amanda Visconti, and Jacque Wernimont. August 6, 2024.
+- DH 2024 workshop, "Teaching Machine Leaerning in the Digital Humanities", with Natalia Ermolaev, Melanie Walsh, Zoe LeBlanc, Andrew Janco, and Toma Tasovac. August 6, 2024.
+- DH 2024 workshop, "#DHRPG campaign" with Paige Morgan and Brandon Walsh. August 5, 2024.
 - University of Washington, "Shift Happens: Unlocking Old Corpora with Transkribus" lecture and workshop. May 23, 2024.
 - University of Illinois I-School, [2024 Windsor Lecture](https://ischool.illinois.edu/news-events/events/2024/05/01/2024-windsor-lecture), "What Happens After the End? Crafting Sustainable Librarianship in an Age of AI". May 1, 2024.
 - University of Hong Kong, Guest lecture for CCCH9051: Digitizing Cultural Heritage in Greater China. "Saving Ukrainian Cultural Heritage Online: Socially Engaged Digital Humanities". March 27, 2024.

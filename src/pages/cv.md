@@ -38,15 +38,16 @@ header:
 
 ## Service
 
+- PC member, Computational Humanities Research conference, 2024
 - Co-President, Association for Computers and the Humanities (ACH), 2022-2024
-- ACH Constituent Organization Board representative to the Alliance of Digital Humanities Organizations (ACH), 2022-present
-- Co-founder and organizer, ACH AI working group, 2023-present.
+- ACH Constituent Organization Board representative to the Alliance of Digital Humanities Organizations (ACH), 2022-2024
+- Co-founder and organizer, ACH AI working group, 2023-present
 - Co-VP, ACH, 2020-2022
 - Digital Ethnic Futures mentor, 2022
 - Executive board member, Global Outlook::Digital Humanities, 2019-2021
 - Co-founder and group organizer, [Multilingual DH](http://multilingualdh.org/), 2019-2023
 - Peer reviewer,&nbsp;_Digital Humanities Quarterly_, 2019-present
-- Founder and group organizer, [DH-WoGeM](http://www.dhwogem.org/), 2018-present
+- Founder and group organizer, [DH-WoGeM](http://www.dhwogem.org/), 2018-2024
 - Executive council member, ACH, 2015-2019
 - Peer reviewer, ADHO Digital Humanities conference, 2010-present
 - Co-chair of Women in IT planning committee for UCCSC conference, 2018
@@ -59,6 +60,7 @@ header:
 
 ## Awards
 
+- [Europa Nostra Cultural Heritage Champion](https://www.europanostra.org/2023-winners-of-europe-top-heritage-awards-announced-by-the-european-commission-and-europa-nostra/) award winner (as part of SUCHO), 2023
 - [Society of American Archivists Council Resolution](https://archives2022.us2.pathable.com/meetings/XPibmp2M5jkJNgrQ5) Honoring SUCHO, 2022
 - DHSI 2021 Most Prolific Tweeter award.
 - DH 2019 innovative poster award for "Gender and Intersectional Identities in the Digital Humanities", with Rachel Hendery, Katie McDonough, and Tassie Gniady
@@ -79,6 +81,9 @@ header:
 
 ## Publications
 
+- "Stop Lying to Yourself: Collective Delusion and Digital Humanities Grant Funding”. Forthcoming in *Reframing Failure*, ed. Michael Donnae and Anna-Maria Sichani.
+- "Collective Praxis, Collaborative Publishing: The Case of the Data-Sitters Club", with Lee Skallerup Bessette, Katherine Bowers, Maria Sachiko Cecire, Anouk Lang, and Roopika Risam. Forthcoming in *Journal of Electronic Publishing*.
+- "Encoding Multilingualism: Technical Affordances of Multilingual Publication from Manuscripts to Unicode and OpenType", with Manish Goregaokar, Ben Joeng (Yang), and Abeera Kamran. Forthcoming in *Jouranl of Electronic Publishing*.
 - "Textile Makerspace: Digital Humanities Meets Craft". *Journal of Modern Craft*, July 2024, issue 17.2.
 - "Voices from the Server Room: Humanists in HPC", with Tassie Gniady, David Kloster, Megan Meredith-Lobay, Jeffrey Tharsen, Lee Zickel. _Computational Humanities_. Univ. of Minnesota Press. Eds. Jessica Marie Johnson, David Mimno, and Lauren Tilton. 2024.
 - [DHMakes: Baking Craft into DH Discourse](https://www.kadh.org/%eb%94%94%ec%a7%80%ed%84%b8%ec%9d%b8%eb%ac%b8%ed%95%99kjdh-%ec%b0%bd%ea%b0%84%ed%98%b8/), with Amanda Visconti and Claudia Berger. *Korean Association of Digital Humanities*, vol. 1, issue 1. May 31, 2024.
@@ -128,7 +133,6 @@ header:
 - "Future Text" and "#CIDR-Coeur" weavings, and guestbook loom, at _Thread Control_ pop-up exhibition. Roble Arts Gym, Stanford University. March 7-8, 2024.
 
 ## Talks and Presentations
-
 - DH 2024 poster, "SILICON: Supporting Digitally-Disadvantaged Languages". August 7, 2024.
 - DH 2024 workshop, "#DHMakes Mini-Conference", with Claudia Berger, Gabriella Evergreen, Jojo Karlin, Anne Ladyem McDivitt, Amanda Visconti, and Jacque Wernimont. August 6, 2024.
 - DH 2024 workshop, "Teaching Machine Leaerning in the Digital Humanities", with Natalia Ermolaev, Melanie Walsh, Zoe LeBlanc, Andrew Janco, and Toma Tasovac. August 6, 2024.

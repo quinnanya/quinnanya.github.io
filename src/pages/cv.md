@@ -102,6 +102,7 @@ header:
 - "Personal Entanglements and Graceful Relationship Degradation in Collaborative Projects", with Erica Cavanaugh. Forthcoming in _Revealing Meaning: Feminist Methods in Digital Scholarship_. Ed. Heather Froehlich and Kim Martin.
 - "[Multilingual Digital Humanities](https://cora.ucc.ie/items/aad3d680-506d-48ab-93d9-e81e3af5bd64)", with Pedro Nilsson-Fernàndez. In _Bloomsbury Handbook to DH_, ed. James O'Sullivan. 2022.
 - "[Does Coding Matter for Doing Digital Humanities?](https://purl.stanford.edu/ck442sc7933)". In _Bloomsbury Handbook to DH_, ed. James O'Sullivan. 2022.
+- "[Review: jsLDA](https://reviewsindh.pubpub.org/pub/jslda/release/1)". *Reviews in Digital Humanities*, vol. 3, no. 8. August 2022.
 - "[Minimizing Computing Maximizes Labor](http://www.digitalhumanities.org/dhq/vol/16/2/000594/000594.html)". _Digital Humanities Quarterly_ vol. 16, no. 2 (cluster on minimal computing).
 - "Academia is a Dice Roll", with Agnieszka Backman, Sabrina Grimberg, and Melissa Hosek. Forthcoming in _Debates in DH: The Digital Futures of Graduate Study in the Humanities_. Univ. of Minnesota Press. Eds. Simon Appleford, Gabriel Hankins, and Anouk Lang.
 - "[Rolling the Dice on Project Management](https://ideah.pubpub.org/pub/9xiyfz6h/release/3)". IDEAH, vol. 2, issue 2. Nov 25, 2021. DOI: 10.21428/f1f23564.0f419bf4.
@@ -131,6 +132,9 @@ header:
 
 ## Exhibitions
 - "Future Text" and "#CIDR-Coeur" weavings, and guestbook loom, at _Thread Control_ pop-up exhibition. Roble Arts Gym, Stanford University. March 7-8, 2024.
+
+## Project Reviews
+- "The Data-Sitters Club", reviewed by Michelle Moravec. *Journal of American History*, Volume 111, Issue 2, September 2024, Pages 399–400, https://doi.org/10.1093/jahist/jaae174
 
 ## Talks and Presentations
 - DH 2024 poster, "SILICON: Supporting Digitally-Disadvantaged Languages". August 7, 2024.

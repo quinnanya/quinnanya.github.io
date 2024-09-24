@@ -83,7 +83,7 @@ header:
 
 - "Stop Lying to Yourself: Collective Delusion and Digital Humanities Grant Funding”. Forthcoming in *Reframing Failure*, ed. Michael Donnae and Anna-Maria Sichani.
 - "Collective Praxis, Collaborative Publishing: The Case of the Data-Sitters Club", with Lee Skallerup Bessette, Katherine Bowers, Maria Sachiko Cecire, Anouk Lang, and Roopika Risam. Forthcoming in *Journal of Electronic Publishing*.
-- "Encoding Multilingualism: Technical Affordances of Multilingual Publication from Manuscripts to Unicode and OpenType", with Manish Goregaokar, Ben Joeng (Yang), and Abeera Kamran. Forthcoming in *Jouranl of Electronic Publishing*.
+- "[Encoding Multilingualism: Technical Affordances of Multilingual Publication from Manuscripts to Unicode and OpenType](https://doi.org/10.3998/jep.5528)", with Manish Goregaokar, Ben Joeng (Yang), and Abeera Kamran. Forthcoming in *Journal of Electronic Publishing*. doi: https://doi.org/10.3998/jep.5528
 - "Textile Makerspace: Digital Humanities Meets Craft". *Journal of Modern Craft*, July 2024, issue 17.2.
 - "Voices from the Server Room: Humanists in HPC", with Tassie Gniady, David Kloster, Megan Meredith-Lobay, Jeffrey Tharsen, Lee Zickel. _Computational Humanities_. Univ. of Minnesota Press. Eds. Jessica Marie Johnson, David Mimno, and Lauren Tilton. 2024.
 - [DHMakes: Baking Craft into DH Discourse](https://www.kadh.org/%eb%94%94%ec%a7%80%ed%84%b8%ec%9d%b8%eb%ac%b8%ed%95%99kjdh-%ec%b0%bd%ea%b0%84%ed%98%b8/), with Amanda Visconti and Claudia Berger. *Korean Association of Digital Humanities*, vol. 1, issue 1. May 31, 2024.

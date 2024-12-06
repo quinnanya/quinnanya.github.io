@@ -137,6 +137,7 @@ header:
 - "The Data-Sitters Club", reviewed by Michelle Moravec. *Journal of American History*, Volume 111, Issue 2, September 2024, Pages 399–400, https://doi.org/10.1093/jahist/jaae174
 
 ## Talks and Presentations
+- UCLA, "Data Visualization with Textiles Community Event". December 2, 2024.
 - HERMES Doctoral Network, seminar on error culture and discussion of "[Towards a Taxonomy of Failure](https://quinndombrowski.com/blog/2019/01/30/towards-taxonomy-failure/)". November 20, 2022.
 - ACH 2024 roundtable, "Emerging Pathways to Supporting Digital Humanities Research on Copyrighted Literature", with Alex Wermer-Colan, Sarah Potvin, Mark Algee-Hewitt, and Peter Jaszi. November 6, 2024.
 - ACH 2024 panel, "Crafting Digital Humanities: Data Physicalizations with Textiles", with Claudia Berger, Gabriella Evergreen, Pam Lach, and Kayleigh Perkov. November 7, 2024.

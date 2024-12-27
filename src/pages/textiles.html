@@ -13,7 +13,7 @@ header:
 <p>I am the founder and director of the <a href="/projects/textile-makerspace">Textile Makerspace</a> at Stanford since 2018, and since 2023 I've been teaching Data Visualization with Textiles.</p>
 
 <div class="entries-grid">
-{%- for textile in collections.textiles | sort: "textiles.data.date" -%}
+  {%- for textile in collections.textiles | sort: "data.date" | reverse -%}
 
 <div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">

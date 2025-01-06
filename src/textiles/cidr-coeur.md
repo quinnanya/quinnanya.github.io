@@ -13,7 +13,7 @@ blurb: "How we talk to each other on our work Slack."
 - Download the [printable zine](/assets/zines/cidr-coeur-print.pdf) (PDF)
 - Download the [zine for the screen](/assets/zines/cidr-coeur-screen.pdf) (PDF)
 
-This weaving documents and celebrates four months (August - November 2022) in the life of the Center for Interdisciplinary Digital Resarch (CIDR), a group within Stanford Libraries’ Research Data Services (RDS) group.
+This weaving documents and celebrates four months (August - November 2022) in the life of the Center for Interdisciplinary Digital Research (CIDR), a group within Stanford Libraries’ Research Data Services (RDS) group.
 
 CIDR had been through a lot around the time period that this weaving captures. In 2021, it was moved from the humanities group within the Libraries into the newly-formed RDS.
 

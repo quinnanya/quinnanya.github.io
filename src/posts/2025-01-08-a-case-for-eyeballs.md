@@ -131,27 +131,27 @@ Additional blue or white yarn is used to indicate the presence of documents with
 
 References to AI are woven in two ways: if AI is being used as a generic umbrella term for probabilistic computational methods, it is woven using the same plain weave as the rest of the visualization. When AI is modified (or implicitly modified) by "generative" in the source document, it is woven with a technique called leno, which involves twisting warp threads over each other before weaving, resulting in a lacy texture.
 
-
-
-*The beginning of the petition; most visible terms are security (yellow), Mellon (purple), Hathi (turquoise) and fair (light blue).*
-
 ![Weaving of beginning of petition](/assets/images/copyrightweaving1.jpg)
 
 *The beginning of the petition; most visible terms are security (yellow), Mellon (purple), Hathi (turquoise) and fair (light blue).*
 
 ![Weaving of letters of support](/assets/images/copyrightweaving2.jpg)
 
+*The beginning of the petition; most visible terms are security (yellow), Mellon (purple), Hathi (turquoise) and fair (light blue).*
+
+![Weaving of opposition filings](/assets/images/copyrightweaving3.jpg)
+
 *Left to right: Matthew Sag, Rachael Samberg & Timothy Vollmer, and Lauren Tilton & Taylor Arnold's letters of support for the petition. The term "AI" is particularly visible as a fluffy yarn.*
 
-![Weaving of opposition filings](/assets/images/copyrightweaving2.jpg)
+![Weaving of section of adverse effects](/assets/images/copyrightweaving4.jpg)
 
 *Part of the opposition filings. "Security" in yellow is particularly visible, as is "fair" (in light blue) and "AI" in fluffy yarn. The leno twists visible in the white warp section represent references to generative AI*.
 
-![Weaving of section of adverse effects](/assets/images/copyrightweaving3.jpg)
+![Weaving of AAP's oposition filings](/assets/images/copyrightweaving5.jpg)
 
 *Part of the AAP's filing about adverse effects. Note the repeated references to generative AI (as visible through the twisted warp yarn), and the section referencing security, HathiTrust, and fair use in the middle.*
 
-![Weaving of AAP's oposition filings](/assets/images/copyrightweaving4.jpg)
+![Weaving of AI section](/assets/images/copyrightweaving6.jpg)
 
 *Close-up of a section from the AAP's opposition filing, in the section on TPM. Terms used are (generative) AI, piracy (gray yarn towards the top), security (yellow), Mellon (purple), fair (light blue), and collaboration (maroon).*
 
@@ -207,9 +207,9 @@ It's a very different view on these documents than my list of seven words that j
 - *Mellon* appears in topic 10, as does *collaborations*
 - *AI* is not in the 50 terms most associated with any of these topics.
 - *Collaborative* clusters with words like "projects", "grantmaking", and "demonstration" in topic 2
-- *Collaborative *is also one of the top words in topic 3 along with "research", "scholars", and "library", as well as *collaboration*
+- *Collaborative* is also one of the top words in topic 3 along with "research", "scholars", and "library", as well as *collaboration*
 - *Collaborate* appears with "researchers", "requirements", "limitations", and "costs" in topic 8
-- *Collaboration *also appears in the top words for topics 15 and 16
+- *Collaboration* also appears in the top words for topics 15 and 16
 
 The fact that different forms of *collaborat-* appear in different topics highlights something noteworthy about topic modeling: it's literally clustering word forms, not concepts. From the perspective of the algorithm, "collaborative" and "collaboration" are completely distinct words -- no less distinct than "text" and "statutory". The fact that topic 3 has multiple forms of *collaborat-* is a good sign (having multiple forms of the same word appear together suggests the topic model is picking up on actual coherent trends in the text, since you would expect different forms of the same word to be used in similar contexts). Having forms of *collaborat-* in so many topics suggests that it's a theme that permeates these documents, but this also makes it difficult to use this topic model to look at collaboration in the documents, because you can't clearly point to one or two "collaboration" topics to track. One might be tempted to point to topic 3 (which has multiple forms of *collaborat-*, but if we create a heat map showing how much of a document is made up of a particular topic (where brighter colors indicate a higher percentage of the document's words are associated with that topic), we can see that topic 3 is a poor proxy for the prevalence of collaboration in these documents, as illustrated by our simple word search analysis earlier:
 

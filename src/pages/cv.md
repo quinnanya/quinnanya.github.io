@@ -82,8 +82,9 @@ header:
 ## Publications
 
 - "Stop Lying to Yourself: Collective Delusion and Digital Humanities Grant Funding”. Forthcoming in *Reframing Failure*, ed. Michael Donnae and Anna-Maria Sichani.
-- "Collective Praxis, Collaborative Publishing: The Case of the Data-Sitters Club", with Lee Skallerup Bessette, Katherine Bowers, Maria Sachiko Cecire, Anouk Lang, and Roopika Risam. Forthcoming in *Journal of Electronic Publishing*.
-- "[Encoding Multilingualism: Technical Affordances of Multilingual Publication from Manuscripts to Unicode and OpenType](https://doi.org/10.3998/jep.5528)", with Manish Goregaokar, Ben Joeng (Yang), and Abeera Kamran. Forthcoming in *Journal of Electronic Publishing*. doi: https://doi.org/10.3998/jep.5528
+- "[DIY Web Archiving](https://zinebakery.com/homemade-zines/bakeshop-2-diywebarchiving)", with Tessa Walsh, Anna Kijas, Ilya Kremer, and Amanda Wyatt Visconti. *Zine Bakery Bakeshop #2*. 
+- "[Collective Praxis, Collaborative Publishing: The Case of the Data-Sitters Club](https://doi.org/10.3998/jep.6093)", with Lee Skallerup Bessette, Katherine Bowers, Maria Sachiko Cecire, Anouk Lang, and Roopika Risam.  *Journal of Electronic Publishing 28g*. doi: https://doi.org/10.3998/jep.6093
+- "[Encoding Multilingualism: Technical Affordances of Multilingual Publication from Manuscripts to Unicode and OpenType](https://doi.org/10.3998/jep.5528)", with Manish Goregaokar, Ben Joeng (Yang), and Abeera Kamran. *The Journal of Electronic Publishing*. doi: https://doi.org/10.3998/jep.5528
 - "Textile Makerspace: Digital Humanities Meets Craft". *Journal of Modern Craft*, July 2024, issue 17.2.
 - "Voices from the Server Room: Humanists in HPC", with Tassie Gniady, David Kloster, Megan Meredith-Lobay, Jeffrey Tharsen, Lee Zickel. _Computational Humanities_. Univ. of Minnesota Press. Eds. Jessica Marie Johnson, David Mimno, and Lauren Tilton. 2024.
 - [DHMakes: Baking Craft into DH Discourse](https://doi.org/10.23287/KJDH.2024.1.1.5), with Amanda Visconti and Claudia Berger. *Korean Association of Digital Humanities*, vol. 1, issue 1. May 31, 2024. https://doi.org/10.23287/KJDH.2024.1.1.5
@@ -137,6 +138,8 @@ header:
 - "The Data-Sitters Club", reviewed by Michelle Moravec. *Journal of American History*, Volume 111, Issue 2, September 2024, Pages 399–400, https://doi.org/10.1093/jahist/jaae174
 
 ## Talks and Presentations
+- Texas A&M University, CoDHR speaker series. "Data You Can Touch: Preserving What You Love on an Uncertain Internet". January 28, 2025.
+- IMLS Data Speculations symposium. "What We Do in the Shadows: Tales of Pragmatic Corpus Building". January 15, 2025.
 - UCLA, "Data Visualization with Textiles Community Event". December 2, 2024.
 - HERMES Doctoral Network, seminar on error culture and discussion of "[Towards a Taxonomy of Failure](https://quinndombrowski.com/blog/2019/01/30/towards-taxonomy-failure/)". November 20, 2022.
 - ACH 2024 roundtable, "Emerging Pathways to Supporting Digital Humanities Research on Copyrighted Literature", with Alex Wermer-Colan, Sarah Potvin, Mark Algee-Hewitt, and Peter Jaszi. November 6, 2024.
@@ -180,7 +183,7 @@ header:
 - Animating Text, Newcastle University speaker series. &quot;Computational Analysis of Youth Fiction with the Young Readers Database of Literature&quot;, with Nichole Nomura. November 9, 2022.
 - Stanford Literary Lab. &quot;Star Wars Episode II: Attack of the Coreference&quot;, with Mark Algee-Hewitt, Nichole Nomura, and Matt Warner. October 31, 2022.
 - Austrian Center for Digital Humanities and Cultural Heritage. &quot;SUCHO: Protecting Digital Cultural Heritage in Times of Crisis&quot;, with Anna Kijas, Sebastian Majstorovic, Andreas Segerberg. October 18, 2022.
-- Austrian Center for Digital Humanities and Cultural Heritage. Presenter at <em>ACDH-CH Tool Gallery 8.2: Teaching Digital Humanities</em>. October 18, 2022.
+- Austrian Center for Digital Humanities and Cultural Heritage. Presenter at *ACDH-CH Tool Gallery 8.2: Teaching Digital Humanities*. October 18, 2022.
 - University of Gothenburg, public lecture, &quot;Saving Ukrainian Cultural Heritage Online&quot;, with Anna Kijas, Sebastian Majstorovic, Andreas Segerberg. October 14, 2022.
 - European Summer University in Digital Humanities, public lecture, "Collaborative Volunteering in the Digital Humanities: Saving Ukrainian Cultural Heritage Online (SUCHO)", with Sebastian Majstorovic. August 8, 2022.
 - FCSI 2022 closing keynote, "Saving Ukrainian Cultural Heritage Online (SUCHO) and the Future of Archivable Scholarly Communication". July 29, 2022.

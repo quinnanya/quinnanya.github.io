@@ -3,6 +3,7 @@ title: PhD Quilt
 date: 2023-04-23
 author: Quinn Dombrowski
 show_date: true
+sortorder: '001'
 permalink: /phdquilt/
 header:
   overlay_image: /assets/images/header_phdquilt.jpg

@@ -3,6 +3,7 @@ permalink: /textiles/guestbook-loom/
 title: "Guestbook Loom"
 date: 2024-12-27
 classes: wide
+sortorder: '007'
 show_date: true
 header:
   overlay_image: /assets/images/header_guestbookloom.jpg

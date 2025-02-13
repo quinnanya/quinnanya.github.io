@@ -2,6 +2,7 @@
 permalink: /textiles/computers-archives-librarians-star-trek/
 title: "Computers, Archives and Librarians in Star Trek"
 date: 2023-11-15
+sortorder: '003'
 classes: wide
 show_date: true
 header:

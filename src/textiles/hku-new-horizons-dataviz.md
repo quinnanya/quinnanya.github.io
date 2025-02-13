@@ -2,6 +2,7 @@
 permalink: /textiles/hku-new-horizons-dataviz/
 title: "HKU 'New Horizons in DH'"
 date: 2023-06-05
+sortorder: '002'
 author: Quinn Dombrowski
 header:
   overlay_image: /assets/images/header_hku.jpg

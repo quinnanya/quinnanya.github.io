@@ -3,6 +3,7 @@ permalink: /textiles/cidr-coeur/
 title: "#CIDR-Coeur"
 date: 2024-03-27
 classes: wide
+sortorder: '005'
 show_date: true
 header:
   overlay_image: /assets/images/header_cidr-coeur.jpg

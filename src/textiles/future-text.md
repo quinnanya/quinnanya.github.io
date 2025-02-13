@@ -3,6 +3,7 @@ permalink: /textiles/future-text/
 title: "Future Text"
 date: 2024-03-27
 classes: wide
+sortorder: '006'
 show_date: true
 header:
   overlay_image: /assets/images/header_future-text.jpg

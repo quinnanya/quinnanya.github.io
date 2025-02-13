@@ -3,6 +3,7 @@ permalink: /textiles/gerunds-saliva/
 title: "Hi! I Also Enjoy Gerunds / A Message From Your Saliva"
 date: 2025-01-06
 classes: wide
+sortorder: '008'
 show_date: true
 header:
   overlay_image: /assets/images/header_gerunds-saliva.jpg

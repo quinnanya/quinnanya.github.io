@@ -6,7 +6,7 @@ classes: wide
 sortorder: '011'
 show_date: true
 header:
-  overlay_image: /assets/images/header_choose2.jpg
+  overlay_image: /assets/images/header_choose.jpg
   overlay_filter: 0.5
 blurb: "A sigil."
 ---

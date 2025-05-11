@@ -105,7 +105,7 @@ header:
 - "[Does Coding Matter for Doing Digital Humanities?](https://purl.stanford.edu/ck442sc7933)". In _Bloomsbury Handbook to DH_, ed. James O'Sullivan. 2022.
 - "[Review: jsLDA](https://reviewsindh.pubpub.org/pub/jslda/release/1)". *Reviews in Digital Humanities*, vol. 3, no. 8. August 2022.
 - "[Minimizing Computing Maximizes Labor](http://www.digitalhumanities.org/dhq/vol/16/2/000594/000594.html)". _Digital Humanities Quarterly_ vol. 16, no. 2 (cluster on minimal computing).
-- "Academia is a Dice Roll", with Agnieszka Backman, Sabrina Grimberg, and Melissa Hosek. Forthcoming in _Debates in DH: The Digital Futures of Graduate Study in the Humanities_. Univ. of Minnesota Press. Eds. Simon Appleford, Gabriel Hankins, and Anouk Lang.
+- "[Academia is a Dice Roll](https://dhdebates.gc.cuny.edu/read/fa512788-5aeb-4437-99a4-0a05706cd89d/section/67fdea9c-783e-4312-967f-70793a21819e#ch21)", with Agnieszka Backman, Sabrina Grimberg, and Melissa Hosek. Forthcoming in _Debates in DH: The Digital Futures of Graduate Study in the Humanities_. Univ. of Minnesota Press. Eds. Simon Appleford, Gabriel Hankins, and Anouk Lang.
 - "[Rolling the Dice on Project Management](https://ideah.pubpub.org/pub/9xiyfz6h/release/3)". IDEAH, vol. 2, issue 2. Nov 25, 2021. DOI: 10.21428/f1f23564.0f419bf4.
 - "[Linguistic Fingerprints on Translation's Lens](https://jdmdh.episciences.org/9008)", with J.D. Porter and Yulia Ilchuk. Journal of Data Mining & Digital Humanities, January 27, 2022, Special Issue on Collecting, Preserving, and Disseminating Endangered Cultural Heritage for New Understandings through Multilingual Approaches. DOI: 10.46298/jdmdh.7223
 - “[The Directory Paradox](https://dhdebates.gc.cuny.edu/read/people-practice-power/section/ca87ec4c-23a0-452d-8595-7cfd7e8d6f0c#ch06)”. _Debates in Digital Humanities: People, Practice, Power: Digital Humanities Outside the Center_. Univ. of Minnesota Press. Eds. Anne McGrail et al. 2021.
@@ -138,6 +138,7 @@ header:
 - "The Data-Sitters Club", reviewed by Michelle Moravec. *Journal of American History*, Volume 111, Issue 2, September 2024, Pages 399–400, https://doi.org/10.1093/jahist/jaae174
 
 ## Talks and Presentations
+- University of Michigan. "Multilingual Digital Humanities in an era of AI", with Andrew Janco. April 24, 2025.
 - Texas A&M University, CoDHR speaker series. "Data You Can Touch: Preserving What You Love on an Uncertain Internet". January 28, 2025.
 - IMLS Data Speculations symposium. "What We Do in the Shadows: Tales of Pragmatic Corpus Building". January 15, 2025.
 - UCLA, "Data Visualization with Textiles Community Event". December 2, 2024.

@@ -138,6 +138,9 @@ header:
 - "The Data-Sitters Club", reviewed by Michelle Moravec. *Journal of American History*, Volume 111, Issue 2, September 2024, Pages 399–400, https://doi.org/10.1093/jahist/jaae174
 
 ## Talks and Presentations
+- Association of Jewish Libraries 2025 conference. "From Matzo Balls to Metrics", with Eitan Kensky. June 25, 2025.
+- ACH 2025. "#DHMakes @ ACH 2025: DH Craftivism as Resistance", with Amanda Wyatt Visconti, Jaj Karajgikar, Claudia Berger, and Lee Skallerup Bessette. June 13, 2025.
+- ACH 2025. "From Matzo Balls to Metrics", with Eitan Kensky. June 11, 2025.
 - University of Michigan. "Multilingual Digital Humanities in an era of AI", with Andrew Janco. April 24, 2025.
 - Texas A&M University, CoDHR speaker series. "Data You Can Touch: Preserving What You Love on an Uncertain Internet". January 28, 2025.
 - IMLS Data Speculations symposium. "What We Do in the Shadows: Tales of Pragmatic Corpus Building". January 15, 2025.

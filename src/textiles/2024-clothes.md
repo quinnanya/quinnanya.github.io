@@ -22,3 +22,7 @@ I struggled with space and planning (I'd intended for it to somehow turn into a 
 I got through embroidering late March, though I kept tracking data until late April, before I gave up. Here's a few example outfits and the shapes they became.
 
 ![Quinn wearing a blue t-shirt and a dark-color knitted sweater, Eliza in a pink dress, and embroidery representing this](/assets/images/textiles_clothes-outfit1.jpg)
+
+![Eliza in a rainbow shark dress and a rainbow star representing this](/assets/images/textiles_clothes-rainbow.jpg)
+
+![Quinn in a chained book themed dress, with medieval chains and a horror theme and some knights with tennis shoes, and a gray/black filled in star](/assets/images/textiles_clothes-graydress.jpg)

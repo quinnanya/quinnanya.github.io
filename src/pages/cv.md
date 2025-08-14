@@ -86,7 +86,7 @@ header:
 - "[Collective Praxis, Collaborative Publishing: The Case of the Data-Sitters Club](https://doi.org/10.3998/jep.6093)", with Lee Skallerup Bessette, Katherine Bowers, Maria Sachiko Cecire, Anouk Lang, and Roopika Risam.  *Journal of Electronic Publishing 28g*. doi: https://doi.org/10.3998/jep.6093
 - "[Encoding Multilingualism: Technical Affordances of Multilingual Publication from Manuscripts to Unicode and OpenType](https://doi.org/10.3998/jep.5528)", with Manish Goregaokar, Ben Joeng (Yang), and Abeera Kamran. *The Journal of Electronic Publishing*. doi: https://doi.org/10.3998/jep.5528
 - "[Textile Makerspace: Digital Humanities Meets Craft](https://www.tandfonline.com/eprint/IBKRBZX3Y72HDVT88QD9/full?target=10.1080/17496772.2024.2378629)". *Journal of Modern Craft*, July 2024, issue 17.2.
-- "Voices from the Server Room: Humanists in HPC", with Tassie Gniady, David Kloster, Megan Meredith-Lobay, Jeffrey Tharsen, Lee Zickel. _Computational Humanities_. Univ. of Minnesota Press. Eds. Jessica Marie Johnson, David Mimno, and Lauren Tilton. 2024.
+- "[Voices from the Server Room: Humanists in HPC](https://dhdebates.manifoldapp.org/read/computational-humanities-5c64bbab-d7ca-41be-8f87-f26117a9a20f/section/57bf0197-fd4a-44ce-a542-78883631cacb#ch14)", with Tassie Gniady, David Kloster, Megan Meredith-Lobay, Jeffrey Tharsen, Lee Zickel. _Computational Humanities_. Univ. of Minnesota Press. Eds. Jessica Marie Johnson, David Mimno, and Lauren Tilton. 2024.
 - [DHMakes: Baking Craft into DH Discourse](https://doi.org/10.23287/KJDH.2024.1.1.5), with Amanda Visconti and Claudia Berger. *Korean Association of Digital Humanities*, vol. 1, issue 1. May 31, 2024. https://doi.org/10.23287/KJDH.2024.1.1.5
 - ["Knot Hard: Accessible Textile Data Visualization with a Circular Knitting Machine"](https://dhandlib.org/2024/04/29/knot-hard-accessible-textile-data-visualization-with-a-circular-knitting-machine/). DH + Lib 2024 special issue, "[Making Research Tactile: Critical Making and Data Physicalization in Digital Humanities](https://dhandlib.org/2024/04/29/making-research-tactile-critical-making-and-data-physicalization-in-digital-humanities/)". April 29, 2024.
 - ["Access and Advocacy: Text & Data Mining and DMCA §1201"](https://doi.org/10.16995/dscn.9658), with Lauren Tilton. _Digital Studies / Le champ numérique_, selected papers from DH Unbound 2022. April 3, 2024. https://doi.org/10.46430/phen0116.
@@ -132,12 +132,14 @@ header:
 - _Crescat Graffiti, Vita Excolatur: Confessions of the University of Chicago_, 2009. (ISBN 978-0-557-17205-4)
 
 ## Exhibitions
+- "Computers, Archives, and Librarians in Star Trek", in _ART/WORK | Creative Pursuits of Stanford Libraries Staff_. February 20, 2024 - April 27, 2025.
 - "Future Text" and "#CIDR-Coeur" weavings, and guestbook loom, at _Thread Control_ pop-up exhibition. Roble Arts Gym, Stanford University. March 7-8, 2024.
 
 ## Project Reviews
 - "The Data-Sitters Club", reviewed by Michelle Moravec. *Journal of American History*, Volume 111, Issue 2, September 2024, Pages 399–400, https://doi.org/10.1093/jahist/jaae174
 
 ## Talks and Presentations
+- DEF CON 33. "Takes All Kinds: Building Onramps for Emergency Web Archiving in Ukraine and Beyond". August 8, 2025.
 - Association of Jewish Libraries 2025 conference. "From Matzo Balls to Metrics", with Eitan Kensky. June 25, 2025.
 - ACH 2025. "#DHMakes @ ACH 2025: DH Craftivism as Resistance", with Amanda Wyatt Visconti, Jaj Karajgikar, Claudia Berger, and Lee Skallerup Bessette. June 13, 2025.
 - ACH 2025. "From Matzo Balls to Metrics", with Eitan Kensky. June 11, 2025.

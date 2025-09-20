@@ -41,7 +41,7 @@ header:
 - PC member, Computational Humanities Research conference, 2024
 - Co-President, Association for Computers and the Humanities (ACH), 2022-2024
 - ACH Constituent Organization Board representative to the Alliance of Digital Humanities Organizations (ACH), 2022-2024
-- Co-founder and organizer, ACH AI working group, 2023-present
+- Co-founder and organizer, ACH AI working group, 2023-2025
 - Co-VP, ACH, 2020-2022
 - Digital Ethnic Futures mentor, 2022
 - Executive board member, Global Outlook::Digital Humanities, 2019-2021
@@ -139,6 +139,7 @@ header:
 - "The Data-Sitters Club", reviewed by Michelle Moravec. *Journal of American History*, Volume 111, Issue 2, September 2024, Pages 399–400, https://doi.org/10.1093/jahist/jaae174
 
 ## Talks and Presentations
+- Open Space Day of the Digital Academy at Bielefeld University. Interviewee about workflows. September 12, 2025.
 - DEF CON 33. "Takes All Kinds: Building Onramps for Emergency Web Archiving in Ukraine and Beyond". August 8, 2025.
 - Association of Jewish Libraries 2025 conference. "From Matzo Balls to Metrics", with Eitan Kensky. June 25, 2025.
 - ACH 2025. "#DHMakes @ ACH 2025: DH Craftivism as Resistance", with Amanda Wyatt Visconti, Jaj Karajgikar, Claudia Berger, and Lee Skallerup Bessette. June 13, 2025.

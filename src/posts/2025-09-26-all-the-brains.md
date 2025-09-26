@@ -21,7 +21,7 @@ The *Les Misérables incident* of my childhood came back to me this week. First 
 
 My brain did that thing again. Some of it was deliberate script changes (bless them for cutting "Little People" and truncating "Castle on a Cloud", and turning Thénardier bi-curious in "Beggars at the Feast"). But "Valjean's Soliloquy" had an odd "one knife from him and I'd be back" that I'm pretty sure was a mistake.
 
-And I was reminded of this remark on neurodiversity from Bluesky:
+And I was reminded of [this remark](https://bsky.app/profile/sbearbergman.bsky.social/post/3lzlrdgk5tc2c) on neurodiversity from Bluesky:
 
 ![Bluesky post from S Bear Bergman, 'Can we not just accept that we need all the different kinds of brains to do all the different kind of human things? Because I am FOR SURE not keeping a 17-volume-and-counting detailed record of my decades of effort in restoring heirloom apple varieties, but I’m very glad someone is. ::crunch::'](/assets/images/all-brains.jpg)
 

@@ -13,7 +13,7 @@ I hadn't thought much of it, but there's a good reason the inflatable frogs were
 
 ![Inside an inflatable frog, looking up](/assets/images/frog_head.jpg)
 
-It is one thing to watch the now-iconic original video of Portland Frog that launched the inflatables movement and a thousand pieces of fan art (yes, I too am weaving a tapestry) and admire his fearlessness. It is another thing to try to navigate the world in some form of that body.
+It is one thing to watch the [now-iconic original video of Portland Frog](https://bsky.app/profile/competentposter.bsky.social/post/3m2fmqrnjtk2q) that launched the inflatables movement and a thousand pieces of fan art (yes, I too am weaving a tapestry) and admire his fearlessness. It is another thing to try to navigate the world in some form of that body.
 
 ![Inside an inflatable frog, looking down](/assets/images/inside_frog.jpg)
 

@@ -23,7 +23,15 @@
 {%- assign auto_description = content | replace: title, '' | description | default: site.description -%}
 {%- assign seo_description = excerpt | default: auto_description -%}
 {%- if seo_description -%}
-  {%- assign seo_description = seo_description | markdownify | strip_html | newline_to_br | strip_newlines | replace: '<br />', ' ' | escape_once | strip -%}
+  {%- assign seo_description = seo_description | markdownify | strip_html | newline_to_br | strip_newlines -%}
+  {%- comment -%}
+    Normalize and defensively encode sequences that confuse HTML parsers when
+    included in meta descriptions (for example literal comment terminators
+    like "-->" or stray angle brackets). We replace common variants of the
+    <br> token and then encode raw greater-than characters. Finally call
+    escape_once to avoid double-escaping.
+  {%- endcomment -%}
+  {%- assign seo_description = seo_description | replace: '<br />', ' ' | replace: '<br>', ' ' | replace: '-->', '--&gt;' | replace: '>', '&gt;' | replace: '<', '&lt;' | escape_once | strip -%}
 {%- endif -%}
 
 {%- assign author = author | default: authors[0] | default: site.author -%}
@@ -139,7 +147,7 @@
 </script>
 
 {% if site.google_site_verification %}
-  <meta name="google-site-verification" content="{{ site.google_site_verification }}" />
+  <meta name="google-site-verification" content="{{ site.google_site_verification }}">
 {% endif %}
 {% if site.bing_site_verification %}
   <meta name="msvalidate.01" content="{{ site.bing_site_verification }}">

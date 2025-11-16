@@ -1,9 +1,9 @@
 {% capture logo_path %}{{ site.logo }}{% endcapture %}
 
-<div class="masthead">
+<header class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
+  <nav id="site-nav" class="greedy-nav" aria-label="{{ site.data.ui-text[site.locale].primary_navigation | default: 'Primary navigation' }}">
         {% unless logo_path == '' %}
           <a class="site-logo" href="{{ '/' | relative_url }}"><img src="{{ logo_path | relative_url }}" alt="{{ site.masthead_title | default: site.title }}"></a>
         {% endunless %}
@@ -19,17 +19,17 @@
           {%- endfor -%}
         </ul>
         {% if site.search == true %}
-        <button class="search__toggle" type="button">
+        <button class="search__toggle" type="button" aria-expanded="false" aria-controls="search" aria-label="{{ site.data.ui-text[site.locale].search_label | default: "Toggle search" }}">
           <span class="visually-hidden">{{ site.data.ui-text[site.locale].search_label | default: "Toggle search" }}</span>
-          <i class="fas fa-search"></i>
+          <i class="fas fa-search" aria-hidden="true"></i>
         </button>
         {% endif %}
-        <button class="greedy-nav__toggle hidden" type="button">
+  <button class="greedy-nav__toggle hidden" type="button" aria-expanded="false" aria-controls="site-nav-hidden" aria-label="{{ site.data.ui-text[site.locale].menu_label | default: "Toggle menu" }}">
           <span class="visually-hidden">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle menu" }}</span>
-          <div class="navicon"></div>
+          <span class="navicon" aria-hidden="true"></span>
         </button>
-        <ul class="hidden-links hidden"></ul>
+  <ul id="site-nav-hidden" class="hidden-links hidden" aria-hidden="true"></ul>
       </nav>
     </div>
   </div>
-</div>
+</header>

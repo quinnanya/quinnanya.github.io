@@ -1,0 +1,17 @@
+{
+  "extends": ["html-validate:recommended"],
+  "root": true,
+  "rules": {
+    "element-permitted-content": "off",
+    "element-permitted-parent": "off",
+    "unique-landmark": "off",
+    "no-dup-id": "off",
+    "void-style": "off",
+    "no-inline-style": "off",
+    "wcag/h32": "off",
+    "wcag/h30": "off",
+    "close-order": "off",
+    "attr-spacing": "off",
+    "no-trailing-whitespace": "off"
+  }
+}

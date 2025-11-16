@@ -12,9 +12,11 @@
   {% endif %}
 
   <div class="author__content">
+    {% if author.name and author.name != '' %}
     <h3 class="author__name p-name" itemprop="name">
       <a class="u-url" rel="me" href="{{ author.home | default: '/' | absolute_url }}" itemprop="url">{{ author.name }}</a>
     </h3>
+    {% endif %}
     {% if author.bio %}
       <div class="author__bio p-note" itemprop="description">
         {{ author.bio | markdownify }}
@@ -49,7 +51,7 @@
       {% if author.email %}
         <li>
           <a href="mailto:{{ author.email }}" rel="me" class="u-email">
-            <meta itemprop="email" content="{{ author.email }}" />
+            <meta itemprop="email" content="{{ author.email }}">
             <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</span>
           </a>
         </li>

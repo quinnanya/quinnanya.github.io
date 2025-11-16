@@ -3,10 +3,11 @@
   {%- case search_provider -%}
   {%- when "lunr" -%}
   <form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
-    <label class="sr-only" for="search">
+    <label class="sr-only" for="search-input">
       {{ site.data.ui-text[site.locale].search_label_text | default: 'Enter your search term...' }}
     </label>
-    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="{{ site.data.ui-text[site.locale].search_placeholder_text | default: 'Enter your search term...' }}" />
+    <input type="search" id="search-input" class="search-input" placeholder="{{ site.data.ui-text[site.locale].search_placeholder_text | default: 'Enter your search term...' }}">
+    <button type="submit" class="sr-only">{{ site.data.ui-text[site.locale].search_label_text | default: 'Search' }}</button>
   </form>
   <div id="results" class="results"></div>
   {%- when "google" -%}
@@ -14,7 +15,8 @@
     <label class="sr-only" for="cse-search-input-box-id">
       {{ site.data.ui-text[site.locale].search_label_text | default: 'Enter your search term...' }}
     </label>
-    <input type="search" id="cse-search-input-box-id" class="search-input" tabindex="-1" placeholder="{{ site.data.ui-text[site.locale].search_placeholder_text | default: 'Enter your search term...' }}" />
+    <input type="search" id="cse-search-input-box-id" class="search-input" placeholder="{{ site.data.ui-text[site.locale].search_placeholder_text | default: 'Enter your search term...' }}">
+    <button type="submit" class="sr-only">{{ site.data.ui-text[site.locale].search_label_text | default: 'Search' }}</button>
   </form>
   <div id="results" class="results">
     <gcse:searchresults-only></gcse:searchresults-only>

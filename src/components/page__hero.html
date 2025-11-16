@@ -1,4 +1,23 @@
-{% capture overlay_img_path %}{{ header.overlay_image | relative_url }}{% endcapture %}
+{%- comment -%}
+  Determine the overlay image path without relying on a custom Liquid filter
+  (some environments may fail to find the filter at parse time). Policy: if
+  front-matter contains an `overlay_image` key (even if empty) use that
+  value; otherwise fall back to the site default `/assets/images/header_cinnamon.jpg`.
+{%- endcomment -%}
+{%- comment -%}
+  Determine the overlay image path. Prefer an explicit `header.overlay_image` if
+  provided and non-empty, otherwise fall back to `header.image` (common page
+  front-matter) and finally use the site-default header image. Using `if`
+  checks guards against empty-string front-matter values which previously
+  caused the overlay branch to render without a data-bg attribute.
+{%- endcomment -%}
+{%- if header.overlay_image and header.overlay_image != '' -%}
+  {% assign overlay_img_path = header.overlay_image %}
+{%- elsif header.image and header.image != '' -%}
+  {% assign overlay_img_path = header.image %}
+{%- else -%}
+  {% assign overlay_img_path = '/assets/images/header_cinnamon.jpg' %}
+{%- endif -%}
 
 {% if header.overlay_filter contains "gradient" %}
   {% capture overlay_filter %}{{ header.overlay_filter }}{% endcapture %}
@@ -17,12 +36,20 @@
 {% endif %}
 
 
-<div class="page__hero{% if header.overlay_color or header.overlay_image %}--overlay{% endif %}"
-  style="{% if header.overlay_color %}background-color: {{ header.overlay_color | default: 'transparent' }};{% endif %} {% if overlay_img_path %}background-image: {% if overlay_filter %}{{ overlay_filter }}, {% endif %}url('{{ overlay_img_path }}');{% endif %}"
+{% comment %} We avoid emitting inline `style` attributes to satisfy html-validate's
+  "no-inline-style" rule. Use `data-bg` and `data-overlay-filter` so runtime
+  JS/CSS can apply backgrounds; server-side inline fallback was removed.
+{% endcomment %}
+
+
+<div class="page__hero{% if header.overlay_color or overlay_img_path or header.image %} page__hero--overlay{% endif %}"
+  {% if header.overlay_color %}data-overlay-color="{{ header.overlay_color | default: 'transparent' }}"{% endif %}
+  {% if overlay_img_path %}data-bg="{{ overlay_img_path | relative_url }}"{% endif %}
+  {% if overlay_filter %}data-overlay-filter="{{ overlay_filter }}" {% endif %}
 >
-  {% if header.overlay_color or header.overlay_image %}
+  {% if header.overlay_color or overlay_img_path %}
     <div class="wrapper">
-      <h1 id="page-title" class="page__title" itemprop="headline">
+  <h1 id="page-title-hero" class="page__title" itemprop="headline">
         {% if paginator and site.paginate_show_page_num %}
           {{ site.title }}{% unless paginator.page == 1 %} {{ site.data.ui-text[site.locale].page | default: "Page" }} {{ paginator.page }}{% endunless %}
         {% else %}
@@ -30,19 +57,20 @@
         {% endif %}
       </h1>
       {% if tagline %}
-        <p class="page__lead">{{ tagline | markdownify | remove: "<p>" | remove: "</p>" }}</p>
+        <div class="page__lead">{{ tagline | markdownify | remove: "<p>" | remove: "</p>" }}</div>
       {% elsif header.show_overlay_excerpt != false and excerpt %}
-        <p class="page__lead">{{ excerpt | markdownify | remove: "<p>" | remove: "</p>" }}</p>
+        <div class="page__lead">{{ excerpt | markdownify | remove: "<p>" | remove: "</p>" }}</div>
       {% endif %}
       {% include components/page__meta.html %}
       {% if header.cta_url %}
-        <p><a href="{{ header.cta_url | relative_url }}" class="btn btn--light-outline btn--large">{{ header.cta_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a></p>
+        <div><a href="{{ header.cta_url | relative_url }}" class="btn btn--light-outline btn--large">{{ header.cta_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a></div>
       {% endif %}
       {% if header.actions %}
-        <p>
+        <div>
         {% for action in header.actions %}
           <a href="{{ action.url | relative_url }}" class="btn btn--light-outline btn--large">{{ action.label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a>
         {% endfor %}
+        </div>
       {% endif %}
     </div>
   {% else %}
@@ -50,5 +78,16 @@
   {% endif %}
   {% if header.caption %}
     <span class="page__hero-caption">{{ header.caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+  {% endif %}
+  {%- comment -%}
+    Provide a non-JS fallback for the hero background without emitting
+    inline style attributes. We avoid inline style attributes to satisfy
+    html-validate, but a <noscript> <img> ensures the header image is
+    visible when JS that applies data-bg-based backgrounds isn't running.
+  {%- endcomment -%}
+  {% if overlay_img_path %}
+    <noscript>
+      <img src="{{ overlay_img_path | relative_url }}" alt="{{ image_description }}" class="page__hero-image">
+    </noscript>
   {% endif %}
 </div>

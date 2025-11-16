@@ -48,6 +48,10 @@ $(function() {
   // Get initial state
   measureLinks();
 
+  // Initialize ARIA states for toggle and hidden links
+  $btn.attr('aria-expanded', 'false');
+  $hlinks.attr('aria-hidden', 'true');
+
   var winWidth = $( window ).width();
   // Set the last measured CSS width breakpoint: 0: <768px, 1: <1024px, 2: < 1280px, 3: >= 1280px.
   var lastBreakpoint = winWidth < 768 ? 0 : winWidth < 1024 ? 1 : winWidth < 1280 ? 2 : 3;
@@ -89,7 +93,9 @@ $(function() {
     $btn.attr("count", numOfItems - numOfVisibleItems);
     if (numOfVisibleItems === numOfItems) {
       $btn.addClass('hidden');
+      $btn.attr('aria-hidden', 'true');
     } else $btn.removeClass('hidden');
+      $btn.attr('aria-hidden', 'false');
   }
 
   // Window listeners
@@ -100,6 +106,10 @@ $(function() {
   $btn.on('click', function() {
     $hlinks.toggleClass('hidden');
     $(this).toggleClass('close');
+    // update aria-expanded on the button and aria-hidden on the hidden-links
+    var expanded = $(this).attr('aria-expanded') === 'true';
+    $(this).attr('aria-expanded', (!expanded).toString());
+    $hlinks.attr('aria-hidden', expanded.toString());
     clearTimeout(timer);
   });
 
@@ -107,6 +117,9 @@ $(function() {
     // Mouse has left, start the timer
     timer = setTimeout(function() {
       $hlinks.addClass('hidden');
+      // ensure ARIA state is updated when the hidden links are closed by timer
+      $btn.attr('aria-expanded', 'false');
+      $hlinks.attr('aria-hidden', 'true');
     }, closingTime);
   }).on('mouseenter', function() {
     // Mouse is back, cancel the timer

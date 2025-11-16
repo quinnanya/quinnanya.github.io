@@ -8,7 +8,7 @@ layout: default.html
   {% include components/page__hero_video.html %}
 {% endif %}
 
-<div id="main" role="main">
+<div class="main-content">
   <article class="splash" itemscope itemtype="https://schema.org/CreativeWork">
     {% if title %}<meta itemprop="headline" content="{{ title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if excerpt %}<meta itemprop="description" content="{{ excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}

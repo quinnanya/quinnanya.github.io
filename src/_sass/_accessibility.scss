@@ -1,0 +1,50 @@
+/* Accessibility helpers: visible focus, skip links, reduced motion */
+
+/* Skip links: hidden visually until focused */
+.screen-reader-shortcut,
+.skip-links a {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.screen-reader-shortcut:focus,
+.screen-reader-shortcut:active,
+.skip-links a:focus,
+.skip-links a:active {
+  position: static;
+  left: auto;
+  top: auto;
+  width: auto;
+  height: auto;
+  padding: .5rem 1rem;
+  background: #111;
+  color: #fff;
+  z-index: 1000;
+  text-decoration: none;
+}
+
+/* Focus outline for keyboard users */
+:focus {
+  outline: none;
+}
+:focus-visible {
+  outline: 3px solid #ffbf47;
+  outline-offset: 2px;
+}
+
+/* Ensure elements that are hidden via .hidden and aria-hidden remain inert */
+[aria-hidden="true"] {
+  pointer-events: none;
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

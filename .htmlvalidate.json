@@ -1,0 +1,7 @@
+{
+  "extends": ["html-validate:recommended"],
+  "root": true,
+  "rules": {
+    "no-trailing-whitespace": "error"
+  }
+}

@@ -17,12 +17,15 @@ header:
   {%- for textile in sorted_textiles -%}
 <div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    <img src="{{textile.data.header.overlay_image}}" / >
+  <img src="{{ textile.data.header.overlay_image | relative_url }}" alt="{{ textile.data.title | default: '' }}">
 	<h3 class="archive__item-title no_toc" itemprop="headline">
       {% if textile.data.permalink %}
-        <a href="{{ textile.data.permalink }}">{{ textile.data.title }}</a> 
+        <a href="{{ textile.data.permalink }}">{{ textile.data.title }}</a>
       {% endif %}
-    {% if textile.data.blurb %}<p class="archive__item-excerpt" itemprop="description">{{ textile.data.blurb | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
+      </h3>
+    {% if textile.data.blurb %}
+  <div class="archive__item-excerpt" itemprop="description">{{ textile.data.blurb | markdownify | strip_html | truncate: 160 }}</div>
+    {% endif %}
   </article>
 </div>
 {% endfor %}

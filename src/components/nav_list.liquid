@@ -1,10 +1,14 @@
 <p>MENU FOO</p>
 {% assign navigation = site.data.navigation[include.nav] %}
 
-<nav class="nav__list">
-  {% if sidebar.title %}<h3 class="nav__title" style="padding-left: 0;">{{ sidebar.title }}</h3>{% endif %}
-  <input id="ac-toc" name="accordion-toc" type="checkbox" />
-  <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle Menu" }}</label>
+<nav class="nav__list" aria-label="{{ sidebar.title | default: 'Sidebar navigation' }}">
+  {% if sidebar.title %}<h3 class="nav__title">{{ sidebar.title }}</h3>{% endif %}
+  {%- assign ac_id = 'ac-toc' -%}
+  {%- if sidebar.title %}
+    {%- assign ac_id = ac_id | append: '-' | append: sidebar.title | slugify -%}
+  {%- endif -%}
+  <input id="{{ ac_id }}" name="accordion-toc" type="checkbox">
+  <label for="{{ ac_id }}">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle Menu" }}</label>
   <ul class="nav__items">
     {% for nav in header %}
       <li>

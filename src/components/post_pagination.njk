@@ -1,5 +1,5 @@
 {% if paginationNextUrl or paginationPrevUrl %}
-  <nav class="pagination">
+  <nav class="pagination" aria-label="Pagination">
     {% if paginationPrevUrl %}
       <a href="{{ paginationPrevUrl }}" class="pagination--pager" title="{{ previous.title | markdownify | strip_html }}">{{ paginationPrevText if paginationPrevText else 'Previous' }}</a>
     {% endif %}

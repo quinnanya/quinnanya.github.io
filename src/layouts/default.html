@@ -1,36 +1,35 @@
 ---
 ---
 
-<!doctype html>
+<!DOCTYPE html>
 <!--
   Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
   Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
-<html lang='{{ site.locale }}' class="no-js">
+<html lang="{{ site.locale }}" class="no-js">
   <head>
     {% include components/head.html %}
     {% include components/head/custom.html %}
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
-    {% include components/skip-links.html %}
-    {% include components/browser-upgrade.html %}
+  {% include components/skip-links.html %}
     {% include components/masthead.html %}
 
-    <div class="initial-content">
+    <main id="main" class="initial-content" aria-label="{{ site.data.ui-text[site.locale].main_label | default: 'Main content' }}">
       {{ content }}
-    </div>
+    </main>
 
     {% if site.search == true %}
-      <div class="search-content">
+      <div id="search" class="search-content" role="region" aria-label="Site search">
         {% include components/search/search_form.html %}
       </div>
     {% endif %}
 
     <div id="footer" class="page__footer">
-      <footer>
+      <footer aria-label="Site footer">
         {% include components/footer/custom.html %}
         {% include components/footer.html %}
       </footer>

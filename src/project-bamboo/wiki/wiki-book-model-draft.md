@@ -27,79 +27,79 @@ header:
 <p>5. Structural information about the book, divisions (chapters, acts, etc)</p>
 <p>6. Scanned images of individual pages</p>
 <h2 id="BookModelDraft-OrganizingBookMaterials"><strong>Organizing Book Materials</strong></h2>
-<p><strong> </strong> <img src="/sites/default/files/bamboo/bamboo-model-1.jpg" /></p>
+<p><strong> </strong> <img src="/sites/default/files/bamboo/bamboo-model-1.jpg"></p>
 <p>The organization of a book is shown in the diagram "Bamboo CI Book Model". A book is represented as a CMIS folder of type bamboo:book. Within this folder are subfolders that contain the original source material and derived page HTML, TEI, page and thumbnail images, and indexes. Item-level metadata is attached as property values on the item folder. Item level metadata fields include:</p>
 <div class="table-wrap">
 <table class="confluenceTable">
 <tbody>
 <tr>
 <td class="confluenceTd">
-<p> dc:title <br class="atl-forced-newline" /> </p>
+<p> dc:title <br class="atl-forced-newline"> </p>
 </td>
 <td class="confluenceTd">
-<p> Dublin Core title (required) <br class="atl-forced-newline" /> </p>
-</td>
-</tr>
-<tr>
-<td class="confluenceTd">
-<p> dc:creator <br class="atl-forced-newline" /> </p>
-</td>
-<td class="confluenceTd">
-<p> Dublin Core creator (required) <br class="atl-forced-newline" /> </p>
+<p> Dublin Core title (required) <br class="atl-forced-newline"> </p>
 </td>
 </tr>
 <tr>
 <td class="confluenceTd">
-<p> dc:date <br class="atl-forced-newline" /> </p>
+<p> dc:creator <br class="atl-forced-newline"> </p>
 </td>
 <td class="confluenceTd">
-<p> Dublin Core date (required, ISO 8601 date range) <br class="atl-forced-newline" /> </p>
-</td>
-</tr>
-<tr>
-<td class="confluenceTd">
-<p> dc:publisher <br class="atl-forced-newline" /> </p>
-</td>
-<td class="confluenceTd">
-<p> Dublin Core publisher <br class="atl-forced-newline" /> </p>
+<p> Dublin Core creator (required) <br class="atl-forced-newline"> </p>
 </td>
 </tr>
 <tr>
 <td class="confluenceTd">
-<p> dc:issued <br class="atl-forced-newline" /> </p>
+<p> dc:date <br class="atl-forced-newline"> </p>
 </td>
 <td class="confluenceTd">
-<p> Dublin Core publication or issue date <br class="atl-forced-newline" /> </p>
-</td>
-</tr>
-<tr>
-<td class="confluenceTd">
-<p> dc:isPartOf <br class="atl-forced-newline" /> </p>
-</td>
-<td class="confluenceTd">
-<p> Identifier for volume that includes this item <br class="atl-forced-newline" /> </p>
+<p> Dublin Core date (required, ISO 8601 date range) <br class="atl-forced-newline"> </p>
 </td>
 </tr>
 <tr>
 <td class="confluenceTd">
-<p> dc:isVersionOf  <br class="atl-forced-newline" /> </p>
+<p> dc:publisher <br class="atl-forced-newline"> </p>
 </td>
 <td class="confluenceTd">
-<p> Identifier for text that this is a version of <br class="atl-forced-newline" /> </p>
+<p> Dublin Core publisher <br class="atl-forced-newline"> </p>
 </td>
 </tr>
 <tr>
 <td class="confluenceTd">
-<p> dc:identifier <br class="atl-forced-newline" /> </p>
+<p> dc:issued <br class="atl-forced-newline"> </p>
 </td>
 <td class="confluenceTd">
-<p> Set only if there is a permanent URL for the item. The value of dc:identifier is the permanent URL <br class="atl-forced-newline" /><br />
+<p> Dublin Core publication or issue date <br class="atl-forced-newline"> </p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd">
+<p> dc:isPartOf <br class="atl-forced-newline"> </p>
+</td>
+<td class="confluenceTd">
+<p> Identifier for volume that includes this item <br class="atl-forced-newline"> </p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd">
+<p> dc:isVersionOf  <br class="atl-forced-newline"> </p>
+</td>
+<td class="confluenceTd">
+<p> Identifier for text that this is a version of <br class="atl-forced-newline"> </p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd">
+<p> dc:identifier <br class="atl-forced-newline"> </p>
+</td>
+<td class="confluenceTd">
+<p> Set only if there is a permanent URL for the item. The value of dc:identifier is the permanent URL <br class="atl-forced-newline"><br>
 in the contributing repository </p>
 </td>
 </tr>
 <tr>
 <td class="confluenceTd">
-<p> bamboo:source <br class="atl-forced-newline" /> </p>
+<p> bamboo:source <br class="atl-forced-newline"> </p>
 </td>
 <td class="confluenceTd">
 <p> Short identifier of contributing repository </p>
@@ -179,7 +179,7 @@ contributing repository and an identifier for the item in that repository. </p>
 <p>XML text and/or metadata for a book page as supplied by a contributing repository (usually TEI.)</p>
 <p>Additional types will be added as needed.</p>
 <h2 id="BookModelDraft-ContentsFolderandIndexing"><strong>Contents Folder and Indexing</strong></h2>
-<p><strong> </strong> <img src="/sites/default/files/bamboo/bamboo-model-2.jpg" /><br />
+<p><strong> </strong> <img src="/sites/default/files/bamboo/bamboo-model-2.jpg"><br>
 Each item folder will contain a "contents" sub-folder, with multiple index folders. Each index provides an alternative way of navigating generated content. Indexes are (possibly nested) folders containing documents that reference content documents.</p>
 <p>Indexes are sets of annotations of source and/or generated content, similar to (and available as) an Atom feed. Even though generated content is organized by page, index items may refer to a selected portion of a range of pages so as to allow divisions and other indexed units to overlap page boundaries. Indexes are described in the diagram labeled "Contents / Indexing".</p>
 <p><strong>Page Index</strong></p>

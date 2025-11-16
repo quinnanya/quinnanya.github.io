@@ -10,13 +10,16 @@ pagination:
 
 <div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    <img src="{{past-project.data.header.overlay_image}}" / >
+  <img src="{{ past-project.data.header.overlay_image | relative_url }}" alt="{{ past-project.data.title | default: '' }}">
 	<h3 class="archive__item-title no_toc" itemprop="headline">
       {% if past-project.data.permalink %}
-        <a href="{{ past-project.data.permalink }}">{{ past-project.data.title }}</a> 
+        <a href="{{ past-project.data.permalink }}">{{ past-project.data.title }}</a>
       {% endif %}
+      </h3>
     {% include components/page__meta.html type=include.type %}
-    {% if past-project.data.contents %}<p class="archive__item-excerpt" itemprop="description">{{ past-project.data.contents | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
+    {% if past-project.data.contents %}
+      <div class="archive__item-excerpt" itemprop="description">{{ past-project.data.contents | markdownify | strip_html | truncate: 160 }}</div>
+    {% endif %}
   </article>
 </div>
 

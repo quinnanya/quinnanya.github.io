@@ -40,3 +40,6 @@
 @import "minimal-mistakes/print";
 
 .alignright {float:right;}
+
+/* Project-specific accessibility helpers */
+@import "accessibility";

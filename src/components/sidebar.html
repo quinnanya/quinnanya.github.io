@@ -4,8 +4,8 @@
   {% if sidebar %}
     {% for s in sidebar %}
       {% if s.image %}
-        <img src="{{ s.image }}"
-             alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
+     <img src="{{ s.image | relative_url }}"
+       alt="{{ s.image_alt | default: s.title | default: '' }}">
       {% endif %}
       {% if s.title %}<h3>{{ s.title }}</h3>{% endif %}
       {% if s.text %}{{ s.text | markdownify }}{% endif %}

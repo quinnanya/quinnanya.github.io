@@ -169,6 +169,33 @@ module.exports = function (eleventyConfig) {
         })
     );
 
+    // Resolve an overlay image path from header data.
+    // Policy: if the page front-matter explicitly references `overlay_image` (the
+    // key exists), return that value (don't substitute). Only when the page
+    // front-matter does NOT reference `overlay_image` at all, fall back to the
+    // site default `/assets/images/header_cinnamon.jpg`.
+    function resolveOverlayFunc(header) {
+        // If there's no header object, fall back to the site default.
+        if (!header) return '/assets/images/header_cinnamon.jpg';
+
+        // If the front-matter explicitly contains an `overlay_image` key,
+        // return it as-is (may be empty or point to a non-existent file,
+        // per the user's request).
+        if (Object.prototype.hasOwnProperty.call(header, 'overlay_image')) {
+            return header.overlay_image || '';
+        }
+
+        // Otherwise, no overlay_image key was present in front-matter — return
+        // the site default fallback.
+        return '/assets/images/header_cinnamon.jpg';
+    }
+
+    // Register for the different template engines Eleventy might use.
+    eleventyConfig.addFilter('resolveOverlay', resolveOverlayFunc);
+    // Liquid templates need addLiquidFilter to expose the filter when using
+    // Liquid syntax like {{ header | resolveOverlay }}.
+    eleventyConfig.addLiquidFilter && eleventyConfig.addLiquidFilter('resolveOverlay', resolveOverlayFunc);
+
     eleventyConfig.addFilter("where", (array, key, value) =>
         array.filter((item) => {
             const keys = key.split(".");
@@ -290,6 +317,16 @@ module.exports = function (eleventyConfig) {
       level: [1, 2, 3, 4]
     }
 
+        // Use the same slugify rules for markdown-it-anchor as the rest of the site
+        // so generated heading IDs contain only safe characters.
+        mdAnchorOpts.slugify = function (s) {
+            return require("slugify")(s, {
+                lower: true,
+                replacement: "-",
+                remove: /[*+~.·,()''`´%!?¿:@]/g,
+            });
+        };
+
     eleventyConfig.setLibrary(
         "md",
         markdownIt()
@@ -311,6 +348,23 @@ module.exports = function (eleventyConfig) {
 
             .use(markdownItAnchor, mdAnchorOpts)
     );
+
+    // Transform generated HTML to sanitize element IDs.
+    // Some content or templates can produce IDs with entities or characters
+    // that fail html-validate's `valid-id` rule. This transform finds
+    // id="..." occurrences and rewrites any id containing invalid
+    // characters to a slugified safe version.
+    eleventyConfig.addTransform("sanitize-ids", function (content, outputPath) {
+        if (outputPath && outputPath.endsWith('.html')) {
+            return content.replace(/id\s*=\s*"([^"]+)"/g, (m, idVal) => {
+                // Allow only letters, digits, dash and underscore
+                if (/^[A-Za-z0-9_-]+$/.test(idVal)) return m;
+                const slug = require('slugify')(idVal, { lower: true, replacement: '-', remove: /[*+~.·,()''`´%!?¿:@\"\#]/g });
+                return `id="${slug}"`;
+            });
+        }
+        return content;
+    });
 
     // override markdown-it-footnote anchor template to use a different unicode character
     md.renderer.rules.footnote_anchor = (tokens, idx, options, env, slf) => {

@@ -12,7 +12,7 @@ layout: default.html
   {% endunless %}
 {% endif %}
 
-<div id="main" role="main">
+<div class="main-content">
   {% include components/sidebar.html %}
 
   <div class="archive">
@@ -25,11 +25,11 @@ layout: default.html
     {%- assign search_provider = site.search_provider | default: "lunr" -%}
     {%- case search_provider -%}
       {%- when "lunr" -%}
-        <input type="text" id="search" class="search-input" placeholder="{{ site.data.ui-text[site.locale].search_placeholder_text | default: 'Enter your search term...' }}" />
+  <input type="text" id="search-input" class="search-input" placeholder="{{ site.data.ui-text[site.locale].search_placeholder_text | default: 'Enter your search term...' }}">
         <div id="results" class="results"></div>
       {%- when "google" -%}
         <form onsubmit="return googleCustomSearchExecute();" id="cse-search-box-form-id">
-        <input type="text" id="cse-search-input-box-id" class="search-input" placeholder="{{ site.data.ui-text[site.locale].search_placeholder_text | default: 'Enter your search term...' }}" />
+  <input type="text" id="cse-search-input-box-id" class="search-input" placeholder="{{ site.data.ui-text[site.locale].search_placeholder_text | default: 'Enter your search term...' }}">
         </form>
         <div id="results" class="results">
           <gcse:searchresults-only></gcse:searchresults-only>

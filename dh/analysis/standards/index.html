@@ -1,18 +1,18 @@
 
-<!doctype html>
+<!DOCTYPE html>
 <!--
   Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
   Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
-<html lang='en-US' class="no-js">
+<html lang="en-US" class="no-js">
   <head>
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html -->
 <title>Analysis: Standards - Quinn Dombrowski</title>
-<meta name="description" content="https://www.quinndombrowski.com/dh/analysis/standards/  An examination of the discussions related to standards suggests that they may be considered a mixed blessing. Particularly from the perspective of librarians and some IT professionals...">
+<meta name="description" content="[/assets/images/header_bamboologo.jpg]   https://www.quinndombrowski.com/dh/analysis/standards/  An examination of the discussions related to standards suggests that they may be considered a mixed blessing...">
 
 
 
@@ -23,7 +23,7 @@
 <meta property="og:url" content="https://www.quinndombrowski.com/dh/analysis/standards/">
 
 
-  <meta property="og:description" content="https://www.quinndombrowski.com/dh/analysis/standards/  An examination of the discussions related to standards suggests that they may be considered a mixed blessing. Particularly from the perspective of librarians and some IT professionals...">
+  <meta property="og:description" content="[/assets/images/header_bamboologo.jpg]   https://www.quinndombrowski.com/dh/analysis/standards/  An examination of the discussions related to standards suggests that they may be considered a mixed blessing...">
 
 
 
@@ -92,24 +92,20 @@
   </head>
 
   <body class="layout--">
-    <nav class="skip-links">
+  <nav class="skip-links" aria-label="Skip links">
   <ul>
-    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+  <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
     <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
     <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
   </ul>
 </nav>
 
-    <!--[if lt IE 9]>
-<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
-<![endif]-->
-
     
 
-<div class="masthead">
+<header class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
+  <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
         
         <a class="site-title" href="/">
           Quinn Dombrowski
@@ -127,23 +123,21 @@
               <a href="/blog/">Blog</a>
             </li></ul>
         
-        <button class="greedy-nav__toggle hidden" type="button">
+  <button class="greedy-nav__toggle hidden" type="button" aria-expanded="false" aria-controls="site-nav-hidden" aria-label="Toggle menu">
           <span class="visually-hidden">Toggle menu</span>
-          <div class="navicon"></div>
+          <span class="navicon" aria-hidden="true"></span>
         </button>
-        <ul class="hidden-links hidden"></ul>
+  <ul id="site-nav-hidden" class="hidden-links hidden" aria-hidden="true"></ul>
       </nav>
     </div>
   </div>
-</div>
+</header>
 
 
-    <div class="initial-content">
+    <main id="main" class="initial-content" aria-label="Main content">
       
 
   
-
-
   
   
 
@@ -153,12 +147,17 @@
 
 
 
-<div class="page__hero--overlay"
-  style=" background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/images/header_bamboologo.jpg');"
+
+
+
+<div class="page__hero page__hero--overlay"
+  
+  data-bg="/assets/images/header_bamboologo.jpg"
+  data-overlay-filter="linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))" 
 >
   
     <div class="wrapper">
-      <h1 id="page-title" class="page__title" itemprop="headline">
+  <h1 id="page-title-hero" class="page__title" itemprop="headline">
         
           Analysis: Standards
         
@@ -172,13 +171,17 @@
     </div>
   
   
+    <noscript>
+      <img src="/assets/images/header_bamboologo.jpg" alt="Analysis: Standards" class="page__hero-image">
+    </noscript>
+  
 </div>
 
 
 
 
 
-<div id="main" role="main">
+<div class="main-content">
   
 
 
@@ -235,12 +238,12 @@
 
   
 </div>
-    </div>
+    </main>
 
     
 
     <div id="footer" class="page__footer">
-      <footer>
+      <footer aria-label="Site footer">
         <!-- start custom footer snippets -->
 
 <!-- end custom footer snippets -->

@@ -1,18 +1,18 @@
 
-<!doctype html>
+<!DOCTYPE html>
 <!--
   Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
   Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
-<html lang='en-US' class="no-js">
+<html lang="en-US" class="no-js">
   <head>
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html -->
 <title>A Case for Eyeballs - Quinn Dombrowski</title>
-<meta name="description" content="https://www.quinndombrowski.com/blog/2025/01/15/a-case-for-eyeballs/  The following is the text I formally submitted to the US Copyright Office as part of a comment on the 2024 proposed expansion to the DMCA exemption for text and data mining...">
+<meta name="description" content="[/assets/images/header_copyrightweaving.jpg]   https://www.quinndombrowski.com/blog/2025/01/15/a-case-for-eyeballs/  The following is the text I formally submitted to the US Copyright Office as part of a comment on the 2024 proposed expansion to the DMCA exemption for text and data mining...">
 
 
 
@@ -23,7 +23,7 @@
 <meta property="og:url" content="https://www.quinndombrowski.com/blog/2025/01/15/a-case-for-eyeballs/">
 
 
-  <meta property="og:description" content="https://www.quinndombrowski.com/blog/2025/01/15/a-case-for-eyeballs/  The following is the text I formally submitted to the US Copyright Office as part of a comment on the 2024 proposed expansion to the DMCA exemption for text and data mining...">
+  <meta property="og:description" content="[/assets/images/header_copyrightweaving.jpg]   https://www.quinndombrowski.com/blog/2025/01/15/a-case-for-eyeballs/  The following is the text I formally submitted to the US Copyright Office as part of a comment on the 2024 proposed expansion to the DMCA exemption for text and data mining...">
 
 
 
@@ -92,24 +92,20 @@
   </head>
 
   <body class="layout--">
-    <nav class="skip-links">
+  <nav class="skip-links" aria-label="Skip links">
   <ul>
-    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+  <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
     <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
     <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
   </ul>
 </nav>
 
-    <!--[if lt IE 9]>
-<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
-<![endif]-->
-
     
 
-<div class="masthead">
+<header class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
+  <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
         
         <a class="site-title" href="/">
           Quinn Dombrowski
@@ -127,23 +123,21 @@
               <a href="/blog/">Blog</a>
             </li></ul>
         
-        <button class="greedy-nav__toggle hidden" type="button">
+  <button class="greedy-nav__toggle hidden" type="button" aria-expanded="false" aria-controls="site-nav-hidden" aria-label="Toggle menu">
           <span class="visually-hidden">Toggle menu</span>
-          <div class="navicon"></div>
+          <span class="navicon" aria-hidden="true"></span>
         </button>
-        <ul class="hidden-links hidden"></ul>
+  <ul id="site-nav-hidden" class="hidden-links hidden" aria-hidden="true"></ul>
       </nav>
     </div>
   </div>
-</div>
+</header>
 
 
-    <div class="initial-content">
+    <main id="main" class="initial-content" aria-label="Main content">
       
 
   
-
-
   
   
 
@@ -153,12 +147,17 @@
 
 
 
-<div class="page__hero--overlay"
-  style=" background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/images/header_copyrightweaving.jpg');"
+
+
+
+<div class="page__hero page__hero--overlay"
+  
+  data-bg="/assets/images/header_copyrightweaving.jpg"
+  data-overlay-filter="linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))" 
 >
   
     <div class="wrapper">
-      <h1 id="page-title" class="page__title" itemprop="headline">
+  <h1 id="page-title-hero" class="page__title" itemprop="headline">
         
           A Case for Eyeballs
         
@@ -172,13 +171,17 @@
     </div>
   
   
+    <noscript>
+      <img src="/assets/images/header_copyrightweaving.jpg" alt="A Case for Eyeballs" class="page__hero-image">
+    </noscript>
+  
 </div>
 
 
 
 
 
-<div id="main" role="main">
+<div class="main-content">
   
 
 
@@ -291,7 +294,7 @@
 <p><em>Part of the AAP's filing about adverse effects. Note the repeated references to generative AI (as visible through the twisted warp yarn), and the section referencing security, HathiTrust, and fair use in the middle.</em></p>
 <p><img src="/assets/images/copyrightweaving6.jpg" alt="Weaving of AI section"></p>
 <p><em>Close-up of a section from the AAP's opposition filing, in the section on TPM. Terms used are (generative) AI, piracy (gray yarn towards the top), security (yellow), Mellon (purple), fair (light blue), and collaboration (maroon).</em></p>
-<h2 id="an-%22ai%22-powered-analysis" tabindex="-1">An &quot;AI&quot; powered analysis</h2>
+<h2 id="an-andquot;aiandquot;-powered-analysis" tabindex="-1">An &quot;AI&quot; powered analysis</h2>
 <p>Prior to the release of ChatGPT, I tried hard to never use the term &quot;AI&quot;, opting for something more precise instead. Machine learning. Natural-language processing. Large language models. That rhetorical war has been lost, and many kinds of methods and processes are now lumped together under that label, with its power to impress and/or terrify (sometimes both at once). I've seen it defined so broadly as to include anything non-deterministic, such as the MALLET topic modeling tool originally developed in 2002. The way topic modeling works is, basically, you give it a set of texts (which can -- and usually should -- be smaller than an entire document, think more like paragraphs or sections than novels or legal filings), you tell it how many &quot;topics&quot; (or groupings of words that tend to co-occur) you want it to generate, and it shuffles all the words around into different buckets until it's finished. Unless you very specifically fix some parameters, you'll never get the exact same results twice (again, because it's a machine learning model, non-deterministic, and therefore &quot;AI&quot;), but if it's working well, you should get similar results if you run it over the same corpus multiple times.</p>
 <p>I broke up the files I'd split into paragraph chunks, combining paragraphs together if they were under 100 words. Then I ran a 20-topic model. Running it a few times, the clusters of words were fairly consistent. Below are the list of the 50 words most associated with each topic, with the topics numbered 0-19.</p>
 <p>0          0.25     works literary circumvention proposed exemptions measures c.f.r section motion technological protection pictures purposes office dissemination language proposal i)(d replication distribution controls rule prevent circumventing adverse copy educational protected tpms place corpus identified downloading librarian relevant unauthorized time includes involved infringing effects nonprofit limit requires statutory asserted adopted employ terms facilitate</p>
@@ -354,12 +357,12 @@
 
   
 </div>
-    </div>
+    </main>
 
     
 
     <div id="footer" class="page__footer">
-      <footer>
+      <footer aria-label="Site footer">
         <!-- start custom footer snippets -->
 
 <!-- end custom footer snippets -->

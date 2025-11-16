@@ -1,18 +1,18 @@
 
-<!doctype html>
+<!DOCTYPE html>
 <!--
   Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
   Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
-<html lang='en-US' class="no-js">
+<html lang="en-US" class="no-js">
   <head>
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html -->
 <title>Textiles - Quinn Dombrowski</title>
-<meta name="description" content="I am the founder and director of the Textile Makerspace [/projects/textile-makerspace] at Stanford since 2018, and since 2023 I&#39;ve been teaching Data Visualization with .  [/assets/images/header_where-sleep.jpg]   WHERE I SLEEP / EX-COMMUNICATION [/textiles/where-i-sleep-excommunication/]  A POST-DIVORCE YEAR...">
+<meta name="description" content="[/assets/images/header_covidscraps.jpg]  I am the founder and director of the Textile Makerspace [/projects/textile-makerspace] at Stanford since 2018, and since 2023 I&#39;ve been teaching Data Visualization with ...">
 
 
 
@@ -23,7 +23,7 @@
 <meta property="og:url" content="https://www.quinndombrowski.com/textiles/">
 
 
-  <meta property="og:description" content="I am the founder and director of the Textile Makerspace [/projects/textile-makerspace] at Stanford since 2018, and since 2023 I&#39;ve been teaching Data Visualization with .  [/assets/images/header_where-sleep.jpg]   WHERE I SLEEP / EX-COMMUNICATION [/textiles/where-i-sleep-excommunication/]  A POST-DIVORCE YEAR...">
+  <meta property="og:description" content="[/assets/images/header_covidscraps.jpg]  I am the founder and director of the Textile Makerspace [/projects/textile-makerspace] at Stanford since 2018, and since 2023 I&#39;ve been teaching Data Visualization with ...">
 
 
 
@@ -90,24 +90,20 @@
   </head>
 
   <body class="layout--">
-    <nav class="skip-links">
+  <nav class="skip-links" aria-label="Skip links">
   <ul>
-    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+  <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
     <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
     <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
   </ul>
 </nav>
 
-    <!--[if lt IE 9]>
-<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
-<![endif]-->
-
     
 
-<div class="masthead">
+<header class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
+  <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
         
         <a class="site-title" href="/">
           Quinn Dombrowski
@@ -125,23 +121,21 @@
               <a href="/blog/">Blog</a>
             </li></ul>
         
-        <button class="greedy-nav__toggle hidden" type="button">
+  <button class="greedy-nav__toggle hidden" type="button" aria-expanded="false" aria-controls="site-nav-hidden" aria-label="Toggle menu">
           <span class="visually-hidden">Toggle menu</span>
-          <div class="navicon"></div>
+          <span class="navicon" aria-hidden="true"></span>
         </button>
-        <ul class="hidden-links hidden"></ul>
+  <ul id="site-nav-hidden" class="hidden-links hidden" aria-hidden="true"></ul>
       </nav>
     </div>
   </div>
-</div>
+</header>
 
 
-    <div class="initial-content">
+    <main id="main" class="initial-content" aria-label="Main content">
       
 
   
-
-
   
   
 
@@ -151,12 +145,17 @@
 
 
 
-<div class="page__hero--overlay"
-  style="background-color: #5e616c; background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/images/header_covidscraps.jpg');"
+
+
+
+<div class="page__hero page__hero--overlay"
+  data-overlay-color="#5e616c"
+  data-bg="/assets/images/header_covidscraps.jpg"
+  data-overlay-filter="linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))" 
 >
   
     <div class="wrapper">
-      <h1 id="page-title" class="page__title" itemprop="headline">
+  <h1 id="page-title-hero" class="page__title" itemprop="headline">
         
           Textiles
         
@@ -170,11 +169,15 @@
     </div>
   
   
+    <noscript>
+      <img src="/assets/images/header_covidscraps.jpg" alt="Textiles" class="page__hero-image">
+    </noscript>
+  
 </div>
 
 
 
-<div id="main" role="main">
+<div class="main-content">
   <!--
 -->
 
@@ -186,162 +189,210 @@
 
 <div class="entries-grid"><div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    <img src="/assets/images/header_where-sleep.jpg" / >
+  <img src="/assets/images/header_where-sleep.jpg" alt="Where I Sleep / Ex-communication">
 	<h3 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/textiles/where-i-sleep-excommunication/">Where I Sleep / Ex-communication</a> 
+        <a href="/textiles/where-i-sleep-excommunication/">Where I Sleep / Ex-communication</a>
       
-    <p class="archive__item-excerpt" itemprop="description">A post-divorce year.</p>
+      </h3>
+    
+  <div class="archive__item-excerpt" itemprop="description">A post-divorce year.</div>
+    
   </article>
 </div>
 <div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    <img src="/assets/images/header_2025people.jpg" / >
+  <img src="/assets/images/header_2025people.jpg" alt="2025 in People">
 	<h3 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/textiles/2025-in-people/">2025 in People</a> 
+        <a href="/textiles/2025-in-people/">2025 in People</a>
       
-    <p class="archive__item-excerpt" itemprop="description">The adults I see each day.</p>
+      </h3>
+    
+  <div class="archive__item-excerpt" itemprop="description">The adults I see each day.</div>
+    
   </article>
 </div>
 <div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    <img src="/assets/images/header_insomnia.jpg" / >
+  <img src="/assets/images/header_insomnia.jpg" alt="2024 in Insomnia">
 	<h3 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/textiles/2024-in-insomnia/">2024 in Insomnia</a> 
+        <a href="/textiles/2024-in-insomnia/">2024 in Insomnia</a>
       
-    <p class="archive__item-excerpt" itemprop="description">Stress and sleeplessness.</p>
+      </h3>
+    
+  <div class="archive__item-excerpt" itemprop="description">Stress and sleeplessness.</div>
+    
   </article>
 </div>
 <div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    <img src="/assets/images/header_clothes.jpg" / >
+  <img src="/assets/images/header_clothes.jpg" alt="2024 in Clothes">
 	<h3 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/textiles/2024-in-clothes/">2024 in Clothes</a> 
+        <a href="/textiles/2024-in-clothes/">2024 in Clothes</a>
       
-    <p class="archive__item-excerpt" itemprop="description">The colors my daughter and I wore.</p>
+      </h3>
+    
+  <div class="archive__item-excerpt" itemprop="description">The colors my daughter and I wore.</div>
+    
   </article>
 </div>
 <div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    <img src="/assets/images/header_sineater.jpg" / >
+  <img src="/assets/images/header_sineater.jpg" alt="Sin Eater">
 	<h3 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/textiles/sin-eater/">Sin Eater</a> 
+        <a href="/textiles/sin-eater/">Sin Eater</a>
       
-    <p class="archive__item-excerpt" itemprop="description">The things one does to create corpora for scholars.</p>
+      </h3>
+    
+  <div class="archive__item-excerpt" itemprop="description">The things one does to create corpora for scholars.</div>
+    
   </article>
 </div>
 <div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    <img src="/assets/images/header_choose.jpg" / >
+  <img src="/assets/images/header_choose.jpg" alt="Choose">
 	<h3 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/textiles/choose/">Choose</a> 
+        <a href="/textiles/choose/">Choose</a>
       
-    <p class="archive__item-excerpt" itemprop="description">A sigil.</p>
+      </h3>
+    
+  <div class="archive__item-excerpt" itemprop="description">A sigil.</div>
+    
   </article>
 </div>
 <div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    <img src="/assets/images/header_wellsee.jpg" / >
+  <img src="/assets/images/header_wellsee.jpg" alt="We'll See">
 	<h3 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/textiles/well-see/">We'll See</a> 
+        <a href="/textiles/well-see/">We'll See</a>
       
-    <p class="archive__item-excerpt" itemprop="description">What we say, over and over.</p>
+      </h3>
+    
+  <div class="archive__item-excerpt" itemprop="description">What we say, over and over.</div>
+    
   </article>
 </div>
 <div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    <img src="/assets/images/header_priorities.jpg" / >
+  <img src="/assets/images/header_priorities.jpg" alt="Priorities, man">
 	<h3 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/textiles/priorities-man/">Priorities, man</a> 
+        <a href="/textiles/priorities-man/">Priorities, man</a>
       
-    <p class="archive__item-excerpt" itemprop="description">Not a time for yelling about bushido.</p>
+      </h3>
+    
+  <div class="archive__item-excerpt" itemprop="description">Not a time for yelling about bushido.</div>
+    
   </article>
 </div>
 <div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    <img src="/assets/images/header_gerunds-saliva.jpg" / >
+  <img src="/assets/images/header_gerunds-saliva.jpg" alt="Hi! I Also Enjoy Gerunds / A Message From Your Saliva">
 	<h3 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/textiles/gerunds-saliva/">Hi! I Also Enjoy Gerunds / A Message From Your Saliva</a> 
+        <a href="/textiles/gerunds-saliva/">Hi! I Also Enjoy Gerunds / A Message From Your Saliva</a>
       
-    <p class="archive__item-excerpt" itemprop="description">The first 3.5 days of a relationship, in yarn.</p>
+      </h3>
+    
+  <div class="archive__item-excerpt" itemprop="description">The first 3.5 days of a relationship, in yarn.</div>
+    
   </article>
 </div>
 <div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    <img src="/assets/images/header_guestbookloom.jpg" / >
+  <img src="/assets/images/header_guestbookloom.jpg" alt="Guestbook Loom">
 	<h3 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/textiles/guestbook-loom/">Guestbook Loom</a> 
+        <a href="/textiles/guestbook-loom/">Guestbook Loom</a>
       
-    <p class="archive__item-excerpt" itemprop="description">Keeping track of Textile Makerspace usage data</p>
+      </h3>
+    
+  <div class="archive__item-excerpt" itemprop="description">Keeping track of Textile Makerspace usage data</div>
+    
   </article>
 </div>
 <div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    <img src="/assets/images/header_future-text.jpg" / >
+  <img src="/assets/images/header_future-text.jpg" alt="Future Text">
 	<h3 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/textiles/future-text/">Future Text</a> 
+        <a href="/textiles/future-text/">Future Text</a>
       
-    <p class="archive__item-excerpt" itemprop="description">Weaving a humanities course on AI</p>
+      </h3>
+    
+  <div class="archive__item-excerpt" itemprop="description">Weaving a humanities course on AI</div>
+    
   </article>
 </div>
 <div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    <img src="/assets/images/header_cidr-coeur.jpg" / >
+  <img src="/assets/images/header_cidr-coeur.jpg" alt="#CIDR-Coeur">
 	<h3 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/textiles/cidr-coeur/">#CIDR-Coeur</a> 
+        <a href="/textiles/cidr-coeur/">#CIDR-Coeur</a>
       
-    <p class="archive__item-excerpt" itemprop="description">How we talk to each other on our work Slack.</p>
+      </h3>
+    
+  <div class="archive__item-excerpt" itemprop="description">How we talk to each other on our work Slack.</div>
+    
   </article>
 </div>
 <div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    <img src="/assets/images/header_lockedloom1.jpg" / >
+  <img src="/assets/images/header_lockedloom1.jpg" alt="The Locked Loom 1: Gideon the Ninth">
 	<h3 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/textiles/locked-loom-1/">The Locked Loom 1: Gideon the Ninth</a> 
+        <a href="/textiles/locked-loom-1/">The Locked Loom 1: Gideon the Ninth</a>
       
-    <p class="archive__item-excerpt" itemprop="description">Weaving nicknames in Gideon the Ninth</p>
+      </h3>
+    
+  <div class="archive__item-excerpt" itemprop="description">Weaving nicknames in Gideon the Ninth</div>
+    
   </article>
 </div>
 <div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    <img src="/assets/images/header_star-trek.jpg" / >
+  <img src="/assets/images/header_star-trek.jpg" alt="Computers, Archives and Librarians in Star Trek">
 	<h3 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/textiles/computers-archives-librarians-star-trek/">Computers, Archives and Librarians in Star Trek</a> 
+        <a href="/textiles/computers-archives-librarians-star-trek/">Computers, Archives and Librarians in Star Trek</a>
       
-    <p class="archive__item-excerpt" itemprop="description">Information work in Star Trek novels</p>
+      </h3>
+    
+  <div class="archive__item-excerpt" itemprop="description">Information work in Star Trek novels</div>
+    
   </article>
 </div>
 <div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    <img src="/assets/images/header_hku.jpg" / >
+  <img src="/assets/images/header_hku.jpg" alt="HKU 'New Horizons in DH'">
 	<h3 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/textiles/hku-new-horizons-dataviz/">HKU 'New Horizons in DH'</a> 
+        <a href="/textiles/hku-new-horizons-dataviz/">HKU 'New Horizons in DH'</a>
       
-    <p class="archive__item-excerpt" itemprop="description">Where did we come from and how long did it take?</p>
+      </h3>
+    
+  <div class="archive__item-excerpt" itemprop="description">Where did we come from and how long did it take?</div>
+    
   </article>
 </div>
 <div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    <img src="/assets/images/header_phdquilt.jpg" / >
+  <img src="/assets/images/header_phdquilt.jpg" alt="PhD Quilt">
 	<h3 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/phdquilt/">PhD Quilt</a> 
+        <a href="/phdquilt/">PhD Quilt</a>
       
-    <p class="archive__item-excerpt" itemprop="description">Grad school as a quilt of sorts</p>
+      </h3>
+    
+  <div class="archive__item-excerpt" itemprop="description">Grad school as a quilt of sorts</div>
+    
   </article>
 </div>
 
@@ -360,12 +411,12 @@
 
   </div>
 </div>
-    </div>
+    </main>
 
     
 
     <div id="footer" class="page__footer">
-      <footer>
+      <footer aria-label="Site footer">
         <!-- start custom footer snippets -->
 
 <!-- end custom footer snippets -->

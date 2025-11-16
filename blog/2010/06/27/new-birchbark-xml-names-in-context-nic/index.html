@@ -19,7 +19,7 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Quinn Dombrowski">
-<meta property="og:title" content="New birchbark XML: names in context (NIC)">
+<meta property="og:title" content="New birchbark XML: names in context (NIC) - Quinn Dombrowski">
 <meta property="og:url" content="https://www.quinndombrowski.com/blog/2010/06/27/new-birchbark-xml-names-in-context-nic/">
 
 
@@ -48,11 +48,11 @@
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    
+
       "@type": "Person",
       "name": "Quinn Dombrowski",
       "url": "https://www.quinndombrowski.com/"
-    
+
   }
 </script>
 
@@ -100,16 +100,16 @@
   </ul>
 </nav>
 
-    
+
 
 <header class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
   <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
-        
+
         <a class="site-title" href="/">
           Quinn Dombrowski
-          
+
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
               <a href="/about/">About</a>
@@ -122,7 +122,7 @@
             </li><li class="masthead__menu-item">
               <a href="/blog/">Blog</a>
             </li></ul>
-        
+
   <button class="greedy-nav__toggle hidden" type="button" aria-expanded="false" aria-controls="site-nav-hidden" aria-label="Toggle menu">
           <span class="visually-hidden">Toggle menu</span>
           <span class="navicon" aria-hidden="true"></span>
@@ -135,35 +135,35 @@
 
 
     <main id="main" class="initial-content" aria-label="Main content">
-      
+
 
 
 
 
 <div class="main-content">
-  
+
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    
+
+
     <meta itemprop="datePublished" content="2010-06-27T00:00:00+00:00">
-    
+
 
     <div class="page__inner-wrap">
-      
+
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
             <a href="https://www.quinndombrowski.com/blog/2010/06/27/new-birchbark-xml-names-in-context-nic/" class="u-url" itemprop="url">New birchbark XML: names in context (NIC)</a>
           </h1>
-          
+
 
 
         </header>
-      
+
 
       <section class="page__content e-content" itemprop="text">
-        
+
         <p>To enable a more interesting proof-of-concept for the birchbark letter XML project, I've spent the last week making a new, limited data set (all documents from 1100-1120, plus some documents with the same names from the 12th century, and all the documents that include the name Boris) that lists all the names that occur in a given document and characterizes their role in the document. For the time being, I'm calling it "names in context" (NIC).</p>
 <p>I've been adapting the schema every time I come across some new aspect that seems significant. Each document contains one or more</p>
 <person> elements, which include:</person>
@@ -210,66 +210,66 @@
 <p>To illustrate, here's a few sample entries:</p>
 <h5><a href="http://gramoty.ru/index.php?no=49&act=full&key=bb">BBL 49</a>: from Nast'ja to her brother</h5>
 <p>Conveying the news of her husband's death</p>
-<p><code>    <bbl_names><br />
+<p><code>    <bbl_names><br >
         <id>49</id></bbl_names></code></p>
 <person>
-            <name>Настасья</name><br />
+            <name>Настасья</name><br >
             <role pos="to">
 <personal>news</personal>
-            </role><br />
-            <fam><br />
-                <relative><br />
-                    <relationship>brother</relationship><br />
+            </role><br >
+            <fam><br >
+                <relative><br >
+                    <relationship>brother</relationship><br >
                     <role pos="to">
 <personal tone="polite">news</personal>
-                    </role><br />
-                </relative><br />
-            </fam><br />
+                    </role><br >
+                </relative><br >
+            </fam><br >
         </person>
 <person>
-            <name>Борисъ</name><br />
+            <name>Борисъ</name><br >
             <role pos="3p">
 <personal>death</personal>
-            </role><br />
+            </role><br >
         </person>
-    
+
 <h5>BBL 736а: Ivan and Dristliv</h5>
 <p>Ivan tells Dristliv to collect money from Pavel and Prokopii.</p>
-<p><code>    <bbl_names><br />
+<p><code>    <bbl_names><br >
         <id>736а</id></bbl_names></code></p>
 <person>
-            <name>Иванъ</name><br />
-            <role pos="from"><br />
-                <orders>giving</orders><br />
-            </role><br />
+            <name>Иванъ</name><br >
+            <role pos="from"><br >
+                <orders>giving</orders><br >
+            </role><br >
         </person>
 <person>
-            <name>Дристливъ</name><br />
-            <role pos="to"><br />
-                <orders>receiving</orders><br />
-                <financial>owed</financial><br />
-            </role><br />
+            <name>Дристливъ</name><br >
+            <role pos="to"><br >
+                <orders>receiving</orders><br >
+                <financial>owed</financial><br >
+            </role><br >
         </person>
 <person>
-            <name type="adj">Павелъ</name><br />
-            <role pos="3p"><br />
-                <financial>owes</financial><br />
-            </role><br />
+            <name type="adj">Павелъ</name><br >
+            <role pos="3p"><br >
+                <financial>owes</financial><br >
+            </role><br >
         </person>
 <person>
-            <name>Прокопии</name><br />
-            <role pos="3p"><br />
-                <financial>owes</financial><br />
-            </role><br />
+            <name>Прокопии</name><br >
+            <role pos="3p"><br >
+                <financial>owes</financial><br >
+            </role><br >
         </person>
-    
 
-        
+
+
       </section>
 
       <footer class="page__meta">
-        
-        
+
+
 
 
         <!---->
@@ -278,19 +278,19 @@
 
       </footer>
 
-      
 
-      
+
+
     </div>
 
-   
+
   </article>
 
-  
+
 </div>
     </main>
 
-    
+
 
     <div id="footer" class="page__footer">
       <footer aria-label="Site footer">
@@ -299,14 +299,14 @@
 <!-- end custom footer snippets -->
         <div class="page__footer-follow">
   <ul class="social-icons">
-      
+
     <li>
       <a
         href="/feed.xml"
         ><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a
       >
     </li>
-    
+
   </ul>
 </div>
 
@@ -328,7 +328,7 @@
       </footer>
     </div>
 
-    
+
   <script src="/assets/js/main.min.js"></script>
 
 

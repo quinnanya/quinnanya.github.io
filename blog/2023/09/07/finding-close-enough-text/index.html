@@ -19,7 +19,7 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Quinn Dombrowski">
-<meta property="og:title" content="Finding &#39;close enough&#39; text">
+<meta property="og:title" content="Finding &#39;close enough&#39; text - Quinn Dombrowski">
 <meta property="og:url" content="https://www.quinndombrowski.com/blog/2023/09/07/finding-close-enough-text/">
 
 
@@ -48,11 +48,11 @@
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    
+
       "@type": "Person",
       "name": "Quinn Dombrowski",
       "url": "https://www.quinndombrowski.com/"
-    
+
   }
 </script>
 
@@ -100,16 +100,16 @@
   </ul>
 </nav>
 
-    
+
 
 <header class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
   <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
-        
+
         <a class="site-title" href="/">
           Quinn Dombrowski
-          
+
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
               <a href="/about/">About</a>
@@ -122,7 +122,7 @@
             </li><li class="masthead__menu-item">
               <a href="/blog/">Blog</a>
             </li></ul>
-        
+
   <button class="greedy-nav__toggle hidden" type="button" aria-expanded="false" aria-controls="site-nav-hidden" aria-label="Toggle menu">
           <span class="visually-hidden">Toggle menu</span>
           <span class="navicon" aria-hidden="true"></span>
@@ -135,15 +135,15 @@
 
 
     <main id="main" class="initial-content" aria-label="Main content">
-      
-
-  
-  
-  
 
 
 
-  
+
+
+
+
+
+
 
 
 
@@ -151,30 +151,30 @@
 
 
 <div class="page__hero page__hero--overlay"
-  
+
   data-bg="/assets/images/header_dsc.jpg"
-  data-overlay-filter="linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))" 
+  data-overlay-filter="linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))"
 >
-  
+
     <div class="wrapper">
   <h1 id="page-title-hero" class="page__title" itemprop="headline">
-        
+
           Finding 'close enough' text
-        
+
       </h1>
-      
-      
 
 
-      
-      
+
+
+
+
     </div>
-  
-  
+
+
     <noscript>
       <img src="/assets/images/header_dsc.jpg" alt="Finding 'close enough' text" class="page__hero-image">
     </noscript>
-  
+
 </div>
 
 
@@ -182,40 +182,40 @@
 
 
 <div class="main-content">
-  
+
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    
+
+
     <meta itemprop="datePublished" content="2023-09-07T00:00:00+00:00">
-    
+
 
     <div class="page__inner-wrap">
-      
+
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
             <a href="https://www.quinndombrowski.com/blog/2023/09/07/finding-close-enough-text/" class="u-url" itemprop="url">Finding 'close enough' text</a>
           </h1>
-          
+
 
 
         </header>
-      
+
 
       <section class="page__content e-content" itemprop="text">
-        
+
         <p>For people new to text analysis, it can be hard to wrap your head around the gap between what's completely obvious to you as a human and what's easily detectible by a computer. Especially when working with humanities data, there's a lot of &quot;almosts&quot;. Is <em>Pale Fire</em> the same as <em>Pale Fire: A Novel</em>? Unless you're researching the nuances of book titles (or rather, <a href="https://www.vox.com/the-goods/2019/2/14/18223954/a-novel-book-cover-reading-line">book cover conventions</a> that can find their way into metadata), those are functionally the same -- but if you search for duplicate rows in your spreadsheet, this pair won't come up because they're not <strong>exactly</strong> the same.</p>
 <p>One of my favorite Python libraries for finding these near-matches is the adorably-named <a href="https://pypi.org/project/fuzzywuzzy/">FuzzyWuzzy</a>, which has some simple and effective options for &quot;fuzzy string matching&quot;, the name for the problem we're trying to solve here. It uses Levenshtein distance -- a way to measure the difference between two sequences -- to calculate a score between two strings, or pieces of text. The simple ratio (<code>fuzz.ratio</code>) gets you the distance between your two pieces of text in their entirety, so if one of them contains extra information (e.g. <em>The Baby-Sitters Club #1: Kristy's Great Idea</em> vs <em>Kristy's Great Idea</em>), it will push the score down because that information is missing from one of the texts, which makes them less similar. What I usually use instead is the partial ratio (<code>fuzz.partial_ratio</code>), which takes the shortest piece of text, and scores to what extent that text exists (in its entirety, or altered) within the longer text.</p>
 <p>As an example, I've used this with a metadata sheet that has a column with what a matching filename <em>should</em> look like (author last name, hyphen, then the title with words lower-cased and separated by underscores). I've compared the values in the metadata sheet with the actual list of files that <em>actually exist</em> in a directory (which may have some extra cruft attached, like book series or series number), and then had the code print out all matches above a certain threshold -- 90 to start, then skimming the results for 80 to pick up anything I missed (<code>if fuzz.partial_ratio(line, file) &gt; 90:</code>)</p>
 <p>Data cleaning is always a slog, but FuzzyWuzzy cuts down on the pain by bringing the computer's evaluation of what's &quot;the same&quot; to something a little closer to mine.</p>
 
-        
+
       </section>
 
       <footer class="page__meta">
-        
-        
+
+
 
 
         <!---->
@@ -224,19 +224,19 @@
 
       </footer>
 
-      
 
-      
+
+
     </div>
 
-   
+
   </article>
 
-  
+
 </div>
     </main>
 
-    
+
 
     <div id="footer" class="page__footer">
       <footer aria-label="Site footer">
@@ -245,14 +245,14 @@
 <!-- end custom footer snippets -->
         <div class="page__footer-follow">
   <ul class="social-icons">
-      
+
     <li>
       <a
         href="/feed.xml"
         ><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a
       >
     </li>
-    
+
   </ul>
 </div>
 
@@ -274,7 +274,7 @@
       </footer>
     </div>
 
-    
+
   <script src="/assets/js/main.min.js"></script>
 
 

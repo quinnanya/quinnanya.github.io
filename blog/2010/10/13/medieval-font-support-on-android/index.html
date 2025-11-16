@@ -19,7 +19,7 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Quinn Dombrowski">
-<meta property="og:title" content="Medieval font support on Android">
+<meta property="og:title" content="Medieval font support on Android - Quinn Dombrowski">
 <meta property="og:url" content="https://www.quinndombrowski.com/blog/2010/10/13/medieval-font-support-on-android/">
 
 
@@ -48,11 +48,11 @@
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    
+
       "@type": "Person",
       "name": "Quinn Dombrowski",
       "url": "https://www.quinndombrowski.com/"
-    
+
   }
 </script>
 
@@ -100,16 +100,16 @@
   </ul>
 </nav>
 
-    
+
 
 <header class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
   <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
-        
+
         <a class="site-title" href="/">
           Quinn Dombrowski
-          
+
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
               <a href="/about/">About</a>
@@ -122,7 +122,7 @@
             </li><li class="masthead__menu-item">
               <a href="/blog/">Blog</a>
             </li></ul>
-        
+
   <button class="greedy-nav__toggle hidden" type="button" aria-expanded="false" aria-controls="site-nav-hidden" aria-label="Toggle menu">
           <span class="visually-hidden">Toggle menu</span>
           <span class="navicon" aria-hidden="true"></span>
@@ -135,36 +135,36 @@
 
 
     <main id="main" class="initial-content" aria-label="Main content">
-      
+
 
 
 
 
 <div class="main-content">
-  
+
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    
+
+
     <meta itemprop="datePublished" content="2010-10-12T00:00:00+00:00">
-    
+
 
     <div class="page__inner-wrap">
-      
+
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
             <a href="https://www.quinndombrowski.com/blog/2010/10/13/medieval-font-support-on-android/" class="u-url" itemprop="url">Medieval font support on Android</a>
           </h1>
-          
+
 
 
         </header>
-      
+
 
       <section class="page__content e-content" itemprop="text">
-        
-        <p><a href="http://www.flickr.com/photos/quinnanya/3874764643/" title="Cyrillic post-it note by quinn.anya, on Flickr"><img src="http://farm3.static.flickr.com/2669/3874764643_44c97b3d52_m.jpg" width="160" height="240" alt="Cyrillic post-it note" class="alignright" /></a>Froyo 2.2 brought native Arabic, Hebrew and Thai support to Android, but what about <a href="http://en.wikipedia.org/wiki/Glagolitic_alphabet">Glagolitic</a>? What is a Slavic medievalist to do without the Old Church Slavonic combining characters, or any of the other wonderful characters introduced in Unicode 5.1? No longer content to look at rectangles, I set about installing a font that supported the Unicode characters I count on.</p>
+
+        <p><a href="http://www.flickr.com/photos/quinnanya/3874764643/" title="Cyrillic post-it note by quinn.anya, on Flickr"><img src="http://farm3.static.flickr.com/2669/3874764643_44c97b3d52_m.jpg" width="160" height="240" alt="Cyrillic post-it note" class="alignright" ></a>Froyo 2.2 brought native Arabic, Hebrew and Thai support to Android, but what about <a href="http://en.wikipedia.org/wiki/Glagolitic_alphabet">Glagolitic</a>? What is a Slavic medievalist to do without the Old Church Slavonic combining characters, or any of the other wonderful characters introduced in Unicode 5.1? No longer content to look at rectangles, I set about installing a font that supported the Unicode characters I count on.</p>
 <h3>What you need</h3>
 <ul>
 <li>A <strong>rooted</strong> Froyo phone. Not rooted? Check out <a href="http://www.unrevoked.com">Unrevoked</a> or <a href="http://wiki.cyanogenmod.com/index.php?title=Universal_Androot">Universal Androot</a>.</li>
@@ -179,7 +179,7 @@
 <li>Launch Terminal Emulator</li>
 <li>Type <em>su</em>. A "Superuser request" screen might come up; allow access. You'll know it works when the prompt in Terminal Emulator changes from <strong>$</strong> to <strong>#</strong></li>
 <li>Type <em>mount</em>, and your screen will be filled with a lot of text. Look about 9 lines down for one that looks like <em>/dev/block/mtdblock[some number] /system yaffs2 ro,relatime 0 0</em>. On my Evo 4G, this line says <em>/dev/block/mtdblock4 /system</em>, but different phones have a different number after <em>mtdblock</em>. Make a note of yours.</li>
-<li><a href="http://www.flickr.com/photos/quinnanya/5080080122/" title="Glagolitic on an Android by quinn.anya, on Flickr"><img src="http://farm5.static.flickr.com/4124/5080080122_987605ed87_m.jpg" width="146" height="240" alt="Glagolitic on an Android" class="alignright" /></a>Type <em>mount -o rw,remount -t yaffs2 /dev/block/<strong>mtdblock4</strong> /system</em>, substituting in the number you just wrote down instead of "4", if yours is different.
+<li><a href="http://www.flickr.com/photos/quinnanya/5080080122/" title="Glagolitic on an Android by quinn.anya, on Flickr"><img src="http://farm5.static.flickr.com/4124/5080080122_987605ed87_m.jpg" width="146" height="240" alt="Glagolitic on an Android" class="alignright" ></a>Type <em>mount -o rw,remount -t yaffs2 /dev/block/<strong>mtdblock4</strong> /system</em>, substituting in the number you just wrote down instead of "4", if yours is different.
 <ul>
 <li>A helpful hint: At least on my setup, using SwiftKey and Terminal Emulator, you can't type a period or comma without overwriting the previous character. If you have this problem too, type a space before typing the comma (i.e., in <em>rw,remount</em>). It'll replace the space with the comma and you can continue as usual. This also comes in handy when you need to type the period in <em>DroidSansFallback.ttf</em>.</li>
 </ul>
@@ -189,12 +189,12 @@
 <li>Reboot your phone, and savor the joys of Unicode.</li>
 </ul>
 
-        
+
       </section>
 
       <footer class="page__meta">
-        
-        
+
+
 
 
         <!---->
@@ -203,19 +203,19 @@
 
       </footer>
 
-      
 
-      
+
+
     </div>
 
-   
+
   </article>
 
-  
+
 </div>
     </main>
 
-    
+
 
     <div id="footer" class="page__footer">
       <footer aria-label="Site footer">
@@ -224,14 +224,14 @@
 <!-- end custom footer snippets -->
         <div class="page__footer-follow">
   <ul class="social-icons">
-      
+
     <li>
       <a
         href="/feed.xml"
         ><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a
       >
     </li>
-    
+
   </ul>
 </div>
 
@@ -253,7 +253,7 @@
       </footer>
     </div>
 
-    
+
   <script src="/assets/js/main.min.js"></script>
 
 

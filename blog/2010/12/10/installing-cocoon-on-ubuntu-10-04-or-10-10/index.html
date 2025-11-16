@@ -19,7 +19,7 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Quinn Dombrowski">
-<meta property="og:title" content="Installing Cocoon on Ubuntu 10.04 or 10.10">
+<meta property="og:title" content="Installing Cocoon on Ubuntu 10.04 or 10.10 - Quinn Dombrowski">
 <meta property="og:url" content="https://www.quinndombrowski.com/blog/2010/12/10/installing-cocoon-on-ubuntu-10-04-or-10-10/">
 
 
@@ -48,11 +48,11 @@
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    
+
       "@type": "Person",
       "name": "Quinn Dombrowski",
       "url": "https://www.quinndombrowski.com/"
-    
+
   }
 </script>
 
@@ -100,16 +100,16 @@
   </ul>
 </nav>
 
-    
+
 
 <header class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
   <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
-        
+
         <a class="site-title" href="/">
           Quinn Dombrowski
-          
+
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
               <a href="/about/">About</a>
@@ -122,7 +122,7 @@
             </li><li class="masthead__menu-item">
               <a href="/blog/">Blog</a>
             </li></ul>
-        
+
   <button class="greedy-nav__toggle hidden" type="button" aria-expanded="false" aria-controls="site-nav-hidden" aria-label="Toggle menu">
           <span class="visually-hidden">Toggle menu</span>
           <span class="navicon" aria-hidden="true"></span>
@@ -135,62 +135,62 @@
 
 
     <main id="main" class="initial-content" aria-label="Main content">
-      
+
 
 
 
 
 <div class="main-content">
-  
+
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    
+
+
     <meta itemprop="datePublished" content="2010-10-10T00:00:00+00:00">
-    
+
 
     <div class="page__inner-wrap">
-      
+
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
             <a href="https://www.quinndombrowski.com/blog/2010/12/10/installing-cocoon-on-ubuntu-10-04-or-10-10/" class="u-url" itemprop="url">Installing Cocoon on Ubuntu 10.04 or 10.10</a>
           </h1>
-          
+
 
 
         </header>
-      
+
 
       <section class="page__content e-content" itemprop="text">
-        
+
         <p>This is an updated version of a <a href="/blog/2010/04/15/installing-cocoon-on-ubuntu/">how-to written for Intrepid (8.10)</a>, now horrendously out-of-date. It was written for Maverick (10.10) but should also work on Lucid (10.04).</p>
 <p>No knowledge of Ubuntu or Linux is assumed; the intended audience is someone who's managed to install Ubuntu and isn't too intimidated by the Terminal. <em>(Hint: You can copy and paste, but in Terminal, pasting is Ctrl + <strong>Shift</strong> +C)</em></p>
 <h3>Step 1: Installing Java SDK</h3>
 <p><em>(Thanks to <a href="http://happy-coding.com/install-sun-java6-jdk-on-ubuntu-10-04-lucid/">Daniel Bruegge</a> for the tip)</em></p>
 <ul>
 <li>Open the Terminal (Applications > Accessories > Terminal)</li>
-<li><strong>On Maverick:</strong> type:<br />
+<li><strong>On Maverick:</strong> type:<br >
 <pre>sudo add-apt-repository "deb <a href="http://archive.canonical.com/" title="http://archive.canonical.com/">http://archive.canonical.com/</a> maverick partner"</pre></li>
-<li><strong>On Lucid:</strong> type:<br />
+<li><strong>On Lucid:</strong> type:<br >
 <pre>sudo add-apt-repository "deb <a href="http://archive.canonical.com/" title="http://archive.canonical.com/">http://archive.canonical.com/</a> lucid partner"</pre></li>
-<li>Type:<br />
+<li>Type:<br >
 <pre>sudo apt-get update</pre><p> This will check all the software repositories for what updates are available, including java.</p>
 </li>
-<li>Type:<br />
+<li>Type:<br >
 <pre>sudo apt-get install sun-java6-jdk</pre><p> It will ask you if you want to continue; type <em>y</em> to confirm.</p>
 </li>
 <li>You'll have to agree to the TOS and license (you can use the tab key to move between the options) and then it'll install on its own.</li>
 </ul>
 <h3>Step 2: Installing Maven</h3>
 <ul>
-<li>Open Terminal, and type<br />
+<li>Open Terminal, and type<br >
 <pre>sudo apt-get install maven2</pre><p> This will list all the packages that need to be installed; type <em>y</em> to proceed</p>
 </li>
 </ul>
 <h3>Step 3: Installing Cocoon</h3>
 <ul>
-<li>Open the Terminal and type<br />
+<li>Open the Terminal and type<br >
 <pre>mvn archetype:generate -DarchetypeCatalog=http://cocoon.apache.org</pre></li>
 <li>This begins the install process.
 <ul>
@@ -208,12 +208,12 @@
 <h3>Step 4: Starting Jetty</h3>
 <p>You need to make a configuration change in the Maven <em>settings.xml</em> to be able to run Jetty. <em>(Thanks to <a href="http://ganeshgembali.wordpress.com/2008/12/29/maven-jetty-org-apache-maven-plugins/">Ganesh Gembali</a> for the tip.)</em></p>
 <ul>
-<li>Open up Terminal and type<br />
+<li>Open up Terminal and type<br >
 <pre>sudo gedit /etc/maven2/settings.xml</pre></li>
-<li>This will pop up a text editor with <em>settings.xml</em>. Search for <em>pluginGroups</em>, and between<br />
+<li>This will pop up a text editor with <em>settings.xml</em>. Search for <em>pluginGroups</em>, and between<br >
 <plugingroups> and </plugingroups>, add
 <pre><plugingroup>org.mortbay.jetty</plugingroup></pre></li>
-<li>Make sure you're in your cocoon directory in Terminal (does it say <em>~/cocoon$</em> right before the cursor?), and type<br />
+<li>Make sure you're in your cocoon directory in Terminal (does it say <em>~/cocoon$</em> right before the cursor?), and type<br >
 <pre>mvn jetty:run</pre></li>
 <li>There'll be a lot more installing, but it should conclude with <em>[INFO] Started Jetty Server</em></li>
 <li>Open a browser and go to <a href="http://localhost:8888/cocoon" title="http://localhost:8888/cocoon">http://localhost:8888/cocoon</a> - you should see a message saying Apache Cocoon: Welcome</li>
@@ -227,47 +227,47 @@
 <li>Create directory <em>avalon</em></li>
 <li>Create the following files in Text Editor (Applications > Accessories > Text Editor), and place them in the avalon directory:
 <ul>
-<li>File named <strong>cocoon-core-xslt-saxon.xconf</strong><br />
+<li>File named <strong>cocoon-core-xslt-saxon.xconf</strong><br >
 <pre><?xml version="1.0" encoding="UTF-8"??>
 <components>
 <component role="org.apache.excalibur.xml.xslt.XSLTProcessor/saxon" class="org.apache.cocoon.components.xslt.TraxProcessor">
 
 <parameter name="use-store" value="true"></parameter>
-<parameter name="transformer-factory" value="net.sf.saxon.TransformerFactoryImpl"></parameter>  
-</component> 
+<parameter name="transformer-factory" value="net.sf.saxon.TransformerFactoryImpl"></parameter>
+</component>
 </components>
 </pre></li>
-<li>File named <strong>sitemap-transformers-saxon-transformer.xconf</strong><br />
+<li>File named <strong>sitemap-transformers-saxon-transformer.xconf</strong><br >
 <pre><?xml version="1.0" encoding="UTF-8"??>
 
 <components xmlns:map="http://apache.org/cocoon/sitemap/1.0">
 <transformers>
-<transformer name="xslt2" src="org.apache.cocoon.transformation.TraxTransformer"> 
+<transformer name="xslt2" src="org.apache.cocoon.transformation.TraxTransformer">
 <xslt-processor-role>saxon</xslt-processor-role>
-</transformer>  
+</transformer>
 </transformers>
 </components></pre></li>
 </ul>
 </li>
 <li>Download <a href="http://saxon.sourceforge.net/#F9.2HE">Saxon-HE 9.2 for Java</a>. By default, this will go into your Downloads folder.</li>
 <li>Extract the zip file; you can delete everything but <em>saxon9he.jar</em></li>
-<li>Open a new Terminal<br />
+<li>Open a new Terminal<br >
 <pre>cd cocoon
 mvn install:install-file -DgroupId=net.sf.saxon -DartifactId=saxon -Dversion=9.2.1.2 -Dpackaging=jar -Dfile=../Downloads/saxon9he.jar</pre></li>
 <li>Go to <em>cocoon</em> and open pom.xml</li>
-<li>At the bottom of <dependencies>, add:<br />
+<li>At the bottom of <dependencies>, add:<br >
 <pre>
-<dependency>  
-<groupid>net.sf.saxon</groupid>    
-<artifactid>saxon</artifactid>    
-<version>9.2.1.2</version>  
+<dependency>
+<groupid>net.sf.saxon</groupid>
+<artifactid>saxon</artifactid>
+<version>9.2.1.2</version>
 </dependency>  </pre></dependencies></li>
 <li>If for some reason you only want Saxon 9 and not the ability to generate HTML, skip to the bottom of this section</li>
 </ul>
 </li>
 <li>Installing HTML support
 <ul>
-<li>Still in pom.xml, at the bottom of <dependencies>, add:<br />
+<li>Still in pom.xml, at the bottom of <dependencies>, add:<br >
 <pre>
 <dependency>
 <groupid>org.apache.cocoon</groupid>
@@ -279,7 +279,7 @@ mvn install:install-file -DgroupId=net.sf.saxon -DartifactId=saxon -Dversion=9.2
 </li>
 <li>Installing FOP (for PDFs)
 <ul>
-<li>Still in pom.xml, at the bottom of <dependencies>, add:<br />
+<li>Still in pom.xml, at the bottom of <dependencies>, add:<br >
 <pre>
 <dependency>
 <groupid>org.apache.cocoon</groupid>
@@ -292,7 +292,7 @@ mvn install:install-file -DgroupId=net.sf.saxon -DartifactId=saxon -Dversion=9.2
 </li>
 <li>Installing Batik (SVG)
 <ul>
-<li>Still in pom.xml, at the bottom of <dependencies>, add:<br />
+<li>Still in pom.xml, at the bottom of <dependencies>, add:<br >
 <pre>
 <dependency>
 <groupid>org.apache.cocoon</groupid>
@@ -305,7 +305,7 @@ mvn install:install-file -DgroupId=net.sf.saxon -DartifactId=saxon -Dversion=9.2
 </li>
 <li>Installing Forms
 <ul>
-<li>Still in pom.xml, at the bottom of <dependencies>, add:<br />
+<li>Still in pom.xml, at the bottom of <dependencies>, add:<br >
 <pre>
 <dependency>
 <groupid>org.apache.cocoon</groupid>
@@ -321,11 +321,11 @@ mvn install:install-file -DgroupId=net.sf.saxon -DartifactId=saxon -Dversion=9.2
 <li><strong>Once you're done adding dependencies:</strong>
 <ul>
 <li>If you have a Terminal open with <em>[INFO] Started Jetty Server</em>, close it.</li>
-<li>Open a new Terminal<br />
+<li>Open a new Terminal<br >
 <pre>cd cocoon
-            
+
 mvn compile</pre></li>
-<li>After it's done...<br />
+<li>After it's done...<br >
 <pre>mvn jetty:run</pre></li>
 </ul>
 </li>
@@ -333,15 +333,15 @@ mvn compile</pre></li>
 <p>You can add your pipelines to the <em>sitemap.xmap</em> in cocoon/src/main/resources/COB-INF, or (more conveniently) you can tell that base sitemap to look elsewhere for your files.</p>
 <p>I'm assuming here that you have a folder called <em>myproject</em> in your Home folder where you have all your files and your sitemap. Please change that, and your user name, accordingly.</p>
 <p>Included here is also the code to generate more useful error messages than a blank pages.</p>
-<p>In <em>sitemap.xmap</em> in cocoon/src/main/resources/COB-INF, at the bottom of the<br />
+<p>In <em>sitemap.xmap</em> in cocoon/src/main/resources/COB-INF, at the bottom of the<br >
 <pipelines> section, add:</pipelines></p>
 <pre>
 <pipeline>
 <handle-errors>
-<generate type="exception"></generate> 
+<generate type="exception"></generate>
 
 <serialize type="xml"></serialize>
-</handle-errors>   
+</handle-errors>
 <match pattern="myproject/**">
 <mount uri-prefix="myproject/" check-reload="yes" src="/home/YOUR_USER_NAME/myproject/sitemap.xmap" reload-method="synchron"></mount>
 </match>
@@ -352,12 +352,12 @@ mvn compile</pre></li>
 mvn jetty:run</pre><p>            Be sure to keep that Terminal window open while you're working with Cocoon. You can always check if Cocoon is working by going to: <a href="http://localhost:8888/cocoon" title="http://localhost:8888/cocoon">http://localhost:8888/cocoon</a>.</p>
 <p>This guide was prepared with help from a guide written on the GSLIS wiki by <a href="http://piez.org/wendell/">Wendell Piez</a>. If you try it and something doesn't work, please post a comment. This document is licensed <a href="http://creativecommons.org/licenses/by/3.0/us/">Creative Commons Attribution</a>.</p>
 
-        
+
       </section>
 
       <footer class="page__meta">
-        
-        
+
+
 
 
         <!---->
@@ -366,19 +366,19 @@ mvn jetty:run</pre><p>            Be sure to keep that Terminal window open whil
 
       </footer>
 
-      
 
-      
+
+
     </div>
 
-   
+
   </article>
 
-  
+
 </div>
     </main>
 
-    
+
 
     <div id="footer" class="page__footer">
       <footer aria-label="Site footer">
@@ -387,14 +387,14 @@ mvn jetty:run</pre><p>            Be sure to keep that Terminal window open whil
 <!-- end custom footer snippets -->
         <div class="page__footer-follow">
   <ul class="social-icons">
-      
+
     <li>
       <a
         href="/feed.xml"
         ><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a
       >
     </li>
-    
+
   </ul>
 </div>
 
@@ -416,7 +416,7 @@ mvn jetty:run</pre><p>            Be sure to keep that Terminal window open whil
       </footer>
     </div>
 
-    
+
   <script src="/assets/js/main.min.js"></script>
 
 

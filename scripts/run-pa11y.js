@@ -15,10 +15,20 @@ const files = glob.sync('**/*.html', { cwd: dist, absolute: true });
 const results = [];
 for (const f of files) {
   try {
-    const url = 'file://' + f; // pa11y can read file:// URLs
+    // If BASE_URL is provided use it to build HTTP urls (e.g. http://127.0.0.1:8080/)
+    // Otherwise default to file:// absolute path.
+    let url;
+    if (process.env.BASE_URL) {
+      // build a relative path to append to BASE_URL
+      const rel = path.relative(dist, f).replace(/\\/g, '/');
+      const base = process.env.BASE_URL.replace(/\/+$/,'');
+      url = base + '/' + rel;
+    } else {
+      url = 'file://' + f; // pa11y can read file:// URLs
+    }
     console.log('Running pa11y on', f);
     // Use npx pa11y to avoid adding it to package.json; set reporter to json
-    const cmd = `npx pa11y --reporter json "${url}"`;
+  const cmd = `npx pa11y --reporter json "${url}"`;
     const out = execSync(cmd, { cwd, stdio: ['ignore', 'pipe', 'pipe'], maxBuffer: 10 * 1024 * 1024});
     // pa11y JSON output is an array of issue objects
     const issues = JSON.parse(out.toString('utf8'));

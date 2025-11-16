@@ -6,8 +6,10 @@ collection: past-projects
 classes: wide
 ---
 <div class="archive">
-<div class="entries-grid">
-{%- for project in collections.projects -%}
+{% assign projects_count = collections.projects | size %}
+{% if projects_count > 0 %}
+  <div class="entries-grid">
+  {%- for project in collections.projects -%}
 
 <div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
@@ -22,14 +24,17 @@ classes: wide
       {% endif %}
   </article>
 </div>
-{% endfor %}
-</div>
+  {% endfor %}
+  </div>
+{% endif %}
 </div>
 
 
-<h2>Past Projects</h2>
-<div class="entries-grid">
-{%- for past-project in collections.past-projects -%}
+{%- assign past_projects_count = collections.past-projects | size -%}
+{%- if past_projects_count > 0 -%}
+  <h2>Past Projects</h2>
+  <div class="entries-grid">
+  {%- for past-project in collections.past-projects -%}
 <div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
   <img src="{{ past-project.data.header.overlay_image | relative_url }}" alt="{{ past-project.data.title | default: '' }}">
@@ -43,5 +48,6 @@ classes: wide
     {% endif %}
   </article>
 </div>
-{% endfor %}
-</div>
+  {% endfor %}
+  </div>
+{% endif %}

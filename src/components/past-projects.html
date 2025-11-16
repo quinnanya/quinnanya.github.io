@@ -4,9 +4,11 @@ pagination:
   size: 10
 ---
 
-<h2>Past Projects</h2>
+{%- assign pp_count = pagination.items | size -%}
+{%- if pp_count > 0 -%}
+  <h2>Past Projects</h2>
 
-{%- for past-project in pagination.items -%}
+  {%- for past-project in pagination.items -%}
 
 <div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
@@ -24,4 +26,5 @@ pagination:
 </div>
 
 
-{%- endfor -%}
+  {%- endfor -%}
+{%- endif -%}

@@ -11,6 +11,7 @@
     "start": "npm-run-all build:sass --parallel watch:*",
     "build": "npm-run-all build:*",
     "trim:dist": "node scripts/trim-trailing-whitespace.js",
+  "postbuild": "node scripts/trim-trailing-whitespace.js && node scripts/fix-void-style.js",
     "build:js": "npm run --prefix src build:js",
     "ci": "npm run build:js && npm run build",
     "debug": "DEBUG=Eleventy:* eleventy"

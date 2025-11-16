@@ -10,14 +10,18 @@ author_profile: true
 {% for collection in site.collections %}
   {% unless collection.output == false or collection.label == "posts" %}
     {% capture label %}{{ collection.label }}{% endcapture %}
-    {% if label != written_label %}
+  {% assign docs_count = collection.docs | size %}
+  {% if label != written_label and docs_count > 0 %}
       <h2 id="{{ label | slugify }}" class="archive__subtitle">{{ label }}</h2>
       {% capture written_label %}{{ label }}{% endcapture %}
     {% endif %}
   {% endunless %}
   {% for post in collection.docs %}
     {% unless collection.output == false or collection.label == "posts" %}
-      {% include components/archive-single.html %}
+  {% assign docs_count_inner = collection.docs | size %}
+  {% if docs_count_inner > 0 %}
+        {% include components/archive-single.html %}
+      {% endif %}
     {% endunless %}
   {% endfor %}
 {% endfor %}

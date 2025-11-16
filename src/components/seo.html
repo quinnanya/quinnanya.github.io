@@ -13,6 +13,14 @@
 {%- if seo_title -%}
   {%- assign seo_title = seo_title | markdownify | strip_html | strip_newlines | escape_once -%}
 {%- endif -%}
+{%- comment -%}
+  Enforce a maximum title length target for browsers and validators.
+  Truncate after building to avoid overly long <title> tags (html-validate
+  flags lengths > 70 characters).
+{%- endcomment -%}
+{%- if seo_title -%}
+  {%- assign seo_title = seo_title | truncate: 70 -%}
+{%- endif -%}
 
 {% if canonical_url %}
   {%- assign canonical_url = canonical_url %}
@@ -31,7 +39,15 @@
     <br> token and then encode raw greater-than characters. Finally call
     escape_once to avoid double-escaping.
   {%- endcomment -%}
-  {%- assign seo_description = seo_description | replace: '<br />', ' ' | replace: '<br>', ' ' | replace: '-->', '--&gt;' | replace: '>', '&gt;' | replace: '<', '&lt;' | escape_once | strip -%}
+  {%- comment -%}
+    Remove inline HTML comments from the captured content to avoid
+    leaking comment terminators into meta descriptions. Then normalize
+    <br> tokens and escape raw angle brackets. This prevents
+    `no-raw-characters` warnings from appearing when content includes
+    comments or other fragments that contain `-->`.
+  {%- endcomment -%}
+  {%- assign seo_description = seo_description | replace: '<!--', ' ' | replace: '-->', ' ' -%}
+  {%- assign seo_description = seo_description | replace: '<br />', ' ' | replace: '<br>', ' ' | replace: '>', '&gt;' | replace: '<', '&lt;' | escape_once | strip -%}
 {%- endif -%}
 
 {%- assign author = author | default: authors[0] | default: site.author -%}
@@ -69,7 +85,7 @@
 <meta property="og:type" content="{{ og_type }}">
 <meta property="og:locale" content="{{ site.locale | replace: "-", "_" | default: "en_US" }}">
 <meta property="og:site_name" content="{{ site.title }}">
-<meta property="og:title" content="{{ title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}">
+<meta property="og:title" content="{{ seo_title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}">
 <meta property="og:url" content="{{ canonical_url }}">
 
 {% if seo_description %}
@@ -84,7 +100,7 @@
 
 {% if site.twitter.username %}
   <meta name="twitter:site" content="@{{ site.twitter.username | replace: "@", "" }}">
-  <meta name="twitter:title" content="{{ title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}">
+  <meta name="twitter:title" content="{{ seo_title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}">
   <meta name="twitter:description" content="{{ seo_description }}">
   <meta name="twitter:url" content="{{ canonical_url }}">
 

@@ -19,7 +19,10 @@ if (!fs.existsSync(dir)) {
   process.exit(1);
 }
 
-const files = walk(dir);
+// Avoid scanning component demo pages (they can intentionally contain
+// repeated ids for presentation). Only scan top-level pages and content
+// outputs in `dist/` — ignore `dist/components/`.
+const files = walk(dir).filter(fp => !fp.includes(path.join('dist', 'components')));
 const out = {};
 files.forEach(file => {
   const str = fs.readFileSync(file, 'utf8');

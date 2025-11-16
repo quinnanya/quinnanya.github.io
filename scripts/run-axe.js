@@ -3,7 +3,9 @@ const fs = require('fs');
 const path = require('path');
 const glob = require('glob');
 const { JSDOM } = require('jsdom');
-const axeCore = require('axe-core');
+// axe-core must be required after a global window/document is created for jsdom.
+// We'll require it inside the loop after setting global.window so it initializes
+// with the DOM context and doesn't error on import.
 
 const cwd = path.resolve(__dirname, '..');
 const dist = path.join(cwd, 'dist');

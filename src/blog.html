@@ -13,7 +13,7 @@ pagination:
 {%- for post in pagination.items -%}
 <h2><a href="{{post.data.permalink}}">{{ post.data.title }}</a></h2>
 <em>{{ post.data.date | toUTCString}}</em>
-<p>{{ post.templateContent | description }} <a href="{{post.data.permalink}}"><em>read more</em></a></p>
+<div class="archive__item-excerpt">{{ post.templateContent | description }} <a href="{{post.data.permalink}}"><em>read more</em></a></div>
 {%- endfor -%}
 
 <ul class="pagination">
@@ -23,6 +23,7 @@ pagination:
       {% else %}
           <a href="#" class="pagination disabled">{{ "First" }}</a>
       {% endif %}
+  </li>
   <li>
       {% if pagination.href.previous %}
           <a href="{{ pagination.href.previous }}" class="pagination">Previous</a>

@@ -1,0 +1,82 @@
+name: 'WCAG Validation (html-validate + runtime)'
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build site (Eleventy + Sass)
+        run: npm run build
+
+      - name: Postbuild normalizers (optional repeat to be safe)
+        run: |
+          node scripts/trim-trailing-whitespace.js
+          node scripts/fix-void-style.js
+
+      - name: Find duplicate ids
+        run: node scripts/find-duplicate-ids.js
+
+      - name: Run html-validate (programmatic)
+        run: node scripts/run-htmlvalidate.js
+
+      - name: Run html-validate (CLI - write artifact)
+        run: node scripts/run-htmlvalidate-cli.js
+
+      - name: Enforce html-validate (CLI - fail on messages)
+        run: |
+          echo "Enforcing html-validate (fail job if there are messages)"
+          npx html-validate -c .htmlvalidate.json "dist/**/*.html"
+
+      - name: Full programmatic validation (enumeration)
+        run: node scripts/run-htmlvalidate-full2.js
+
+      - name: Axe checks (jsdom)
+        run: node scripts/run-axe.js
+
+      - name: Start local HTTP server for pa11y (best-effort)
+        run: |
+          # Start a simple node http-server in the background (no cache)
+          npx http-server dist -p 8080 -c-1 > pa11y-server.log 2>&1 &
+          sleep 1
+
+      - name: Pa11y runtime checks (via http)
+        env:
+          BASE_URL: http://127.0.0.1:8080
+        run: |
+          # Run pa11y using HTTP server; don't fail the job if pa11y has issues
+          node scripts/run-pa11y.js || true
+
+      - name: Warn if pa11y found issues (non-fatal)
+        run: |
+          FILE=dist/pa11y-results.json
+          if [ -f "$FILE" ]; then
+            node -e "const fs=require('fs'); const r=JSON.parse(fs.readFileSync('$FILE')); const issues=r.flatMap(x=>x.issues||[]); if(issues.length){ console.warn('::warning::pa11y found ' + issues.length + ' issues. See ' + '$FILE'); process.exit(0);} console.log('No pa11y issues found.');"
+          else
+            echo "No pa11y results file present (skipping warning)."
+          fi
+
+      - name: Upload validation artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: a11y-artifacts
+          path: |
+            dist/htmlvalidate-site-after3*.json
+            dist/pa11y-results.json
+            dist/axe-results.json
+            dist/duplicate-ids.json

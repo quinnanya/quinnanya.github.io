@@ -1,4 +1,12 @@
-{% if postListItems.length %}
+{# Only render list wrapper if at least one item is visible (not future-dated) #}
+{% set visibleCount = 0 %}
+{% for item in postListItems %}
+  {% if item.date.getTime() <= global.now %}
+    {% set visibleCount = visibleCount + 1 %}
+  {% endif %}
+{% endfor %}
+
+{% if visibleCount > 0 %}
   <section class="[ post-list ] [ pad-top-700 gap-bottom-900 ]">
     <div>
       <h2>Posts</h2>

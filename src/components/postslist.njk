@@ -15,7 +15,11 @@
           {% if item.date.getTime() <= global.now %}
             <li class="post-list__item">
               <h3 class="font-base leading-tight text-600 weight-mid">
-                <a href="{{ item.url }}" class="post-list__link" rel="bookmark">{{ item.data.title }}</a>
+                {%- if item.data.title -%}
+                  <a href="{{ item.url }}" class="post-list__link" rel="bookmark">{{ item.data.title }}</a>
+                {%- else -%}
+                  <a href="{{ item.url }}" class="post-list__link" rel="bookmark">{{ item.fileSlug | replace('-', ' ') | default(item.url) }}</a>
+                {%- endif -%}
               </h3>
               <p>
                 <time datetime="{{ item.date }}">{{ item.date }}</time>

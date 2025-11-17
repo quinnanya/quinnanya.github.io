@@ -3,5 +3,10 @@
   "root": true,
   "rules": {
     "no-trailing-whitespace": "error"
+    ,"wcag/h30": "error",
+    "wcag/h32": "error",
+    "wcag/h37": "error",
+    "wcag/h67": "error"
   }
 }
+

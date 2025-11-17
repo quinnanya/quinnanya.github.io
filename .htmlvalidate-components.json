@@ -8,8 +8,10 @@
     "no-dup-id": "off",
     "void-style": "off",
     "no-inline-style": "off",
-    "wcag/h32": "off",
-    "wcag/h30": "off",
+  "wcag/h30": "error",
+  "wcag/h32": "error",
+  "wcag/h37": "error",
+  "wcag/h67": "error",
     "close-order": "off",
     "attr-spacing": "off",
     "no-trailing-whitespace": "off"

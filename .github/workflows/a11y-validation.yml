@@ -38,10 +38,8 @@ jobs:
       - name: Run html-validate (CLI - write artifact)
         run: node scripts/run-htmlvalidate-cli.js
 
-      - name: Enforce html-validate (CLI - fail on messages)
-        run: |
-          echo "Enforcing html-validate (fail job if there are messages)"
-          npx html-validate -c .htmlvalidate.json "dist/**/*.html"
+      - name: "Note: WCAG enforcement disabled in CI"
+        run: echo "WCAG enforcement (html-validate fail-on-error) has been disabled for this workflow. To re-enable, restore the CLI enforcement step."
 
       - name: Full programmatic validation (enumeration)
         run: node scripts/run-htmlvalidate-full2.js

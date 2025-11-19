@@ -5,7 +5,7 @@ date: 2025-11-19
 classes: wide
 show_date: true
 header:
-  overlay_image: /assets/images/header_annotation.jpg
+  overlay_image: /assets/images/header_swimsuit.jpg
   overlay_filter: 0.2
 ---
 

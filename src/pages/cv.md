@@ -81,7 +81,7 @@ header:
 
 ## Publications
 
-- "Stop Lying to Yourself: Collective Delusion and Digital Humanities Grant Funding”. Forthcoming in *Reframing Failure*, ed. Michael Donnae and Anna-Maria Sichani.
+- "[Stop Lying to Yourself: Collective Delusion and Digital Humanities Grant Funding](https://read.uolpress.co.uk/read/reframing-failure-in-digital-scholarship-a56118ab-e4eb-4eb4-9dca-e8c343c6441b/section/9bbd0f75-6d96-48e2-bcc1-e8e5a6d07ce9#ch1)”. In *Reframing Failure*, ed. Michael Donnae and Anna-Maria Sichani. University of London Press. 2025.
 - "[DIY Web Archiving](https://zinebakery.com/homemade-zines/bakeshop-2-diywebarchiving)", with Tessa Walsh, Anna Kijas, Ilya Kremer, and Amanda Wyatt Visconti. *Zine Bakery Bakeshop #2*. 
 - "[Collective Praxis, Collaborative Publishing: The Case of the Data-Sitters Club](https://doi.org/10.3998/jep.6093)", with Lee Skallerup Bessette, Katherine Bowers, Maria Sachiko Cecire, Anouk Lang, and Roopika Risam.  *Journal of Electronic Publishing 28g*. doi: https://doi.org/10.3998/jep.6093
 - "[Encoding Multilingualism: Technical Affordances of Multilingual Publication from Manuscripts to Unicode and OpenType](https://doi.org/10.3998/jep.5528)", with Manish Goregaokar, Ben Joeng (Yang), and Abeera Kamran. *The Journal of Electronic Publishing*. doi: https://doi.org/10.3998/jep.5528

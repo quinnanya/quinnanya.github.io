@@ -139,6 +139,7 @@ header:
 - "The Data-Sitters Club", reviewed by Michelle Moravec. *Journal of American History*, Volume 111, Issue 2, September 2024, Pages 399–400, https://doi.org/10.1093/jahist/jaae174
 
 ## Talks and Presentations
+- Stanford University, CESTA. "Craftivism in a Crisis: Making the Humanities Matter when it's All Falling Apart". January 29, 2026. [Original slides](/assets/files/craftivism-crisis.pdf) (PDF) and [writeup](/blog/2026/02/10/craftivism-crisis/).
 - Open Space Day of the Digital Academy at Bielefeld University. Interviewee about workflows. September 12, 2025.
 - DEF CON 33. "Takes All Kinds: Building Onramps for Emergency Web Archiving in Ukraine and Beyond". August 8, 2025.
 - Association of Jewish Libraries 2025 conference. "From Matzo Balls to Metrics", with Eitan Kensky. June 25, 2025.

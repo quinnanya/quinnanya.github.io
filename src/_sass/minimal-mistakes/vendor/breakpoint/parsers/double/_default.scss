@@ -1,8 +1,13 @@
+@use "sass:meta";
+@use "../../context";
+@use "../../helpers";
+@use "../../settings";
+
 @function breakpoint-parse-double-default($first, $second) {
   $feature: '';
   $value: '';
 
-  @if type-of($first) == 'string' {
+  @if meta.type-of($first) == 'string' {
     $feature: $first;
     $value: $second;
   }
@@ -12,10 +17,10 @@
   }
 
   // Set Context
-  $context-setter: private-breakpoint-set-context($feature, $value);
+  $context-setter: context.private-breakpoint-set-context($feature, $value);
 
-  @if (breakpoint-get('to ems') == true) {
-    $value: breakpoint-to-base-em($value);
+  @if (settings.breakpoint-get('to ems') == true) {
+    $value: helpers.breakpoint-to-base-em($value);
   }
 
   @return '(#{$feature}: #{$value})'

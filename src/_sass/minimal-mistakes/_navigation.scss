@@ -1,3 +1,5 @@
+@use "sass:color";
+@use "deps" as *;
 /* ==========================================================================
    NAVIGATION
    ========================================================================== */
@@ -80,7 +82,7 @@
       text-align: center;
       text-decoration: none;
       color: $muted-text-color;
-      border: 1px solid mix(#000, $border-color, 25%);
+      border: 1px solid color.mix(#000, $border-color, 25%);
       border-radius: 0;
 
       &:hover {
@@ -129,7 +131,7 @@
     text-align: center;
     text-decoration: none;
     color: $muted-text-color;
-    border: 1px solid mix(#000, $border-color, 25%);
+    border: 1px solid color.mix(#000, $border-color, 25%);
     border-radius: $border-radius;
 
     &:hover {
@@ -198,14 +200,14 @@
 
     &.site-title {
       margin-left: 0;
-      color: mix(#000, $base0e, 20%);
+      color: color.mix(#000, $base0e, 20%);
 
       &:visited {
-        color: mix(#000, $base0e, 20%);
+        color: color.mix(#000, $base0e, 20%);
       }
 
       &:hover {
-        color: mix(#000, $base0e, 30%);
+        color: color.mix(#000, $base0e, 30%);
       }
     }
   }
@@ -393,7 +395,7 @@
       &:hover {
         color: #fff;
         border-color: $gray;
-        background-color: mix(white, #000, 20%);
+        background-color: color.mix(white, #000, 20%);
 
         &:before,
         &:after {
@@ -405,7 +407,7 @@
     /* selected*/
     input:checked + label {
       color: white;
-      background-color: mix(white, #000, 20%);
+      background-color: color.mix(white, #000, 20%);
 
       &:before,
       &:after {

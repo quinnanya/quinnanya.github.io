@@ -1,5 +1,9 @@
+@use "../../context";
+@use "../../helpers";
+@use "../../settings";
+
 @function breakpoint-parse-default-pair($first, $second) {
-  $default: breakpoint-get('default pair');
+  $default: settings.breakpoint-get('default pair');
   $min: '';
   $max: '';
 
@@ -8,13 +12,13 @@
   $max: max($first, $second);
 
   // Set Context
-  $context-setter: private-breakpoint-set-context(min-#{$default}, $min);
-  $context-setter: private-breakpoint-set-context(max-#{$default}, $max);
+  $context-setter: context.private-breakpoint-set-context(min-#{$default}, $min);
+  $context-setter: context.private-breakpoint-set-context(max-#{$default}, $max);
 
   // Make them EMs if need be
-  @if (breakpoint-get('to ems') == true) {
-    $min: breakpoint-to-base-em($min);
-    $max: breakpoint-to-base-em($max);
+  @if (settings.breakpoint-get('to ems') == true) {
+    $min: helpers.breakpoint-to-base-em($min);
+    $max: helpers.breakpoint-to-base-em($max);
   }
 
   @return '(min-#{$default}: #{$min}) and (max-#{$default}: #{$max})';

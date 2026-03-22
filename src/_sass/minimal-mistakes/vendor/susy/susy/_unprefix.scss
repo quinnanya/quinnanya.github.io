@@ -1,3 +1,6 @@
+@use "api";
+@use "settings";
+
 // Unprefix Susy
 // =============
 
@@ -16,7 +19,7 @@
   $span,
   $config: ()
 ) {
-  @return susy-span($span, $config);
+  @return api.susy-span($span, $config);
 }
 
 
@@ -31,10 +34,10 @@
 /// @param {integer | list} $context [null] -
 /// @param {map} $config [()]
 @function gutter(
-  $context: susy-get('columns'),
+  $context: settings.susy-get('columns'),
   $config: ()
 ) {
-  @return susy-gutter($context, $config);
+  @return api.susy-gutter($context, $config);
 }
 
 
@@ -52,5 +55,5 @@
   $span,
   $config: ()
 ) {
-  @return susy-slice($span, $config);
+  @return api.susy-slice($span, $config);
 }

@@ -3,7 +3,7 @@ permalink: /textiles/hku-new-horizons-dataviz/
 title: "HKU 'New Horizons in DH'"
 date: 2023-06-05
 sortorder: '002'
-author: Quinn Dombrowski
+author: Quinn Daedal
 header:
   overlay_image: /assets/images/header_hku.jpg
   overlay_color: "#5e616c"

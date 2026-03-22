@@ -1,7 +1,7 @@
 ---
 title: PhD Quilt
 date: 2023-04-23
-author: Quinn Dombrowski
+author: Quinn Daedal
 show_date: true
 sortorder: '001'
 permalink: /phdquilt/
@@ -16,7 +16,7 @@ blurb: "Grad school as a quilt of sorts"
 
 ## Context
 
-I made this data visualization PhD quilt in 2013 when my husband, Andy, graduated with a dual PhD in linguistics and Slavic linguistics. I had been sewing for 3 years at that point (only with wovens), and had never done anything quilt-like before.
+I made this data visualization PhD quilt in 2013 when my (now ex-)husband, Andy, graduated with a dual PhD in linguistics and Slavic linguistics. I had been sewing for 3 years at that point (only with wovens), and had never done anything quilt-like before.
 
 My husband's dissertation was on phonological contact, particularly between Slavic and non-Slavic languages. At the point when I was making this visualization, he had decided to be done with academia and pursue something in the biomedical field. I wanted this to be a tribute to everything he had done, in the context of what he was planning to do next.
 

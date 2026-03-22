@@ -198,6 +198,15 @@
 
     &.site-title {
       margin-left: 0;
+      color: mix(#000, $base0e, 20%);
+
+      &:visited {
+        color: mix(#000, $base0e, 20%);
+      }
+
+      &:hover {
+        color: mix(#000, $base0e, 30%);
+      }
     }
   }
 

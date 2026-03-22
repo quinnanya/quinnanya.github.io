@@ -1,7 +1,7 @@
 ---
 permalink: /projects/drupal-humanists/
 title: "Drupal for Humanists"
-date: 2012-12-18
+date: 2022-01-16
 classes: wide
 show_date: true
 header:

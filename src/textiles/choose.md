@@ -1,7 +1,7 @@
 ---
 permalink: /textiles/choose/
 title: "Choose"
-date: 2025-02-12
+date: 2026-03-21
 classes: wide
 sortorder: '011'
 show_date: true

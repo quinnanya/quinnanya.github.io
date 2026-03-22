@@ -1,7 +1,7 @@
 ---
 permalink: /textiles/hku-new-horizons-dataviz/
 title: "HKU 'New Horizons in DH'"
-date: 2023-06-05
+date: 2026-03-20
 sortorder: '002'
 author: Quinn Daedal
 header:

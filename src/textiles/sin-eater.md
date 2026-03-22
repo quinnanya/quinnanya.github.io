@@ -1,7 +1,7 @@
 ---
 permalink: /textiles/sin-eater/
 title: "Sin Eater"
-date: 2025-02-12
+date: 2025-02-11
 classes: wide
 sortorder: '012'
 show_date: true

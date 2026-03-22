@@ -1,7 +1,7 @@
 ---
 permalink: /textiles/gerunds-saliva/
 title: "Hi! I Also Enjoy Gerunds / A Message From Your Saliva"
-date: 2025-01-06
+date: 2025-02-11
 classes: wide
 sortorder: '008'
 show_date: true

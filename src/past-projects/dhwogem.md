@@ -1,7 +1,7 @@
 ---
 permalink: /projects/dhwogem/
 title: "DH-WoGeM"
-date: 2022-01-15
+date: 2026-03-21
 classes: wide
 show_date: true
 header:

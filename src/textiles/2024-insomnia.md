@@ -1,7 +1,7 @@
 ---
 permalink: /textiles/2024-in-insomnia/
 title: "2024 in Insomnia"
-date: 2025-03-26
+date: 2025-05-10
 classes: wide
 sortorder: '014'
 show_date: true

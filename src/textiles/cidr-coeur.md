@@ -1,7 +1,7 @@
 ---
 permalink: /textiles/cidr-coeur/
 title: "#CIDR-Coeur"
-date: 2024-03-27
+date: 2025-02-11
 classes: wide
 sortorder: '005'
 show_date: true

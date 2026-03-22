@@ -1,7 +1,7 @@
 ---
 permalink: /textiles/2025-in-people/
 title: "2025 in People"
-date: 2025-06-26
+date: 2025-06-25
 classes: wide
 sortorder: '015'
 show_date: true

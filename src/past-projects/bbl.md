@@ -1,7 +1,7 @@
 ---
 permalink: /projects/novgorod-birchbark-letters/
 title: "Old Novgorod Birchbark Letters"
-date: 2012-12-26
+date: 2022-01-16
 classes: wide
 show_date: true
 header:

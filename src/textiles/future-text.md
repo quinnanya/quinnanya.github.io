@@ -1,7 +1,7 @@
 ---
 permalink: /textiles/future-text/
 title: "Future Text"
-date: 2024-03-27
+date: 2026-03-21
 classes: wide
 sortorder: '006'
 show_date: true

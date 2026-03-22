@@ -13,6 +13,7 @@
     "trim:dist": "node scripts/trim-trailing-whitespace.js",
   "postbuild": "node scripts/trim-trailing-whitespace.js && node scripts/fix-void-style.js",
     "build:js": "npm run --prefix src build:js",
+    "populate:dates": "node scripts/populate-frontmatter-dates.js",
     "ci": "npm run build:js && npm run build",
     "debug": "DEBUG=Eleventy:* eleventy"
   },

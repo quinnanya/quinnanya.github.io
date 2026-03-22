@@ -1,7 +1,7 @@
 ---
 permalink: /projects/data-sitters-club/
 title: "Data-Sitters Club"
-date: 2022-01-15
+date: 2022-01-16
 classes: wide
 show_date: true
 header:

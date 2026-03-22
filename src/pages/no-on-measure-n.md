@@ -1,7 +1,7 @@
 ---
 title: "Vote No on Measure N"
 permalink: /no-on-n
-date: 2014-10-29
+date: 2025-11-14
 layout: single.html
 classes: wide
 ---

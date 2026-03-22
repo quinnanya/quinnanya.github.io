@@ -1,7 +1,7 @@
 ---
 permalink: /textiles/guestbook-loom/
 title: "Guestbook Loom"
-date: 2024-12-27
+date: 2025-02-11
 classes: wide
 sortorder: '007'
 show_date: true

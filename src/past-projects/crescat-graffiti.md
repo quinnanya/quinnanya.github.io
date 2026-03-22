@@ -1,7 +1,7 @@
 ---
 permalink: /projects/crescat-graffiti-vita-excolatur/
 title: "Crescat Graffiti, Vita Excolatur"
-date: 2012-12-26
+date: 2022-01-16
 classes: wide
 show_date: true
 header:

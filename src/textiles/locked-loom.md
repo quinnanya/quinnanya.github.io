@@ -1,7 +1,7 @@
 ---
 permalink: /textiles/locked-loom-1/
 title: "The Locked Loom 1: Gideon the Ninth"
-date: 2023-12-21
+date: 2026-03-21
 sortorder: '004'
 classes: wide
 show_date: true

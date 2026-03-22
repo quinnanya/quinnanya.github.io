@@ -1,7 +1,7 @@
 ---
 permalink: /projects/textile-makerspace/
 title: "Textile Makerspace"
-date: 2026-03-22
+date: 2026-03-21
 classes: wide
 show_date: true
 header:

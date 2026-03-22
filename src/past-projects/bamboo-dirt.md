@@ -1,7 +1,7 @@
 ---
 permalink: /projects/bamboo-dirt/
 title: "Bamboo DiRT / DiRT Directory"
-date: 2012-12-26
+date: 2022-01-16
 classes: wide
 show_date: true
 header:

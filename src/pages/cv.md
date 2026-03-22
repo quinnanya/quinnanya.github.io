@@ -1,7 +1,7 @@
 ---
 permalink: /cv/
 title: "Curriculum Vitae"
-date: 2027-03-22
+date: 2026-03-21
 toc: true
 toc_label: "Contents"
 layout: single.html

@@ -1,7 +1,7 @@
 ---
 permalink: /projects/bulgarian-dialectology-living-tradition/
 title: "Bulgarian Dialectology as Living Tradition"
-date: 2012-12-26
+date: 2022-01-16
 classes: wide
 show_date: true
 header:

@@ -1,7 +1,7 @@
 ---
 permalink: /textiles/2024-in-clothes/
 title: "2024 in Clothes"
-date: 2025-03-14
+date: 2025-06-25
 classes: wide
 sortorder: '013'
 show_date: true

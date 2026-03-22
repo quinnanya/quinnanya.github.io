@@ -1,7 +1,7 @@
 ---
 permalink: /textiles/where-i-sleep-excommunication/
 title: "Where I Sleep / Ex-communication"
-date: 2025-06-26
+date: 2025-06-25
 classes: wide
 sortorder: '016'
 show_date: true

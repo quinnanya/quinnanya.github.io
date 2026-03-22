@@ -1,7 +1,7 @@
 ---
 permalink: /textiles/priorities-man/
 title: "Priorities, man"
-date: 2025-01-12
+date: 2025-02-11
 sortorder: '009'
 classes: wide
 show_date: true

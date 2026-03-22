@@ -1,7 +1,7 @@
 ---
 permalink: /textiles/well-see/
 title: "We'll See"
-date: 2025-02-12
+date: 2025-02-11
 classes: wide
 sortorder: '010'
 show_date: true

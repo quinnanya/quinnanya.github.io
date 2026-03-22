@@ -1,0 +1,21 @@
+---
+layout: default.html
+---
+
+{% if header.overlay_color or header.overlay_image or header.image %}
+  {% include components/page__hero.html %}
+{% elsif header.video.id and header.video.provider %}
+  {% include components/page__hero_video.html %}
+{% endif %}
+
+<div class="main-content">
+  <article class="sewing-page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+
+    <div class="sewing-page__inner-wrap">
+      <section class="page__content e-content" itemprop="text">
+        {{ content }}
+      </section>
+    </div>
+  </article>
+</div>

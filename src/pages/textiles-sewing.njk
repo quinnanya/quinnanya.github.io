@@ -1,0 +1,296 @@
+---
+title: Sewing
+layout: textiles-sewing.html
+permalink: /textiles/sewing/
+classes: wide
+header:
+  overlay_image: /assets/images/header_clothes.jpg
+  overlay_color: "#5e616c"
+  overlay_filter: 0.5
+---
+
+<p><img src="/assets/images/threadbanger.jpg" style="float:right; max-height:300px;" />I have been sewing since late 2009, when my (now ex-)mother-in-law bought me a Janome Threadbanger sewing machine for Christmas. It had a blood-dripping dragon on it. I loved that machine.</p>
+<p>I had been promoted to a junior management position at UChicago IT, and I needed appropriate "business casual" clothes. This was a tricky and expensive proposition since I am roughly the size of a medium-to-large child.</p>
+<p>Inspired by my boss at the time, who also sewed, I started sewing myself button-down shirts in fun fabric patterns that I designed myself and had printed.</p>
+<p>In 2012 I moved to California, and with the dress code expectations lifted (and proximity to the wonderful <a href="https://stonemountainfabric.com/">Stonemountain Fabric</a>), things got weird. When I was pregnant with my second kid, I got a serger from my aunt and fell into the fascinating world of secret Facebook fabric groups selling cotton lycra with more interesting patterns than what you could find in even the best stores.</p>
+
+
+
+
+<div class="sewing-wall-controls">
+  <label for="sewing-tag-filter">Filter by tag</label>
+  <select id="sewing-tag-filter" name="sewing-tag-filter">
+    <option value="">All tags</option>
+  </select>
+  <p id="sewing-filter-count" class="sewing-filter-count" aria-live="polite"></p>
+</div>
+
+<div class="sewing-wall" id="sewing-wall" aria-live="polite">
+  {% for item in dhsewing | sortByDateDesc("Date") %}
+    {% if item.Image %}
+      <figure
+        class="sewing-wall__item"
+        data-sewing-item
+        data-tags="{{ item.Tags | default('') | escape }}"
+      >
+        <button
+          type="button"
+          class="sewing-wall__button"
+          data-sewing-open
+          data-name="{{ item.Name | default('') | escape }}"
+          data-image="{{ item.Image | escape }}"
+          data-date="{{ item.Date | default('') | escape }}"
+          data-pattern="{{ item.Pattern | default('') | escape }}"
+          data-notes="{{ item.Notes | default('') | escape }}"
+        >
+          <img src="{{ item.Image }}" alt="{{ item.Name | default('Sewing project photo') | escape }}" loading="lazy" decoding="async">
+        </button>
+      </figure>
+    {% endif %}
+  {% endfor %}
+</div>
+
+<div id="sewing-lightbox" class="sewing-lightbox" hidden aria-hidden="true">
+  <div class="sewing-lightbox__panel" role="dialog" aria-modal="true" aria-labelledby="sewing-lightbox-title">
+    <button type="button" class="sewing-lightbox__close" id="sewing-lightbox-close" aria-label="Close image details">×</button>
+    <h2 id="sewing-lightbox-title"></h2>
+    <img id="sewing-lightbox-image" src="" alt="" loading="eager" decoding="async">
+    <dl class="sewing-lightbox__meta">
+      <dt>Date</dt>
+      <dd id="sewing-lightbox-date"></dd>
+      <dt>Pattern</dt>
+      <dd id="sewing-lightbox-pattern"></dd>
+      <dt>Notes</dt>
+      <dd id="sewing-lightbox-notes"></dd>
+    </dl>
+  </div>
+</div>
+
+<style>
+  .sewing-page,
+  .sewing-page__inner-wrap,
+  .sewing-page .page__content {
+    width: 100%;
+    max-width: none;
+  }
+
+  .sewing-wall-controls {
+    margin-bottom: 1.5rem;
+  }
+
+  .sewing-filter-count {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+  }
+
+  .sewing-wall {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .sewing-wall__item {
+    display: block;
+    flex: 1 0 180px;
+    min-width: 180px;
+    margin: 0;
+  }
+
+  .sewing-wall__item[hidden] {
+    display: none;
+  }
+
+  .sewing-wall__button {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .sewing-wall__button img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .sewing-lightbox {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    z-index: 30;
+  }
+
+  .sewing-lightbox.is-open {
+    display: flex;
+  }
+
+  .sewing-lightbox::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  .sewing-lightbox__panel {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    max-height: 90vh;
+    overflow: auto;
+    padding: 1rem;
+    background: #fff;
+  }
+
+  .sewing-lightbox__close {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    font-size: 2rem;
+    line-height: 1;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  #sewing-lightbox-image {
+    width: 100%;
+    max-height: 60vh;
+    object-fit: contain;
+    margin: 0.5rem 0 1rem;
+  }
+
+  .sewing-lightbox__meta {
+    margin: 0;
+  }
+
+  .sewing-lightbox__meta dt {
+    font-weight: 600;
+  }
+
+  .sewing-lightbox__meta dd {
+    margin: 0 0 0.75rem;
+  }
+</style>
+
+<script>
+  (function () {
+    var tagFilter = document.getElementById("sewing-tag-filter");
+    var items = Array.prototype.slice.call(document.querySelectorAll("[data-sewing-item]"));
+    var lightbox = document.getElementById("sewing-lightbox");
+    var closeButton = document.getElementById("sewing-lightbox-close");
+    var lightboxTitle = document.getElementById("sewing-lightbox-title");
+    var lightboxImage = document.getElementById("sewing-lightbox-image");
+    var lightboxDate = document.getElementById("sewing-lightbox-date");
+    var lightboxPattern = document.getElementById("sewing-lightbox-pattern");
+    var lightboxNotes = document.getElementById("sewing-lightbox-notes");
+    var countLabel = document.getElementById("sewing-filter-count");
+    var previousActiveElement = null;
+
+    function splitTags(value) {
+      return (value || "")
+        .split(",")
+        .map(function (tag) { return tag.trim(); })
+        .filter(Boolean);
+    }
+
+    function populateFilter() {
+      var uniqueTags = new Set();
+
+      items.forEach(function (item) {
+        splitTags(item.getAttribute("data-tags")).forEach(function (tag) {
+          uniqueTags.add(tag);
+        });
+      });
+
+      Array.from(uniqueTags)
+        .sort(function (a, b) { return a.localeCompare(b); })
+        .forEach(function (tag) {
+          var option = document.createElement("option");
+          option.value = tag;
+          option.textContent = tag;
+          tagFilter.appendChild(option);
+        });
+    }
+
+    function applyFilter() {
+      var selectedTag = tagFilter.value;
+      var visibleCount = 0;
+
+      items.forEach(function (item) {
+        var tags = splitTags(item.getAttribute("data-tags"));
+        var visible = !selectedTag || tags.indexOf(selectedTag) > -1;
+        item.hidden = !visible;
+        if (visible) {
+          visibleCount += 1;
+        }
+      });
+
+      if (countLabel) {
+        countLabel.textContent = "Showing " + visibleCount + " item" + (visibleCount === 1 ? "" : "s") + (selectedTag ? " for " + selectedTag : "");
+      }
+    }
+
+    function openLightbox(data) {
+      previousActiveElement = document.activeElement;
+      lightboxTitle.textContent = data.name || "Sewing project";
+      lightboxImage.src = data.image || "";
+      lightboxImage.alt = data.name || "Sewing project";
+      lightboxDate.textContent = data.date || "—";
+      lightboxPattern.textContent = data.pattern || "—";
+      lightboxNotes.textContent = data.notes || "—";
+      lightbox.classList.add("is-open");
+      lightbox.hidden = false;
+      lightbox.setAttribute("aria-hidden", "false");
+      closeButton.focus();
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove("is-open");
+      lightbox.hidden = true;
+      lightbox.setAttribute("aria-hidden", "true");
+      lightboxImage.src = "";
+      document.body.style.overflow = "";
+      if (previousActiveElement && typeof previousActiveElement.focus === "function") {
+        previousActiveElement.focus();
+      }
+    }
+
+    document.addEventListener("click", function (event) {
+      var trigger = event.target.closest("[data-sewing-open]");
+
+      if (trigger) {
+        openLightbox({
+          name: trigger.getAttribute("data-name"),
+          image: trigger.getAttribute("data-image"),
+          date: trigger.getAttribute("data-date"),
+          pattern: trigger.getAttribute("data-pattern"),
+          notes: trigger.getAttribute("data-notes")
+        });
+        return;
+      }
+
+      if (lightbox.classList.contains("is-open") && (event.target === lightbox || event.target === closeButton)) {
+        closeLightbox();
+      }
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (lightbox.classList.contains("is-open") && event.key === "Escape") {
+        closeLightbox();
+      }
+    });
+
+    tagFilter.addEventListener("change", applyFilter);
+
+    closeLightbox();
+    populateFilter();
+    applyFilter();
+  })();
+</script>

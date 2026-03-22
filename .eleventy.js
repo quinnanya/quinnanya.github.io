@@ -17,6 +17,7 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
 const xmlFiltersPlugin = require("eleventy-xml-plugin");
 const yaml = require("js-yaml");
+const { parse } = require("csv-parse/sync");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 
@@ -32,6 +33,15 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.addDataExtension("yaml", contents => yaml.load(contents));
     eleventyConfig.addDataExtension("yml", contents => yaml.load(contents));
+    eleventyConfig.addDataExtension("tsv", (contents) =>
+        parse(contents, {
+            columns: true,
+            delimiter: "\t",
+            skip_empty_lines: true,
+            trim: true,
+            relax_column_count: true,
+        })
+    );
 
     eleventyConfig.addPlugin(pluginRss);
     //Blog excerpts
@@ -230,6 +240,13 @@ module.exports = function (eleventyConfig) {
       });
 
     eleventyConfig.addFilter('group_by', groupBy)
+    eleventyConfig.addFilter("sortByDateDesc", (array, key) => {
+        if (!Array.isArray(array)) return array;
+
+        return [...array].sort(
+            (a, b) => parseUsDateToTimestamp(b?.[key]) - parseUsDateToTimestamp(a?.[key])
+        );
+    });
 
     // Passthrough copy
     // don't use .gitignore (allows compiling sass to css into a monitored folder WITHOUT committing it to repo)
@@ -522,6 +539,20 @@ function absoluteUrl(url) {
     } else {
         return siteURL
     }
+}
+
+function parseUsDateToTimestamp(value) {
+    if (typeof value !== "string") return 0;
+
+    const match = value.trim().match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
+    if (!match) return 0;
+
+    const month = Number(match[1]);
+    const day = Number(match[2]);
+    const year = Number(match[3]);
+    const parsed = new Date(year, month - 1, day).getTime();
+
+    return Number.isNaN(parsed) ? 0 : parsed;
 }
 
 function groupBy(array, key) {

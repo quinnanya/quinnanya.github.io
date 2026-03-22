@@ -14,7 +14,7 @@ layout: default.html
   {% endunless %}
 {% endif %}
 
-<div class="main-content{% if classes and classes contains 'wide' %} wide{% endif %}{% if page.url == '/cv/' or page.url == '/cv/index.html' %} cv-page{% endif %}">
+<div class="main-content{% if classes and classes contains 'wide' %} wide{% endif %}{% if page.url == '/cv/' or page.url == '/cv/index.html' %} cv-page{% endif %}{% if page.inputPath and page.inputPath contains '/textiles/' %} textiles-page{% endif %}">
   {% include components/sidebar.html %}
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">

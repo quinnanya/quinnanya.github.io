@@ -546,20 +546,26 @@ body {
 .wide {
   .page {
     @include breakpoint($large) {
+      float: none;
+      width: 100%;
       padding-right: 0;
     }
 
     @include breakpoint($x-large) {
+      width: 100%;
       padding-right: 0;
     }
   }
 
   .page__related {
     @include breakpoint($large) {
+      float: none;
+      width: 100%;
       padding-right: 0;
     }
 
     @include breakpoint($x-large) {
+      width: 100%;
       padding-right: 0;
     }
   }

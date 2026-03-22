@@ -14,9 +14,9 @@ blurb: "Weaving a humanities course on AI"
 - Download the [printable zine](/assets/zines/future-text-print.pdf) (PDF)
 - Download the [zine for the screen](/assets/zines/future-text-screen.pdf) (PDF)
 
-In fall 2023, Laura Wittman and Quinn Dombrowski taught DLCL 103, Future Text: AI in Literatures, Cultures, and Languages. They were not expecting a 60-student class, mostly CS juniors and seniors looking to fulfill their humanities requirement.
+In fall 2023, Laura Wittman and I taught DLCL 103, Future Text: AI in Literatures, Cultures, and Languages. We were not expecting a 60-student class, mostly CS juniors and seniors looking to fulfill their humanities requirement.
 
-The class had a final project where students could choose a technical, creative, or analytical option. Quinn decided to do a final project too: weaving the data from the class.
+The class had a final project where students could choose a technical, creative, or analytical option. I decided to do a final project too: weaving the data from the class.
 
 The Future Text weaving captures four main kinds of data: assigned readings, lecture slides, attendance, and assignment grades. The weaving ends with course evaluation data, final grades, and email discussions from after the quarter was over.
 

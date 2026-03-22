@@ -11,6 +11,6 @@ header:
 blurb: "Weaving nicknames in Gideon the Ninth"
 ---
 
-See the original [blog post](https://quinndombrowski.com/blog/2023/12/21/locked-loom-1-gideon-the-ninth/) for more on weaving _Gideon the Ninth_.
+See the original [blog post](https://quinndaedal.com/blog/2023/12/21/locked-loom-1-gideon-the-ninth/) for more on weaving _Gideon the Ninth_.
 
 ![Panorama photo of the weaving](/assets/images/lockedloom1-panorama.jpg)

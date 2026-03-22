@@ -8,7 +8,7 @@ header:
   overlay_image: /assets/images/header_bamboologo.jpg
   overlay_filter: 0.5
 ---
-<p>So you wanna create a clearinghouse for tools, data, projects, and/or resources? A lot of people also think that <a href="http://www.quinndombrowski.com/dh/analysis/clearinghouse-tools-data-projects-and-resources">it's a good idea</a>. You'll soon be hearing from many people who have serious doubts about the feasibility of your project. Here's some issues to think about:</p>
+<p>So you wanna create a clearinghouse for tools, data, projects, and/or resources? A lot of people also think that <a href="http://www.quinndaedal.com/dh/analysis/clearinghouse-tools-data-projects-and-resources">it's a good idea</a>. You'll soon be hearing from many people who have serious doubts about the feasibility of your project. Here's some issues to think about:</p>
 <h3>Kinds of content</h3>
 <p>How broad is the scope of your clearinghouse? Tools? Data sources? Projects? Resources? News about "what's happening" in the digital humanities community? Information about scholarly practice associated with tools?</p>
 <h4>Tools, data and projects</h4>

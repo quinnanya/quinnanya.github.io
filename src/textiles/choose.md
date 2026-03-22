@@ -13,7 +13,7 @@ blurb: "A sigil."
 
 The weeklong embroidery workshop I did the week of the 2025 inauguration was "Embroidery Magic", taught by [Laura Tandeske](https://www.lauratandeske.com/). For those interested, there were optional readings from *Sigil Witchery: A Witch's Guide to Crafting Magick Symbols* and other books. Talking with Laura, it didn't take long to realize (unsurprisingly) that I'm oriented towards words and letters, and she encouraged me to sketch a sigil along those lines.
 
-I ended up with something based on the word *CHOOSE*: a circle for the O and C, H splitting the shape in the middle, and an S and E on the two sides. Actually **choosing**, rather than just going along with the default, has been [important to me in the last year](https://quinndombrowski.com/blog/2024/11/01/pick-up-the-purple/), and how I ended up with the life I have now.(Arguably it's also easy to read the center text as "SHE", but opting out of that has been another choice.)
+I ended up with something based on the word *CHOOSE*: a circle for the O and C, H splitting the shape in the middle, and an S and E on the two sides. Actually **choosing**, rather than just going along with the default, has been [important to me in the last year](https://quinndaedal.com/blog/2024/11/01/pick-up-the-purple/), and how I ended up with the life I have now.(Arguably it's also easy to read the center text as "SHE", but opting out of that has been another choice.)
 
 ![Yellow yarn on a green sweater with a circular sigil reading 'choose'](/assets/images/textiles_choose-orig.jpg)
 

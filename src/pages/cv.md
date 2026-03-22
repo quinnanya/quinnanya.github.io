@@ -150,7 +150,7 @@ header:
 - Texas A&M University, CoDHR speaker series. "Data You Can Touch: Preserving What You Love on an Uncertain Internet". January 28, 2025.
 - IMLS Data Speculations symposium. "What We Do in the Shadows: Tales of Pragmatic Corpus Building". January 15, 2025.
 - UCLA, "Data Visualization with Textiles Community Event". December 2, 2024.
-- HERMES Doctoral Network, seminar on error culture and discussion of "[Towards a Taxonomy of Failure](https://quinndombrowski.com/blog/2019/01/30/towards-taxonomy-failure/)". November 20, 2022.
+- HERMES Doctoral Network, seminar on error culture and discussion of "[Towards a Taxonomy of Failure](https://quinndaedal.com/blog/2019/01/30/towards-taxonomy-failure/)". November 20, 2022.
 - ACH 2024 roundtable, "Emerging Pathways to Supporting Digital Humanities Research on Copyrighted Literature", with Alex Wermer-Colan, Sarah Potvin, Mark Algee-Hewitt, and Peter Jaszi. November 6, 2024.
 - ACH 2024 panel, "Crafting Digital Humanities: Data Physicalizations with Textiles", with Claudia Berger, Gabriella Evergreen, Pam Lach, and Kayleigh Perkov. November 7, 2024.
 - DH 2024 poster, "SILICON: Supporting Digitally-Disadvantaged Languages". August 7, 2024.

@@ -10,4 +10,4 @@ header:
 blurb: "Corpus & projects related to modern literature for young readers."
 ---
 
-The Young Readers Database of Literature (YRDL) is a collaboration with Nichole Nomura and Jennifer Wolf. Details and website coming soon!
+The Young Readers Database of Literature (YRDL) was a collaboration with Nichole Nomura and Jennifer Wolf.

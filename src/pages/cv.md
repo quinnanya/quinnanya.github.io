@@ -1,10 +1,11 @@
 ---
 permalink: /cv/
 title: "Curriculum Vitae"
-date: 2024-01-12
+date: 2027-03-22
 toc: true
 toc_label: "Contents"
 layout: single.html
+classes: wide
 header:
   overlay_image: /assets/images/header_dsc.jpg
   overlay_filter: 0.5

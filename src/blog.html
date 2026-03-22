@@ -2,6 +2,7 @@
 title: "Blog"
 layout: archive.html
 permalink: "blog/{% if pagination.pageNumber>0 %}page-{{ pagination.pageNumber | plus: 1 }}{% endif %}/index.html"
+classes: blog-index
 header:
   overlay_image: /assets/images/header_dsc.jpg
   overlay_filter: 0.5
@@ -11,9 +12,21 @@ pagination:
 ---
 
 {%- for post in pagination.items -%}
-<h2><a href="{{post.data.permalink}}">{{ post.data.title }}</a></h2>
-<em>{{ post.data.date | toUTCString}}</em>
-<div class="archive__item-excerpt">{{ post.templateContent | description }} <a href="{{post.data.permalink}}"><em>read more</em></a></div>
+{% assign preview_image = post.data.header.overlay_image | default: post.data.header.teaser | default: post.data.header.image %}
+<article class="blog-preview">
+    {% if preview_image %}
+    <a class="blog-preview__image-link" href="{{post.data.permalink}}">
+        <div class="archive__item-teaser blog-preview__teaser">
+            <img src="{{ preview_image | relative_url }}" alt="{{ post.data.title | default: '' }}">
+        </div>
+    </a>
+    {% endif %}
+    <div class="blog-preview__body">
+        <h2><a href="{{post.data.permalink}}">{{ post.data.title }}</a></h2>
+        <em>{{ post.data.date | toUTCString}}</em>
+        <div class="archive__item-excerpt">{{ post.templateContent | description }} <a href="{{post.data.permalink}}"><em>read more</em></a></div>
+    </div>
+</article>
 {%- endfor -%}
 
 <ul class="pagination">

@@ -352,3 +352,42 @@
   }
 }
 
+.cv-page {
+  .page {
+    @include breakpoint($large) {
+      float: none;
+      width: 100%;
+      padding-right: 0;
+    }
+
+    @include breakpoint($x-large) {
+      width: 100%;
+    }
+  }
+
+  .page__content {
+    .sidebar__right {
+      float: right;
+      position: relative;
+      top: auto;
+      right: auto;
+      width: 9rem;
+      margin: 0 0 1rem 1rem;
+      padding-left: 0;
+    }
+
+    .toc {
+      font-size: 0.7em;
+    }
+
+    .toc .nav__title {
+      font-size: 0.9em;
+      padding: 0.4rem 0.5rem;
+    }
+
+    .toc__menu ol {
+      font-size: 0.9em;
+    }
+  }
+}
+

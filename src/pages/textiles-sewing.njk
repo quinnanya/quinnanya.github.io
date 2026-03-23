@@ -26,7 +26,9 @@ header:
 </div>
 
 <div class="sewing-wall" id="sewing-wall" aria-live="polite">
-  {% for item in dhsewing | sortByDateDesc("Date") %}
+  {% set sewingItems = dhsewing | sortByDateDesc("Date") %}
+  {% set useProgressiveLoading = sewingItems.length > 50 %}
+  {% for item in sewingItems %}
     {% if item.Image %}
       <figure
         class="sewing-wall__item"
@@ -43,7 +45,17 @@ header:
           data-pattern="{{ item.Pattern | default('') | escape }}"
           data-notes="{{ item.Notes | default('') | escape }}"
         >
-          <img src="{{ item.Image }}" alt="{{ item.Name | default('Sewing project photo') | escape }}" loading="lazy" decoding="async">
+          <img
+            {% if useProgressiveLoading and loop.index > 50 %}
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+              data-sewing-src="{{ item.Image | escape }}"
+            {% else %}
+              src="{{ item.Image }}"
+            {% endif %}
+            alt="{{ item.Name | default('Sewing project photo') | escape }}"
+            loading="lazy"
+            decoding="async"
+          >
         </button>
       </figure>
     {% endif %}
@@ -263,6 +275,44 @@ header:
       }
     }
 
+    function loadProgressiveImage(img) {
+      var src = img.getAttribute("data-sewing-src");
+      if (!src) {
+        return;
+      }
+
+      img.src = src;
+      img.removeAttribute("data-sewing-src");
+    }
+
+    function initProgressiveImages() {
+      var deferredImages = Array.prototype.slice.call(document.querySelectorAll("img[data-sewing-src]"));
+
+      if (!deferredImages.length) {
+        return;
+      }
+
+      if (!("IntersectionObserver" in window)) {
+        deferredImages.forEach(loadProgressiveImage);
+        return;
+      }
+
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) {
+            return;
+          }
+
+          loadProgressiveImage(entry.target);
+          observer.unobserve(entry.target);
+        });
+      }, { rootMargin: "200px 0px" });
+
+      deferredImages.forEach(function (img) {
+        observer.observe(img);
+      });
+    }
+
     function openLightbox(data) {
       previousActiveElement = document.activeElement;
       lightboxTitle.textContent = data.name || "Sewing project";
@@ -317,6 +367,7 @@ header:
     tagFilter.addEventListener("change", applyFilter);
 
     closeLightbox();
+    initProgressiveImages();
     populateFilter();
     applyFilter();
   })();

@@ -28,13 +28,51 @@ const path = require("path");
 const urlFilter = require("@11ty/eleventy/src/Filters/Url");
 const indexify = (url) => url.replace(/(\/[^.]*)$/, "$1index.html");
 
+function cleanTsvNotesQuotes(contents) {
+    const lines = contents.split(/\r?\n/);
+
+    if (lines.length === 0) {
+        return contents;
+    }
+
+    const headers = lines[0].split("\t");
+    const notesIndex = headers.indexOf("Notes");
+
+    if (notesIndex === -1) {
+        return contents;
+    }
+
+    const cleanedLines = [lines[0]];
+
+    for (const line of lines.slice(1)) {
+        if (!line) {
+            cleanedLines.push(line);
+            continue;
+        }
+
+        const columns = line.split("\t");
+
+        if (columns.length <= notesIndex) {
+            cleanedLines.push(line);
+            continue;
+        }
+
+        const notesValue = columns.slice(notesIndex).join("\t").replace(/"/g, "'");
+        const nextColumns = columns.slice(0, notesIndex);
+        nextColumns.push(notesValue);
+        cleanedLines.push(nextColumns.join("\t"));
+    }
+
+    return cleanedLines.join("\n");
+}
+
 module.exports = function (eleventyConfig) {
     let pathPrefix = "/";
 
     eleventyConfig.addDataExtension("yaml", contents => yaml.load(contents));
     eleventyConfig.addDataExtension("yml", contents => yaml.load(contents));
-    eleventyConfig.addDataExtension("tsv", (contents) =>
-        parse(contents, {
+    eleventyConfig.addDataExtension("tsv", (contents, filePath) =>
+        parse(path.basename(filePath) === "dhsewing.tsv" ? cleanTsvNotesQuotes(contents) : contents, {
             columns: true,
             delimiter: "\t",
             skip_empty_lines: true,

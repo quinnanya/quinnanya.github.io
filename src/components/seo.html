@@ -30,8 +30,10 @@
 
 {%- assign auto_description = content | default: '' | markdownify | strip_html | strip_newlines | default: site.description -%}
 {%- assign seo_description = excerpt | default: auto_description -%}
+{%- assign seo_title_text = page.title | default: title | default: '' | markdownify | strip_html | strip_newlines | strip -%}
 {%- if seo_description -%}
   {%- assign seo_description = seo_description | markdownify | strip_html | newline_to_br | strip_newlines -%}
+  {%- assign seo_description = seo_description | remove_first: seo_title_text -%}
   {%- comment -%}
     Normalize and defensively encode sequences that confuse HTML parsers when
     included in meta descriptions (for example literal comment terminators
@@ -57,6 +59,7 @@
     | replace: '.gif]', ' '
   -%}
   {%- assign seo_description = seo_description
+    | replace: seo_title_text, ' '
     | replace: 'Filter by tag', ' '
     | replace: 'All tags', ' '
     | replace: '×DatePatternNotes', ' '

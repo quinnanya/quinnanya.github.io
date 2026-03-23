@@ -28,7 +28,7 @@
   {%- assign canonical_url = page.url | replace: "index.html", "" | absolute_url %}
 {% endif %}
 
-{%- assign auto_description = content | replace: title, '' | description | default: site.description -%}
+{%- assign auto_description = content | default: '' | markdownify | strip_html | strip_newlines | default: site.description -%}
 {%- assign seo_description = excerpt | default: auto_description -%}
 {%- if seo_description -%}
   {%- assign seo_description = seo_description | markdownify | strip_html | newline_to_br | strip_newlines -%}
@@ -47,7 +47,37 @@
     comments or other fragments that contain `-->`.
   {%- endcomment -%}
   {%- assign seo_description = seo_description | replace: '<!--', ' ' | replace: '-->', ' ' -%}
-  {%- assign seo_description = seo_description | replace: '<br />', ' ' | replace: '<br>', ' ' | replace: '>', '&gt;' | replace: '<', '&lt;' | escape_once | strip -%}
+  {%- assign seo_description = seo_description
+    | replace: '[/assets/images/', ' '
+    | replace: '[/assets/', ' '
+    | replace: '.jpg]', ' '
+    | replace: '.jpeg]', ' '
+    | replace: '.png]', ' '
+    | replace: '.webp]', ' '
+    | replace: '.gif]', ' '
+  -%}
+  {%- assign seo_description = seo_description
+    | replace: 'Filter by tag', ' '
+    | replace: 'All tags', ' '
+    | replace: '×DatePatternNotes', ' '
+    | replace: '×', ' '
+    | replace: '[', ' '
+    | replace: ']', ' '
+    | replace: '&amp;quot;', '&quot;'
+  -%}
+  {%- assign seo_description = seo_description
+    | replace: '<br />', ' '
+    | replace: '<br>', ' '
+    | replace: '>', '&gt;'
+    | replace: '<', '&lt;'
+    | replace: '  ', ' '
+    | replace: '  ', ' '
+    | replace: '  ', ' '
+    | strip_newlines
+    | escape_once
+    | strip
+    | truncatewords: 40
+  -%}
 {%- endif -%}
 
 {%- assign author = author | default: authors[0] | default: site.author -%}

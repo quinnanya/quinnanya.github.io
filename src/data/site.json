@@ -6,6 +6,8 @@
   "title_separator": "-",
   "name": "Quinn Daedal",
   "description": "Personal website for Quinn Daedal.",
+  "og_image_width": 1200,
+  "og_image_height": 630,
   "maxPostsPerPage": 5,
   "search": false,
   "minimal_mistakes_skin": "mint",

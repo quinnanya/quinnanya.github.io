@@ -141,6 +141,8 @@ header:
 - "The Data-Sitters Club", reviewed by Michelle Moravec. *Journal of American History*, Volume 111, Issue 2, September 2024, Pages 399–400, https://doi.org/10.1093/jahist/jaae174
 
 ## Talks and Presentations
+- Aarhus University, *Archived Web as Research Data* workshop. "Caring and Acting for Emergency Web Archiving: Saving Ukrainian Cultural Heritage Online (SUCHO)". May 21, 2026.
+- Stanford University, CESTA. "The Global Medieval Sourcebook", with Kathryn Starkey. May 7, 2026.
 - University of London School of Advanced Study DHRH Seminar Series *The Fragile Record*. Panelist for "Cultural Heritage under attack: Saving cultural data in times of crisis". March 31, 2026.
 - Information Stewardship Forum 2026, Internet Archive. Plenary panel speaker on "Infrastructure, Tools, and Standards for Digital Government Information". March 18, 2026.
 - Stanford University, CESTA. "Craftivism in a Crisis: Making the Humanities Matter when it's All Falling Apart". January 29, 2026. [Original slides](/assets/files/craftivism-crisis.pdf) (PDF) and [writeup](/blog/2026/02/10/craftivism-crisis/).

@@ -143,7 +143,7 @@ header:
 - "The Data-Sitters Club", reviewed by Michelle Moravec. *Journal of American History*, Volume 111, Issue 2, September 2024, Pages 399–400, https://doi.org/10.1093/jahist/jaae174
 
 ## Talks and Presentations
-- Samuelson Law, Technology & Public Policy Clinic, "25 Years at the Digital Frontier" Symposium. Panelist, "Shaping the Future: Fostering Innovation and PRotecting Individuals", with Lila Bailey, Heather Patterson, and Aaron Perzanowski. Septemebr 25, 2026.
+- Samuelson Law, Technology & Public Policy Clinic, "25 Years at the Digital Frontier" Symposium. Panelist, "Shaping the Future: Fostering Innovation and Protecting Individuals", with Lila Bailey, Heather Patterson, and Aaron Perzanowski. Septemebr 25, 2026.
 - DH 2026. "This Is How We Fight: Revising Digital Humanities Values", with Lisa Spiro. July 30, 2026.
 - DH 2026. "#DHMakes: Embodied Craft as Critical Engagement" mini-conference, with Nichole Nomura and Jajwalya Karajgikar. July 28, 2026.
 - ACH 2026. "Reimagining the Global Medieval Sourcebook", with Nino Martin. June 25, 2026.

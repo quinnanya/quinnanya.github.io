@@ -39,7 +39,7 @@ header:
 
 ## Service
 
-- PC member, Computational Humanities Research conference, 2024
+- PC member, Computational Humanities Research conference, 2024-present
 - Co-President, Association for Computers and the Humanities (ACH), 2022-2024
 - ACH Constituent Organization Board representative to the Alliance of Digital Humanities Organizations (ACH), 2022-2024
 - Co-founder and organizer, ACH AI working group, 2023-2025
@@ -136,6 +136,7 @@ header:
 - _Crescat Graffiti, Vita Excolatur: Confessions of the University of Chicago_, 2009. (ISBN 978-0-557-17205-4)
 
 ## Exhibitions
+- "[Who Wears the Pants in Education?](https://yarnlab.stanford.edu/ai-pants)", on display at YarnLab, 2026.
 - "Computers, Archives, and Librarians in Star Trek", in _ART/WORK | Creative Pursuits of Stanford Libraries Staff_. February 20, 2024 - April 27, 2025.
 - "Future Text" and "#CIDR-Coeur" weavings, and guestbook loom, at _Thread Control_ pop-up exhibition. Roble Arts Gym, Stanford University. March 7-8, 2024.
 
@@ -346,9 +347,9 @@ header:
 ## Teaching
 
 - Princeton Center for Digital Humanities. Instructor for NEH-funded institute "New Languages for NLP". 2021-2022.
-- Stanford University, DLCL 205/305: Project Management and Ethical Collaboration for Humanists, winter 2020.
-- Stanford University, DLCL 204: Digital Humanities Across Borders, winter 2019.&nbsp;
-- Stanford University, CIDR workshops on research data management, data modeling, Cytoscape, Tableau, and Zotero/Tropy. 2018-present.
+- Stanford University, DLCL 205/305: Project Management and Ethical Collaboration for Humanists, winter 2020 & 2024, spring 2026.
+- Stanford University, DLCL 204: Digital Humanities Across Borders, winter 2019, 2021, 2023, fall 2024.&nbsp;
+- Stanford University, CIDR workshops on research data management, data modeling, Cytoscape, Tableau, and Zotero/Tropy. 2018.
 - Drupal for Digital Humanities Projects workshop, Digital Humanities Summer Institute, 2014-2016&nbsp;
 - Workshops on Drupal for digital research projects at UC Berkeley's D-Lab, 2013-2014 academic year
 - THATCamp LAC workshop: "If Google Can’t Find Your Project, Does It Exist? or, How to Build a Website in 90 Minutes", June 2011
